@@ -49,7 +49,6 @@ some tools used for helping the test, not important
 # device = "xc7z020-clg484-1"
 device = "xc7z020-clg400-1" # Z7-20 core
 clk_ns = "10"
-
 ...
 
 # generate scripts to kick off HLS
@@ -105,7 +104,6 @@ start_gui
 ```
 
 > sdk &rarr; Vitis IDE : `launch_sdk` &rarr; `vitis` <br>
->
 > `.hdf` &rarr; `.xsa`
 
 <br>
@@ -185,17 +183,17 @@ opencv
 └── source_contrib
 ```
 
-2. git clone opencv-4.4.0, opencv-4.4.0-contrib
-   _But I don't know how to change clone folder name_
-   So, I just make opencv and cd to opencv and then
-   `git clone https://github.com/opencv/opencv/tree/4.4.0`
-   `git clone https://github.com/opencv/opencv_contrib/tree/4.4.0`
-   `mv opencv source`
+2. git clone opencv-4.4.0, opencv-4.4.0-contrib <br>
+   _But I don't know how to change clone folder name_ <br>
+   So, I just make opencv and cd to opencv and then <br>
+   `git clone https://github.com/opencv/opencv/tree/4.4.0` <br>
+   `git clone https://github.com/opencv/opencv_contrib/tree/4.4.0` <br>
+   `mv opencv source` <br>
    `mv opencv_contrib source_contrib`
 
 3. `setenv LIBRARY_PATH /usr/lib/x86_64-linux-gnu/` &larr; I'm using C Shell !!
 
-4. Change the cmake command as the below. I arbitrarily modified the code to make it easier to read.
+4. Change the cmake command as the below. I arbitrarily modified the code to make it easier to read. <br>
    Copy Vitis Vision README code and change _If you got some errors as me._
 
 ```
@@ -230,9 +228,9 @@ CMake Error at CMakeLists.txt:25 (cmake_minimum_required):
 -- Configuring incomplete, errors occurred!
 ```
 
-update cmake. In my case,
-`sudo dnf remove cmake`
-`sudo dnf install cmake`
+update cmake. In my case, <br>
+`sudo dnf remove cmake` <br>
+`sudo dnf install cmake` <br>
 `cmake --version` : 3.20.x
 
 6. `make all -j8` : `-j` option is cpu core number to use
