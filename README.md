@@ -112,4 +112,133 @@ start_gui
 
 ### Vitis HLS
 
+```shell
+fatal error: hls_video.h: No such file or directory
+ #include "hls_video.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+```
+
+[`hls_video.h` has been deprecated.](https://adaptivesupport.amd.com/s/question/0D52E00006hpY1uSAE/where-can-i-find-the-header-file-hlsvideoh?language=en_US)
+
+[**Install Vitis Vision!!**](#in-my-workspace)
+
+#### How to Install Vitis Vision
+
+From [Vitis Vision GitHub](https://github.com/Xilinx/Vitis_Libraries/tree/master/vision) README
+
+##### Prerequisites
+
+- Valid installation of Vitis™ 2022.2 or later version and the corresponding licenses.
+
+- Xilinx® Runtime (XRT) must be installed. XRT provides software interface to Xilinx FPGAs.
+
+- Install OpenCV-4.4.0 x86 libraries(with compatible libjpeg.so). x86 libs have to be used for
+
+```
+  a) L1 flow irrespective of target FPGA device being PCIe or embedded.
+  b) L2/L3 flow when the target device is PCIe based
+  c) L2/L3 flow when performing software emulation for an embedded platform.
+```
+
+For L2/L3 flow targeting embedded platforms (for hardware emulationa and hardware build), aarch32/aarch64 version OpenCV shipped within their sysroot should be used.
+
+- libOpenCL.so must be installed if not present.
+
+- Install the card for which the platform is supported in Vitis 2022.2 or later versions.
+
+- If targeting an embedded platform, install it and set up the evaluation board.
+
+##### OpenCV Installation Guidance:
+
+It is recommended to do a fresh installation of OpenCV 4.4.0 and not use existing libs of your system, as they may or may not work with Vitis environment.
+
+**Please make sure you update and upgrade the packages and OS libraries of your system and have cmake version>3.5 installed before proceeding.**
+
+The below steps can help install the basic libs required to compile and link the OpenCV calls in Vitis Vision host code.
+
+1. create a directory "source" and clone opencv-4.4.0 into it.
+2. create a directory "source_contrib" and clone opencv-4.4.0-contrib into it.
+3. create 2 more directories: `build` , `install`
+4. open a bash terminal and cd to build directory
+5. Run the command: `export LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/`
+6. Run the command: `cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=< path-to-install-directory> -D CMAKE_CXX_COMPILER=< path-to-Vitis-installation-directory>/tps/lnx64/gcc-6.2.0/bin/g++ -D OPENCV_EXTRA_MODULES_PATH=< path-to-source_contrib-directory>/modules/ -D WITH_V4L=ON -DBUILD_TESTS=OFF -DBUILD_ZLIB=ON -DBUILD_JPEG=ON -DWITH_JPEG=ON -DWITH_PNG=ON -DBUILD_EXAMPLES=OFF -DINSTALL_C_EXAMPLES=OFF -DINSTALL_PYTHON_EXAMPLES=OFF -DWITH_OPENEXR=OFF -DBUILD_OPENEXR=OFF`
+7. Run the command: `make all -j8`
+8. Run the command: `make install`
+
+The OpenCV includes and libs will be in the install directory
+
+#### In My Workspace
+
+- shell : cshell
+- OS : RHEL 8.10
+- CMake version : 3.3.2
+- No OpenCV
+
+1. `mkdir opencv; mkdir opencv/source opencv/source_contrib opencv/build opencv/install`
+
+```
+opencv
+├── build
+├── install
+├── source
+└── source_contrib
+```
+
+2. git clone opencv-4.4.0, opencv-4.4.0-contrib
+   _But I don't know how to change clone folder name_
+   So, I just make opencv and cd to opencv and then
+   `git clone https://github.com/opencv/opencv/tree/4.4.0`
+   `git clone https://github.com/opencv/opencv_contrib/tree/4.4.0`
+   `mv opencv source`
+   `mv opencv_contrib source_contrib`
+
+3. `setenv LIBRARY_PATH /usr/lib/x86_64-linux-gnu/` &larr; I'm using C Shell !!
+
+4. Change the cmake command as the below. I arbitrarily modified the code to make it easier to read.
+   Copy Vitis Vision README code and change _If you got some errors as me._
+
+```
+cmake -D "CMAKE_BUILD_TYPE=RELEASE" \
+      -D "CMAKE_INSTALL_PREFIX=/home/tony/opencv/install" \
+      -D "CMAKE_CXX_COMPILER=/home/tony/tools/xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-6.2.0/bin/g++" \
+      -D "OPENCV_EXTRA_MODULES_PATH=/home/tony/opencv/source_contrib/modules/" \
+      -D "WITH_V4L=ON" \
+      -D "BUILD_TESTS=OFF" \
+      -D "BUILD_ZLIB=ON" \
+      -D "BUILD_JPEG=ON" \
+      -D "WITH_JPEG=ON" \
+      -D "WITH_PNG=ON" \
+      -D "BUILD_EXAMPLES=OFF" \
+      -D "INSTALL_C_EXAMPLES=OFF" \
+      -D "INSTALL_PYTHON_EXAMPLES=OFF" \
+      -D "WITH_OPENEXR=OFF" \
+      -D "BUILD_OPENEXR=OFF" \
+      ../source
+```
+
+> 1. CMAKE_CXX_COMPILER is path to Vitis_HLS install path
+> 2. I specified the source code path(opencv) at the end of the command. : `../source`
+
+5. Did you meet Error? HAHA We didn't read README exactly!!
+
+```
+CMake Error at CMakeLists.txt:25 (cmake_minimum_required):
+  CMake 3.7 or higher is required.  You are running version 3.3.2
+
+
+-- Configuring incomplete, errors occurred!
+```
+
+update cmake. In my case,
+`sudo dnf remove cmake`
+`sudo dnf install cmake`
+`cmake --version` : 3.20.x
+
+6. `make all -j8` : `-j` option is cpu core number to use
+
+7. `make install`
+
+DONE!!!
+
 ---
