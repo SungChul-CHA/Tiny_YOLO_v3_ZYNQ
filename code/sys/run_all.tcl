@@ -20,7 +20,8 @@ set script_folder [_tcl::get_script_folder]
 ################################################################
 # Check if script is running in correct Vivado version.
 ################################################################
-set scripts_vivado_version 2019.1
+# set scripts_vivado_version 2019.1
+set scripts_vivado_version 2022.2
 set current_vivado_version [version -short]
 
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
@@ -43,7 +44,9 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 set list_projs [get_projects -quiet]
 if { $list_projs eq "" } {
-   create_project project_1 myproj -part [lindex $argv 0] -force
+   # create_project project_1 myproj -part [lindex $argv 0] -force
+   create_project project_1 myproj -part xc7z020clg400-1 -force
+   set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
 }
 
 
@@ -771,9 +774,10 @@ wait_on_run synth_1
 launch_runs impl_1 -to_step write_bitstream
 wait_on_run impl_1
 
-file mkdir myproj/project_1.sdk
-file copy -force myproj/project_1.runs/impl_1/design_1_wrapper.sysdef myproj/project_1.sdk/design_1_wrapper.hdf
+# file mkdir myproj/project_1.sdk
+# file copy -force myproj/project_1.runs/impl_1/design_1_wrapper.sysdef myproj/project_1.sdk/design_1_wrapper.hdf
 
-launch_sdk -workspace myproj/project_1.sdk -hwspec myproj/project_1.sdk/design_1_wrapper.hdf
+# launch_sdk -workspace myproj/project_1.sdk -hwspec myproj/project_1.sdk/design_1_wrapper.hdf
+start_gui
 
 exit

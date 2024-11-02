@@ -2,7 +2,8 @@ import os
 import shutil
 import zipfile
 
-device = "xc7z020-clg484-1"
+# device = "xc7z020-clg484-1"
+device = "xc7z020-clg400-1"
 clk_ns = "10"
 
 root_path = os.path.abspath("../")
