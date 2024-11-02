@@ -73,9 +73,9 @@ for hls_prj_name in os.listdir():
     shutil.copy(hls_prj_name + "_prj/solution1/impl/ip/xilinx_com_hls_" + hls_prj_name + "_top_1_0.zip", root_path + "/code/ip/xilinx_com_hls_" + hls_prj_name + "_top_1_0.zip")
 ```
 
-> change target device
-> No more support `-tool` option in Vitis HLS 2022.2
-> program name was changed : `vivado_hls` &rarr; `vitis_hls`
+> change target device <br>
+> No more support `-tool` option in Vitis HLS 2022.2 <br>
+> program name was changed : `vivado_hls` &rarr; `vitis_hls` <br>
 > before copy, need to generate 'ip' folder in code : /code/ip &larr; I just used mkdir
 
 <br>
@@ -104,7 +104,7 @@ if { $list_projs eq "" } {
 start_gui
 ```
 
-> sdk &rarr; Vitis IDE : `launch_sdk` &rarr; `vitis`
+> sdk &rarr; Vitis IDE : `launch_sdk` &rarr; `vitis` <br>
 >
 > `.hdf` &rarr; `.xsa`
 
