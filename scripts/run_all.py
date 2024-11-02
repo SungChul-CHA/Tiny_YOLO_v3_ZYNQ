@@ -68,7 +68,8 @@ for hls_prj_name in os.listdir():
             tcl_fp.write("add_files -tb tb/" + tb_file + "\n")
 
         tcl_fp.write("open_solution \"solution1\"\n")
-        tcl_fp.write("set_part {" + device + "} -tool vivado\n")
+        # tcl_fp.write("set_part {" + device + "} -tool vivado\n")
+        tcl_fp.write("set_part {" + device + "}\n")
         if hls_prj_name == "yolo_conv":
             tcl_fp.write("create_clock -period " + str(float(clk_ns)*0.75) + " -name default\n") # conv block needs stricter timing, is there a better way to achieve this
         else:    
@@ -79,7 +80,11 @@ for hls_prj_name in os.listdir():
         tcl_fp.write("cosim_design\n")
         tcl_fp.write("export_design -rtl verilog -format ip_catalog\n")
 
-    os.system("vivado_hls run_hls.tcl")
+    # os.system("vivado_hls run_hls.tcl")
+    os.system("vitis_hls run_hls.tcl")
+    ip_directory = os.path.join(root_path, "code", "ip")
+    if not os.path.exists(ip_directory):
+        os.makedirs(ip_directory)
     shutil.copy(hls_prj_name + "_prj/solution1/impl/ip/xilinx_com_hls_" + hls_prj_name + "_top_1_0.zip", root_path + "/code/ip/xilinx_com_hls_" + hls_prj_name + "_top_1_0.zip")
 
 # fetch IPs exported

@@ -1,0 +1,63 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/tony/tools/xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:678:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/tony/tools/xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:692:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/tony/tools/xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/run_hls.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=yolo_acc_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=bias_en bundle=CTRL_BUS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=leaky bundle=CTRL_BUS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=fold_input_ch bundle=CTRL_BUS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=input_w bundle=CTRL_BUS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=input_h bundle=CTRL_BUS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL_BUS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=outStream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=inStream_a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=inStream_b" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=kernel_bias_fp cyclic factor=1 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4 max=4" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=416 max=416" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=416 max=416" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=4 max=4" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_acc.cpp:51:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_acc_top" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

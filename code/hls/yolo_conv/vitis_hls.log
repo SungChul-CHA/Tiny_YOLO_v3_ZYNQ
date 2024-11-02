@@ -1,0 +1,69 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2.2 (64-bit)
+  **** SW Build 3779808 on Feb 17 2023
+  **** IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+    ** Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+
+source /home/tony/tools/xilinx/Vitis_HLS/2022.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/home/tony/tools/xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'tony' on host 'tony' (Linux_x86_64 version 4.18.0-553.22.1.el8_10.x86_64) on Sat Nov 02 18:44:31 KST 2024
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.10 (Ootpa)"
+INFO: [HLS 200-10] In directory '/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: source run_hls.tcl
+INFO: [HLS 200-1510] Running: open_project -reset yolo_conv_prj 
+INFO: [HLS 200-10] Creating and opening project '/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj'.
+INFO: [HLS 200-1510] Running: set_top yolo_conv_top 
+INFO: [HLS 200-1510] Running: add_files src/yolo_conv.cpp 
+INFO: [HLS 200-10] Adding design file 'src/yolo_conv.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_conv.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_conv.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_fp.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_fp.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_stream.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_stream.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/layer_input.dat 
+INFO: [HLS 200-10] Adding test bench file 'tb/layer_input.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/layer_output_sdk.dat 
+INFO: [HLS 200-10] Adding test bench file 'tb/layer_output_sdk.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/weight_file.h 
+INFO: [HLS 200-10] Adding test bench file 'tb/weight_file.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/yolo_conv_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'tb/yolo_conv_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Creating and opening solution '/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 7.5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7.5ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: csim_design 
+Running Dispatch Server on port: 45169
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb/yolo_conv_tb.cpp in debug mode
+In file included from ../../../../tb/yolo_conv_tb.cpp:3:
+../../../../tb/../src/yolo_conv.h:5:10: fatal error: hls_video.h: No such file or directory
+ #include "hls_video.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [csim.mk:77: obj/yolo_conv_tb.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.06 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.12 seconds; current allocated memory: 0.000 MB.
+4
+    while executing
+"source run_hls.tcl"
+    invoked from within
+"hls::main run_hls.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 0.64 seconds. Total CPU system time: 0.13 seconds. Total elapsed time: 10.72 seconds; peak allocated memory: 198.340 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sat Nov  2 18:44:41 2024...

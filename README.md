@@ -40,17 +40,47 @@ some tools used for helping the test, not important
 - OS : RHEL 8
 - tool version : 2022.2
 
-> `run_all.py`
+**Original vivado tool version was 2019.1**
+**In 2022.2, there are some changes...**
+
+1. `run_all.py`
 
 ```python
 # device = "xc7z020-clg484-1"
 device = "xc7z020-clg400-1" # Z7-20 core
 clk_ns = "10"
+
+...
+
+# generate scripts to kick off HLS
+for hls_prj_name in os.listdir():
+    os.chdir(root_path + "/code/hls/" + hls_prj_name)
+    with open("run_hls.tcl", "w") as tcl_fp:
+
+        ...
+
+        tcl_fp.write("open_solution \"solution1\"\n")
+        # tcl_fp.write("set_part {" + device + "} -tool vivado\n")
+        tcl_fp.write("set_part {" + device + "}\n")
+
+        ...
+
+    # os.system("vivado_hls run_hls.tcl")
+    os.system("vitis_hls run_hls.tcl")
+    ip_directory = os.path.join(root_path, "code", "ip")
+    if not os.path.exists(ip_directory):
+        os.makedirs(ip_directory)
+    shutil.copy(hls_prj_name + "_prj/solution1/impl/ip/xilinx_com_hls_" + hls_prj_name + "_top_1_0.zip", root_path + "/code/ip/xilinx_com_hls_" + hls_prj_name + "_top_1_0.zip")
 ```
+
+> change target device
+> No more support `-tool` option in Vitis HLS 2022.2
+> program name was changed : `vivado_hls` &rarr; `vitis_hls`
+> before copy, need to generate 'ip' folder in code : /code/ip &larr; I just used mkdir
 
 <br>
 
-> `code/sys/run_all.tcl`
+2. `code/sys/run_all.tcl`
 
 ```tcl
 # set scripts_vivado_version 2019.1
@@ -74,11 +104,9 @@ if { $list_projs eq "" } {
 start_gui
 ```
 
-> Original vivado tool version was 2019.1
-> In 2022.2, there are some changes...
+> sdk &rarr; Vitis IDE : `launch_sdk` &rarr; `vitis`
 >
-> 1. sdk &rarr; Vitis IDE : `launch_sdk` &rarr; `vitis`
-> 2. `.hdf` &rarr; `.xsa`
+> `.hdf` &rarr; `.xsa`
 
 <br>
 

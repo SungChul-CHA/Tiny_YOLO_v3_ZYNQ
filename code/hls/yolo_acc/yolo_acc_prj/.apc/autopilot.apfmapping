@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="yolo_stream.h" path="/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/src/yolo_stream.h"/>
+    <originFiles name="yolo_fp.h" path="/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/src/yolo_fp.h"/>
+    <originFiles name="yolo_acc.h" path="/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/src/yolo_acc.h"/>
+    <originFiles name="yolo_acc.cpp" path="/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/src/yolo_acc.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="yolo_acc_tb.cpp" path="/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/tb/yolo_acc_tb.cpp"/>
+    <originFiles name="weight_file.h" path="/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/tb/weight_file.h"/>
+    <originFiles name="layer_output_sdk.dat" path="/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/tb/layer_output_sdk.dat"/>
+    <originFiles name="layer_input.dat" path="/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/tb/layer_input.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
