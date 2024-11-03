@@ -15,9 +15,10 @@ add_files -tb tb/layer_output_sdk.dat -cflags "-Wno-unknown-pragmas" -csimflags 
 add_files -tb tb/layer_input.dat -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xc7z020-clg400-1}
-create_clock -period 2 -name default
+create_clock -period 10 -name default
 config_interface -m_axi_latency 0
-#source "./yolo_acc_prj/solution1/directives.tcl"
+config_export -format ip_catalog -rtl verilog
+source "./yolo_acc_prj/solution1/directives.tcl"
 csim_design
 csynth_design
 cosim_design

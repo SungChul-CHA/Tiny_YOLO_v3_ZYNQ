@@ -15,28 +15,28 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 8.69 seconds. CPU system time: 0.23 seconds. Elapsed time: 8.95 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 8.95 seconds. CPU system time: 0.23 seconds. Elapsed time: 9.22 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0.01 seconds. Elapsed time: 0 seconds; current allocated memory: 198.406 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 198.363 MB.
 INFO: [HLS 200-10] Analyzing design file 'src/yolo_acc.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1.95 seconds. CPU system time: 0.22 seconds. Elapsed time: 2.18 seconds; current allocated memory: 200.617 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1.98 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.21 seconds; current allocated memory: 200.559 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.85 seconds. CPU system time: 0.22 seconds. Elapsed time: 2.09 seconds; current allocated memory: 200.801 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 200.801 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.9 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.09 seconds; current allocated memory: 200.742 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 200.742 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 217.453 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 217.426 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 237.410 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 237.398 MB.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/yolo_acc.cpp:96:5) to (src/yolo_acc.cpp:114:1) in function 'post_process_unit'... converting 4 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'yolo_acc_top' (src/yolo_acc.cpp:4)...5 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 278.938 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 278.930 MB.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_45_3' (src/yolo_acc.cpp:45:27) in function 'yolo_acc_top'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_42_2' (src/yolo_acc.cpp:42:27) in function 'yolo_acc_top'.
 INFO: [HLS 200-472] Inferring partial write operation for 'kernel_bias_fp.V' (src/yolo_acc.cpp:33:23)
 INFO: [HLS 200-472] Inferring partial write operation for 'kernel_bias_fp.V' (src/yolo_acc.cpp:34:25)
 INFO: [HLS 200-472] Inferring partial write operation for 'kernel_bias_fp.V' (src/yolo_acc.cpp:35:25)
 INFO: [HLS 200-472] Inferring partial write operation for 'kernel_bias_fp.V' (src/yolo_acc.cpp:36:25)
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 305.293 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 305.289 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'yolo_acc_top' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -47,13 +47,13 @@ INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_25_1'.
 WARNING: [HLS 200-885] The II Violation in module 'yolo_acc_top_Pipeline_VITIS_LOOP_25_1' (loop 'VITIS_LOOP_25_1'): Unable to schedule 'store' operation ('kernel_bias_fp_V_addr_1_write_ln34', src/yolo_acc.cpp:34) of variable 'curr_input.data.sub_data_1.V', src/yolo_acc.cpp:32 on array 'kernel_bias_fp_V' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'kernel_bias_fp_V'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 3, loop 'VITIS_LOOP_25_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.05 seconds; current allocated memory: 305.293 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 305.289 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 305.293 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 305.289 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'post_process_unit' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -62,13 +62,13 @@ INFO: [HLS 200-486] Changing DSP latency (root=r_V) to 3 in order to utilize ava
 INFO: [SCHED 204-61] Pipelining function 'post_process_unit'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'post_process_unit'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 305.293 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 305.289 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 305.293 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 305.289 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'yolo_acc_top_Pipeline_VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -77,12 +77,12 @@ INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP
 WARNING: [HLS 200-885] The II Violation in module 'yolo_acc_top_Pipeline_VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4' (loop 'VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4'): Unable to schedule 'load' operation ('kernel_bias_fp_V_load_1', src/yolo_acc.cpp:66) on array 'kernel_bias_fp_V' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'kernel_bias_fp_V'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 10, loop 'VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 306.703 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 306.699 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 306.703 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 306.699 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'yolo_acc_top' 

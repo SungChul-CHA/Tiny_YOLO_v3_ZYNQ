@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Sun Nov  3 20:50:47 2024
+# Process ID: 31564
+# Current directory: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/yolo_max_pool_top/xsim_script.tcl}
+# Log file: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/xsim.log
+# Journal file: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/xsim.jou
+# Running On: tony, OS: Linux, CPU Frequency: 2700.000 MHz, CPU Physical cores: 14, Host memory: 33431 MB
+#-----------------------------------------------------------
+source xsim.dir/yolo_max_pool_top/xsim_script.tcl
+# xsim {yolo_max_pool_top} -autoloadwcfg -tclbatch {yolo_max_pool_top.tcl}
+Time resolution is 1 ps
+source yolo_max_pool_top.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "20767625000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 20767685 ns : File "/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top.autotb.v" Line 382
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:33 . Memory (MB): peak = 1475.426 ; gain = 0.000 ; free physical = 17324 ; free virtual = 56076
+## quit
+INFO: xsimkernel Simulation Memory Usage: 306020 KB (Peak: 306020 KB), Simulation CPU Usage: 32900 ms
+INFO: [Common 17-206] Exiting xsim at Sun Nov  3 20:51:23 2024...

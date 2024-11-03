@@ -1,0 +1,4 @@
+2 warnings and 9 errors generated.
+Error while processing /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/.autopilot/db/yolo_conv.pp.0.cpp.
+clang-tidy applied 74 of 74 suggested fixes.
+Suppressed 2 warnings (2 with check filters).

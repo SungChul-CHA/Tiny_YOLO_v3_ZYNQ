@@ -58,14 +58,26 @@ for hls_prj_name in os.listdir():
 for hls_prj_name in os.listdir():
     os.chdir(root_path + "/code/hls/" + hls_prj_name)
     with open("run_hls.tcl", "w") as tcl_fp:
+        tcl_fp.write("set OPENCV_INCLUDE /opencv/install/include\n")
+        tcl_fp.write("set XF_PROJ_ROOT /home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision\n")
         tcl_fp.write("open_project -reset " + hls_prj_name + "_prj\n")
         tcl_fp.write("set_top " + hls_prj_name + "_top\n")
 
+        # for src_file in os.listdir("src"):
+        #     tcl_fp.write("add_files src/" + src_file + "\n")
         for src_file in os.listdir("src"):
-            tcl_fp.write("add_files src/" + src_file + "\n")
+            if src_file.endswith(".cpp"):
+                tcl_fp.write("add_files src/" + src_file + " -cflags -I${XF_PROJ_ROOT}/L1/include -csimflags -I${XF_PROJ_ROOT}/L1/include\n")
+            else:
+                tcl_fp.write("add_files src/" + src_file + "\n")
 
+        # for tb_file in os.listdir("tb"):
+        #     tcl_fp.write("add_files -tb tb/" + tb_file + "\n")
         for tb_file in os.listdir("tb"):
-            tcl_fp.write("add_files -tb tb/" + tb_file + "\n")
+            if tb_file.endswith(".cpp"):
+                tcl_fp.write("add_files -tb tb/" + tb_file + " -cflags \"-I${OPENCV_INCLUDE} -I${XF_PROJ_ROOT}/L1/include\" -csimflags -I${XF_PROJ_ROOT}/L1/include\n")
+            else:
+                tcl_fp.write("add_files -tb tb/" + tb_file + "\n")        
 
         tcl_fp.write("open_solution \"solution1\"\n")
         # tcl_fp.write("set_part {" + device + "} -tool vivado\n")

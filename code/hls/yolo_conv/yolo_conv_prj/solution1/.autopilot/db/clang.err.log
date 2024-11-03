@@ -1,0 +1,10 @@
+In file included from src/yolo_conv.cpp:1:
+In file included from src/yolo_conv.h:7:
+In file included from /home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_utility.hpp:23:
+/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:759:47: warning: 'factor' in '#pragma HLS array_reshape' is ignored [-Wextra-tokens]
+#pragma HLS ARRAY_RESHAPE variable=val factor=RESHAPE_FACTOR dim=1
+                                              ^
+src/yolo_conv.cpp:25:59: warning: the 'dim' option to 'Stream' pragma is not supported and will be ignored [-Winvalid-hls-pragmas]
+#pragma HLS STREAM variable=out_stream_group depth=2 dim=1
+                                                          ^
+2 warnings generated.

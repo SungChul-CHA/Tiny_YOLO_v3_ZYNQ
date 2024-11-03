@@ -57,7 +57,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
-IFLAG += -Wno-unknown-pragmas 
+IFLAG += -I/opencv/install/include -I/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include -Wno-unknown-pragmas 
 IFLAG += -g
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
 CCFLAG += -Werror=return-type
@@ -74,12 +74,12 @@ all: $(TARGET)
 
 $(ObjDir)/yolo_acc_tb.o: ../../../../tb/yolo_acc_tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../tb/yolo_acc_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I/opencv/install/include -I/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include -I/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/yolo_acc_tb.d
 
 $(ObjDir)/yolo_acc.o: ../../../../src/yolo_acc.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../src/yolo_acc.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include -I/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/yolo_acc.d

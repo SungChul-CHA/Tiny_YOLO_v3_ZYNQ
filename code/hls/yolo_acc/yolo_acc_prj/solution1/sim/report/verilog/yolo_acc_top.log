@@ -126,10 +126,10 @@ source yolo_acc_top.tcl
 // RTL Simulation : 1 / 1 [100.00%] @ "13845425000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 13845485 ns : File "/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/yolo_acc_prj/solution1/sim/verilog/yolo_acc_top.autotb.v" Line 414
-run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:33 . Memory (MB): peak = 1475.426 ; gain = 0.000 ; free physical = 16818 ; free virtual = 58183
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:35 . Memory (MB): peak = 1475.426 ; gain = 0.000 ; free physical = 16935 ; free virtual = 55695
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 694540 KB (Peak: 694540 KB), Simulation CPU Usage: 33180 ms
-INFO: [Common 17-206] Exiting xsim at Sat Nov  2 18:44:11 2024...
+INFO: xsimkernel Simulation Memory Usage: 694540 KB (Peak: 694540 KB), Simulation CPU Usage: 35100 ms
+INFO: [Common 17-206] Exiting xsim at Sun Nov  3 20:47:59 2024...
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 692228
 INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

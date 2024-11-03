@@ -5900,7 +5900,7 @@ __attribute__((sdx_kernel("yolo_acc_top", 0))) void yolo_acc_top(yolo_quad_strea
       ap_uint<(5-2+1)> fold_input_ch,
       ap_uint<1> leaky, ap_uint<1> bias_en)
 {
-#line 16 "/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/run_hls.tcl"
+#line 18 "/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/run_hls.tcl"
 #pragma HLSDIRECTIVE TOP name=yolo_acc_top
 # 9 "src/yolo_acc.cpp"
 

@@ -1,0 +1,3 @@
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+173055
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 692224

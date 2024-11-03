@@ -238,5 +238,51 @@ update cmake. In my case, <br>
 7. `make install`
 
 DONE!!!
+Now we can use `common/xf_common.hpp`, `common/xf_utility.hpp`
 
 ---
+
+#### code/hls, scripts/run_all.py Changes
+
+1. code/hls/yolo_conv/src/yolo_conv.h ~ yolo_upcamp.h
+
+```cpp
+#include "yolo_stream.h"
+// #include "hls_video.h"
+#include "common/xf_common.hpp"
+#include "common/xf_utility.hpp"
+
+// typedef hls::Window<KERNEL_DIM,KERNEL_DIM,fp_data_type> window_type;
+// typedef hls::LineBuffer<KERNEL_DIM,MAX_IN_WIDTH,fp_data_type> line_buff_type;
+typedef xf::cv::Window<KERNEL_DIM,KERNEL_DIM,fp_data_type> window_type;
+typedef xf::cv::LineBuffer<KERNEL_DIM,MAX_IN_WIDTH,fp_data_type> line_buff_type;
+```
+
+2. scripts/run_all.py line num 57 ~
+
+```python
+# generate scripts to kick off HLS
+for hls_prj_name in os.listdir():
+    os.chdir(root_path + "/code/hls/" + hls_prj_name)
+    with open("run_hls.tcl", "w") as tcl_fp:
+        tcl_fp.write("set OPENCV_INCLUDE /opencv/install/include\n")
+        tcl_fp.write("set XF_PROJ_ROOT /home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision\n")
+        tcl_fp.write("open_project -reset " + hls_prj_name + "_prj\n")
+        tcl_fp.write("set_top " + hls_prj_name + "_top\n")
+
+        # for src_file in os.listdir("src"):
+        #     tcl_fp.write("add_files src/" + src_file + "\n")
+        for src_file in os.listdir("src"):
+            if src_file.endswith(".cpp"):
+                tcl_fp.write("add_files src/" + src_file + " -cflags -I${XF_PROJ_ROOT}/L1/include -csimflags -I${XF_PROJ_ROOT}/L1/include\n")
+            else:
+                tcl_fp.write("add_files src/" + src_file + "\n")
+
+        # for tb_file in os.listdir("tb"):
+        #     tcl_fp.write("add_files -tb tb/" + tb_file + "\n")
+        for tb_file in os.listdir("tb"):
+            if tb_file.endswith(".cpp"):
+                tcl_fp.write("add_files -tb tb/" + tb_file + " -cflags \"-I${OPENCV_INCLUDE} -I${XF_PROJ_ROOT}/L1/include\" -csimflags -I${XF_PROJ_ROOT}/L1/include\n")
+            else:
+                tcl_fp.write("add_files -tb tb/" + tb_file + "\n")
+```

@@ -11,7 +11,7 @@ In file included from /home/tony/tools/xilinx/Vitis_HLS/2022.2/common/technology
 /home/tony/tools/xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=xor_reduce_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS unroll
         ^
-/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/run_hls.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=yolo_acc_top_XLX_SEP_ PragmaOptions=name=yolo_acc_top_XLX_SEP_ [-Wdump-hls-pragmas]
+/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/run_hls.tcl:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=yolo_acc_top_XLX_SEP_ PragmaOptions=name=yolo_acc_top_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLSDIRECTIVE TOP name=yolo_acc_top
         ^
 src/yolo_acc.cpp:10:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=yolo_acc_top_XLX_SEP_ PragmaOptions=s_axilite port=bias_en bundle=CTRL_BUS_XLX_SEP_ [-Wdump-hls-pragmas]

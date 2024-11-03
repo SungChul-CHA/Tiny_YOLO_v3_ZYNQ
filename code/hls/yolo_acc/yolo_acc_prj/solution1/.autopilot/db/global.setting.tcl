@@ -43,7 +43,7 @@ set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:-clg400:-1
 set SourceFiles {sc {} c {../../src/yolo_stream.h ../../src/yolo_fp.h ../../src/yolo_acc.h ../../src/yolo_acc.cpp}}
-set SourceFlags {sc {} c {{ } {} { } {} { } {} { } {}}}
+set SourceFlags {sc {} c {{ } {} { } {} { } {} { -I/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include } -I/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include}}
 set DirectiveFile /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/yolo_acc_prj/solution1/solution1.directive
 set TBFiles {verilog {../../tb/yolo_acc_tb.cpp ../../tb/weight_file.h ../../tb/layer_output_sdk.dat ../../tb/layer_input.dat} bc {../../tb/yolo_acc_tb.cpp ../../tb/weight_file.h ../../tb/layer_output_sdk.dat ../../tb/layer_input.dat} sc {../../tb/yolo_acc_tb.cpp ../../tb/weight_file.h ../../tb/layer_output_sdk.dat ../../tb/layer_input.dat} vhdl {../../tb/yolo_acc_tb.cpp ../../tb/weight_file.h ../../tb/layer_output_sdk.dat ../../tb/layer_input.dat} c {} cas {../../tb/yolo_acc_tb.cpp ../../tb/weight_file.h ../../tb/layer_output_sdk.dat ../../tb/layer_input.dat}}
 set SpecLanguage C

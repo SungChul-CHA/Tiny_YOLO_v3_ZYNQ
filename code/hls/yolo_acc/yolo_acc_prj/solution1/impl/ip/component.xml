@@ -1762,8 +1762,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Yolo_acc_top</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2113805324</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-11-02T09:44:20Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2113806888</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-11-03T11:48:07Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

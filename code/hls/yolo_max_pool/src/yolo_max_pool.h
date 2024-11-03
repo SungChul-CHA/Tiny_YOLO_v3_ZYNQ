@@ -2,7 +2,9 @@
 #define YOLO_MAX_POOL_H
 
 #include "yolo_stream.h"
-#include "hls_video.h"
+// #include "hls_video.h"
+#include "common/xf_common.hpp"
+#include "common/xf_utility.hpp"
 
 // SCRIPT_START N_max DO NOT EDIT OR DELETE THIS LINE
 #define MAX_KERNEL_NUM 32
@@ -12,8 +14,10 @@
 #define MAX_IN_WIDTH 418
 #define MAX_FOLD_CH_BIT (5-2+1)
 
-typedef hls::Window<KERNEL_DIM,KERNEL_DIM,fp_data_type> window_type;
-typedef hls::LineBuffer<KERNEL_DIM,MAX_IN_WIDTH,fp_data_type> line_buff_type;
+// typedef hls::Window<KERNEL_DIM,KERNEL_DIM,fp_data_type> window_type;
+// typedef hls::LineBuffer<KERNEL_DIM,MAX_IN_WIDTH,fp_data_type> line_buff_type;
+typedef xf::cv::Window<KERNEL_DIM,KERNEL_DIM,fp_data_type> window_type;
+typedef xf::cv::LineBuffer<KERNEL_DIM,MAX_IN_WIDTH,fp_data_type> line_buff_type;
 
 void yolo_max_pool_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,
 		               ap_uint<9> output_h, ap_uint<9> output_w,

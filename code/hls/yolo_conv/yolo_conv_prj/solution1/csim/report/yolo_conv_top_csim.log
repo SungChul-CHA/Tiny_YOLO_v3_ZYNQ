@@ -1,11 +1,9 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../tb/yolo_conv_tb.cpp in debug mode
-In file included from ../../../../tb/yolo_conv_tb.cpp:3:
-../../../../tb/../src/yolo_conv.h:5:10: fatal error: hls_video.h: No such file or directory
- #include "hls_video.h"
-          ^~~~~~~~~~~~~
-compilation terminated.
-make: *** [csim.mk:77: obj/yolo_conv_tb.o] Error 1
-ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+   Compiling ../../../../src/yolo_conv.cpp in debug mode
+   Generating csim.exe
+4991
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4992
+INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

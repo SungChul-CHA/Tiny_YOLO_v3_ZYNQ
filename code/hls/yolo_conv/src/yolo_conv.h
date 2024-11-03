@@ -2,7 +2,9 @@
 #define YOLO_CONV_H
 
 #include "yolo_stream.h"
-#include "hls_video.h"
+//#include "hls_video.h"
+#include "common/xf_common.hpp"
+#include "common/xf_utility.hpp"
 
 #define STREAM_TX_SIZE 6
 #define MAX_CH_BIT (5+1)
@@ -16,8 +18,10 @@
 #define MAX_LINE_BUFF_WIDTH (416+2)
 #define MAX_KERNEL_DIM 3
 
-typedef hls::Window<3,3,fp_data_type> window_type;
-typedef hls::LineBuffer<3,MAX_LINE_BUFF_WIDTH,fp_data_type> line_buff_type;
+// typedef hls::Window<3,3,fp_data_type> window_type;
+// typedef hls::LineBuffer<3,MAX_LINE_BUFF_WIDTH,fp_data_type> line_buff_type;
+typedef xf::cv::Window<3,3,fp_data_type> window_type;
+typedef xf::cv::LineBuffer<3,MAX_LINE_BUFF_WIDTH,fp_data_type> line_buff_type;
 typedef struct local_weight_type
 {
 	fp_weight_type data[3*3];
