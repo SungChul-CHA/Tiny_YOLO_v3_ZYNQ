@@ -214,8 +214,8 @@ proc create_root_design { parentCell } {
    CONFIG.c_include_mm2s_dre {1} \
    CONFIG.c_include_s2mm_dre {1} \
    CONFIG.c_include_sg {0} \
-   CONFIG.c_m_axi_mm2s_data_width {64} \
-   CONFIG.c_m_axis_mm2s_tdata_width {64} \
+   CONFIG.c_m_axi_mm2s_data_width {128} \
+   CONFIG.c_m_axis_mm2s_tdata_width {128} \
    CONFIG.c_mm2s_burst_size {256} \
    CONFIG.c_s2mm_burst_size {256} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
@@ -228,8 +228,8 @@ proc create_root_design { parentCell } {
    CONFIG.c_include_mm2s_dre {1} \
    CONFIG.c_include_s2mm {0} \
    CONFIG.c_include_sg {0} \
-   CONFIG.c_m_axi_mm2s_data_width {64} \
-   CONFIG.c_m_axis_mm2s_tdata_width {64} \
+   CONFIG.c_m_axi_mm2s_data_width {128} \
+   CONFIG.c_m_axis_mm2s_tdata_width {128} \
    CONFIG.c_mm2s_burst_size {256} \
    CONFIG.c_sg_include_stscntrl_strm {0} \
    CONFIG.c_sg_length_width {26} \
@@ -271,6 +271,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.NUM_SI {4} \
    CONFIG.ROUTING_MODE {1} \
+   CONFIG.TDATA_NUM_BYTES {4} \
  ] $axis_switch_2
 
   # Create instance: processing_system7_0, and set properties

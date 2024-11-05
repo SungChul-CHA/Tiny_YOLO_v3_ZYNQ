@@ -9,9 +9,9 @@ add_files src/yolo_stream.h
 add_files -tb tb/layer_input.dat
 add_files -tb tb/layer_output_sdk.dat
 add_files -tb tb/weight_file.h
-add_files -tb tb/yolo_acc_tb.cpp -cflags "-I${OPENCV_INCLUDE} -I${XF_PROJ_ROOT}/L1/include" -csimflags -I${XF_PROJ_ROOT}/L1/include
-open_solution "solution1"
-set_part {xc7z020-clg400-1}
+add_files -tb tb/yolo_acc_tb.cpp -cflags -I${XF_PROJ_ROOT}/L1/include -csimflags -I${XF_PROJ_ROOT}/L1/include
+open_solution "solution1" -flow_target vivado
+set_part {xc7z020clg400-1}
 create_clock -period 10 -name default
 config_export -format ip_catalog -rtl verilog
 csim_design

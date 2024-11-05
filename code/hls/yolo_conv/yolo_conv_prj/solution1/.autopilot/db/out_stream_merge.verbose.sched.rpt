@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'out_stream_merge'
 ================================================================
-* Date:           Sun Nov  3 20:48:58 2024
+* Date:           Tue Nov  5 20:59:23 2024
 
 * Version:        2022.2.2 (Build 3779808 on Feb 17 2023)
 * Project:        yolo_conv_prj
@@ -364,11 +364,11 @@ The critical path consists of the following:
 
  <State 6>: 2.74ns
 The critical path consists of the following:
-	fifo read operation ('curr_output.data.sub_data_0.V', src/yolo_conv.cpp:303) on port 'out_stream_group_8' (src/yolo_conv.cpp:303) [215]  (2.74 ns)
+	fifo read operation ('curr_output.data.sub_data_3.V', src/yolo_conv.cpp:310) on port 'out_stream_group_15' (src/yolo_conv.cpp:310) [249]  (2.74 ns)
 
  <State 7>: 2.74ns
 The critical path consists of the following:
-	fifo read operation ('curr_output.data.sub_data_3.V', src/yolo_conv.cpp:310) on port 'out_stream_group_19' (src/yolo_conv.cpp:310) [277]  (2.74 ns)
+	fifo read operation ('curr_output.data.sub_data_0.V', src/yolo_conv.cpp:303) on port 'out_stream_group_1213' (src/yolo_conv.cpp:303) [243]  (2.74 ns)
 
  <State 8>: 2.74ns
 The critical path consists of the following:

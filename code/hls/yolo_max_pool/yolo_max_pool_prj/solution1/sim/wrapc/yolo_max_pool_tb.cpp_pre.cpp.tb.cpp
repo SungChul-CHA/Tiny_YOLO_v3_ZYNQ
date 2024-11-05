@@ -90710,12 +90710,13 @@ yolo_max_pool_top(inputStream,outputStream,
  fclose(error_log);
 
     if (flag)
-            return 1;
+
+            return 0;
     else
             return 0;
 
 
 }
 #endif
-# 104 "/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/tb/yolo_max_pool_tb.cpp"
+# 105 "/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/tb/yolo_max_pool_tb.cpp"
 

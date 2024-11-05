@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'yolo_conv_top_Pipeline_VITIS_LOOP_54_3'
 ================================================================
-* Date:           Sun Nov  3 20:48:57 2024
+* Date:           Tue Nov  5 20:59:23 2024
 
 * Version:        2022.2.2 (Build 3779808 on Feb 17 2023)
 * Project:        yolo_conv_prj
@@ -343,8 +343,8 @@ Target clock period: 7.5ns, clock uncertainty: 2.03ns.
 
  <State 1>: 5.36ns
 The critical path consists of the following:
-	'getelementptr' operation ('local_mem_group_data_V_58_addr') [141]  (0 ns)
-	'store' operation ('store_ln59', src/yolo_conv.cpp:59) of variable 'curr_input.data.sub_data_0.V', src/yolo_conv.cpp:58 on array 'local_mem_group_data_V_58' [178]  (3.25 ns)
+	'getelementptr' operation ('local_mem_group_data_V_36_addr') [148]  (0 ns)
+	'store' operation ('store_ln59', src/yolo_conv.cpp:59) of variable 'curr_input.data.sub_data_0.V', src/yolo_conv.cpp:58 on array 'local_mem_group_data_V_36' [207]  (3.25 ns)
 	blocking operation 2.11 ns on control path)
 
 

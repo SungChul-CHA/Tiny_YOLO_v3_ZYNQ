@@ -2,8 +2,8 @@
 # xsim v2022.2.2 (64-bit)
 # SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
 # IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
-# Start of session at: Sun Nov  3 20:49:43 2024
-# Process ID: 30901
+# Start of session at: Tue Nov  5 21:00:10 2024
+# Process ID: 23565
 # Current directory: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/yolo_conv_top/xsim_script.tcl}
 # Log file: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/xsim.log
@@ -25,6 +25,6 @@ source yolo_conv_top.tcl
 // RTL Simulation : 1 / 1 [100.00%] @ "210506000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 210551250 ps : File "/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top.autotb.v" Line 392
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1475.426 ; gain = 0.000 ; free physical = 17211 ; free virtual = 55953
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1475.426 ; gain = 0.000 ; free physical = 19754 ; free virtual = 59100
 ## quit
-INFO: [Common 17-206] Exiting xsim at Sun Nov  3 20:49:51 2024...
+INFO: [Common 17-206] Exiting xsim at Tue Nov  5 21:00:19 2024...

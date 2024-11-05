@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'yolo_conv_top_Pipeline_VITIS_LOOP_83_4_VITIS_LOOP_87_5_VITIS_LOOP_90_6'" level="0">
-<item name = "Date">Sun Nov  3 20:49:12 2024
+<item name = "Date">Tue Nov  5 20:59:38 2024
 </item>
 <item name = "Version">2022.2.2 (Build 3779808 on Feb 17 2023)</item>
 <item name = "Project">yolo_conv_prj</item>

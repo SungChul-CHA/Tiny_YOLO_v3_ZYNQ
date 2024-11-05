@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Tue Nov  5 22:33:57 2024
+# Process ID: 232921
+# Current directory: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.runs/design_1_axi_dma_0_synth_1
+# Command line: vivado -log design_1_axi_dma_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_dma_0.tcl
+# Log file: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.runs/design_1_axi_dma_0_synth_1/design_1_axi_dma_0.vds
+# Journal file: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.runs/design_1_axi_dma_0_synth_1/vivado.jou
+# Running On: tony, OS: Linux, CPU Frequency: 3613.911 MHz, CPU Physical cores: 14, Host memory: 33431 MB
+#-----------------------------------------------------------
+source design_1_axi_dma_0.tcl -notrace

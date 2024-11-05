@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'yolo_conv_top_Pipeline_VITIS_LOOP_83_4_VITIS_LOOP_87_5_VITIS_LOOP_90_6'
 ================================================================
-* Date:           Sun Nov  3 20:49:10 2024
+* Date:           Tue Nov  5 20:59:36 2024
 
 * Version:        2022.2.2 (Build 3779808 on Feb 17 2023)
 * Project:        yolo_conv_prj
@@ -6798,20 +6798,19 @@ The critical path consists of the following:
 
  <State 5>: 3.25ns
 The critical path consists of the following:
-	'getelementptr' operation ('local_mem_group_data_V_9_addr', src/yolo_conv.cpp:156) [546]  (0 ns)
-	'load' operation ('local_mem_group_data_V_9_load', src/yolo_conv.cpp:156) on array 'local_mem_group_data_V_9' [2082]  (3.25 ns)
+	'load' operation ('local_mem_group_data_V_load_11', src/yolo_conv.cpp:165) on array 'local_mem_group_data_V' [1920]  (3.25 ns)
 
  <State 6>: 5.12ns
 The critical path consists of the following:
 	'add' operation ('add_ln156', src/yolo_conv.cpp:156) [504]  (1.87 ns)
-	'getelementptr' operation ('local_mem_group_data_V_9_addr_1', src/yolo_conv.cpp:156) [547]  (0 ns)
-	'load' operation ('local_mem_group_data_V_9_load_4', src/yolo_conv.cpp:156) on array 'local_mem_group_data_V_9' [2179]  (3.25 ns)
+	'getelementptr' operation ('local_mem_group_data_V_54_addr_1', src/yolo_conv.cpp:156) [727]  (0 ns)
+	'load' operation ('local_mem_group_data_V_54_load_4', src/yolo_conv.cpp:156) on array 'local_mem_group_data_V_54' [4119]  (3.25 ns)
 
  <State 7>: 5.12ns
 The critical path consists of the following:
 	'add' operation ('add_ln157', src/yolo_conv.cpp:157) [802]  (1.87 ns)
-	'getelementptr' operation ('local_mem_group_data_V_18_addr_6', src/yolo_conv.cpp:157) [881]  (0 ns)
-	'load' operation ('local_mem_group_data_V_18_load_5', src/yolo_conv.cpp:157) on array 'local_mem_group_data_V_18' [2577]  (3.25 ns)
+	'getelementptr' operation ('local_mem_group_data_V_54_addr_6', src/yolo_conv.cpp:157) [1025]  (0 ns)
+	'load' operation ('local_mem_group_data_V_54_load_5', src/yolo_conv.cpp:157) on array 'local_mem_group_data_V_54' [4129]  (3.25 ns)
 
  <State 8>: 4.8ns
 The critical path consists of the following:
@@ -6832,7 +6831,7 @@ The critical path consists of the following:
  <State 12>: 5.4ns
 The critical path consists of the following:
 	'call' operation ('tmp_6', src/yolo_conv.cpp:143) to 'slide_window' [490]  (3.25 ns)
-	'call' operation ('call_ret4', src/yolo_conv.cpp:165) to 'window_macc' [1735]  (2.15 ns)
+	'call' operation ('call_ret116', src/yolo_conv.cpp:165) to 'window_macc' [2705]  (2.15 ns)
 
  <State 13>: 4.8ns
 The critical path consists of the following:
@@ -6853,7 +6852,7 @@ The critical path consists of the following:
 
  <State 17>: 4.65ns
 The critical path consists of the following:
-	'call' operation ('call_ret64', src/yolo_conv.cpp:165) to 'window_macc' [3966]  (4.65 ns)
+	'call' operation ('call_ret4', src/yolo_conv.cpp:165) to 'window_macc' [1735]  (4.65 ns)
 
  <State 18>: 4.65ns
 The critical path consists of the following:
@@ -6865,7 +6864,7 @@ The critical path consists of the following:
 
  <State 20>: 4.65ns
 The critical path consists of the following:
-	'call' operation ('call_ret99', src/yolo_conv.cpp:156) to 'window_macc' [3158]  (4.65 ns)
+	'call' operation ('call_ret83', src/yolo_conv.cpp:156) to 'window_macc' [3546]  (4.65 ns)
 
  <State 21>: 4.65ns
 The critical path consists of the following:
@@ -6881,7 +6880,7 @@ The critical path consists of the following:
 
  <State 24>: 4.65ns
 The critical path consists of the following:
-	'call' operation ('call_ret83', src/yolo_conv.cpp:156) to 'window_macc' [3546]  (4.65 ns)
+	'call' operation ('call_ret63', src/yolo_conv.cpp:156) to 'window_macc' [4031]  (4.65 ns)
 
  <State 25>: 4.65ns
 The critical path consists of the following:
@@ -6903,13 +6902,13 @@ The critical path consists of the following:
 
  <State 28>: 5.03ns
 The critical path consists of the following:
-	'add' operation ('output_rec.V') [2046]  (2.08 ns)
-	'xor' operation ('xor_ln896_6') [2048]  (0.978 ns)
-	'and' operation ('carry') [2049]  (0.978 ns)
-	'select' operation ('deleted_zeros') [2055]  (0 ns)
-	'xor' operation ('xor_ln895_6') [2061]  (0 ns)
-	'or' operation ('or_ln895_3') [2062]  (0 ns)
-	'and' operation ('overflow') [2064]  (0.993 ns)
+	'add' operation ('output_rec.V') [2240]  (2.08 ns)
+	'xor' operation ('xor_ln896_10') [2242]  (0.978 ns)
+	'and' operation ('carry') [2243]  (0.978 ns)
+	'select' operation ('deleted_zeros') [2249]  (0 ns)
+	'xor' operation ('xor_ln895_10') [2255]  (0 ns)
+	'or' operation ('or_ln895_5') [2256]  (0 ns)
+	'and' operation ('overflow') [2258]  (0.993 ns)
 
  <State 29>: 5.03ns
 The critical path consists of the following:
@@ -6963,23 +6962,23 @@ The critical path consists of the following:
 
  <State 34>: 5.03ns
 The critical path consists of the following:
-	'add' operation ('output_rec.V') [3792]  (2.08 ns)
-	'xor' operation ('xor_ln896_42') [3794]  (0.978 ns)
-	'and' operation ('carry') [3795]  (0.978 ns)
-	'select' operation ('deleted_zeros') [3801]  (0 ns)
-	'xor' operation ('xor_ln895_42') [3807]  (0 ns)
-	'or' operation ('or_ln895_21') [3808]  (0 ns)
-	'and' operation ('overflow') [3810]  (0.993 ns)
+	'add' operation ('output_rec.V') [3986]  (2.08 ns)
+	'xor' operation ('xor_ln896_46') [3988]  (0.978 ns)
+	'and' operation ('carry') [3989]  (0.978 ns)
+	'select' operation ('deleted_zeros') [3995]  (0 ns)
+	'xor' operation ('xor_ln895_46') [4001]  (0 ns)
+	'or' operation ('or_ln895_23') [4002]  (0 ns)
+	'and' operation ('overflow') [4004]  (0.993 ns)
 
  <State 35>: 5.03ns
 The critical path consists of the following:
-	'add' operation ('output_rec.V') [4180]  (2.08 ns)
-	'xor' operation ('xor_ln896_50') [4182]  (0.978 ns)
-	'and' operation ('carry') [4183]  (0.978 ns)
-	'select' operation ('deleted_zeros') [4189]  (0 ns)
-	'xor' operation ('xor_ln895_50') [4195]  (0 ns)
-	'or' operation ('or_ln895_25') [4196]  (0 ns)
-	'and' operation ('overflow') [4198]  (0.993 ns)
+	'add' operation ('output_rec.V') [4277]  (2.08 ns)
+	'xor' operation ('xor_ln896_52') [4279]  (0.978 ns)
+	'and' operation ('carry') [4280]  (0.978 ns)
+	'select' operation ('deleted_zeros') [4286]  (0 ns)
+	'xor' operation ('xor_ln895_52') [4292]  (0 ns)
+	'or' operation ('or_ln895_26') [4293]  (0 ns)
+	'and' operation ('overflow') [4295]  (0.993 ns)
 
  <State 36>: 5.03ns
 The critical path consists of the following:

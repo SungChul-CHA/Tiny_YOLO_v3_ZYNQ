@@ -3,9 +3,9 @@ Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2.2 (64-bit)
 Tool Version Limit: 2019.12
 Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
 ==============================================================
-INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
 INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
-INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
 INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
 INFO: [HLS 200-1510] Running: create_clock -period 7.5 -name default 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 7.5ns.
@@ -15,9 +15,9 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.25 seconds. CPU system time: 0.22 seconds. Elapsed time: 2.5 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.33 seconds. CPU system time: 0.23 seconds. Elapsed time: 2.58 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 198.367 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 198.363 MB.
 INFO: [HLS 200-10] Analyzing design file 'src/yolo_conv.cpp' ... 
 WARNING: [HLS 207-5529] 'factor' in '#pragma HLS array_reshape' is ignored (/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:759:47)
 WARNING: [HLS 207-5508] the 'dim' option to 'Stream' pragma is not supported and will be ignored (src/yolo_conv.cpp:25:59)
@@ -29,7 +29,7 @@ WARNING: [HLS 207-5292] unused parameter 'stride' (/home/tony/tools/xilinx/Vitis
 WARNING: [HLS 207-5292] unused parameter 'index' (/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1224:102)
 WARNING: [HLS 207-5292] unused parameter 'index' (/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1530:34)
 WARNING: [HLS 207-5292] unused parameter 'output_ch' (src/yolo_conv.cpp:289:161)
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.81 seconds. CPU system time: 0.32 seconds. Elapsed time: 3.14 seconds; current allocated memory: 205.027 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.92 seconds. CPU system time: 0.31 seconds. Elapsed time: 3.26 seconds; current allocated memory: 205.070 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::shift_pixels_up(int)' into 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::shift_up(int)' (/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1018:2)
 INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::insert_bottom_row(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int)' into 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int)' (/home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1042:2)
@@ -141,12 +141,12 @@ INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'out_stream_group_28
 INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'out_stream_group_29' with compact=bit mode in 16-bits (src/yolo_conv.cpp:23:20)
 INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'out_stream_group_30' with compact=bit mode in 16-bits (src/yolo_conv.cpp:23:20)
 INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'out_stream_group_31' with compact=bit mode in 16-bits (src/yolo_conv.cpp:23:20)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 6.83 seconds. CPU system time: 0.23 seconds. Elapsed time: 7.1 seconds; current allocated memory: 205.699 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 205.699 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 7.17 seconds. CPU system time: 0.26 seconds. Elapsed time: 7.45 seconds; current allocated memory: 205.711 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 205.711 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.94 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.96 seconds; current allocated memory: 230.848 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.9 seconds. CPU system time: 0 seconds. Elapsed time: 1.91 seconds; current allocated memory: 230.703 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 2.16 seconds. CPU system time: 0 seconds. Elapsed time: 2.19 seconds; current allocated memory: 253.246 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 2.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 2.27 seconds; current allocated memory: 253.230 MB.
 INFO: [XFORM 203-102] Partitioning array 'window.0' automatically.
 INFO: [XFORM 203-102] Partitioning array 'window.1' automatically.
 INFO: [XFORM 203-102] Partitioning array 'window.2' automatically.
@@ -205,7 +205,7 @@ INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (src/yolo_conv.c
 INFO: [XFORM 203-11] Balancing expressions in function 'window_macc' (src/yolo_conv.cpp:281:2)...8 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'post_process' (src/yolo_conv.cpp:213:3)...4 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'out_stream_merge' (src/yolo_conv.cpp:289:69)...30 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 5.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 5.1 seconds; current allocated memory: 307.605 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 5.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 5.23 seconds; current allocated memory: 307.328 MB.
 WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_51_2' (src/yolo_conv.cpp:35:23) in function 'yolo_conv_top' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_48_1' (src/yolo_conv.cpp:35:23) in function 'yolo_conv_top'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_87_5' (src/yolo_conv.cpp:32:14) in function 'yolo_conv_top'.
@@ -600,7 +600,7 @@ WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_conv.cpp:30).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.1' (src/yolo_conv.cpp:30).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_conv.cpp:30).
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 5.51 seconds. CPU system time: 0.05 seconds. Elapsed time: 5.57 seconds; current allocated memory: 389.637 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 6.06 seconds. CPU system time: 0.05 seconds. Elapsed time: 6.14 seconds; current allocated memory: 389.441 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'yolo_conv_top' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -682,13 +682,13 @@ INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_3'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_54_3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.97 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.99 seconds; current allocated memory: 397.008 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.97 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.01 seconds; current allocated memory: 396.738 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 397.008 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 396.738 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'slide_window' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -699,13 +699,13 @@ WARNING: [HLS 200-885] The II Violation in module 'slide_window' (function 'slid
 WARNING: [HLS 200-885] The II Violation in module 'slide_window' (function 'slide_window'): Unable to schedule 'load' operation ('kernel_window.val.V', /home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:297) on array 'line_buff_0' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'line_buff_0'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 5, function 'slide_window'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 397.145 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 396.738 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 397.145 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 396.738 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'window_macc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -722,13 +722,13 @@ INFO: [HLS 200-486] Changing DSP latency (root=r_V_1) to 3 in order to utilize a
 INFO: [SCHED 204-61] Pipelining function 'window_macc'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, function 'window_macc'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 397.375 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 397.023 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 397.375 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 397.023 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'post_process' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -736,13 +736,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'post_process'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'post_process'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 397.809 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 397.457 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 397.809 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 397.457 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'write_output' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -750,13 +750,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'write_output'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'write_output'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 397.809 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 397.457 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 397.809 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 397.457 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'out_stream_merge' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -769,13 +769,13 @@ WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function '
 WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function 'out_stream_merge'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1) between axis write operation ('outStream_write_ln328', src/yolo_conv.cpp:328) on port 'outStream' (src/yolo_conv.cpp:328) and axis write operation ('outStream_write_ln328', src/yolo_conv.cpp:328) on port 'outStream' (src/yolo_conv.cpp:328).
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 6, Depth = 9, function 'out_stream_merge'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 399.391 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 399.336 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 399.391 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 399.336 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top_Pipeline_VITIS_LOOP_83_4_VITIS_LOOP_87_5_VITIS_LOOP_90_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -872,38 +872,38 @@ WARNING: [HLS 200-1016] The critical path in module 'yolo_conv_top_Pipeline_VITI
 	'call' operation ('_ln178', src/yolo_conv.cpp:178) to 'write_output' [4694]  (2.74 ns)
 
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 11.86 seconds. CPU system time: 0.04 seconds. Elapsed time: 11.93 seconds; current allocated memory: 476.328 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 12.45 seconds. CPU system time: 0.03 seconds. Elapsed time: 12.51 seconds; current allocated memory: 476.191 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1.92 seconds. CPU system time: 0 seconds. Elapsed time: 1.93 seconds; current allocated memory: 476.328 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.99 seconds. CPU system time: 0.01 seconds. Elapsed time: 2 seconds; current allocated memory: 476.191 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [HLS 200-486] Changing DSP latency (root=add_ln83) to 3 in order to utilize available DSP registers.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.9 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.92 seconds; current allocated memory: 476.328 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.97 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.99 seconds; current allocated memory: 476.191 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.53 seconds. CPU system time: 0 seconds. Elapsed time: 0.53 seconds; current allocated memory: 476.328 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.53 seconds. CPU system time: 0 seconds. Elapsed time: 0.54 seconds; current allocated memory: 476.191 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_top_Pipeline_VITIS_LOOP_54_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_top_Pipeline_VITIS_LOOP_54_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.38 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.4 seconds; current allocated memory: 476.328 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.43 seconds. CPU system time: 0 seconds. Elapsed time: 1.45 seconds; current allocated memory: 476.191 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'slide_window' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'slide_window' pipeline 'slide_window' pipeline type 'function pipeline'
 INFO: [RTGEN 206-100] Generating core module 'mul_3ns_10ns_12_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'slide_window'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 476.328 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 476.191 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'window_macc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -911,30 +911,30 @@ INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32ns_32_4_0': 1
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_0': 4 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_mul_16s_16s_32_4_0': 4 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'window_macc'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 476.328 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 476.191 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'post_process' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 476.328 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 476.191 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'write_output' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 476.328 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 476.191 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'out_stream_merge' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'out_stream_merge' pipeline 'out_stream_merge' pipeline type 'function pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'out_stream_merge'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 476.328 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 476.191 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_top_Pipeline_VITIS_LOOP_83_4_VITIS_LOOP_87_5_VITIS_LOOP_90_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_conv_top_Pipeline_VITIS_LOOP_83_4_VITIS_LOOP_87_5_VITIS_LOOP_90_6' pipeline 'VITIS_LOOP_83_4_VITIS_LOOP_87_5_VITIS_LOOP_90_6' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_4ns_9ns_9ns_12_4_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_top_Pipeline_VITIS_LOOP_83_4_VITIS_LOOP_87_5_VITIS_LOOP_90_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.12 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.15 seconds; current allocated memory: 519.707 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.22 seconds; current allocated memory: 512.707 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------

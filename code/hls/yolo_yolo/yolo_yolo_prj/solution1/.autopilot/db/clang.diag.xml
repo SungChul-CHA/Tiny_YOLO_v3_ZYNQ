@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>src/yolo_yolo.cpp</string>
+      <key>line</key>
+      <integer>23</integer>
+      <key>column</key>
+      <integer>34</integer>
+      <key>message</key>
+      <string>unexpected pragma argument &apos;logistic_activate&apos;, expects function/operation</string>
+      <key>ID</key>
+      <integer>5555</integer>
+      <key>WarningOption</key>
+      <string>invalid-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

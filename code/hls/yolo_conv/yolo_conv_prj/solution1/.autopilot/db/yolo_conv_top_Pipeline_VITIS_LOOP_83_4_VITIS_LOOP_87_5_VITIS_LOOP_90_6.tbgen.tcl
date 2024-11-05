@@ -2076,15 +2076,15 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "out_stream_group_4_i_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "136", "SubInstance" : "call_ln178_write_output_fu_12152", "Port" : "out_stream_group_0", "Inst_start_state" : "37", "Inst_end_state" : "37"},
-					{"ID" : "164", "SubInstance" : "grp_out_stream_merge_fu_12348", "Port" : "out_stream_group_4", "Inst_start_state" : "38", "Inst_end_state" : "46"}]},
+					{"ID" : "164", "SubInstance" : "grp_out_stream_merge_fu_12348", "Port" : "out_stream_group_4", "Inst_start_state" : "38", "Inst_end_state" : "46"},
+					{"ID" : "136", "SubInstance" : "call_ln178_write_output_fu_12152", "Port" : "out_stream_group_0", "Inst_start_state" : "37", "Inst_end_state" : "37"}]},
 			{"Name" : "cmp_i_i76_5", "Type" : "None", "Direction" : "I"},
 			{"Name" : "out_stream_group_5", "Type" : "Fifo", "Direction" : "IO",
 				"BlockSignal" : [
 					{"Name" : "out_stream_group_5_i_blk_n", "Type" : "RtlSignal"}],
 				"SubConnect" : [
-					{"ID" : "137", "SubInstance" : "call_ln178_write_output_fu_12159", "Port" : "out_stream_group_0", "Inst_start_state" : "37", "Inst_end_state" : "37"},
-					{"ID" : "164", "SubInstance" : "grp_out_stream_merge_fu_12348", "Port" : "out_stream_group_5", "Inst_start_state" : "38", "Inst_end_state" : "46"}]},
+					{"ID" : "164", "SubInstance" : "grp_out_stream_merge_fu_12348", "Port" : "out_stream_group_5", "Inst_start_state" : "38", "Inst_end_state" : "46"},
+					{"ID" : "137", "SubInstance" : "call_ln178_write_output_fu_12159", "Port" : "out_stream_group_0", "Inst_start_state" : "37", "Inst_end_state" : "37"}]},
 			{"Name" : "cmp_i_i76_6", "Type" : "None", "Direction" : "I"},
 			{"Name" : "out_stream_group_6", "Type" : "Fifo", "Direction" : "IO",
 				"BlockSignal" : [

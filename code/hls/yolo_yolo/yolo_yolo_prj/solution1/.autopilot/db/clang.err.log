@@ -1,0 +1,4 @@
+src/yolo_yolo.cpp:23:34: warning: unexpected pragma argument 'logistic_activate', expects function/operation [-Winvalid-hls-pragmas]
+#pragma HLS ALLOCATION instances=logistic_activate limit=1 function
+                                 ^
+1 warning generated.

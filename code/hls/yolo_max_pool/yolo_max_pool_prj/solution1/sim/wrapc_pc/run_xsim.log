@@ -107,10 +107,10 @@ source yolo_max_pool_top.tcl
 // RTL Simulation : 1 / 1 [100.00%] @ "20767625000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 20767685 ns : File "/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top.autotb.v" Line 382
-run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:33 . Memory (MB): peak = 1475.426 ; gain = 0.000 ; free physical = 17324 ; free virtual = 56076
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:34 . Memory (MB): peak = 1475.426 ; gain = 0.000 ; free physical = 19548 ; free virtual = 59163
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 306020 KB (Peak: 306020 KB), Simulation CPU Usage: 32900 ms
-INFO: [Common 17-206] Exiting xsim at Sun Nov  3 20:51:23 2024...
+INFO: xsimkernel Simulation Memory Usage: 306020 KB (Peak: 306020 KB), Simulation CPU Usage: 33600 ms
+INFO: [Common 17-206] Exiting xsim at Tue Nov  5 21:04:26 2024...
 WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
 173055
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 692224

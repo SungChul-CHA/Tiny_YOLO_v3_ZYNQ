@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# xsim v2022.2.2 (64-bit)
+# SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+# IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+# Start of session at: Tue Nov  5 21:01:08 2024
+# Process ID: 24230
+# Current directory: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/yolo_upsamp_top/xsim_script.tcl}
+# Log file: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/sim/verilog/xsim.log
+# Journal file: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/sim/verilog/xsim.jou
+# Running On: tony, OS: Linux, CPU Frequency: 2700.000 MHz, CPU Physical cores: 14, Host memory: 33431 MB
+#-----------------------------------------------------------
+source xsim.dir/yolo_upsamp_top/xsim_script.tcl
+source yolo_upsamp_top.tcl

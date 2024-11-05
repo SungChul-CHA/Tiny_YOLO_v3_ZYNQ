@@ -2,8 +2,8 @@
 # xsim v2022.2.2 (64-bit)
 # SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
 # IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
-# Start of session at: Sun Nov  3 20:50:47 2024
-# Process ID: 31564
+# Start of session at: Tue Nov  5 21:03:50 2024
+# Process ID: 25550
 # Current directory: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/yolo_max_pool_top/xsim_script.tcl}
 # Log file: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/xsim.log

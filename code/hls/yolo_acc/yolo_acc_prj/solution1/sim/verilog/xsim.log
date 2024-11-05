@@ -2,8 +2,8 @@
 # xsim v2022.2.2 (64-bit)
 # SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
 # IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
-# Start of session at: Sun Nov  3 20:47:21 2024
-# Process ID: 30108
+# Start of session at: Tue Nov  5 20:57:45 2024
+# Process ID: 22856
 # Current directory: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/yolo_acc_prj/solution1/sim/verilog
 # Command line: xsim -mode tcl -source {xsim.dir/yolo_acc_top/xsim_script.tcl}
 # Log file: /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/yolo_acc_prj/solution1/sim/verilog/xsim.log
@@ -25,7 +25,7 @@ source yolo_acc_top.tcl
 // RTL Simulation : 1 / 1 [100.00%] @ "13845425000"
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 13845485 ns : File "/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/yolo_acc_prj/solution1/sim/verilog/yolo_acc_top.autotb.v" Line 414
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:35 . Memory (MB): peak = 1475.426 ; gain = 0.000 ; free physical = 16935 ; free virtual = 55695
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:35 . Memory (MB): peak = 1475.426 ; gain = 0.000 ; free physical = 19734 ; free virtual = 59093
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 694540 KB (Peak: 694540 KB), Simulation CPU Usage: 35100 ms
-INFO: [Common 17-206] Exiting xsim at Sun Nov  3 20:47:59 2024...
+INFO: xsimkernel Simulation Memory Usage: 694540 KB (Peak: 694540 KB), Simulation CPU Usage: 34630 ms
+INFO: [Common 17-206] Exiting xsim at Tue Nov  5 20:58:23 2024...

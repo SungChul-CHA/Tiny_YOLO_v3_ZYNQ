@@ -1,0 +1,785 @@
+
+*** Running vivado
+    with args -log design_1_yolo_yolo_top_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_yolo_yolo_top_0_0.tcl
+
+
+****** Vivado v2022.2.2 (64-bit)
+  **** SW Build 3788238 on Tue Feb 21 19:59:23 MST 2023
+  **** IP Build 3783773 on Tue Feb 21 23:41:56 MST 2023
+    ** Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+
+source design_1_yolo_yolo_top_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/tony/tools/xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_yolo_yolo_top_0_0
+Command: synth_design -top design_1_yolo_yolo_top_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 37156
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/tony/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2196.930 ; gain = 370.801 ; free physical = 8451 ; free virtual = 48397
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1183.131; parent = 1054.823; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3806.969; parent = 2203.871; children = 1603.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_yolo_yolo_top_0_0' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ip/design_1_yolo_yolo_top_0_0/synth/design_1_yolo_yolo_top_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top.v:10]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_logistic_activate' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_logistic_activate.v:10]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_exp_16_8_s' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_exp_16_8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R.dat' is read successfully [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R.dat' is read successfully [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R.dat' is read successfully [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_mul_25ns_18ns_43_1_1' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_mul_25ns_18ns_43_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_mul_25ns_18ns_43_1_1' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_mul_25ns_18ns_43_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_mul_25ns_25ns_50_1_1' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_mul_25ns_25ns_50_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_mul_25ns_25ns_50_1_1' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_mul_25ns_25ns_50_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_exp_16_8_s' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_exp_16_8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_sdiv_18ns_17s_18_22_1' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:74]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_sdiv_18ns_17s_18_22_1_divider' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_sdiv_18ns_17s_18_22_1_divider' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_sdiv_18ns_17s_18_22_1' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_logistic_activate' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_logistic_activate.v:10]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_flow_control_loop_pipe_sequential_init' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_flow_control_loop_pipe_sequential_init' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_CTRL_BUS_s_axi' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_CTRL_BUS_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_CTRL_BUS_s_axi.v:216]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_CTRL_BUS_s_axi' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_CTRL_BUS_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_mul_5ns_8ns_13_1_1' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_mul_5ns_8ns_13_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_mul_5ns_8ns_13_1_1' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_mul_5ns_8ns_13_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'yolo_yolo_top_regslice_both' [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top_regslice_both' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'yolo_yolo_top' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_yolo_yolo_top_0_0' (0#1) [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ip/design_1_yolo_yolo_top_0_0/synth/design_1_yolo_yolo_top_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element loop[17].divisor_tmp_reg[18] was removed.  [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:57]
+WARNING: [Synth 8-6014] Unused sequential element remd_reg was removed.  [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:146]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_CTRL_BUS_s_axi.v:285]
+WARNING: [Synth 8-7129] Port reset in module yolo_yolo_top_sdiv_18ns_17s_18_22_1_divider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[111] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[110] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[103] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[102] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[101] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[95] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[94] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[93] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[92] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[91] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[90] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[89] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[88] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[87] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[86] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[85] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[84] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[83] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[82] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2297.836 ; gain = 471.707 ; free physical = 8505 ; free virtual = 48452
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1183.131; parent = 1054.823; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3900.938; parent = 2297.840; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2312.680 ; gain = 486.551 ; free physical = 8505 ; free virtual = 48452
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1183.131; parent = 1054.823; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3915.781; parent = 2312.684; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2312.680 ; gain = 486.551 ; free physical = 8505 ; free virtual = 48452
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1183.131; parent = 1054.823; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3915.781; parent = 2312.684; children = 1603.098
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2312.680 ; gain = 0.000 ; free physical = 8495 ; free virtual = 48442
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ip/design_1_yolo_yolo_top_0_0/constraints/yolo_yolo_top_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ip/design_1_yolo_yolo_top_0_0/constraints/yolo_yolo_top_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.runs/design_1_yolo_yolo_top_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.runs/design_1_yolo_yolo_top_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2464.430 ; gain = 0.000 ; free physical = 8383 ; free virtual = 48329
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2464.430 ; gain = 0.000 ; free physical = 8379 ; free virtual = 48326
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/tony/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8481 ; free virtual = 48428
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1183.131; parent = 1054.823; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8481 ; free virtual = 48428
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1183.131; parent = 1054.823; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.runs/design_1_yolo_yolo_top_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8481 ; free virtual = 48428
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1183.131; parent = 1054.823; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[16].remd_tmp_reg[17]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[15].remd_tmp_reg[16]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[14].remd_tmp_reg[15]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[13].remd_tmp_reg[14]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[12].remd_tmp_reg[13]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[11].remd_tmp_reg[12]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[10].remd_tmp_reg[11]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[9].remd_tmp_reg[10]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[8].remd_tmp_reg[9]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[7].remd_tmp_reg[8]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[6].remd_tmp_reg[7]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[5].remd_tmp_reg[6]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[4].remd_tmp_reg[5]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[3].remd_tmp_reg[4]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[2].remd_tmp_reg[3]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[1].remd_tmp_reg[2]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[0].remd_tmp_reg[1]' and it is trimmed from '18' to '17' bits. [/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.gen/sources_1/bd/design_1/ipshared/a2a5/hdl/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v:56]
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'yolo_yolo_top_CTRL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'yolo_yolo_top_CTRL_BUS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'yolo_yolo_top_CTRL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'yolo_yolo_top_CTRL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8472 ; free virtual = 48420
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1183.131; parent = 1054.823; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   50 Bit       Adders := 4     
+	   2 Input   25 Bit       Adders := 4     
+	   3 Input   25 Bit       Adders := 4     
+	   3 Input   19 Bit       Adders := 72    
+	   2 Input   18 Bit       Adders := 8     
+	   2 Input   17 Bit       Adders := 8     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 39    
++---Registers : 
+	              112 Bit    Registers := 4     
+	               32 Bit    Registers := 3     
+	               29 Bit    Registers := 1     
+	               25 Bit    Registers := 32    
+	               19 Bit    Registers := 4     
+	               18 Bit    Registers := 122   
+	               17 Bit    Registers := 144   
+	               16 Bit    Registers := 249   
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 12    
+	                9 Bit    Registers := 1     
+	                6 Bit    Registers := 33    
+	                5 Bit    Registers := 35    
+	                4 Bit    Registers := 11    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 91    
+	                1 Bit    Registers := 616   
++---Muxes : 
+	   2 Input  112 Bit        Muxes := 2     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 4     
+	   2 Input   18 Bit        Muxes := 12    
+	   2 Input   17 Bit        Muxes := 72    
+	   2 Input   16 Bit        Muxes := 28    
+	   2 Input    9 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 35    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout, operation Mode is: A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/exp_x_msb_2_m_1_table_V_U/q0_reg is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/exp_x_msb_2_m_1_V_reg_559_reg is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: A''*B2.
+DSP Report: register grp_exp_16_8_s_fu_59/exp_x_msb_2_lsb_m_1_V_reg_575_reg is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/exp_x_msb_1_table_V_U/q0_reg is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/exp_x_msb_1_V_reg_580_reg is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/exp_x_msb_2_lsb_m_1_V_reg_575_reg is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/exp_x_msb_1_table_V_U/q0_reg is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/exp_x_msb_1_V_reg_580_reg is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout, operation Mode is: A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: A''*B2.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout, operation Mode is: A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: A''*B2.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout, operation Mode is: A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_18ns_43_1_1_U1/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: A''*B2.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: register grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: operator grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout is absorbed into DSP grp_exp_16_8_s_fu_59/mul_25ns_25ns_50_1_1_U2/dout.
+DSP Report: Generating DSP mul_5ns_8ns_13_1_1_U21/dout, operation Mode is: A2*B2.
+DSP Report: register mul_5ns_8ns_13_1_1_U21/dout is absorbed into DSP mul_5ns_8ns_13_1_1_U21/dout.
+DSP Report: register mul_5ns_8ns_13_1_1_U21/dout is absorbed into DSP mul_5ns_8ns_13_1_1_U21/dout.
+DSP Report: operator mul_5ns_8ns_13_1_1_U21/dout is absorbed into DSP mul_5ns_8ns_13_1_1_U21/dout.
+WARNING: [Synth 8-7129] Port inStream_TDATA[111] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[110] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[103] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[102] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[101] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[95] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[94] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[93] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[92] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[91] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[90] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[89] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[88] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[87] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[86] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[85] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[84] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[83] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inStream_TDATA[82] in module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (CTRL_BUS_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module yolo_yolo_top.
+WARNING: [Synth 8-3332] Sequential element (CTRL_BUS_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module yolo_yolo_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8446 ; free virtual = 48403
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1183.131; parent = 1054.823; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-------------------------------------------------------------+------------+---------------+----------------+
+|Module Name                                                  | RTL Object | Depth x Width | Implemented As | 
++-------------------------------------------------------------+------------+---------------+----------------+
+|yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R         | rom0       | 32x11         | LUT            | 
+|yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R | rom0       | 32x25         | LUT            | 
+|yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R     | rom0       | 32x25         | LUT            | 
+|yolo_yolo_top_logistic_activate                              | p_0_out    | 32x25         | LUT            | 
+|yolo_yolo_top_logistic_activate                              | p_0_out    | 32x11         | LUT            | 
+|yolo_yolo_top_logistic_activate                              | p_0_out    | 32x25         | LUT            | 
+|yolo_yolo_top_logistic_activate                              | p_0_out    | 32x25         | LUT            | 
+|yolo_yolo_top_logistic_activate                              | p_0_out    | 32x11         | LUT            | 
+|yolo_yolo_top_logistic_activate                              | p_0_out    | 32x25         | LUT            | 
+|yolo_yolo_top_logistic_activate                              | p_0_out    | 32x25         | LUT            | 
+|yolo_yolo_top_logistic_activate                              | p_0_out    | 32x11         | LUT            | 
+|yolo_yolo_top_logistic_activate                              | p_0_out    | 32x25         | LUT            | 
+|yolo_yolo_top_logistic_activate                              | p_0_out    | 32x11         | LUT            | 
++-------------------------------------------------------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                     | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|yolo_yolo_top_logistic_activate | A2*B''            | 19     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 19     | 9      | -      | -      | 26     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A''*B2            | 18     | 9      | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 9      | 9      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A2*B''            | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 18     | 9      | -      | -      | 33     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A2*B''            | 19     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 19     | 9      | -      | -      | 26     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A''*B2            | 18     | 9      | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 9      | 9      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A2*B''            | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 18     | 9      | -      | -      | 33     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A2*B''            | 19     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 19     | 9      | -      | -      | 26     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A''*B2            | 18     | 9      | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 9      | 9      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A2*B''            | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 18     | 9      | -      | -      | 33     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A2*B''            | 19     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 19     | 9      | -      | -      | 26     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A''*B2            | 18     | 9      | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 9      | 9      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A2*B''            | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17)+A2*B'' | 18     | 9      | -      | -      | 33     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top                   | A2*B2             | 9      | 6      | -      | -      | 15     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++--------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8287 ; free virtual = 48244
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1337.944; parent = 1209.718; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8269 ; free virtual = 48226
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1355.607; parent = 1227.381; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8263 ; free virtual = 48220
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1361.850; parent = 1233.623; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8262 ; free virtual = 48218
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1363.548; parent = 1235.321; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8262 ; free virtual = 48218
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1363.563; parent = 1235.337; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8261 ; free virtual = 48217
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1364.262; parent = 1236.035; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8261 ; free virtual = 48217
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1364.262; parent = 1236.035; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8262 ; free virtual = 48218
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1364.262; parent = 1236.035; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8262 ; free virtual = 48218
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1364.262; parent = 1236.035; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                                                                                                                                                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/grp_exp_16_8_s_fu_59/icmp_ln1653_reg_517_pp0_iter4_reg_reg[0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/grp_exp_16_8_s_fu_59/icmp_ln1649_reg_522_pp0_iter4_reg_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/grp_exp_16_8_s_fu_59/or_ln202_2_reg_548_pp0_iter4_reg_reg[0]  | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/grp_exp_16_8_s_fu_59/p_Result_s_reg_511_pp0_iter4_reg_reg[0]  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[17]                         | 19     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[16]                         | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[15]                         | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[14]                         | 16     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[13]                         | 15     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[12]                         | 14     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[11]                         | 13     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[10]                         | 12     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[9]                          | 11     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[8]                          | 10     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[7]                          | 9      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[6]                          | 8      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[5]                          | 7      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[4]                          | 6      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[3]                          | 5      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[2]                          | 4      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/sdiv_18ns_17s_18_22_1_U9/quot_reg[1]                          | 3      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/icmp_ln1653_reg_213_pp0_iter5_reg_reg[0]                      | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_255/icmp_ln1653_reg_213_pp0_iter27_reg_reg[0]                     | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/grp_exp_16_8_s_fu_59/icmp_ln1653_reg_517_pp0_iter4_reg_reg[0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/grp_exp_16_8_s_fu_59/icmp_ln1649_reg_522_pp0_iter4_reg_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/grp_exp_16_8_s_fu_59/or_ln202_2_reg_548_pp0_iter4_reg_reg[0]  | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/grp_exp_16_8_s_fu_59/p_Result_s_reg_511_pp0_iter4_reg_reg[0]  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[17]                         | 19     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[16]                         | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[15]                         | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[14]                         | 16     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[13]                         | 15     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[12]                         | 14     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[11]                         | 13     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[10]                         | 12     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[9]                          | 11     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[8]                          | 10     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[7]                          | 9      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[6]                          | 8      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[5]                          | 7      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[4]                          | 6      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[3]                          | 5      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[2]                          | 4      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/sdiv_18ns_17s_18_22_1_U9/quot_reg[1]                          | 3      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/icmp_ln1653_reg_213_pp0_iter5_reg_reg[0]                      | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_267/icmp_ln1653_reg_213_pp0_iter27_reg_reg[0]                     | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/grp_exp_16_8_s_fu_59/icmp_ln1653_reg_517_pp0_iter4_reg_reg[0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/grp_exp_16_8_s_fu_59/icmp_ln1649_reg_522_pp0_iter4_reg_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/grp_exp_16_8_s_fu_59/or_ln202_2_reg_548_pp0_iter4_reg_reg[0]  | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/grp_exp_16_8_s_fu_59/p_Result_s_reg_511_pp0_iter4_reg_reg[0]  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[17]                         | 19     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[16]                         | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[15]                         | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[14]                         | 16     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[13]                         | 15     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[12]                         | 14     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[11]                         | 13     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[10]                         | 12     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[9]                          | 11     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[8]                          | 10     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[7]                          | 9      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[6]                          | 8      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[5]                          | 7      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[4]                          | 6      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[3]                          | 5      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[2]                          | 4      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/sdiv_18ns_17s_18_22_1_U9/quot_reg[1]                          | 3      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/icmp_ln1653_reg_213_pp0_iter5_reg_reg[0]                      | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_279/icmp_ln1653_reg_213_pp0_iter27_reg_reg[0]                     | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/grp_exp_16_8_s_fu_59/icmp_ln1653_reg_517_pp0_iter4_reg_reg[0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/grp_exp_16_8_s_fu_59/icmp_ln1649_reg_522_pp0_iter4_reg_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/grp_exp_16_8_s_fu_59/or_ln202_2_reg_548_pp0_iter4_reg_reg[0]  | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/grp_exp_16_8_s_fu_59/p_Result_s_reg_511_pp0_iter4_reg_reg[0]  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[17]                         | 19     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[16]                         | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[15]                         | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[14]                         | 16     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[13]                         | 15     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[12]                         | 14     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[11]                         | 13     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[10]                         | 12     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[9]                          | 11     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[8]                          | 10     | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[7]                          | 9      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[6]                          | 8      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[5]                          | 7      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[4]                          | 6      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[3]                          | 5      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[2]                          | 4      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/sdiv_18ns_17s_18_22_1_U9/quot_reg[1]                          | 3      | 1     | NO           | NO                 | NO                | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/icmp_ln1653_reg_213_pp0_iter5_reg_reg[0]                      | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/grp_logistic_activate_fu_291/icmp_ln1653_reg_213_pp0_iter27_reg_reg[0]                     | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/p_Result_s_reg_856_pp0_iter29_reg_reg[0]                                                   | 29     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/icmp_ln1027_reg_809_pp0_iter29_reg_reg[0]                                                  | 29     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/p_Result_1_reg_860_pp0_iter29_reg_reg[0]                                                   | 29     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/p_Result_2_reg_864_pp0_iter29_reg_reg[0]                                                   | 29     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/p_Result_3_reg_868_pp0_iter29_reg_reg[0]                                                   | 29     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/tmp_4_reg_882_pp0_iter29_reg_reg[17]                                                       | 29     | 18    | NO           | NO                 | YES               | 0      | 18      | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/curr_output_last_V_reg_887_pp0_iter29_reg_reg[0]                                           | 28     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/tmp_1_reg_877_pp0_iter29_reg_reg[4]                                                        | 29     | 5     | NO           | NO                 | YES               | 0      | 5       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/tmp_s_reg_872_pp0_iter29_reg_reg[5]                                                        | 29     | 6     | NO           | NO                 | YES               | 0      | 6       | 
+|yolo_yolo_top | grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82/ap_loop_exit_ready_pp0_iter29_reg_reg                                                      | 29     | 1     | NO           | NO                 | YES               | 0      | 1       | 
++--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                     | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|yolo_yolo_top_logistic_activate | A'*B''             | 18     | 17     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17+A'*B'')' | 18     | 8      | -      | -      | 26     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|yolo_yolo_top_logistic_activate | A''*B'             | 17     | 8      | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | PCIN>>17+A'*B''    | 8      | 8      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A'*B''             | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | PCIN>>17+A*B''     | 0      | 8      | -      | -      | 33     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A'*B''             | 18     | 17     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17+A'*B'')' | 18     | 8      | -      | -      | 26     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|yolo_yolo_top_logistic_activate | A''*B'             | 17     | 8      | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | PCIN>>17+A'*B''    | 8      | 8      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A'*B''             | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | PCIN>>17+A*B''     | 0      | 8      | -      | -      | 33     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A'*B''             | 18     | 17     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17+A'*B'')' | 18     | 8      | -      | -      | 26     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|yolo_yolo_top_logistic_activate | A''*B'             | 17     | 8      | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | PCIN>>17+A'*B''    | 8      | 8      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A'*B''             | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | PCIN>>17+A*B''     | 0      | 8      | -      | -      | 33     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A'*B''             | 18     | 17     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | (PCIN>>17+A'*B'')' | 18     | 8      | -      | -      | 26     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|yolo_yolo_top_logistic_activate | A''*B'             | 17     | 8      | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | PCIN>>17+A'*B''    | 8      | 8      | -      | -      | 16     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | A'*B''             | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top_logistic_activate | PCIN>>17+A*B''     | 0      | 8      | -      | -      | 33     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|yolo_yolo_top                   | (A'*B')'           | 8      | 5      | -      | -      | 15     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++--------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   482|
+|2     |DSP48E1 |    25|
+|6     |LUT1    |   332|
+|7     |LUT2    |  1426|
+|8     |LUT3    |  1325|
+|9     |LUT4    |   127|
+|10    |LUT5    |   268|
+|11    |LUT6    |   204|
+|12    |MUXF7   |     3|
+|13    |SRL16E  |    80|
+|14    |SRLC32E |    48|
+|15    |FDRE    |  6030|
+|16    |FDSE    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8262 ; free virtual = 48218
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1364.262; parent = 1236.035; children = 128.308
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4035.516; parent = 2432.418; children = 1603.098
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2464.430 ; gain = 486.551 ; free physical = 8335 ; free virtual = 48291
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2464.430 ; gain = 638.301 ; free physical = 8335 ; free virtual = 48291
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2464.430 ; gain = 0.000 ; free physical = 8444 ; free virtual = 48401
+INFO: [Netlist 29-17] Analyzing 510 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2464.430 ; gain = 0.000 ; free physical = 8386 ; free virtual = 48342
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 1d3bd35f
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 2464.430 ; gain = 968.895 ; free physical = 8621 ; free virtual = 48577
+INFO: [Common 17-1381] The checkpoint '/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.runs/design_1_yolo_yolo_top_0_0_synth_1/design_1_yolo_yolo_top_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_yolo_yolo_top_0_0, cache-ID = e8835d3d30f83b44
+INFO: [Coretcl 2-1174] Renamed 43 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/tony/Desktop/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.runs/design_1_yolo_yolo_top_0_0_synth_1/design_1_yolo_yolo_top_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_yolo_yolo_top_0_0_utilization_synth.rpt -pb design_1_yolo_yolo_top_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  5 21:46:59 2024...
