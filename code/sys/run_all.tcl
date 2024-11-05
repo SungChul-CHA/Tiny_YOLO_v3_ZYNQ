@@ -255,6 +255,7 @@ proc create_root_design { parentCell } {
    CONFIG.NUM_MI {2} \
    CONFIG.NUM_SI {1} \
    CONFIG.ROUTING_MODE {1} \
+   CONFIG.TDATA_NUM_BYTES {14} \
  ] $axis_switch_0
 
   # Create instance: axis_switch_1, and set properties
