@@ -3,7 +3,7 @@ import shutil
 import zipfile
 
 # device = "xc7z020-clg484-1"
-device = "xc7z020-clg400-1"
+device = "xc7z020clg400-1"
 clk_ns = "10"
 
 root_path = os.path.abspath("../")
@@ -75,11 +75,11 @@ for hls_prj_name in os.listdir():
         #     tcl_fp.write("add_files -tb tb/" + tb_file + "\n")
         for tb_file in os.listdir("tb"):
             if tb_file.endswith(".cpp"):
-                tcl_fp.write("add_files -tb tb/" + tb_file + " -cflags \"-I${OPENCV_INCLUDE} -I${XF_PROJ_ROOT}/L1/include\" -csimflags -I${XF_PROJ_ROOT}/L1/include\n")
+                tcl_fp.write("add_files -tb tb/" + tb_file + " -cflags -I${XF_PROJ_ROOT}/L1/include -csimflags -I${XF_PROJ_ROOT}/L1/include\n")
             else:
-                tcl_fp.write("add_files -tb tb/" + tb_file + "\n")        
+                tcl_fp.write("add_files -tb tb/" + tb_file + "\n")
 
-        tcl_fp.write("open_solution \"solution1\"\n")
+        tcl_fp.write("open_solution \"solution1\" -flow_target vivado\n")
         # tcl_fp.write("set_part {" + device + "} -tool vivado\n")
         tcl_fp.write("set_part {" + device + "}\n")
         if hls_prj_name == "yolo_conv":
