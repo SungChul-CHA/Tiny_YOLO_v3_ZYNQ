@@ -180,7 +180,7 @@ yolo_conv_top_mul_3ns_10ns_12_1_1 #(
     .din0_WIDTH( 3 ),
     .din1_WIDTH( 10 ),
     .dout_WIDTH( 12 ))
-mul_3ns_10ns_12_1_1_U78(
+mul_3ns_10ns_12_1_1_U89(
     .din0(mul_ln984_fu_151_p0),
     .din1(mul_ln984_fu_151_p1),
     .dout(mul_ln984_fu_151_p2)
@@ -192,7 +192,7 @@ yolo_conv_top_mul_3ns_10ns_12_1_1 #(
     .din0_WIDTH( 3 ),
     .din1_WIDTH( 10 ),
     .dout_WIDTH( 12 ))
-mul_3ns_10ns_12_1_1_U79(
+mul_3ns_10ns_12_1_1_U90(
     .din0(mul_ln984_1_fu_161_p0),
     .din1(mul_ln984_1_fu_161_p1),
     .dout(mul_ln984_1_fu_161_p2)
@@ -204,7 +204,7 @@ yolo_conv_top_mul_3ns_10ns_12_1_1 #(
     .din0_WIDTH( 3 ),
     .din1_WIDTH( 10 ),
     .dout_WIDTH( 12 ))
-mul_3ns_10ns_12_1_1_U80(
+mul_3ns_10ns_12_1_1_U91(
     .din0(mul_ln984_2_fu_171_p0),
     .din1(mul_ln984_2_fu_171_p1),
     .dout(mul_ln984_2_fu_171_p2)

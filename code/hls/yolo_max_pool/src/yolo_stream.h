@@ -4,6 +4,7 @@
 #include "ap_int.h"
 #include "hls_stream.h"
 #include "yolo_fp.h"
+#include "ap_axi_sdata.h"
 
 typedef struct quad_fp_pack{
 	fp_data_type sub_data_0;
@@ -12,18 +13,19 @@ typedef struct quad_fp_pack{
 	fp_data_type sub_data_3;
 }quad_fp_pack;
 
-template<int D,int U,int TI,int TD>
-  struct ap_axi_fp{
-	quad_fp_pack   data;
-    ap_uint<(D+7)/8> keep;
-    ap_uint<(D+7)/8> strb;
-    ap_uint<U>       user;
-    ap_uint<1>       last;
-    ap_uint<TI>      id;
-    ap_uint<TD>      dest;
-};
+// template<int D,int U,int TI,int TD>
+//   struct ap_axi_fp{
+// 	quad_fp_pack   data;
+//     ap_uint<(D+7)/8> keep;
+//     ap_uint<(D+7)/8> strb;
+//     ap_uint<U>       user;
+//     ap_uint<1>       last;
+//     ap_uint<TI>      id;
+//     ap_uint<TD>      dest;
+// };
 
-typedef ap_axi_fp<64,2,5,6> quad_fp_side_channel;
+// typedef ap_axi_fp<64,2,5,6> quad_fp_side_channel;
+typedef hls::axis<quad_fp_pack, 2, 5, 6> quad_fp_side_channel;
 typedef hls::stream<quad_fp_side_channel> yolo_quad_stream;
 typedef hls::stream<fp_data_type> yolo_inter_stream;
 

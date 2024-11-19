@@ -84813,34 +84813,6 @@ public:
 typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_data_type;
 typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_weight_type;
 # 7 "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/tb/../src/yolo_stream.h" 2
-
-typedef struct quad_fp_pack{
- fp_data_type sub_data_0;
- fp_data_type sub_data_1;
- fp_data_type sub_data_2;
- fp_data_type sub_data_3;
-}quad_fp_pack;
-
-template<int D,int U,int TI,int TD>
-  struct ap_axi_fp{
- quad_fp_pack data;
-    ap_uint<(D+7)/8> keep;
-    ap_uint<(D+7)/8> strb;
-    ap_uint<U> user;
-    ap_uint<1> last;
-    ap_uint<TI> id;
-    ap_uint<TD> dest;
-};
-
-typedef ap_axi_fp<64,2,5,6> quad_fp_side_channel;
-typedef hls::stream<quad_fp_side_channel> yolo_quad_stream;
-typedef hls::stream<fp_data_type> yolo_inter_stream;
-# 5 "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/tb/../src/yolo_max_pool.h" 2
-
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_common.hpp" 1
-# 20 "/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_common.hpp"
-# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp" 1
-# 27 "/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h" 1
 # 41 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/climits" 1 3
@@ -85003,8 +84975,24 @@ template <std::size_t WData> struct qdma_axis<WData, 0, 0, 0> {
     return *this;
   }
 };
-# 28 "/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp" 2
+# 8 "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/tb/../src/yolo_stream.h" 2
 
+typedef struct quad_fp_pack{
+ fp_data_type sub_data_0;
+ fp_data_type sub_data_1;
+ fp_data_type sub_data_2;
+ fp_data_type sub_data_3;
+}quad_fp_pack;
+# 28 "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/tb/../src/yolo_stream.h"
+typedef hls::axis<quad_fp_pack, 2, 5, 6> quad_fp_side_channel;
+typedef hls::stream<quad_fp_side_channel> yolo_quad_stream;
+typedef hls::stream<fp_data_type> yolo_inter_stream;
+# 5 "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/tb/../src/yolo_max_pool.h" 2
+
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_common.hpp" 1
+# 20 "/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_common.hpp"
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp" 1
+# 29 "/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_types.hpp" 1
 # 24 "/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_types.hpp"
 # 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h" 1
@@ -89731,7 +89719,7 @@ typedef xf::cv::LineBuffer<2,418,fp_data_type> line_buff_type;
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_yolo_max_pool_top_sw(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0> &, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0> &, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>);
+void apatb_yolo_max_pool_top_sw(hls::stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0> &, hls::stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0> &, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>);
 #endif
 # 22 "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/tb/../src/yolo_max_pool.h"
 void yolo_max_pool_top(yolo_quad_stream &inStream, yolo_quad_stream &outStream,

@@ -1,0 +1,7 @@
++====================+===================+========================================================================================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                                                                                                    |
++====================+===================+========================================================================================================================================================================+
+| clk_fpga_0         | clk_fpga_0        | design_1_i/yolo_conv_top_0/inst/grp_yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6_fu_1509/grp_window_macc_fu_11900/p_read18_int_reg_reg[10]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/yolo_conv_top_0/inst/grp_yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6_fu_1509/grp_window_macc_fu_11966/p_read13_int_reg_reg[2]/D  |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/yolo_conv_top_0/inst/grp_yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6_fu_1509/grp_window_macc_fu_11966/p_read13_int_reg_reg[10]/D |
++--------------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

@@ -58,6 +58,12 @@ _M_AXI_GP1_THREAD_ID_WIDTH=12,C_NUM_F2P_INTR_INPUTS=1,C_IRQ_F2P_MODE=DIRECT,C_DQ
 N=1,C_GP1_EN_MODIFIABLE_TXN=1}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_processing_system7_0_0 (
+  TTC0_WAVE0_OUT,
+  TTC0_WAVE1_OUT,
+  TTC0_WAVE2_OUT,
+  USB0_PORT_INDCTL,
+  USB0_VBUS_PWRSELECT,
+  USB0_VBUS_PWRFAULT,
   M_AXI_GP0_ARVALID,
   M_AXI_GP0_AWVALID,
   M_AXI_GP0_BREADY,
@@ -212,6 +218,15 @@ module design_1_processing_system7_0_0 (
   PS_PORB
 );
 
+output wire TTC0_WAVE0_OUT;
+output wire TTC0_WAVE1_OUT;
+output wire TTC0_WAVE2_OUT;
+(* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL" *)
+output wire [1 : 0] USB0_PORT_INDCTL;
+(* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRSELECT" *)
+output wire USB0_VBUS_PWRSELECT;
+(* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRFAULT" *)
+input wire USB0_VBUS_PWRFAULT;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARVALID" *)
 output wire M_AXI_GP0_ARVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 AWVALID" *)
@@ -731,9 +746,9 @@ inout wire PS_PORB;
     .UART1_DSRN(1'B0),
     .UART1_RIN(1'B0),
     .UART1_RX(1'B1),
-    .TTC0_WAVE0_OUT(),
-    .TTC0_WAVE1_OUT(),
-    .TTC0_WAVE2_OUT(),
+    .TTC0_WAVE0_OUT(TTC0_WAVE0_OUT),
+    .TTC0_WAVE1_OUT(TTC0_WAVE1_OUT),
+    .TTC0_WAVE2_OUT(TTC0_WAVE2_OUT),
     .TTC0_CLK0_IN(1'B0),
     .TTC0_CLK1_IN(1'B0),
     .TTC0_CLK2_IN(1'B0),
@@ -749,9 +764,9 @@ inout wire PS_PORB;
     .TRACE_CLK_OUT(),
     .TRACE_CTL(),
     .TRACE_DATA(),
-    .USB0_PORT_INDCTL(),
-    .USB0_VBUS_PWRSELECT(),
-    .USB0_VBUS_PWRFAULT(1'B0),
+    .USB0_PORT_INDCTL(USB0_PORT_INDCTL),
+    .USB0_VBUS_PWRSELECT(USB0_VBUS_PWRSELECT),
+    .USB0_VBUS_PWRFAULT(USB0_VBUS_PWRFAULT),
     .USB1_PORT_INDCTL(),
     .USB1_VBUS_PWRSELECT(),
     .USB1_VBUS_PWRFAULT(1'B0),

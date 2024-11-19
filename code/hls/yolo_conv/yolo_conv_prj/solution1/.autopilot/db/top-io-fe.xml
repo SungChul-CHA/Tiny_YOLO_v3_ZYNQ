@@ -1,13 +1,13 @@
 <root versionMajor = "1" versionMinor = "5">
   <kernel src_name="yolo_conv_top" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
     <args>
-      <arg id="0" access_type="r" src_name="inStream" src_type="stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="112" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="inStream" hw_bitwidth="112" hw_size_or_depth="0" hw_kernel_support="true">
+      <arg id="0" access_type="r" src_name="inStream" src_type="stream&lt;hls::axis&lt;quad_fp_pack, 2, 5, 6&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="112" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="inStream" hw_bitwidth="64" hw_size_or_depth="1" hw_kernel_support="true">
           <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
         </hw>
       </arg>
-      <arg id="1" access_type="w" src_name="outStream" src_type="stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="112" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="outStream" hw_bitwidth="112" hw_size_or_depth="0" hw_kernel_support="true">
+      <arg id="1" access_type="w" src_name="outStream" src_type="stream&lt;hls::axis&lt;quad_fp_pack, 2, 5, 6&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="112" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="outStream" hw_bitwidth="64" hw_size_or_depth="1" hw_kernel_support="true">
           <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
         </hw>
       </arg>

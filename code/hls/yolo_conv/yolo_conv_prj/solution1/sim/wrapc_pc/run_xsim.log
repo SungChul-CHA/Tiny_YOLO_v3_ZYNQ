@@ -22,8 +22,8 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/
 INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/AESL_deadlock_idx2_monitor.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx2_monitor
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_yolo_conv_top_Pipeline_VITIS_LOOP_55_3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_yolo_conv_top_Pipeline_VITIS_LOOP_55_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_slide_window.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_slide_window
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_window_macc.v" into library xil_defaultlib
@@ -45,8 +45,10 @@ INFO: [VRFC 10-311] analyzing module yolo_conv_top_regslice_both
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_regslice_both_w1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_mul_3ns_10ns_12_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_3ns_10ns_12_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_mul_6ns_6ns_12_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_6ns_6ns_12_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_mul_6ns_3ns_9_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_6ns_3ns_9_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_mul_6ns_9ns_15_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_6ns_9ns_15_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_mul_9ns_4ns_13_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_9ns_4ns_13_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_line_buff_group_0_val_V_RAM_S2P_BRAM_1R1W.v" into library xil_defaultlib
@@ -103,24 +105,40 @@ Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_4ns_9ns...
 Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_4ns_9ns...
 Compiling module xil_defaultlib.yolo_conv_top_yolo_conv_top_Pipe...
 Compiling module xil_defaultlib.yolo_conv_top_CTRL_BUS_s_axi
-Compiling module xil_defaultlib.yolo_conv_top_mul_6ns_6ns_12_1_1...
+Compiling module xil_defaultlib.yolo_conv_top_mul_6ns_3ns_9_1_1(...
+Compiling module xil_defaultlib.yolo_conv_top_mul_6ns_9ns_15_1_1...
 Compiling module xil_defaultlib.yolo_conv_top_mul_9ns_4ns_13_1_1...
 Compiling module xil_defaultlib.yolo_conv_top_am_addmul_9ns_1ns_...
 Compiling module xil_defaultlib.yolo_conv_top_am_addmul_9ns_1ns_...
 Compiling module xil_defaultlib.yolo_conv_top_fifo_w16_d2_S_Shif...
 Compiling module xil_defaultlib.yolo_conv_top_fifo_w16_d2_S
 Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
+Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
+Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
+Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
+Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
+Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
 Compiling module xil_defaultlib.yolo_conv_top
-Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=112)
+Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=1808)
+Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=6)
 Compiling module xil_defaultlib.AESL_axi_s_inStream
-Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=112)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=4992)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=6)
 Compiling module xil_defaultlib.AESL_axi_s_outStream
 Compiling module xil_defaultlib.AESL_axi_slave_CTRL_BUS
 Compiling module xil_defaultlib.AESL_deadlock_idx2_monitor
 Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
 Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
 Compiling module xil_defaultlib.nodf_module_intf
-Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=11)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
 Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=11)
 Compiling module xil_defaultlib.dataflow_monitor_1
 Compiling module xil_defaultlib.apatb_yolo_conv_top_top
@@ -144,11 +162,11 @@ source yolo_conv_top.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "116000"
-// RTL Simulation : 1 / 1 [100.00%] @ "210506000"
+// RTL Simulation : 1 / 1 [100.00%] @ "209036000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 210551250 ps : File "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top.autotb.v" Line 392
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1475.250 ; gain = 0.000 ; free physical = 18242 ; free virtual = 60068
+$finish called at time : 209081250 ps : File "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top.autotb.v" Line 488
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1475.250 ; gain = 0.000 ; free physical = 16726 ; free virtual = 58427
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Nov 18 23:57:21 2024...
+INFO: [Common 17-206] Exiting xsim at Tue Nov 19 23:15:15 2024...
 4991
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4992

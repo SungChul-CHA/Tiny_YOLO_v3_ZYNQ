@@ -23,10 +23,10 @@ obj/yolo_upsamp.o: ../../../../src/yolo_upsamp.cpp \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_special.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/hls_stream.h \
  ../../../../src/yolo_fp.h \
- /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_common.hpp \
- /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h \
+ /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_common.hpp \
+ /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp \
  /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_types.hpp \
  /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_params.hpp \
  /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp \

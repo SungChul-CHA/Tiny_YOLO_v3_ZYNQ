@@ -81,7 +81,13 @@ proc check_tvin_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "c.yolo_conv_top.autotvin_inStream.dat"
+         "c.yolo_conv_top.autotvin_inStream_V_data_V.dat"
+         "c.yolo_conv_top.autotvin_inStream_V_keep_V.dat"
+         "c.yolo_conv_top.autotvin_inStream_V_strb_V.dat"
+         "c.yolo_conv_top.autotvin_inStream_V_user_V.dat"
+         "c.yolo_conv_top.autotvin_inStream_V_last_V.dat"
+         "c.yolo_conv_top.autotvin_inStream_V_id_V.dat"
+         "c.yolo_conv_top.autotvin_inStream_V_dest_V.dat"
          "c.yolo_conv_top.autotvin_output_ch.dat"
          "c.yolo_conv_top.autotvin_input_ch.dat"
          "c.yolo_conv_top.autotvin_fold_output_ch.dat"
@@ -109,7 +115,13 @@ proc check_tvout_file {} {
 		puts stdout "[debug_prompt arg check_sim.tcl] start...";
 	}
     set rtlfilelist {
-         "rtl.yolo_conv_top.autotvout_outStream.dat"
+         "rtl.yolo_conv_top.autotvout_outStream_V_data_V.dat"
+         "rtl.yolo_conv_top.autotvout_outStream_V_keep_V.dat"
+         "rtl.yolo_conv_top.autotvout_outStream_V_strb_V.dat"
+         "rtl.yolo_conv_top.autotvout_outStream_V_user_V.dat"
+         "rtl.yolo_conv_top.autotvout_outStream_V_last_V.dat"
+         "rtl.yolo_conv_top.autotvout_outStream_V_id_V.dat"
+         "rtl.yolo_conv_top.autotvout_outStream_V_dest_V.dat"
     }
     foreach rtlfile $rtlfilelist {
         if {[file isfile $rtlfile]} {

@@ -23,438 +23,438 @@
       ^~~
       VITIS_LOOP_1245_1: 
 /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:3941:7: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:5940:13: warning: Added loop label VITIS_LOOP_94_1:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6369:13: warning: Added loop label VITIS_LOOP_94_1:   [xilinx-label-all-loops]
             for (int j = 3; j >= I_+1; j--) {
             ^~~
             VITIS_LOOP_94_1: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:5940:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:5946:17: warning: Added loop label VITIS_LOOP_100_2:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6369:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6375:17: warning: Added loop label VITIS_LOOP_100_2:   [xilinx-label-all-loops]
                 for (int j = 3; j >= I_+1; j--){
                 ^~~
                 VITIS_LOOP_100_2: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:5946:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:5950:17: warning: Added loop label VITIS_LOOP_104_3:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6375:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6379:17: warning: Added loop label VITIS_LOOP_104_3:   [xilinx-label-all-loops]
                 for (int j = I_; j >= 0; j--){
                 ^~~
                 VITIS_LOOP_104_3: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:5950:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:5998:13: warning: Added loop label VITIS_LOOP_171_4:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6379:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6427:13: warning: Added loop label VITIS_LOOP_171_4:   [xilinx-label-all-loops]
             for (int j = 9; j >= I_+4; j--) {
             ^~~
             VITIS_LOOP_171_4: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:5998:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6004:17: warning: Added loop label VITIS_LOOP_177_5:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6427:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6433:17: warning: Added loop label VITIS_LOOP_177_5:   [xilinx-label-all-loops]
                 for (int j = 9; j >= I_+4; j--){
                 ^~~
                 VITIS_LOOP_177_5: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6004:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6008:17: warning: Added loop label VITIS_LOOP_181_6:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6433:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6437:17: warning: Added loop label VITIS_LOOP_181_6:   [xilinx-label-all-loops]
                 for (int j = I_+3; j >= 0; j--){
                 ^~~
                 VITIS_LOOP_181_6: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6008:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6023:9: warning: Added loop label VITIS_LOOP_196_7:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6437:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6452:9: warning: Added loop label VITIS_LOOP_196_7:   [xilinx-label-all-loops]
         for (int j = 14; j < 22; j++){
         ^~~
         VITIS_LOOP_196_7: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6023:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6031:17: warning: Added loop label VITIS_LOOP_204_8:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6452:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6460:17: warning: Added loop label VITIS_LOOP_204_8:   [xilinx-label-all-loops]
                 for (int j = 0; j < 22; j++){
                 ^~~
                 VITIS_LOOP_204_8: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6031:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6096:13: warning: Added loop label VITIS_LOOP_269_9:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6460:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6525:13: warning: Added loop label VITIS_LOOP_269_9:   [xilinx-label-all-loops]
             for (int j = 21; j >= I_+10; j--) {
             ^~~
             VITIS_LOOP_269_9: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6096:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6102:17: warning: Added loop label VITIS_LOOP_275_10:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6525:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6531:17: warning: Added loop label VITIS_LOOP_275_10:   [xilinx-label-all-loops]
                 for (int j = 21; j >= I_+10; j--) {
                 ^~~
                 VITIS_LOOP_275_10: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6102:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6106:17: warning: Added loop label VITIS_LOOP_279_11:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6531:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6535:17: warning: Added loop label VITIS_LOOP_279_11:   [xilinx-label-all-loops]
                 for (int j = I_+9; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_279_11: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6106:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6121:9: warning: Added loop label VITIS_LOOP_294_12:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6535:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6550:9: warning: Added loop label VITIS_LOOP_294_12:   [xilinx-label-all-loops]
         for (int j = 27; j < 46; j++){
         ^~~
         VITIS_LOOP_294_12: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6121:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6129:17: warning: Added loop label VITIS_LOOP_302_13:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6550:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6558:17: warning: Added loop label VITIS_LOOP_302_13:   [xilinx-label-all-loops]
                 for (int j = 0; j < 46; j++) {
                 ^~~
                 VITIS_LOOP_302_13: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6129:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6358:13: warning: Added loop label VITIS_LOOP_531_14:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6558:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6787:13: warning: Added loop label VITIS_LOOP_531_14:   [xilinx-label-all-loops]
             for (int j = 45; j >= I_+22; j--) {
             ^~~
             VITIS_LOOP_531_14: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6358:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6364:17: warning: Added loop label VITIS_LOOP_537_15:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6787:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6793:17: warning: Added loop label VITIS_LOOP_537_15:   [xilinx-label-all-loops]
                 for (int j = 45; j >= I_+22; j--){
                 ^~~
                 VITIS_LOOP_537_15: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6364:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6368:17: warning: Added loop label VITIS_LOOP_541_16:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6793:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6797:17: warning: Added loop label VITIS_LOOP_541_16:   [xilinx-label-all-loops]
                 for (int j = I_+21; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_541_16: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6368:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6378:9: warning: Added loop label VITIS_LOOP_551_17:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6797:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6807:9: warning: Added loop label VITIS_LOOP_551_17:   [xilinx-label-all-loops]
         for (int j = 32-F_; j < 32+I_; j++){
         ^~~
         VITIS_LOOP_551_17: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6378:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6382:9: warning: Added loop label VITIS_LOOP_555_18:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6807:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6811:9: warning: Added loop label VITIS_LOOP_555_18:   [xilinx-label-all-loops]
         for (int j = 32+I_; j <= 64; j++){
         ^~~
         VITIS_LOOP_555_18: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6382:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6392:9: warning: Added loop label VITIS_LOOP_565_19:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6811:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6821:9: warning: Added loop label VITIS_LOOP_565_19:   [xilinx-label-all-loops]
         for (int j = 37; j < 64; j++) {
         ^~~
         VITIS_LOOP_565_19: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6392:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6400:17: warning: Added loop label VITIS_LOOP_573_20:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6821:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6829:17: warning: Added loop label VITIS_LOOP_573_20:   [xilinx-label-all-loops]
                 for (int j = 0; j < 64; j++){
                 ^~~
                 VITIS_LOOP_573_20: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6400:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6761:13: warning: Added loop label VITIS_LOOP_934_21:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6829:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7190:13: warning: Added loop label VITIS_LOOP_934_21:   [xilinx-label-all-loops]
             for (int j = 63; j >= I_+31; j--) {
             ^~~
             VITIS_LOOP_934_21: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6761:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6767:17: warning: Added loop label VITIS_LOOP_940_22:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7190:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7196:17: warning: Added loop label VITIS_LOOP_940_22:   [xilinx-label-all-loops]
                 for (int j = 63; j >= I_+31; j--) {
                 ^~~
                 VITIS_LOOP_940_22: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6767:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6771:17: warning: Added loop label VITIS_LOOP_944_23:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7196:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7200:17: warning: Added loop label VITIS_LOOP_944_23:   [xilinx-label-all-loops]
                 for (int j = I_+30; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_944_23: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6771:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6887:13: warning: Added loop label VITIS_LOOP_1060_1:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7200:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7316:13: warning: Added loop label VITIS_LOOP_1060_1:   [xilinx-label-all-loops]
             for (int j = 4; j >= I_+1; j--) {
             ^~~
             VITIS_LOOP_1060_1: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6887:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6893:17: warning: Added loop label VITIS_LOOP_1066_2:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7316:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7322:17: warning: Added loop label VITIS_LOOP_1066_2:   [xilinx-label-all-loops]
                 for (int j = 4; j >= I_+1; j--) {
                 ^~~
                 VITIS_LOOP_1066_2: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6893:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6897:17: warning: Added loop label VITIS_LOOP_1070_3:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7322:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7326:17: warning: Added loop label VITIS_LOOP_1070_3:   [xilinx-label-all-loops]
                 for (int j = I_; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_1070_3: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6897:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6984:13: warning: Added loop label VITIS_LOOP_1157_4:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7326:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7413:13: warning: Added loop label VITIS_LOOP_1157_4:   [xilinx-label-all-loops]
             for (int j = 10; j >= I_+4; j--) {
             ^~~
             VITIS_LOOP_1157_4: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6984:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6990:17: warning: Added loop label VITIS_LOOP_1163_5:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7413:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7419:17: warning: Added loop label VITIS_LOOP_1163_5:   [xilinx-label-all-loops]
                 for (int j = 10; j >= I_+4; j--) {
                 ^~~
                 VITIS_LOOP_1163_5: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6990:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6994:17: warning: Added loop label VITIS_LOOP_1167_6:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7419:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7423:17: warning: Added loop label VITIS_LOOP_1167_6:   [xilinx-label-all-loops]
                 for (int j = I_+3; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_1167_6: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:6994:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7013:9: warning: Added loop label VITIS_LOOP_1186_7:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7423:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7442:9: warning: Added loop label VITIS_LOOP_1186_7:   [xilinx-label-all-loops]
         for (int j = wf+3; j < w-1; j++) {
         ^~~
         VITIS_LOOP_1186_7: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7013:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7020:17: warning: Added loop label VITIS_LOOP_1193_8:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7442:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7449:17: warning: Added loop label VITIS_LOOP_1193_8:   [xilinx-label-all-loops]
                 for (int j = 0; j < 22; j++) {
                 ^~~
                 VITIS_LOOP_1193_8: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7020:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7136:13: warning: Added loop label VITIS_LOOP_1309_9:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7449:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7565:13: warning: Added loop label VITIS_LOOP_1309_9:   [xilinx-label-all-loops]
             for (int j = 22; j >= I_+10; j--) {
             ^~~
             VITIS_LOOP_1309_9: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7136:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7142:17: warning: Added loop label VITIS_LOOP_1315_10:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7565:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7571:17: warning: Added loop label VITIS_LOOP_1315_10:   [xilinx-label-all-loops]
                 for (int j = 22; j >= I_+10; j--){
                 ^~~
                 VITIS_LOOP_1315_10: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7142:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7146:17: warning: Added loop label VITIS_LOOP_1319_11:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7571:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7575:17: warning: Added loop label VITIS_LOOP_1319_11:   [xilinx-label-all-loops]
                 for (int j = I_+9; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_1319_11: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7146:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7166:9: warning: Added loop label VITIS_LOOP_1339_12:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7575:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7595:9: warning: Added loop label VITIS_LOOP_1339_12:   [xilinx-label-all-loops]
         for (int j = wf+4; j < w-1; j++){
         ^~~
         VITIS_LOOP_1339_12: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7166:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7173:17: warning: Added loop label VITIS_LOOP_1346_13:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7595:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7602:17: warning: Added loop label VITIS_LOOP_1346_13:   [xilinx-label-all-loops]
                 for (int j = 0; j < 46; j++) {
                 ^~~
                 VITIS_LOOP_1346_13: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7173:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7435:13: warning: Added loop label VITIS_LOOP_1608_14:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7602:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7864:13: warning: Added loop label VITIS_LOOP_1608_14:   [xilinx-label-all-loops]
             for (int j = 46; j >= I_+22; j--) {
             ^~~
             VITIS_LOOP_1608_14: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7435:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7441:17: warning: Added loop label VITIS_LOOP_1614_15:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7864:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7870:17: warning: Added loop label VITIS_LOOP_1614_15:   [xilinx-label-all-loops]
                 for (int j = 46; j >= I_+22; j--) {
                 ^~~
                 VITIS_LOOP_1614_15: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7441:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7445:17: warning: Added loop label VITIS_LOOP_1618_16:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7870:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7874:17: warning: Added loop label VITIS_LOOP_1618_16:   [xilinx-label-all-loops]
                 for (int j = I_+21; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_1618_16: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7445:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7469:9: warning: Added loop label VITIS_LOOP_1642_17:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7874:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7898:9: warning: Added loop label VITIS_LOOP_1642_17:   [xilinx-label-all-loops]
         for (int j = wf+5; j < w-1; j++){
         ^~~
         VITIS_LOOP_1642_17: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7469:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7476:17: warning: Added loop label VITIS_LOOP_1649_18:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7898:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7905:17: warning: Added loop label VITIS_LOOP_1649_18:   [xilinx-label-all-loops]
                 for (int j = 0; j < 64; j++) {
                 ^~~
                 VITIS_LOOP_1649_18: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7476:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7906:13: warning: Added loop label VITIS_LOOP_2079_19:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7905:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8335:13: warning: Added loop label VITIS_LOOP_2079_19:   [xilinx-label-all-loops]
             for (int j = 64; j >= I_+31; j--) {
             ^~~
             VITIS_LOOP_2079_19: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7906:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7912:17: warning: Added loop label VITIS_LOOP_2085_20:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8335:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8341:17: warning: Added loop label VITIS_LOOP_2085_20:   [xilinx-label-all-loops]
                 for (int j = 64; j >= I_+31; j--) {
                 ^~~
                 VITIS_LOOP_2085_20: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7912:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7916:17: warning: Added loop label VITIS_LOOP_2089_21:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8341:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8345:17: warning: Added loop label VITIS_LOOP_2089_21:   [xilinx-label-all-loops]
                 for (int j = I_+30; j >= 0; j--) {
                 ^~~
                 VITIS_LOOP_2089_21: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:7916:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8046:13: warning: Added loop label VITIS_LOOP_2219_1:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8345:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8475:13: warning: Added loop label VITIS_LOOP_2219_1:   [xilinx-label-all-loops]
             for(int j=3; j>=I+1; j--) {
             ^~~
             VITIS_LOOP_2219_1: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8046:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8053:17: warning: Added loop label VITIS_LOOP_2226_2:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8475:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8482:17: warning: Added loop label VITIS_LOOP_2226_2:   [xilinx-label-all-loops]
                 for(int j=3; j>=I+1; j--) {
                 ^~~
                 VITIS_LOOP_2226_2: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8053:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8057:17: warning: Added loop label VITIS_LOOP_2230_3:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8482:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8486:17: warning: Added loop label VITIS_LOOP_2230_3:   [xilinx-label-all-loops]
                 for(int j=I; j>=0; j--) {
                 ^~~
                 VITIS_LOOP_2230_3: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8057:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8104:13: warning: Added loop label VITIS_LOOP_2277_4:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8486:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8533:13: warning: Added loop label VITIS_LOOP_2277_4:   [xilinx-label-all-loops]
             for(int j=7; j>=3+I; j--) {
             ^~~
             VITIS_LOOP_2277_4: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8104:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8111:17: warning: Added loop label VITIS_LOOP_2284_5:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8533:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8540:17: warning: Added loop label VITIS_LOOP_2284_5:   [xilinx-label-all-loops]
                 for(int j=7; j>=3+I; j--) {
                 ^~~
                 VITIS_LOOP_2284_5: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8111:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8115:17: warning: Added loop label VITIS_LOOP_2288_6:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8540:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8544:17: warning: Added loop label VITIS_LOOP_2288_6:   [xilinx-label-all-loops]
                 for(int j=I+2; j>=0; j--) {
                 ^~~
                 VITIS_LOOP_2288_6: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8115:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8133:9: warning: Added loop label VITIS_LOOP_2306_7:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8544:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8562:9: warning: Added loop label VITIS_LOOP_2306_7:   [xilinx-label-all-loops]
         for(int j=11; j<16; j++) {
         ^~~
         VITIS_LOOP_2306_7: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8133:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8188:13: warning: Added loop label VITIS_LOOP_2361_8:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8562:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8617:13: warning: Added loop label VITIS_LOOP_2361_8:   [xilinx-label-all-loops]
             for(int j=15; j>=7+I; j--) {
             ^~~
             VITIS_LOOP_2361_8: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8188:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8195:17: warning: Added loop label VITIS_LOOP_2368_9:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8617:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8624:17: warning: Added loop label VITIS_LOOP_2368_9:   [xilinx-label-all-loops]
                 for(int j=15; j>=7+I; j--) {
                 ^~~
                 VITIS_LOOP_2368_9: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8195:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8199:17: warning: Added loop label VITIS_LOOP_2372_10:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8624:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8628:17: warning: Added loop label VITIS_LOOP_2372_10:   [xilinx-label-all-loops]
                 for(int j=6+I; j>=0; j--) {
                 ^~~
                 VITIS_LOOP_2372_10: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8199:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8217:9: warning: Added loop label VITIS_LOOP_2390_11:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8628:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8646:9: warning: Added loop label VITIS_LOOP_2390_11:   [xilinx-label-all-loops]
         for(int j=20; j<32; j++) {
         ^~~
         VITIS_LOOP_2390_11: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8217:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8306:13: warning: Added loop label VITIS_LOOP_2479_12:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8646:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8735:13: warning: Added loop label VITIS_LOOP_2479_12:   [xilinx-label-all-loops]
             for(int j=31; j>=I+15; j--) {
             ^~~
             VITIS_LOOP_2479_12: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8306:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8313:17: warning: Added loop label VITIS_LOOP_2486_13:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8735:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8742:17: warning: Added loop label VITIS_LOOP_2486_13:   [xilinx-label-all-loops]
                 for(int j=31; j>=I+15; j--) {
                 ^~~
                 VITIS_LOOP_2486_13: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8313:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8317:17: warning: Added loop label VITIS_LOOP_2490_14:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8742:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8746:17: warning: Added loop label VITIS_LOOP_2490_14:   [xilinx-label-all-loops]
                 for(int j=I+14; j>=0; j--) {
                 ^~~
                 VITIS_LOOP_2490_14: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8317:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8327:9: warning: Added loop label VITIS_LOOP_2500_15:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8746:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8756:9: warning: Added loop label VITIS_LOOP_2500_15:   [xilinx-label-all-loops]
         for(int j=32-F; j<32+I; j++) {
         ^~~
         VITIS_LOOP_2500_15: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8327:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8331:9: warning: Added loop label VITIS_LOOP_2504_16:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8756:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8760:9: warning: Added loop label VITIS_LOOP_2504_16:   [xilinx-label-all-loops]
         for(int j=32+I; j<=64; j++) {
         ^~~
         VITIS_LOOP_2504_16: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8331:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8342:9: warning: Added loop label VITIS_LOOP_2515_17:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8760:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8771:9: warning: Added loop label VITIS_LOOP_2515_17:   [xilinx-label-all-loops]
         for(int j=37; j<64; j++) {
         ^~~
         VITIS_LOOP_2515_17: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8342:9: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8350:17: warning: Added loop label VITIS_LOOP_2523_18:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8771:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8779:17: warning: Added loop label VITIS_LOOP_2523_18:   [xilinx-label-all-loops]
                 for(int j=0; j<64; j++) {
                 ^~~
                 VITIS_LOOP_2523_18: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8350:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8675:13: warning: Added loop label VITIS_LOOP_2848_19:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8779:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9104:13: warning: Added loop label VITIS_LOOP_2848_19:   [xilinx-label-all-loops]
             for(int j=63; j>=I+31; j--) {
             ^~~
             VITIS_LOOP_2848_19: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8675:13: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8682:17: warning: Added loop label VITIS_LOOP_2855_20:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9104:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9111:17: warning: Added loop label VITIS_LOOP_2855_20:   [xilinx-label-all-loops]
                 for(int j=63; j>=I+31; j--) {
                 ^~~
                 VITIS_LOOP_2855_20: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8682:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8686:17: warning: Added loop label VITIS_LOOP_2859_21:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9111:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9115:17: warning: Added loop label VITIS_LOOP_2859_21:   [xilinx-label-all-loops]
                 for(int j=I+30; j>=0; j--) {
                 ^~~
                 VITIS_LOOP_2859_21: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8686:17: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8774:4: warning: Added loop label VITIS_LOOP_2947_1:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9115:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9203:4: warning: Added loop label VITIS_LOOP_2947_1:   [xilinx-label-all-loops]
    for(int j = 5; j>=I_+2; j--) {
    ^~~
    VITIS_LOOP_2947_1: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8774:4: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8781:5: warning: Added loop label VITIS_LOOP_2954_2:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9203:4: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9210:5: warning: Added loop label VITIS_LOOP_2954_2:   [xilinx-label-all-loops]
     for(int j = 5; j>=I_+2; j--) {
     ^~~
     VITIS_LOOP_2954_2: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8781:5: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8785:5: warning: Added loop label VITIS_LOOP_2958_3:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9210:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9214:5: warning: Added loop label VITIS_LOOP_2958_3:   [xilinx-label-all-loops]
     for(int j = I_+1; j>=0; j--) {
     ^~~
     VITIS_LOOP_2958_3: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8785:5: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8800:3: warning: Added loop label VITIS_LOOP_2973_4:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9214:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9229:3: warning: Added loop label VITIS_LOOP_2973_4:   [xilinx-label-all-loops]
   for(int j = 11; j >=7; j--) {
   ^~~
   VITIS_LOOP_2973_4: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8800:3: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8832:4: warning: Added loop label VITIS_LOOP_3005_5:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9229:3: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9261:4: warning: Added loop label VITIS_LOOP_3005_5:   [xilinx-label-all-loops]
    for(int j = 11; j >= I_+5; j--) {
    ^~~
    VITIS_LOOP_3005_5: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8832:4: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8839:5: warning: Added loop label VITIS_LOOP_3012_6:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9261:4: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9268:5: warning: Added loop label VITIS_LOOP_3012_6:   [xilinx-label-all-loops]
     for(int j = 11; j>= I_+5; j--) {
     ^~~
     VITIS_LOOP_3012_6: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8839:5: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8843:5: warning: Added loop label VITIS_LOOP_3016_7:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9268:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9272:5: warning: Added loop label VITIS_LOOP_3016_7:   [xilinx-label-all-loops]
     for(int j = I_+4; j>=0; j--) {
     ^~~
     VITIS_LOOP_3016_7: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8843:5: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8858:3: warning: Added loop label VITIS_LOOP_3031_8:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9272:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9287:3: warning: Added loop label VITIS_LOOP_3031_8:   [xilinx-label-all-loops]
   for(int j = 25; j>=15; j--) {
   ^~~
   VITIS_LOOP_3031_8: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8858:3: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8908:4: warning: Added loop label VITIS_LOOP_3081_9:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9287:3: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9337:4: warning: Added loop label VITIS_LOOP_3081_9:   [xilinx-label-all-loops]
    for(int j = 25; j>= I_+12; j--) {
    ^~~
    VITIS_LOOP_3081_9: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8908:4: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8915:5: warning: Added loop label VITIS_LOOP_3088_10:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9337:4: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9344:5: warning: Added loop label VITIS_LOOP_3088_10:   [xilinx-label-all-loops]
     for(int j = 25; j>=I_+12; j--) {
     ^~~
     VITIS_LOOP_3088_10: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8915:5: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8919:5: warning: Added loop label VITIS_LOOP_3092_11:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9344:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9348:5: warning: Added loop label VITIS_LOOP_3092_11:   [xilinx-label-all-loops]
     for(int j = I_+11; j>=0; j--) {
     ^~~
     VITIS_LOOP_3092_11: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8919:5: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8934:3: warning: Added loop label VITIS_LOOP_3107_12:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9348:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9363:3: warning: Added loop label VITIS_LOOP_3107_12:   [xilinx-label-all-loops]
   for(int j = 51; j >= 29; j--) {
   ^~~
   VITIS_LOOP_3107_12: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:8934:3: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9071:4: warning: Added loop label VITIS_LOOP_3244_13:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9363:3: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9500:4: warning: Added loop label VITIS_LOOP_3244_13:   [xilinx-label-all-loops]
    for(int j = 51; j >= 25 + I_; j--) {
    ^~~
    VITIS_LOOP_3244_13: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9071:4: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9078:5: warning: Added loop label VITIS_LOOP_3251_14:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9500:4: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9507:5: warning: Added loop label VITIS_LOOP_3251_14:   [xilinx-label-all-loops]
     for(int j = 51; j>=25 + I_; j--) {
     ^~~
     VITIS_LOOP_3251_14: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9078:5: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9082:5: warning: Added loop label VITIS_LOOP_3255_15:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9507:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9511:5: warning: Added loop label VITIS_LOOP_3255_15:   [xilinx-label-all-loops]
     for(int j = 24 + I_; j >= 0; j--) {
     ^~~
     VITIS_LOOP_3255_15: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9082:5: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9097:3: warning: Added loop label VITIS_LOOP_3270_16:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9511:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9526:3: warning: Added loop label VITIS_LOOP_3270_16:   [xilinx-label-all-loops]
   for(int j = 63; j >= 36; j--) {
   ^~~
   VITIS_LOOP_3270_16: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9097:3: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9257:4: warning: Added loop label VITIS_LOOP_3430_17:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9526:3: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9686:4: warning: Added loop label VITIS_LOOP_3430_17:   [xilinx-label-all-loops]
    for(int j = 63; j >= 31 + I_; j--) {
    ^~~
    VITIS_LOOP_3430_17: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9257:4: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9264:5: warning: Added loop label VITIS_LOOP_3437_18:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9686:4: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9693:5: warning: Added loop label VITIS_LOOP_3437_18:   [xilinx-label-all-loops]
     for(int j = 63; j >= 31 + I_; j--) {
     ^~~
     VITIS_LOOP_3437_18: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9264:5: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9268:5: warning: Added loop label VITIS_LOOP_3441_19:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9693:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9697:5: warning: Added loop label VITIS_LOOP_3441_19:   [xilinx-label-all-loops]
     for(int j = 30 + I_; j >= 0; j--) {
     ^~~
     VITIS_LOOP_3441_19: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9268:5: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9321:2: warning: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9697:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9750:2: warning: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
  for(int row_idx=0;row_idx<input_h;row_idx++)
  ^~~
  VITIS_LOOP_14_1: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9321:2: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9324:2: warning: Added loop label VITIS_LOOP_17_2:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9750:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9753:2: warning: Added loop label VITIS_LOOP_17_2:   [xilinx-label-all-loops]
  for(int col_idx=0;col_idx<input_w;col_idx++)
  ^~~
  VITIS_LOOP_17_2: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9324:2: note: FIX-IT applied suggested code changes
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9327:2: warning: Added loop label VITIS_LOOP_20_3:   [xilinx-label-all-loops]
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9753:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9756:2: warning: Added loop label VITIS_LOOP_20_3:   [xilinx-label-all-loops]
  for(int input_ch_idx=0;input_ch_idx<32/4;input_ch_idx++)
  ^~~
  VITIS_LOOP_20_3: 
-/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9327:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/.autopilot/db/yolo_yolo.pp.0.cpp:9756:2: note: FIX-IT applied suggested code changes

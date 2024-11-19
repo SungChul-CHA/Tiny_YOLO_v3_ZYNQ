@@ -117,9 +117,9 @@ set RtlHierarchyInfo {[
 			{"Name" : "line_buff_1_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "line_buff_2", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "line_buff_2_offset", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_3ns_10ns_12_1_1_U78", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_3ns_10ns_12_1_1_U79", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_3ns_10ns_12_1_1_U80", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_3ns_10ns_12_1_1_U89", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_3ns_10ns_12_1_1_U90", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mul_3ns_10ns_12_1_1_U91", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

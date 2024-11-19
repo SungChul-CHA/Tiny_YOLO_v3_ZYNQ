@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="yolo_yolo_top_yolo_yolo_top,hls_ip_2022_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.650000,HLS_SYN_LAT=5442,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=3560,HLS_SYN_LUT=2928,HLS_VERSION=2022_2}" *)
+(* CORE_GENERATION_INFO="yolo_yolo_top_yolo_yolo_top,hls_ip_2022_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.650000,HLS_SYN_LAT=5442,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=3688,HLS_SYN_LUT=2992,HLS_VERSION=2022_2}" *)
 
 module yolo_yolo_top (
         ap_clk,
@@ -15,9 +15,21 @@ module yolo_yolo_top (
         inStream_TDATA,
         inStream_TVALID,
         inStream_TREADY,
+        inStream_TKEEP,
+        inStream_TSTRB,
+        inStream_TUSER,
+        inStream_TLAST,
+        inStream_TID,
+        inStream_TDEST,
         outStream_TDATA,
         outStream_TVALID,
         outStream_TREADY,
+        outStream_TKEEP,
+        outStream_TSTRB,
+        outStream_TUSER,
+        outStream_TLAST,
+        outStream_TID,
+        outStream_TDEST,
         s_axi_CTRL_BUS_AWVALID,
         s_axi_CTRL_BUS_AWREADY,
         s_axi_CTRL_BUS_AWADDR,
@@ -51,12 +63,24 @@ parameter C_S_AXI_WSTRB_WIDTH = (32 / 8);
 
 input   ap_clk;
 input   ap_rst_n;
-input  [111:0] inStream_TDATA;
+input  [63:0] inStream_TDATA;
 input   inStream_TVALID;
 output   inStream_TREADY;
-output  [111:0] outStream_TDATA;
+input  [7:0] inStream_TKEEP;
+input  [7:0] inStream_TSTRB;
+input  [1:0] inStream_TUSER;
+input  [0:0] inStream_TLAST;
+input  [4:0] inStream_TID;
+input  [5:0] inStream_TDEST;
+output  [63:0] outStream_TDATA;
 output   outStream_TVALID;
 input   outStream_TREADY;
+output  [7:0] outStream_TKEEP;
+output  [7:0] outStream_TSTRB;
+output  [1:0] outStream_TUSER;
+output  [0:0] outStream_TLAST;
+output  [4:0] outStream_TID;
+output  [5:0] outStream_TDEST;
 input   s_axi_CTRL_BUS_AWVALID;
 output   s_axi_CTRL_BUS_AWREADY;
 input  [C_S_AXI_CTRL_BUS_ADDR_WIDTH - 1:0] s_axi_CTRL_BUS_AWADDR;
@@ -86,78 +110,139 @@ reg    ap_ready;
 wire   [31:0] activate_en;
 wire   [4:0] input_h;
 wire   [4:0] input_w;
-reg   [31:0] activate_en_read_reg_155;
-wire   [28:0] trunc_ln3_fu_103_p1;
-reg   [28:0] trunc_ln3_reg_160;
-wire   [5:0] sub_i_i59_fu_111_p2;
-reg   [5:0] sub_i_i59_reg_165;
-wire   [5:0] sub_i_i_fu_121_p2;
-reg   [5:0] sub_i_i_reg_170;
-wire   [7:0] tmp_fu_127_p3;
-reg   [7:0] tmp_reg_175;
-wire   [12:0] mul_ln3_fu_143_p2;
-reg   [12:0] mul_ln3_reg_180;
-wire   [0:0] cmp_i_i36_mid111_fu_149_p2;
-reg   [0:0] cmp_i_i36_mid111_reg_185;
-wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start;
-wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_done;
-wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_idle;
-wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_ready;
-wire   [111:0] grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TDATA;
-wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TVALID;
-wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TREADY;
-wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_inStream_TREADY;
-reg    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg;
+reg   [31:0] activate_en_read_reg_209;
+wire   [28:0] trunc_ln3_fu_157_p1;
+reg   [28:0] trunc_ln3_reg_214;
+wire   [5:0] sub_i_i60_fu_165_p2;
+reg   [5:0] sub_i_i60_reg_219;
+wire   [5:0] sub_i_i_fu_175_p2;
+reg   [5:0] sub_i_i_reg_224;
+wire   [7:0] tmp_fu_181_p3;
+reg   [7:0] tmp_reg_229;
+wire   [12:0] mul_ln3_fu_197_p2;
+reg   [12:0] mul_ln3_reg_234;
+wire   [0:0] cmp_i_i37_mid111_fu_203_p2;
+reg   [0:0] cmp_i_i37_mid111_reg_239;
+wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start;
+wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_done;
+wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_idle;
+wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_ready;
+wire   [63:0] grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDATA;
+wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID;
+wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TREADY;
+wire   [7:0] grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TKEEP;
+wire   [7:0] grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TSTRB;
+wire   [1:0] grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TUSER;
+wire   [0:0] grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TLAST;
+wire   [4:0] grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TID;
+wire   [5:0] grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDEST;
+wire    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_inStream_TREADY;
+reg    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg;
 wire    ap_CS_fsm_state2;
 wire    ap_CS_fsm_state3;
-wire   [5:0] input_w_cast_fu_107_p1;
-wire   [5:0] input_h_cast_fu_117_p1;
-wire   [4:0] mul_ln3_fu_143_p0;
-wire   [7:0] mul_ln3_fu_143_p1;
+wire   [5:0] input_w_cast_fu_161_p1;
+wire   [5:0] input_h_cast_fu_171_p1;
+wire   [4:0] mul_ln3_fu_197_p0;
+wire   [7:0] mul_ln3_fu_197_p1;
 wire    ap_CS_fsm_state4;
-wire    regslice_both_outStream_U_apdone_blk;
+wire    regslice_both_outStream_V_data_V_U_apdone_blk;
 reg   [3:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
 reg    ap_ST_fsm_state3_blk;
 reg    ap_ST_fsm_state4_blk;
-wire    regslice_both_inStream_U_apdone_blk;
-wire   [111:0] inStream_TDATA_int_regslice;
+wire    regslice_both_inStream_V_data_V_U_apdone_blk;
+wire   [63:0] inStream_TDATA_int_regslice;
 wire    inStream_TVALID_int_regslice;
 reg    inStream_TREADY_int_regslice;
-wire    regslice_both_inStream_U_ack_in;
+wire    regslice_both_inStream_V_data_V_U_ack_in;
+wire    regslice_both_inStream_V_keep_V_U_apdone_blk;
+wire   [7:0] inStream_TKEEP_int_regslice;
+wire    regslice_both_inStream_V_keep_V_U_vld_out;
+wire    regslice_both_inStream_V_keep_V_U_ack_in;
+wire    regslice_both_inStream_V_strb_V_U_apdone_blk;
+wire   [7:0] inStream_TSTRB_int_regslice;
+wire    regslice_both_inStream_V_strb_V_U_vld_out;
+wire    regslice_both_inStream_V_strb_V_U_ack_in;
+wire    regslice_both_inStream_V_user_V_U_apdone_blk;
+wire   [1:0] inStream_TUSER_int_regslice;
+wire    regslice_both_inStream_V_user_V_U_vld_out;
+wire    regslice_both_inStream_V_user_V_U_ack_in;
+wire    regslice_both_inStream_V_last_V_U_apdone_blk;
+wire   [0:0] inStream_TLAST_int_regslice;
+wire    regslice_both_inStream_V_last_V_U_vld_out;
+wire    regslice_both_inStream_V_last_V_U_ack_in;
+wire    regslice_both_inStream_V_id_V_U_apdone_blk;
+wire   [4:0] inStream_TID_int_regslice;
+wire    regslice_both_inStream_V_id_V_U_vld_out;
+wire    regslice_both_inStream_V_id_V_U_ack_in;
+wire    regslice_both_inStream_V_dest_V_U_apdone_blk;
+wire   [5:0] inStream_TDEST_int_regslice;
+wire    regslice_both_inStream_V_dest_V_U_vld_out;
+wire    regslice_both_inStream_V_dest_V_U_ack_in;
+wire    outStream_TVALID_int_regslice;
 wire    outStream_TREADY_int_regslice;
-wire    regslice_both_outStream_U_vld_out;
-wire   [12:0] mul_ln3_fu_143_p00;
-wire   [12:0] mul_ln3_fu_143_p10;
+wire    regslice_both_outStream_V_data_V_U_vld_out;
+wire    regslice_both_outStream_V_keep_V_U_apdone_blk;
+wire    regslice_both_outStream_V_keep_V_U_ack_in_dummy;
+wire    regslice_both_outStream_V_keep_V_U_vld_out;
+wire    regslice_both_outStream_V_strb_V_U_apdone_blk;
+wire    regslice_both_outStream_V_strb_V_U_ack_in_dummy;
+wire    regslice_both_outStream_V_strb_V_U_vld_out;
+wire    regslice_both_outStream_V_user_V_U_apdone_blk;
+wire    regslice_both_outStream_V_user_V_U_ack_in_dummy;
+wire    regslice_both_outStream_V_user_V_U_vld_out;
+wire    regslice_both_outStream_V_last_V_U_apdone_blk;
+wire    regslice_both_outStream_V_last_V_U_ack_in_dummy;
+wire    regslice_both_outStream_V_last_V_U_vld_out;
+wire    regslice_both_outStream_V_id_V_U_apdone_blk;
+wire    regslice_both_outStream_V_id_V_U_ack_in_dummy;
+wire    regslice_both_outStream_V_id_V_U_vld_out;
+wire    regslice_both_outStream_V_dest_V_U_apdone_blk;
+wire    regslice_both_outStream_V_dest_V_U_ack_in_dummy;
+wire    regslice_both_outStream_V_dest_V_U_vld_out;
+wire   [12:0] mul_ln3_fu_197_p00;
+wire   [12:0] mul_ln3_fu_197_p10;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 4'd1;
-#0 grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg = 1'b0;
+#0 grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg = 1'b0;
 end
 
-yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82(
+yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start),
-    .ap_done(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_done),
-    .ap_idle(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_idle),
-    .ap_ready(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_ready),
-    .sub_i_i(sub_i_i_reg_170),
-    .sub_i_i59(sub_i_i59_reg_165),
-    .mul_ln3(mul_ln3_reg_180),
-    .outStream_TDATA(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TDATA),
-    .outStream_TVALID(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TVALID),
-    .outStream_TREADY(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TREADY),
-    .activate_en(activate_en_read_reg_155),
-    .zext_ln3(tmp_reg_175),
-    .cmp_i_i36_mid111(cmp_i_i36_mid111_reg_185),
+    .ap_start(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start),
+    .ap_done(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_done),
+    .ap_idle(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_idle),
+    .ap_ready(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_ready),
+    .sub_i_i(sub_i_i_reg_224),
+    .sub_i_i60(sub_i_i60_reg_219),
+    .mul_ln3(mul_ln3_reg_234),
+    .outStream_TDATA(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDATA),
+    .outStream_TVALID(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID),
+    .outStream_TREADY(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TREADY),
+    .outStream_TKEEP(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TKEEP),
+    .outStream_TSTRB(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TSTRB),
+    .outStream_TUSER(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TUSER),
+    .outStream_TLAST(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TLAST),
+    .outStream_TID(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TID),
+    .outStream_TDEST(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDEST),
+    .activate_en(activate_en_read_reg_209),
+    .zext_ln3(tmp_reg_229),
+    .cmp_i_i37_mid111(cmp_i_i37_mid111_reg_239),
     .inStream_TDATA(inStream_TDATA_int_regslice),
     .inStream_TVALID(inStream_TVALID_int_regslice),
-    .inStream_TREADY(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_inStream_TREADY),
-    .trunc_ln3(trunc_ln3_reg_160)
+    .inStream_TREADY(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_inStream_TREADY),
+    .inStream_TKEEP(inStream_TKEEP_int_regslice),
+    .inStream_TSTRB(inStream_TSTRB_int_regslice),
+    .inStream_TUSER(inStream_TUSER_int_regslice),
+    .inStream_TLAST(inStream_TLAST_int_regslice),
+    .inStream_TID(inStream_TID_int_regslice),
+    .inStream_TDEST(inStream_TDEST_int_regslice),
+    .trunc_ln3(trunc_ln3_reg_214)
 );
 
 yolo_yolo_top_CTRL_BUS_s_axi #(
@@ -200,38 +285,206 @@ yolo_yolo_top_mul_5ns_8ns_13_1_1 #(
     .din0_WIDTH( 5 ),
     .din1_WIDTH( 8 ),
     .dout_WIDTH( 13 ))
-mul_5ns_8ns_13_1_1_U21(
-    .din0(mul_ln3_fu_143_p0),
-    .din1(mul_ln3_fu_143_p1),
-    .dout(mul_ln3_fu_143_p2)
+mul_5ns_8ns_13_1_1_U33(
+    .din0(mul_ln3_fu_197_p0),
+    .din1(mul_ln3_fu_197_p1),
+    .dout(mul_ln3_fu_197_p2)
 );
 
 yolo_yolo_top_regslice_both #(
-    .DataWidth( 112 ))
-regslice_both_inStream_U(
+    .DataWidth( 64 ))
+regslice_both_inStream_V_data_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .data_in(inStream_TDATA),
     .vld_in(inStream_TVALID),
-    .ack_in(regslice_both_inStream_U_ack_in),
+    .ack_in(regslice_both_inStream_V_data_V_U_ack_in),
     .data_out(inStream_TDATA_int_regslice),
     .vld_out(inStream_TVALID_int_regslice),
     .ack_out(inStream_TREADY_int_regslice),
-    .apdone_blk(regslice_both_inStream_U_apdone_blk)
+    .apdone_blk(regslice_both_inStream_V_data_V_U_apdone_blk)
 );
 
 yolo_yolo_top_regslice_both #(
-    .DataWidth( 112 ))
-regslice_both_outStream_U(
+    .DataWidth( 8 ))
+regslice_both_inStream_V_keep_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .data_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TDATA),
-    .vld_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TVALID),
+    .data_in(inStream_TKEEP),
+    .vld_in(inStream_TVALID),
+    .ack_in(regslice_both_inStream_V_keep_V_U_ack_in),
+    .data_out(inStream_TKEEP_int_regslice),
+    .vld_out(regslice_both_inStream_V_keep_V_U_vld_out),
+    .ack_out(inStream_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inStream_V_keep_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 8 ))
+regslice_both_inStream_V_strb_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inStream_TSTRB),
+    .vld_in(inStream_TVALID),
+    .ack_in(regslice_both_inStream_V_strb_V_U_ack_in),
+    .data_out(inStream_TSTRB_int_regslice),
+    .vld_out(regslice_both_inStream_V_strb_V_U_vld_out),
+    .ack_out(inStream_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inStream_V_strb_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 2 ))
+regslice_both_inStream_V_user_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inStream_TUSER),
+    .vld_in(inStream_TVALID),
+    .ack_in(regslice_both_inStream_V_user_V_U_ack_in),
+    .data_out(inStream_TUSER_int_regslice),
+    .vld_out(regslice_both_inStream_V_user_V_U_vld_out),
+    .ack_out(inStream_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inStream_V_user_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 1 ))
+regslice_both_inStream_V_last_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inStream_TLAST),
+    .vld_in(inStream_TVALID),
+    .ack_in(regslice_both_inStream_V_last_V_U_ack_in),
+    .data_out(inStream_TLAST_int_regslice),
+    .vld_out(regslice_both_inStream_V_last_V_U_vld_out),
+    .ack_out(inStream_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inStream_V_last_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 5 ))
+regslice_both_inStream_V_id_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inStream_TID),
+    .vld_in(inStream_TVALID),
+    .ack_in(regslice_both_inStream_V_id_V_U_ack_in),
+    .data_out(inStream_TID_int_regslice),
+    .vld_out(regslice_both_inStream_V_id_V_U_vld_out),
+    .ack_out(inStream_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inStream_V_id_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 6 ))
+regslice_both_inStream_V_dest_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(inStream_TDEST),
+    .vld_in(inStream_TVALID),
+    .ack_in(regslice_both_inStream_V_dest_V_U_ack_in),
+    .data_out(inStream_TDEST_int_regslice),
+    .vld_out(regslice_both_inStream_V_dest_V_U_vld_out),
+    .ack_out(inStream_TREADY_int_regslice),
+    .apdone_blk(regslice_both_inStream_V_dest_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 64 ))
+regslice_both_outStream_V_data_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDATA),
+    .vld_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID),
     .ack_in(outStream_TREADY_int_regslice),
     .data_out(outStream_TDATA),
-    .vld_out(regslice_both_outStream_U_vld_out),
+    .vld_out(regslice_both_outStream_V_data_V_U_vld_out),
     .ack_out(outStream_TREADY),
-    .apdone_blk(regslice_both_outStream_U_apdone_blk)
+    .apdone_blk(regslice_both_outStream_V_data_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 8 ))
+regslice_both_outStream_V_keep_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TKEEP),
+    .vld_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID),
+    .ack_in(regslice_both_outStream_V_keep_V_U_ack_in_dummy),
+    .data_out(outStream_TKEEP),
+    .vld_out(regslice_both_outStream_V_keep_V_U_vld_out),
+    .ack_out(outStream_TREADY),
+    .apdone_blk(regslice_both_outStream_V_keep_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 8 ))
+regslice_both_outStream_V_strb_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TSTRB),
+    .vld_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID),
+    .ack_in(regslice_both_outStream_V_strb_V_U_ack_in_dummy),
+    .data_out(outStream_TSTRB),
+    .vld_out(regslice_both_outStream_V_strb_V_U_vld_out),
+    .ack_out(outStream_TREADY),
+    .apdone_blk(regslice_both_outStream_V_strb_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 2 ))
+regslice_both_outStream_V_user_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TUSER),
+    .vld_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID),
+    .ack_in(regslice_both_outStream_V_user_V_U_ack_in_dummy),
+    .data_out(outStream_TUSER),
+    .vld_out(regslice_both_outStream_V_user_V_U_vld_out),
+    .ack_out(outStream_TREADY),
+    .apdone_blk(regslice_both_outStream_V_user_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 1 ))
+regslice_both_outStream_V_last_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TLAST),
+    .vld_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID),
+    .ack_in(regslice_both_outStream_V_last_V_U_ack_in_dummy),
+    .data_out(outStream_TLAST),
+    .vld_out(regslice_both_outStream_V_last_V_U_vld_out),
+    .ack_out(outStream_TREADY),
+    .apdone_blk(regslice_both_outStream_V_last_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 5 ))
+regslice_both_outStream_V_id_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TID),
+    .vld_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID),
+    .ack_in(regslice_both_outStream_V_id_V_U_ack_in_dummy),
+    .data_out(outStream_TID),
+    .vld_out(regslice_both_outStream_V_id_V_U_vld_out),
+    .ack_out(outStream_TREADY),
+    .apdone_blk(regslice_both_outStream_V_id_V_U_apdone_blk)
+);
+
+yolo_yolo_top_regslice_both #(
+    .DataWidth( 6 ))
+regslice_both_outStream_V_dest_V_U(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .data_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDEST),
+    .vld_in(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID),
+    .ack_in(regslice_both_outStream_V_dest_V_U_ack_in_dummy),
+    .data_out(outStream_TDEST),
+    .vld_out(regslice_both_outStream_V_dest_V_U_vld_out),
+    .ack_out(outStream_TREADY),
+    .apdone_blk(regslice_both_outStream_V_dest_V_U_apdone_blk)
 );
 
 always @ (posedge ap_clk) begin
@@ -244,25 +497,25 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg <= 1'b0;
+        grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state2)) begin
-            grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg <= 1'b1;
-        end else if ((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_ready == 1'b1)) begin
-            grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg <= 1'b0;
+            grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg <= 1'b1;
+        end else if ((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_ready == 1'b1)) begin
+            grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state1)) begin
-        activate_en_read_reg_155 <= activate_en;
-        cmp_i_i36_mid111_reg_185 <= cmp_i_i36_mid111_fu_149_p2;
-        mul_ln3_reg_180 <= mul_ln3_fu_143_p2;
-        sub_i_i59_reg_165 <= sub_i_i59_fu_111_p2;
-        sub_i_i_reg_170 <= sub_i_i_fu_121_p2;
-        tmp_reg_175[7 : 3] <= tmp_fu_127_p3[7 : 3];
-        trunc_ln3_reg_160 <= trunc_ln3_fu_103_p1;
+        activate_en_read_reg_209 <= activate_en;
+        cmp_i_i37_mid111_reg_239 <= cmp_i_i37_mid111_fu_203_p2;
+        mul_ln3_reg_234 <= mul_ln3_fu_197_p2;
+        sub_i_i60_reg_219 <= sub_i_i60_fu_165_p2;
+        sub_i_i_reg_224 <= sub_i_i_fu_175_p2;
+        tmp_reg_229[7 : 3] <= tmp_fu_181_p3[7 : 3];
+        trunc_ln3_reg_214 <= trunc_ln3_fu_157_p1;
     end
 end
 
@@ -277,7 +530,7 @@ end
 assign ap_ST_fsm_state2_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_done == 1'b0)) begin
+    if ((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_done == 1'b0)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
@@ -285,7 +538,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((regslice_both_outStream_U_apdone_blk == 1'b1)) begin
+    if ((regslice_both_outStream_V_data_V_U_apdone_blk == 1'b1)) begin
         ap_ST_fsm_state4_blk = 1'b1;
     end else begin
         ap_ST_fsm_state4_blk = 1'b0;
@@ -293,7 +546,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (regslice_both_outStream_U_apdone_blk == 1'b0))) begin
+    if (((regslice_both_outStream_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state4))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = 1'b0;
@@ -309,7 +562,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) & (regslice_both_outStream_U_apdone_blk == 1'b0))) begin
+    if (((regslice_both_outStream_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state4))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -318,7 +571,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        inStream_TREADY_int_regslice = grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_inStream_TREADY;
+        inStream_TREADY_int_regslice = grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_inStream_TREADY;
     end else begin
         inStream_TREADY_int_regslice = 1'b0;
     end
@@ -337,14 +590,14 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state3;
         end
         ap_ST_fsm_state3 : begin
-            if (((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+            if (((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end
         end
         ap_ST_fsm_state4 : begin
-            if (((1'b1 == ap_CS_fsm_state4) & (regslice_both_outStream_U_apdone_blk == 1'b0))) begin
+            if (((regslice_both_outStream_V_data_V_U_apdone_blk == 1'b0) & (1'b1 == ap_CS_fsm_state4))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -368,38 +621,40 @@ always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
 end
 
-assign cmp_i_i36_mid111_fu_149_p2 = ((sub_i_i59_fu_111_p2 == 6'd0) ? 1'b1 : 1'b0);
+assign cmp_i_i37_mid111_fu_203_p2 = ((sub_i_i60_fu_165_p2 == 6'd0) ? 1'b1 : 1'b0);
 
-assign grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start = grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg;
+assign grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start = grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg;
 
-assign grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TREADY = (outStream_TREADY_int_regslice & ap_CS_fsm_state3);
+assign grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TREADY = (outStream_TREADY_int_regslice & ap_CS_fsm_state3);
 
-assign inStream_TREADY = regslice_both_inStream_U_ack_in;
+assign inStream_TREADY = regslice_both_inStream_V_data_V_U_ack_in;
 
-assign input_h_cast_fu_117_p1 = input_h;
+assign input_h_cast_fu_171_p1 = input_h;
 
-assign input_w_cast_fu_107_p1 = input_w;
+assign input_w_cast_fu_161_p1 = input_w;
 
-assign mul_ln3_fu_143_p0 = mul_ln3_fu_143_p00;
+assign mul_ln3_fu_197_p0 = mul_ln3_fu_197_p00;
 
-assign mul_ln3_fu_143_p00 = input_h;
+assign mul_ln3_fu_197_p00 = input_h;
 
-assign mul_ln3_fu_143_p1 = mul_ln3_fu_143_p10;
+assign mul_ln3_fu_197_p1 = mul_ln3_fu_197_p10;
 
-assign mul_ln3_fu_143_p10 = tmp_fu_127_p3;
+assign mul_ln3_fu_197_p10 = tmp_fu_181_p3;
 
-assign outStream_TVALID = regslice_both_outStream_U_vld_out;
+assign outStream_TVALID = regslice_both_outStream_V_data_V_U_vld_out;
 
-assign sub_i_i59_fu_111_p2 = ($signed(input_w_cast_fu_107_p1) + $signed(6'd63));
+assign outStream_TVALID_int_regslice = grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID;
 
-assign sub_i_i_fu_121_p2 = ($signed(input_h_cast_fu_117_p1) + $signed(6'd63));
+assign sub_i_i60_fu_165_p2 = ($signed(input_w_cast_fu_161_p1) + $signed(6'd63));
 
-assign tmp_fu_127_p3 = {{input_w}, {3'd0}};
+assign sub_i_i_fu_175_p2 = ($signed(input_h_cast_fu_171_p1) + $signed(6'd63));
 
-assign trunc_ln3_fu_103_p1 = activate_en[28:0];
+assign tmp_fu_181_p3 = {{input_w}, {3'd0}};
+
+assign trunc_ln3_fu_157_p1 = activate_en[28:0];
 
 always @ (posedge ap_clk) begin
-    tmp_reg_175[2:0] <= 3'b000;
+    tmp_reg_229[2:0] <= 3'b000;
 end
 
 

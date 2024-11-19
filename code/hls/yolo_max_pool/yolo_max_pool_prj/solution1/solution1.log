@@ -15,7 +15,7 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.64 seconds. CPU system time: 0.2 seconds. Elapsed time: 3.86 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.74 seconds. CPU system time: 0.24 seconds. Elapsed time: 4.01 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-1510] Running: csynth_design 
 INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 198.496 MB.
 INFO: [HLS 200-10] Analyzing design file 'src/yolo_max_pool.cpp' ... 
@@ -27,7 +27,7 @@ WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2
 WARNING: [HLS 207-5292] unused parameter 'stride' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1036:41)
 WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1224:102)
 WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1530:34)
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.42 seconds. CPU system time: 0.27 seconds. Elapsed time: 2.7 seconds; current allocated memory: 204.148 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.48 seconds. CPU system time: 0.31 seconds. Elapsed time: 2.81 seconds; current allocated memory: 204.148 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::shift_pixels_up(int)' into 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::shift_up(int)' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1018:2)
 INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_bottom_row(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1042:2)
@@ -38,14 +38,14 @@ INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_
 INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int, int)' into 'slide_window(int, xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>*)' (src/yolo_max_pool.cpp:145:18)
 INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)' into 'slide_window(int, xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>*)' (src/yolo_max_pool.cpp:144:48)
 INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval(int, int)' into 'window_max_pool(xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >)' (src/yolo_max_pool.cpp:159:30)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:19:17)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:20:17)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:21:17)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:22:17)
-INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:87:18)
-INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:86:18)
-INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:85:18)
-INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:84:18)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:19:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:20:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:21:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:22:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:87:18)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:86:18)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:85:18)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:84:18)
 INFO: [HLS 214-377] Adding 'ref.tmp96' into disaggregation list because there's array-partition pragma applied on the struct field (src/yolo_max_pool.cpp:94:17)
 INFO: [HLS 214-377] Adding 'ref.tmp99' into disaggregation list because there's array-partition pragma applied on the struct field (src/yolo_max_pool.cpp:95:17)
 INFO: [HLS 214-377] Adding 'ref.tmp102' into disaggregation list because there's array-partition pragma applied on the struct field (src/yolo_max_pool.cpp:96:17)
@@ -87,8 +87,8 @@ INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_140_1' (src/yolo_max_pool.cpp:140
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_142_2' (src/yolo_max_pool.cpp:142:21) in function 'slide_window' completely with a factor of 2 (src/yolo_max_pool.cpp:137:0)
 INFO: [HLS 214-186] Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'slide_window' completely with a factor of 2 (src/yolo_max_pool.cpp:137:0)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_867_1' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:867:23) in function 'yolo_line_buffer' completely with a factor of 1 (src/yolo_max_pool.cpp:129:0)
-INFO: [HLS 214-178] Inlining function 'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>*, int)' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:8:0)
-INFO: [HLS 214-178] Inlining function 'write_output(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_axi_fp<64, 2, 5, 6>, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<1>)' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:8:0)
+INFO: [HLS 214-178] Inlining function 'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>*, int)' into 'yolo_max_pool_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:8:0)
+INFO: [HLS 214-178] Inlining function 'write_output(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<1>)' into 'yolo_max_pool_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:8:0)
 INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_0': Complete partitioning on dimension 2. (src/yolo_max_pool.cpp:19:17)
 INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_1': Complete partitioning on dimension 2. (src/yolo_max_pool.cpp:20:17)
 INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_2': Complete partitioning on dimension 2. (src/yolo_max_pool.cpp:21:17)
@@ -97,12 +97,12 @@ INFO: [HLS 214-248] Applying array_partition to 'ref.tmp96': Complete partitioni
 INFO: [HLS 214-248] Applying array_partition to 'ref.tmp99': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
 INFO: [HLS 214-248] Applying array_partition to 'ref.tmp102': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
 INFO: [HLS 214-248] Applying array_partition to 'ref.tmp105': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.11 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.31 seconds; current allocated memory: 204.566 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 204.566 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.43 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.63 seconds; current allocated memory: 204.582 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 204.582 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 216.758 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 216.840 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 233.688 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 233.820 MB.
 INFO: [XFORM 203-102] Partitioning array 'window.0' automatically.
 INFO: [XFORM 203-102] Partitioning array 'window.1' automatically.
 INFO: [XFORM 203-102] Partitioning array 'agg.tmp109' in dimension 1 automatically.
@@ -118,8 +118,7 @@ INFO: [XFORM 203-102] Partitioning array 'agg.tmp113.1' automatically.
 INFO: [XFORM 203-102] Partitioning array 'agg.tmp115.0' automatically.
 INFO: [XFORM 203-102] Partitioning array 'agg.tmp115.1' automatically.
 INFO: [XFORM 203-602] Inlining function 'slide_window' into 'yolo_max_pool_top' (src/yolo_max_pool.cpp:94) automatically.
-INFO: [XFORM 203-11] Balancing expressions in function 'yolo_max_pool_top' (src/yolo_max_pool.cpp:4)...5 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 270.469 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 270.676 MB.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_36_4' (src/yolo_max_pool.cpp:25:23) in function 'yolo_max_pool_top'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_33_3' (src/yolo_max_pool.cpp:25:23) in function 'yolo_max_pool_top'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_30_2' (src/yolo_max_pool.cpp:25:23) in function 'yolo_max_pool_top'.
@@ -382,7 +381,7 @@ WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.33 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.35 seconds; current allocated memory: 292.891 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.34 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.37 seconds; current allocated memory: 292.812 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'yolo_max_pool_top' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -392,13 +391,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'window_max_pool'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'window_max_pool'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 292.891 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 292.812 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 292.891 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 292.812 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -408,39 +407,35 @@ WARNING: [HLS 200-882] User specified resource constraint cannot be honored func
 WARNING: [HLS 200-885] The II Violation in module 'yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS' (loop 'VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5'): Unable to schedule 'load' operation ('kernel_window.val.V', /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:297) on array 'line_buff_group_0_val_V_2' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'line_buff_group_0_val_V_2'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 10, loop 'VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 300.965 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 301.281 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Starting global binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 300.965 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 301.281 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'yolo_max_pool_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [HLS 200-486] Changing DSP latency (root=mul_ln4_3) to 3 in order to utilize available DSP registers.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 300.965 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.28 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 301.281 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 300.965 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 301.281 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'window_max_pool' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'window_max_pool'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 300.965 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 301.281 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS' pipeline 'VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'mul_4ns_10ns_12_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_9ns_2ns_11_1_1': 4 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 300.965 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'yolo_max_pool_top' 

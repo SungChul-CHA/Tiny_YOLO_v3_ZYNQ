@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'yolo_max_pool_top'
 ================================================================
 + General Information: 
-    * Date:           Mon Nov 18 23:58:01 2024
+    * Date:           Tue Nov 19 23:15:56 2024
     * Version:        2022.2 (Build 3670227 on Oct 13 2022)
     * Project:        yolo_max_pool_prj
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -54,12 +54,12 @@
 +----------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
 
 * AXIS
-+-----------+---------------+-------+--------+--------+
-| Interface | Register Mode | TDATA | TREADY | TVALID |
-+-----------+---------------+-------+--------+--------+
-| inStream  | both          | 112   | 1      | 1      |
-| outStream | both          | 112   | 1      | 1      |
-+-----------+---------------+-------+--------+--------+
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| inStream  | both          | 64    | 6     | 5   | 8     | 1     | 1      | 8     | 2     | 1      |
+| outStream | both          | 64    | 6     | 5   | 8     | 1     | 1      | 8     | 2     | 1      |
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
 
 * TOP LEVEL CONTROL
 +-----------+------------+-----------+
@@ -76,18 +76,18 @@
 == SW I/O Information
 ================================================================
 * Top Function Arguments
-+---------------+-----------+------------------------------------+
-| Argument      | Direction | Datatype                           |
-+---------------+-----------+------------------------------------+
-| inStream      | in        | stream<ap_axi_fp<64, 2, 5, 6>, 0>& |
-| outStream     | out       | stream<ap_axi_fp<64, 2, 5, 6>, 0>& |
-| output_h      | in        | ap_uint<9>                         |
-| output_w      | in        | ap_uint<9>                         |
-| input_h       | in        | ap_uint<9>                         |
-| input_w       | in        | ap_uint<9>                         |
-| input_fold_ch | in        | ap_uint<4>                         |
-| stride        | in        | ap_uint<2>                         |
-+---------------+-----------+------------------------------------+
++---------------+-----------+----------------------------------------------+
+| Argument      | Direction | Datatype                                     |
++---------------+-----------+----------------------------------------------+
+| inStream      | in        | stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0>& |
+| outStream     | out       | stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0>& |
+| output_h      | in        | ap_uint<9>                                   |
+| output_w      | in        | ap_uint<9>                                   |
+| input_h       | in        | ap_uint<9>                                   |
+| input_w       | in        | ap_uint<9>                                   |
+| input_fold_ch | in        | ap_uint<4>                                   |
+| stride        | in        | ap_uint<2>                                   |
++---------------+-----------+----------------------------------------------+
 
 * SW-to-HW Mapping
 +---------------+----------------+-----------+-----------------------------------------+
@@ -111,42 +111,42 @@
 | Name                                                                                | DSP | Pragma | Variable                | Op  | Impl   | Latency |
 +-------------------------------------------------------------------------------------+-----+--------+-------------------------+-----+--------+---------+
 | + yolo_max_pool_top                                                                 | 1   |        |                         |     |        |         |
-|   sub_i_i270_fu_658_p2                                                              | -   |        | sub_i_i270              | add | fabric | 0       |
-|   sub_i_i87_fu_668_p2                                                               | -   |        | sub_i_i87               | add | fabric | 0       |
-|   sub_i_i56_fu_678_p2                                                               | -   |        | sub_i_i56               | add | fabric | 0       |
-|   sub_i_i_fu_688_p2                                                                 | -   |        | sub_i_i                 | add | fabric | 0       |
-|   mul_2ns_4ns_6_1_1_U40                                                             | -   |        | mul_ln4                 | mul | auto   | 0       |
-|   mul_9ns_6ns_15_1_1_U41                                                            | -   |        | mul_ln4_1               | mul | auto   | 0       |
-|   mul_2ns_15ns_17_1_1_U42                                                           | -   |        | mul_ln4_2               | mul | auto   | 0       |
-|   mul_mul_9ns_17ns_26_4_1_U43                                                       | 1   |        | mul_ln4_3               | mul | dsp48  | 3       |
+|   sub_i_i270_fu_712_p2                                                              | -   |        | sub_i_i270              | add | fabric | 0       |
+|   sub_i_i87_fu_722_p2                                                               | -   |        | sub_i_i87               | add | fabric | 0       |
+|   sub_i_i56_fu_732_p2                                                               | -   |        | sub_i_i56               | add | fabric | 0       |
+|   sub_i_i_fu_742_p2                                                                 | -   |        | sub_i_i                 | add | fabric | 0       |
+|   mul_2ns_4ns_6_1_1_U52                                                             | -   |        | mul_ln4                 | mul | auto   | 0       |
+|   mul_9ns_6ns_15_1_1_U53                                                            | -   |        | mul_ln4_1               | mul | auto   | 0       |
+|   mul_2ns_15ns_17_1_1_U54                                                           | -   |        | mul_ln4_2               | mul | auto   | 0       |
+|   mul_mul_9ns_17ns_26_4_1_U55                                                       | 1   |        | mul_ln4_3               | mul | dsp48  | 3       |
 |  + yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS | 0   |        |                         |     |        |         |
-|    mul_9ns_2ns_11_1_1_U5                                                            | -   |        | conv3_i_i_i2821604      | mul | auto   | 0       |
-|    row_idx_fu_935_p2                                                                | -   |        | row_idx                 | add | fabric | 0       |
-|    mul_9ns_2ns_11_1_1_U6                                                            | -   |        | conv3_i_i_i3291606      | mul | auto   | 0       |
-|    col_idx_fu_972_p2                                                                | -   |        | col_idx                 | add | fabric | 0       |
-|    conv_count_fu_1147_p2                                                            | -   |        | conv_count              | add | fabric | 0       |
-|    add_ln144_fu_1709_p2                                                             | -   |        | add_ln144               | add | fabric | 0       |
-|    add_ln1027_3_fu_1189_p2                                                          | -   |        | add_ln1027_3            | add | fabric | 0       |
-|    out_row_3_fu_876_p2                                                              | -   |        | out_row_3               | add | fabric | 0       |
-|    mul_9ns_2ns_11_1_1_U7                                                            | -   |        | conv3_i_i_i2821604_mid1 | mul | auto   | 0       |
-|    row_stride_3_fu_1049_p2                                                          | -   |        | row_stride_3            | add | fabric | 0       |
-|    row_idx_mid1_fu_1065_p2                                                          | -   |        | row_idx_mid1            | add | fabric | 0       |
-|    out_col_3_fu_1089_p2                                                             | -   |        | out_col_3               | add | fabric | 0       |
-|    mul_9ns_2ns_11_1_1_U8                                                            | -   |        | conv3_i_i_i3291606_mid1 | mul | auto   | 0       |
-|    conv_count_mid125_fu_1325_p2                                                     | -   |        | conv_count_mid125       | add | fabric | 0       |
-|    add_ln144_1_fu_1746_p2                                                           | -   |        | add_ln144_1             | add | fabric | 0       |
-|    col_stride_3_fu_1399_p2                                                          | -   |        | col_stride_3            | add | fabric | 0       |
-|    col_idx_mid1_fu_1425_p2                                                          | -   |        | col_idx_mid1            | add | fabric | 0       |
-|    conv_count_mid1_fu_1435_p2                                                       | -   |        | conv_count_mid1         | add | fabric | 0       |
-|    add_ln144_2_fu_1779_p2                                                           | -   |        | add_ln144_2             | add | fabric | 0       |
+|    mul_9ns_2ns_11_1_1_U5                                                            | -   |        | conv3_i_i_i2821607      | mul | auto   | 0       |
+|    row_idx_fu_963_p2                                                                | -   |        | row_idx                 | add | fabric | 0       |
+|    mul_9ns_2ns_11_1_1_U6                                                            | -   |        | conv3_i_i_i3291609      | mul | auto   | 0       |
+|    col_idx_fu_1000_p2                                                               | -   |        | col_idx                 | add | fabric | 0       |
+|    conv_count_fu_1175_p2                                                            | -   |        | conv_count              | add | fabric | 0       |
+|    add_ln144_fu_1711_p2                                                             | -   |        | add_ln144               | add | fabric | 0       |
+|    add_ln1027_3_fu_1217_p2                                                          | -   |        | add_ln1027_3            | add | fabric | 0       |
+|    out_row_3_fu_904_p2                                                              | -   |        | out_row_3               | add | fabric | 0       |
+|    mul_9ns_2ns_11_1_1_U7                                                            | -   |        | conv3_i_i_i2821607_mid1 | mul | auto   | 0       |
+|    row_stride_3_fu_1077_p2                                                          | -   |        | row_stride_3            | add | fabric | 0       |
+|    row_idx_mid1_fu_1093_p2                                                          | -   |        | row_idx_mid1            | add | fabric | 0       |
+|    out_col_3_fu_1117_p2                                                             | -   |        | out_col_3               | add | fabric | 0       |
+|    mul_9ns_2ns_11_1_1_U8                                                            | -   |        | conv3_i_i_i3291609_mid1 | mul | auto   | 0       |
+|    conv_count_mid125_fu_1353_p2                                                     | -   |        | conv_count_mid125       | add | fabric | 0       |
+|    add_ln144_1_fu_1748_p2                                                           | -   |        | add_ln144_1             | add | fabric | 0       |
+|    col_stride_3_fu_1427_p2                                                          | -   |        | col_stride_3            | add | fabric | 0       |
+|    col_idx_mid1_fu_1453_p2                                                          | -   |        | col_idx_mid1            | add | fabric | 0       |
+|    conv_count_mid1_fu_1463_p2                                                       | -   |        | conv_count_mid1         | add | fabric | 0       |
+|    add_ln144_2_fu_1781_p2                                                           | -   |        | add_ln144_2             | add | fabric | 0       |
 |    mul_4ns_10ns_12_1_1_U9                                                           | -   |        | mul_ln871               | mul | auto   | 0       |
-|    add_ln871_fu_1801_p2                                                             | -   |        | add_ln871               | add | fabric | 0       |
-|    add_ln984_fu_1806_p2                                                             | -   |        | add_ln984               | add | fabric | 0       |
-|    add_ln984_1_fu_1823_p2                                                           | -   |        | add_ln984_1             | add | fabric | 0       |
-|    add_ln39_fu_1848_p2                                                              | -   |        | add_ln39                | add | fabric | 0       |
-|    add_ln1027_fu_1628_p2                                                            | -   |        | add_ln1027              | add | fabric | 0       |
-|    add_ln1027_1_fu_1640_p2                                                          | -   |        | add_ln1027_1            | add | fabric | 0       |
-|    add_ln1027_2_fu_1652_p2                                                          | -   |        | add_ln1027_2            | add | fabric | 0       |
+|    add_ln871_fu_1803_p2                                                             | -   |        | add_ln871               | add | fabric | 0       |
+|    add_ln984_fu_1808_p2                                                             | -   |        | add_ln984               | add | fabric | 0       |
+|    add_ln984_1_fu_1825_p2                                                           | -   |        | add_ln984_1             | add | fabric | 0       |
+|    add_ln39_fu_1850_p2                                                              | -   |        | add_ln39                | add | fabric | 0       |
+|    add_ln1027_fu_1630_p2                                                            | -   |        | add_ln1027              | add | fabric | 0       |
+|    add_ln1027_1_fu_1642_p2                                                          | -   |        | add_ln1027_1            | add | fabric | 0       |
+|    add_ln1027_2_fu_1654_p2                                                          | -   |        | add_ln1027_2            | add | fabric | 0       |
 +-------------------------------------------------------------------------------------+-----+--------+-------------------------+-----+--------+---------+
 
 

@@ -84805,6 +84805,169 @@ public:
 typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_data_type;
 typedef ap_fixed<16,8,AP_RND_CONV,AP_SAT> fp_weight_type;
 # 7 "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/src/../src/yolo_stream.h" 2
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h" 1
+# 41 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h"
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/climits" 1 3
+# 39 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/climits" 3
+       
+# 40 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/climits" 3
+
+
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include-fixed/limits.h" 1 3 4
+# 43 "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/include/c++/8.3.0/climits" 2 3
+# 42 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h" 2
+# 1 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h" 1
+# 43 "/tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h" 2
+
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
+struct ap_fixed;
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
+struct ap_ufixed;
+
+namespace hls {
+
+template <typename T> constexpr std::size_t bitwidth = sizeof(T) * 8;
+
+template <std::size_t W> constexpr std::size_t bitwidth<ap_int<W>> = W;
+template <std::size_t W> constexpr std::size_t bitwidth<ap_uint<W>> = W;
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
+constexpr std::size_t bitwidth<ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> = _AP_W;
+template <int _AP_W, int _AP_I, ap_q_mode _AP_Q, ap_o_mode _AP_O, int _AP_N>
+constexpr std::size_t bitwidth<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> = _AP_W;
+
+template <typename T>
+constexpr std::size_t bytewidth = (bitwidth<T> + 8 - 1) / 8;
+
+template <typename T, std::size_t WUser, std::size_t WId, std::size_t WDest> struct axis {
+  static constexpr std::size_t NewWUser = (WUser == 0) ? 1 : WUser;
+  static constexpr std::size_t NewWId = (WId == 0) ? 1 : WId;
+  static constexpr std::size_t NewWDest = (WDest == 0) ? 1 : WDest;
+  T data;
+  ap_uint<bytewidth<T>> keep;
+  ap_uint<bytewidth<T>> strb;
+  ap_uint<NewWUser> user;
+  ap_uint<1> last;
+  ap_uint<NewWId> id;
+  ap_uint<NewWDest> dest;
+
+  ap_uint<NewWUser> *get_user_ptr() {
+#pragma HLS inline
+    return (WUser == 0) ? nullptr : &user;
+  }
+  ap_uint<NewWId> *get_id_ptr() {
+#pragma HLS inline
+    return (WId == 0) ? nullptr : &id;
+  }
+  ap_uint<NewWDest> *get_dest_ptr() {
+#pragma HLS inline
+    return (WDest == 0) ? nullptr : &dest;
+  }
+};
+
+}
+
+template <std::size_t WData, std::size_t WUser, std::size_t WId, std::size_t WDest>
+using ap_axis = hls::axis<ap_int<WData>, WUser, WId, WDest>;
+
+template <std::size_t WData, std::size_t WUser, std::size_t WId, std::size_t WDest>
+using ap_axiu = hls::axis<ap_uint<WData>, WUser, WId, WDest>;
+
+
+template <std::size_t WData, std::size_t WUser, std::size_t WId, std::size_t WDest>
+struct qdma_axis;
+
+template <std::size_t WData> struct qdma_axis<WData, 0, 0, 0> {
+
+  static constexpr std::size_t kBytes = (WData + 7) / 8;
+
+  ap_uint<WData> data;
+  ap_uint<kBytes> keep;
+  ap_uint<1> strb;
+  ap_uint<1> user;
+  ap_uint<1> last;
+  ap_uint<1> id;
+  ap_uint<1> dest;
+
+  ap_uint<1> *get_strb_ptr() {
+#pragma HLS inline
+    return nullptr;
+  }
+  ap_uint<1> *get_user_ptr() {
+#pragma HLS inline
+    return nullptr;
+  }
+  ap_uint<1> *get_id_ptr() {
+#pragma HLS inline
+    return nullptr;
+  }
+  ap_uint<1> *get_dest_ptr() {
+#pragma HLS inline
+    return nullptr;
+  }
+
+
+  ap_uint<WData> get_data() const {
+#pragma HLS inline
+    return data;
+  }
+  ap_uint<kBytes> get_keep() const {
+#pragma HLS inline
+    return keep;
+  }
+  ap_uint<1> get_last() const {
+#pragma HLS inline
+    return last;
+  }
+
+  void set_data(const ap_uint<WData> &d) {
+#pragma HLS inline
+    data = d;
+  }
+  void set_keep(const ap_uint<kBytes> &k) {
+#pragma HLS inline
+    keep = k;
+  }
+  void set_last(const ap_uint<1> &l) {
+#pragma HLS inline
+    last = l;
+  }
+  void keep_all() {
+#pragma HLS inline
+    ap_uint<kBytes> k = 0;
+    keep = ~k;
+  }
+
+  qdma_axis() {
+#pragma HLS inline
+    ;
+  }
+  qdma_axis(ap_uint<WData> d) : data(d) {
+#pragma HLS inline
+    ;
+  }
+  qdma_axis(ap_uint<WData> d, ap_uint<kBytes> k) : data(d), keep(k) {
+#pragma HLS inline
+    ;
+  }
+  qdma_axis(ap_uint<WData> d, ap_uint<kBytes> k, ap_uint<1> l)
+      : data(d), keep(k), last(l) {
+#pragma HLS inline
+    ;
+  }
+  qdma_axis(const qdma_axis<WData, 0, 0, 0> &d)
+      : data(d.data), keep(d.keep), last(d.last) {
+#pragma HLS inline
+    ;
+  }
+  qdma_axis &operator=(const qdma_axis<WData, 0, 0, 0> &d) {
+#pragma HLS inline
+    data = d.data;
+    keep = d.keep;
+    last = d.last;
+    return *this;
+  }
+};
+# 8 "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/src/../src/yolo_stream.h" 2
 
 typedef struct quad_fp_pack{
  fp_data_type sub_data_0;
@@ -84812,19 +84975,8 @@ typedef struct quad_fp_pack{
  fp_data_type sub_data_2;
  fp_data_type sub_data_3;
 }quad_fp_pack;
-
-template<int D,int U,int TI,int TD>
-  struct ap_axi_fp{
- quad_fp_pack data;
-    ap_uint<(D+7)/8> keep;
-    ap_uint<(D+7)/8> strb;
-    ap_uint<U> user;
-    ap_uint<1> last;
-    ap_uint<TI> id;
-    ap_uint<TD> dest;
-};
-
-typedef ap_axi_fp<64,2,5,6> quad_fp_side_channel;
+# 28 "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/src/../src/yolo_stream.h"
+typedef hls::axis<quad_fp_pack, 2, 5, 6> quad_fp_side_channel;
 typedef hls::stream<quad_fp_side_channel> yolo_quad_stream;
 typedef hls::stream<fp_data_type> yolo_inter_stream;
 # 5 "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/src/../src/yolo_yolo.h" 2
@@ -88333,18 +88485,18 @@ struct __cosim_s3__{char data[sizeof(ap_uint<5>)];};
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_yolo_yolo_top_ir(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0> &, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0> &, struct __cosim_s1__*, struct __cosim_s2__*, struct __cosim_s3__*);
+void apatb_yolo_yolo_top_ir(hls::stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0> &, hls::stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0> &, struct __cosim_s1__*, struct __cosim_s2__*, struct __cosim_s3__*);
 #ifdef __cplusplus
 extern "C"
 #endif
-void yolo_yolo_top_hw_stub(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0> &inStream, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0> &outStream, struct __cosim_s1__* activate_en, struct __cosim_s2__* input_h, struct __cosim_s3__* input_w){
+void yolo_yolo_top_hw_stub(hls::stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0> &inStream, hls::stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0> &outStream, struct __cosim_s1__* activate_en, struct __cosim_s2__* input_h, struct __cosim_s3__* input_w){
 yolo_yolo_top(inStream, outStream, *((ap_uint<32>*)activate_en), *((ap_uint<5>*)input_h), *((ap_uint<5>*)input_w));
 return ;
 }
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_yolo_yolo_top_sw(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0> &inStream, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0> &outStream, ap_uint<32> activate_en, ap_uint<5> input_h, ap_uint<5> input_w){
+void apatb_yolo_yolo_top_sw(hls::stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0> &inStream, hls::stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0> &outStream, ap_uint<32> activate_en, ap_uint<5> input_h, ap_uint<5> input_w){
 apatb_yolo_yolo_top_ir(inStream, outStream, ((struct __cosim_s1__*)&activate_en), ((struct __cosim_s2__*)&input_h), ((struct __cosim_s3__*)&input_w));
 return ;
 }

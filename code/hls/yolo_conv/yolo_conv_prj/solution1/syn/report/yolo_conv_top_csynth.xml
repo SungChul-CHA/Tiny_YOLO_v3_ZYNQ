@@ -22,49 +22,23 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1926700</Best-caseLatency>
-<Average-caseLatency>1926892</Average-caseLatency>
-<Worst-caseLatency>1927036</Worst-caseLatency>
-<Best-caseRealTimeLatency>14.450 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>14.452 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>14.453 ms</Worst-caseRealTimeLatency>
-<Interval-min>1926701</Interval-min>
-<Interval-max>1927037</Interval-max>
+<Best-caseLatency>1926751</Best-caseLatency>
+<Average-caseLatency>1926751</Average-caseLatency>
+<Worst-caseLatency>1926751</Worst-caseLatency>
+<Best-caseRealTimeLatency>14.451 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>14.451 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>14.451 ms</Worst-caseRealTimeLatency>
+<Interval-min>1926752</Interval-min>
+<Interval-max>1926752</Interval-max>
 </SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<VITIS_LOOP_49_1_VITIS_LOOP_52_2>
-<Slack>5.47</Slack>
-<TripCount>48</TripCount>
-<Latency>
-<range>
-<min>96</min>
-<max>432</max>
-</range>
-</Latency>
-<AbsoluteTimeLatency>
-<range>
-<min>720</min>
-<max>3240</max>
-</range>
-</AbsoluteTimeLatency>
-<IterationLatency>
-<range>
-<min>2</min>
-<max>9</max>
-</range>
-</IterationLatency>
-<InstanceList>
-</InstanceList>
-</VITIS_LOOP_49_1_VITIS_LOOP_52_2>
-</SummaryOfLoopLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>120</BRAM_18K>
 <DSP>110</DSP>
-<FF>44333</FF>
-<LUT>36373</LUT>
+<FF>44374</FF>
+<LUT>36597</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -299,19 +273,19 @@
 </RtlPorts>
 <RtlPorts>
 <name>inStream_TDATA</name>
-<Object>inStream</Object>
+<Object>inStream_V_data_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>in</Dir>
-<Bits>112</Bits>
+<Bits>64</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
 <name>inStream_TVALID</name>
-<Object>inStream</Object>
+<Object>inStream_V_dest_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -323,7 +297,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>inStream_TREADY</name>
-<Object>inStream</Object>
+<Object>inStream_V_dest_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -334,20 +308,92 @@
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
+<name>inStream_TDEST</name>
+<Object>inStream_V_dest_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>6</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>inStream_TKEEP</name>
+<Object>inStream_V_keep_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>inStream_TSTRB</name>
+<Object>inStream_V_strb_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>inStream_TUSER</name>
+<Object>inStream_V_user_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>inStream_TLAST</name>
+<Object>inStream_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>inStream_TID</name>
+<Object>inStream_V_id_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>in</Dir>
+<Bits>5</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
 <name>outStream_TDATA</name>
-<Object>outStream</Object>
+<Object>outStream_V_data_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>out</Dir>
-<Bits>112</Bits>
+<Bits>64</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
 <name>outStream_TVALID</name>
-<Object>outStream</Object>
+<Object>outStream_V_dest_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -359,7 +405,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>outStream_TREADY</name>
-<Object>outStream</Object>
+<Object>outStream_V_dest_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -367,6 +413,78 @@
 <Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>outStream_TDEST</name>
+<Object>outStream_V_dest_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>6</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>outStream_TKEEP</name>
+<Object>outStream_V_keep_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>outStream_TSTRB</name>
+<Object>outStream_V_strb_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>outStream_TUSER</name>
+<Object>outStream_V_user_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>2</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>outStream_TLAST</name>
+<Object>outStream_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>outStream_TID</name>
+<Object>outStream_V_id_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>5</Bits>
+<Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
 </InterfaceSummary>

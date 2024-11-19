@@ -6,7 +6,7 @@
 
 source /tools/Xilinx/Vitis_HLS/2022.2/scripts/vitis_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'tony' on host 'tony' (Linux_x86_64 version 4.18.0-553.27.1.el8_10.x86_64) on Mon Nov 18 23:55:50 KST 2024
+INFO: [HLS 200-10] For user 'tony' on host 'tony' (Linux_x86_64 version 4.18.0-553.27.1.el8_10.x86_64) on Tue Nov 19 23:13:39 KST 2024
 INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.10 (Ootpa)"
 INFO: [HLS 200-10] In directory '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv'
 Sourcing Tcl script 'run_hls.tcl'
@@ -41,7 +41,7 @@ INFO: [HLS 200-1510] Running: create_clock -period 7.5 -name default
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 7.5ns.
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
 INFO: [HLS 200-1510] Running: csim_design 
-Running Dispatch Server on port: 35191
+Running Dispatch Server on port: 38931
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
    Compiling ../../../../tb/yolo_conv_tb.cpp in debug mode
@@ -51,9 +51,9 @@ INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4992
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.14 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.35 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.23 seconds. CPU system time: 0.25 seconds. Elapsed time: 2.51 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 198.496 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 198.496 MB.
 INFO: [HLS 200-10] Analyzing design file 'src/yolo_conv.cpp' ... 
 WARNING: [HLS 207-5529] 'factor' in '#pragma HLS array_reshape' is ignored (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:759:47)
 WARNING: [HLS 207-5292] unused parameter 'src' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:517:30)
@@ -64,7 +64,7 @@ WARNING: [HLS 207-5292] unused parameter 'stride' (/tools/Xilinx/Vitis_HLS/2022.
 WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1224:102)
 WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1530:34)
 WARNING: [HLS 207-5292] unused parameter 'output_ch' (src/yolo_conv.cpp:290:161)
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.62 seconds. CPU system time: 0.26 seconds. Elapsed time: 2.89 seconds; current allocated memory: 204.141 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.62 seconds. CPU system time: 0.34 seconds. Elapsed time: 2.98 seconds; current allocated memory: 204.125 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::shift_pixels_up(int)' into 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::shift_up(int)' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1018:2)
 INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::insert_bottom_row(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int)' into 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int)' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1042:2)
@@ -75,14 +75,14 @@ INFO: [HLS 214-131] Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_
 INFO: [HLS 214-131] Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::insert(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, int)' into 'slide_window(int, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*)' (src/yolo_conv.cpp:263:18)
 INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::getval(int, int)' into 'slide_window(int, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*)' (src/yolo_conv.cpp:262:48)
 INFO: [HLS 214-131] Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::getval(int, int)' into 'window_macc(xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >, local_weight_type)' (src/yolo_conv.cpp:278:33)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:28:17)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:29:17)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:30:17)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:31:17)
-INFO: [HLS 214-131] Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:139:70)
-INFO: [HLS 214-131] Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:139:53)
-INFO: [HLS 214-131] Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:139:36)
-INFO: [HLS 214-131] Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:139:19)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:28:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:29:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:30:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:31:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:139:70)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:139:53)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:139:36)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:139:19)
 INFO: [HLS 214-377] Adding 'ref.tmp177' into disaggregation list because there's array-partition pragma applied on the struct field (src/yolo_conv.cpp:141:25)
 INFO: [HLS 214-377] Adding 'ref.tmp180' into disaggregation list because there's array-partition pragma applied on the struct field (src/yolo_conv.cpp:142:25)
 INFO: [HLS 214-377] Adding 'ref.tmp183' into disaggregation list because there's array-partition pragma applied on the struct field (src/yolo_conv.cpp:143:25)
@@ -140,7 +140,7 @@ INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_258_1' (src/yolo_conv.cpp:258:20)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_260_2' (src/yolo_conv.cpp:260:21) in function 'slide_window' completely with a factor of 3 (src/yolo_conv.cpp:255:0)
 INFO: [HLS 214-186] Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'slide_window' completely with a factor of 3 (src/yolo_conv.cpp:255:0)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_867_1' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:867:23) in function 'yolo_line_buffer' completely with a factor of 2 (src/yolo_conv.cpp:247:0)
-INFO: [HLS 214-178] Inlining function 'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*, int)' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:8:0)
+INFO: [HLS 214-178] Inlining function 'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*, int)' into 'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)' (src/yolo_conv.cpp:8:0)
 INFO: [HLS 214-248] Applying array_partition to 'out_stream_group': Complete partitioning on dimension 1. (src/yolo_conv.cpp:23:20)
 INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_0': Complete partitioning on dimension 2. (src/yolo_conv.cpp:28:17)
 INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_1': Complete partitioning on dimension 2. (src/yolo_conv.cpp:29:17)
@@ -188,12 +188,12 @@ INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'out_stream_group_28
 INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'out_stream_group_29' with compact=bit mode in 16-bits (src/yolo_conv.cpp:23:20)
 INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'out_stream_group_30' with compact=bit mode in 16-bits (src/yolo_conv.cpp:23:20)
 INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'out_stream_group_31' with compact=bit mode in 16-bits (src/yolo_conv.cpp:23:20)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 6.86 seconds. CPU system time: 0.23 seconds. Elapsed time: 7.12 seconds; current allocated memory: 204.867 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 204.867 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 7.17 seconds. CPU system time: 0.25 seconds. Elapsed time: 7.45 seconds; current allocated memory: 204.852 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 204.852 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.92 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.93 seconds; current allocated memory: 230.449 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1.97 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.98 seconds; current allocated memory: 230.461 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 2.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 2.19 seconds; current allocated memory: 252.387 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 2.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 2.21 seconds; current allocated memory: 253.176 MB.
 INFO: [XFORM 203-102] Partitioning array 'window.0' automatically.
 INFO: [XFORM 203-102] Partitioning array 'window.1' automatically.
 INFO: [XFORM 203-102] Partitioning array 'window.2' automatically.
@@ -251,10 +251,8 @@ INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (src/yolo_conv.c
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (src/yolo_conv.cpp:177:12) in function 'yolo_conv_top'... converting 3 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'window_macc' (src/yolo_conv.cpp:282:2)...8 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'post_process' (src/yolo_conv.cpp:214:3)...4 expression(s) balanced.
-INFO: [XFORM 203-11] Balancing expressions in function 'out_stream_merge' (src/yolo_conv.cpp:290:69)...30 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4.95 seconds. CPU system time: 0.01 seconds. Elapsed time: 5.01 seconds; current allocated memory: 306.484 MB.
-WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_52_2' (src/yolo_conv.cpp:36:23) in function 'yolo_conv_top' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
-Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-960.html
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 5.39 seconds. CPU system time: 0.02 seconds. Elapsed time: 5.45 seconds; current allocated memory: 306.844 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_52_2' (src/yolo_conv.cpp:36:23) in function 'yolo_conv_top'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_49_1' (src/yolo_conv.cpp:36:23) in function 'yolo_conv_top'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_88_5' (src/yolo_conv.cpp:33:14) in function 'yolo_conv_top'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_84_4' (src/yolo_conv.cpp:33:14) in function 'yolo_conv_top'.
@@ -648,11 +646,11 @@ WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_conv.cpp:31).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.1' (src/yolo_conv.cpp:31).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_conv.cpp:31).
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 5.58 seconds. CPU system time: 0.04 seconds. Elapsed time: 5.64 seconds; current allocated memory: 388.574 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 5.93 seconds. CPU system time: 0.06 seconds. Elapsed time: 6.02 seconds; current allocated memory: 392.105 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'yolo_conv_top' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top_Pipeline_VITIS_LOOP_55_3' 
+INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'local_mem_group_data_V_66'. Use bind_storage pragma to override this type.
@@ -727,16 +725,16 @@ INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'local_mem_group_data_V_62'. Use bind_storage pragma to override this type.
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'local_mem_group_data_V_54'. Use bind_storage pragma to override this type.
 INFO: [HLS 200-1457] Automatically inferring inferring RAM_1WNR storage type for array 'local_mem_group_data_V_58'. Use bind_storage pragma to override this type.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_55_3'.
-INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_55_3'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.9 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.93 seconds; current allocated memory: 395.902 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.04 seconds; current allocated memory: 402.793 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 395.902 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 402.793 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'slide_window' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -750,13 +748,13 @@ WARNING: [HLS 200-885] The II Violation in module 'slide_window' (function 'slid
 Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 5, function 'slide_window'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 395.902 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 402.793 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 395.902 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 402.793 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'window_macc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -773,13 +771,13 @@ INFO: [HLS 200-486] Changing DSP latency (root=r_V_1) to 3 in order to utilize a
 INFO: [SCHED 204-61] Pipelining function 'window_macc'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, function 'window_macc'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 396.207 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 402.793 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 396.207 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 402.793 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'post_process' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -787,13 +785,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'post_process'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'post_process'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 396.645 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 402.793 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 396.645 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 402.793 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'write_output' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -801,37 +799,37 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'write_output'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, function 'write_output'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 396.645 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 402.793 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 396.645 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 402.793 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'out_stream_merge' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'out_stream_merge'.
-WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function 'out_stream_merge'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between axis write operation ('outStream_write_ln329', src/yolo_conv.cpp:329) on port 'outStream' (src/yolo_conv.cpp:329) and axis write operation ('outStream_write_ln329', src/yolo_conv.cpp:329) on port 'outStream' (src/yolo_conv.cpp:329).
+WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function 'out_stream_merge'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between axis write operation ('outStream_V_data_V_write_ln258') on port 'outStream_V_data_V' and axis write operation ('outStream_V_data_V_write_ln258') on port 'outStream_V_data_V'.
 Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
-WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function 'out_stream_merge'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between axis write operation ('outStream_write_ln329', src/yolo_conv.cpp:329) on port 'outStream' (src/yolo_conv.cpp:329) and axis write operation ('outStream_write_ln329', src/yolo_conv.cpp:329) on port 'outStream' (src/yolo_conv.cpp:329).
+WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function 'out_stream_merge'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between axis write operation ('outStream_V_data_V_write_ln258') on port 'outStream_V_data_V' and axis write operation ('outStream_V_data_V_write_ln258') on port 'outStream_V_data_V'.
 Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
-WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function 'out_stream_merge'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between axis write operation ('outStream_write_ln329', src/yolo_conv.cpp:329) on port 'outStream' (src/yolo_conv.cpp:329) and axis write operation ('outStream_write_ln329', src/yolo_conv.cpp:329) on port 'outStream' (src/yolo_conv.cpp:329).
+WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function 'out_stream_merge'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between axis write operation ('outStream_V_data_V_write_ln258') on port 'outStream_V_data_V' and axis write operation ('outStream_V_data_V_write_ln258') on port 'outStream_V_data_V'.
 Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
-WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function 'out_stream_merge'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between axis write operation ('outStream_write_ln329', src/yolo_conv.cpp:329) on port 'outStream' (src/yolo_conv.cpp:329) and axis write operation ('outStream_write_ln329', src/yolo_conv.cpp:329) on port 'outStream' (src/yolo_conv.cpp:329).
+WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function 'out_stream_merge'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between axis write operation ('outStream_V_data_V_write_ln258') on port 'outStream_V_data_V' and axis write operation ('outStream_V_data_V_write_ln258') on port 'outStream_V_data_V'.
 Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
-WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function 'out_stream_merge'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1) between axis write operation ('outStream_write_ln329', src/yolo_conv.cpp:329) on port 'outStream' (src/yolo_conv.cpp:329) and axis write operation ('outStream_write_ln329', src/yolo_conv.cpp:329) on port 'outStream' (src/yolo_conv.cpp:329).
+WARNING: [HLS 200-880] The II Violation in module 'out_stream_merge' (function 'out_stream_merge'): Unable to enforce a carried dependence constraint (II = 5, distance = 1, offset = 1) between axis write operation ('outStream_V_data_V_write_ln258') on port 'outStream_V_data_V' and axis write operation ('outStream_V_data_V_write_ln258') on port 'outStream_V_data_V'.
 Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 6, Depth = 9, function 'out_stream_merge'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 398.402 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 402.793 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 398.402 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 402.793 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -916,57 +914,58 @@ WARNING: [HLS 200-875] II = 7 is infeasible due to multiple pipeline iteration l
 Resolution: For help on HLS 200-875 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-875.html
 WARNING: [HLS 200-875] II = 8 is infeasible due to multiple pipeline iteration latency = 9 and incompatible II = 6 of 'call' operation ('_ln200', src/yolo_conv.cpp:200) to 'out_stream_merge'.
 Resolution: For help on HLS 200-875 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-875.html
-WARNING: [HLS 200-880] The II Violation in module 'yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6' (loop 'VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6'): Unable to enforce a carried dependence constraint (II = 9, distance = 1, offset = 1) between 'call' operation ('_ln200', src/yolo_conv.cpp:200) to 'out_stream_merge' and fifo request operation ('tmp_7', src/yolo_conv.cpp:177) on port 'out_stream_group_0' (src/yolo_conv.cpp:177).
+WARNING: [HLS 200-880] The II Violation in module 'yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6' (loop 'VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6'): Unable to enforce a carried dependence constraint (II = 9, distance = 1, offset = 1) between 'call' operation ('_ln200', src/yolo_conv.cpp:200) to 'out_stream_merge' and fifo request operation ('tmp_3', src/yolo_conv.cpp:177) on port 'out_stream_group_0' (src/yolo_conv.cpp:177).
 Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
-WARNING: [HLS 200-880] The II Violation in module 'yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6' (loop 'VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6'): Unable to enforce a carried dependence constraint (II = 10, distance = 1, offset = 1) between 'call' operation ('_ln200', src/yolo_conv.cpp:200) to 'out_stream_merge' and fifo request operation ('tmp_7', src/yolo_conv.cpp:177) on port 'out_stream_group_0' (src/yolo_conv.cpp:177).
+WARNING: [HLS 200-880] The II Violation in module 'yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6' (loop 'VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6'): Unable to enforce a carried dependence constraint (II = 10, distance = 1, offset = 1) between 'call' operation ('_ln200', src/yolo_conv.cpp:200) to 'out_stream_merge' and fifo request operation ('tmp_3', src/yolo_conv.cpp:177) on port 'out_stream_group_0' (src/yolo_conv.cpp:177).
 Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-880.html
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 11, Depth = 46, loop 'VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6'
 WARNING: [HLS 200-871] Estimated clock period (7.4695ns) exceeds the target (target clock period: 7.5ns, clock uncertainty: 2.025ns, effective delay budget: 5.475ns).
 Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-871.html
-WARNING: [HLS 200-1016] The critical path in module 'yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6' consists of the following:	'xor' operation ('xor_ln896_60') [4667]  (0.978 ns)
-	'and' operation ('carry') [4668]  (0.978 ns)
-	'select' operation ('deleted_zeros') [4674]  (0 ns)
-	'xor' operation ('xor_ln895_60') [4680]  (0 ns)
-	'or' operation ('or_ln895_30') [4681]  (0 ns)
-	'and' operation ('overflow') [4683]  (0.993 ns)
-	'or' operation ('or_ln346_30') [4689]  (0.978 ns)
-	'select' operation ('output_rec.V') [4690]  (0.805 ns)
-	'call' operation ('_ln179', src/yolo_conv.cpp:179) to 'write_output' [4694]  (2.74 ns)
+WARNING: [HLS 200-1016] The critical path in module 'yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6' consists of the following:	'xor' operation ('xor_ln896_60') [4688]  (0.978 ns)
+	'and' operation ('carry') [4689]  (0.978 ns)
+	'select' operation ('deleted_zeros') [4695]  (0 ns)
+	'xor' operation ('xor_ln895_60') [4701]  (0 ns)
+	'or' operation ('or_ln895_30') [4702]  (0 ns)
+	'and' operation ('overflow') [4704]  (0.993 ns)
+	'or' operation ('or_ln346_30') [4710]  (0.978 ns)
+	'select' operation ('output_rec.V') [4711]  (0.805 ns)
+	'call' operation ('_ln179', src/yolo_conv.cpp:179) to 'write_output' [4715]  (2.74 ns)
 
 Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1016.html
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 11.65 seconds. CPU system time: 0.04 seconds. Elapsed time: 11.73 seconds; current allocated memory: 475.961 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 12.08 seconds. CPU system time: 0.04 seconds. Elapsed time: 12.15 seconds; current allocated memory: 480.066 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1.87 seconds. CPU system time: 0 seconds. Elapsed time: 1.89 seconds; current allocated memory: 475.961 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1.94 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.95 seconds; current allocated memory: 480.066 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'yolo_conv_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [HLS 200-486] Changing DSP latency (root=add_ln84) to 3 in order to utilize available DSP registers.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.87 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.89 seconds; current allocated memory: 475.961 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1.91 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.93 seconds; current allocated memory: 480.066 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.51 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.51 seconds; current allocated memory: 475.961 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.51 seconds. CPU system time: 0 seconds. Elapsed time: 0.52 seconds; current allocated memory: 480.066 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_top_Pipeline_VITIS_LOOP_55_3' 
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_top_Pipeline_VITIS_LOOP_55_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.37 seconds. CPU system time: 0 seconds. Elapsed time: 1.38 seconds; current allocated memory: 475.961 MB.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3' pipeline 'VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.42 seconds. CPU system time: 0 seconds. Elapsed time: 1.43 seconds; current allocated memory: 480.066 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'slide_window' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'slide_window' pipeline 'slide_window' pipeline type 'function pipeline'
 INFO: [RTGEN 206-100] Generating core module 'mul_3ns_10ns_12_1_1': 3 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'slide_window'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 475.961 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 480.066 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'window_macc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -974,36 +973,48 @@ INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32ns_32_4_0': 1
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_0': 4 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_mul_16s_16s_32_4_0': 4 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'window_macc'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 475.961 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 480.066 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'post_process' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'post_process'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 475.961 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 480.066 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'write_output' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'write_output'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 475.961 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 480.066 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'out_stream_merge' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'out_stream_merge' pipeline 'out_stream_merge' pipeline type 'function pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'out_stream_merge'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 475.961 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 480.066 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6' pipeline 'VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_4ns_9ns_9ns_12_4_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.16 seconds; current allocated memory: 512.344 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.19 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.22 seconds; current allocated memory: 517.840 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'yolo_conv_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/outStream_V_dest_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/output_ch' to 's_axilite & ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/input_ch' to 's_axilite & ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/fold_output_ch' to 's_axilite & ap_none'.
@@ -1013,9 +1024,10 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/input_w' to 
 INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/real_input_h' to 's_axilite & ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_conv_top/fold_win_area' to 's_axilite & ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'yolo_conv_top' to 's_axilite & ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'output_ch', 'input_ch', 'fold_output_ch', 'fold_input_ch', 'input_h', 'input_w', 'real_input_h', 'fold_win_area' to AXI-Lite port CTRL_BUS.
+INFO: [RTGEN 206-100] Bundling port 'output_ch', 'input_ch', 'fold_output_ch', 'fold_input_ch', 'input_h', 'input_w', 'real_input_h', 'fold_win_area' and 'return' to AXI-Lite port CTRL_BUS.
 INFO: [RTGEN 206-100] Generating core module 'am_addmul_9ns_1ns_13ns_22_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'mul_6ns_6ns_12_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_3ns_9_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_9ns_15_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_9ns_4ns_13_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_conv_top'.
 INFO: [RTMG 210-278] Implementing memory 'yolo_conv_top_line_buff_group_0_val_V_RAM_S2P_BRAM_1R1W' using block RAMs.
@@ -1052,14 +1064,14 @@ INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_28_U(yolo_conv_top_fifo
 INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_29_U(yolo_conv_top_fifo_w16_d2_S)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_30_U(yolo_conv_top_fifo_w16_d2_S)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'out_stream_group_31_U(yolo_conv_top_fifo_w16_d2_S)' using Shift Registers.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5.1 seconds. CPU system time: 0.1 seconds. Elapsed time: 5.24 seconds; current allocated memory: 597.418 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2.96 seconds. CPU system time: 0.03 seconds. Elapsed time: 3.02 seconds; current allocated memory: 601.449 MB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.45 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.46 seconds; current allocated memory: 614.652 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5.25 seconds. CPU system time: 0.12 seconds. Elapsed time: 5.38 seconds; current allocated memory: 602.934 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 3.1 seconds; current allocated memory: 606.676 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.55 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.56 seconds; current allocated memory: 620.254 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for yolo_conv_top.
 INFO: [VLOG 209-307] Generating Verilog RTL for yolo_conv_top.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 133.88 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 52.97 seconds. CPU system time: 0.84 seconds. Elapsed time: 54.1 seconds; current allocated memory: 418.691 MB.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 55.35 seconds. CPU system time: 1 seconds. Elapsed time: 56.61 seconds; current allocated memory: 424.293 MB.
 INFO: [HLS 200-1510] Running: cosim_design 
 WARNING: [COSIM 212-384] This design has internal non-blocking FIFO/Stream accesses, which may result in mismatches or simulation hanging.
 INFO: [COSIM 212-47] Using XSIM for RTL simulation.
@@ -1101,8 +1113,8 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/
 INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/AESL_deadlock_idx2_monitor.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx2_monitor
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_yolo_conv_top_Pipeline_VITIS_LOOP_55_3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_yolo_conv_top_Pipeline_VITIS_LOOP_55_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_slide_window.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_slide_window
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_window_macc.v" into library xil_defaultlib
@@ -1124,8 +1136,10 @@ INFO: [VRFC 10-311] analyzing module yolo_conv_top_regslice_both
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_regslice_both_w1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_mul_3ns_10ns_12_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_3ns_10ns_12_1_1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_mul_6ns_6ns_12_1_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_6ns_6ns_12_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_mul_6ns_3ns_9_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_6ns_3ns_9_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_mul_6ns_9ns_15_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_6ns_9ns_15_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_mul_9ns_4ns_13_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module yolo_conv_top_mul_9ns_4ns_13_1_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top_line_buff_group_0_val_V_RAM_S2P_BRAM_1R1W.v" into library xil_defaultlib
@@ -1182,24 +1196,40 @@ Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_4ns_9ns...
 Compiling module xil_defaultlib.yolo_conv_top_mac_muladd_4ns_9ns...
 Compiling module xil_defaultlib.yolo_conv_top_yolo_conv_top_Pipe...
 Compiling module xil_defaultlib.yolo_conv_top_CTRL_BUS_s_axi
-Compiling module xil_defaultlib.yolo_conv_top_mul_6ns_6ns_12_1_1...
+Compiling module xil_defaultlib.yolo_conv_top_mul_6ns_3ns_9_1_1(...
+Compiling module xil_defaultlib.yolo_conv_top_mul_6ns_9ns_15_1_1...
 Compiling module xil_defaultlib.yolo_conv_top_mul_9ns_4ns_13_1_1...
 Compiling module xil_defaultlib.yolo_conv_top_am_addmul_9ns_1ns_...
 Compiling module xil_defaultlib.yolo_conv_top_am_addmul_9ns_1ns_...
 Compiling module xil_defaultlib.yolo_conv_top_fifo_w16_d2_S_Shif...
 Compiling module xil_defaultlib.yolo_conv_top_fifo_w16_d2_S
 Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
+Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
+Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
+Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
+Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
+Compiling module xil_defaultlib.yolo_conv_top_regslice_both(Data...
 Compiling module xil_defaultlib.yolo_conv_top
-Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=112)
+Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=1808)
+Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=1808,WIDTH=6)
 Compiling module xil_defaultlib.AESL_axi_s_inStream
-Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=112)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=4992)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=4992,WIDTH=6)
 Compiling module xil_defaultlib.AESL_axi_s_outStream
 Compiling module xil_defaultlib.AESL_axi_slave_CTRL_BUS
 Compiling module xil_defaultlib.AESL_deadlock_idx2_monitor
 Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
 Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
 Compiling module xil_defaultlib.nodf_module_intf
-Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=11)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
 Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=11)
 Compiling module xil_defaultlib.dataflow_monitor_1
 Compiling module xil_defaultlib.apatb_yolo_conv_top_top
@@ -1223,18 +1253,18 @@ source yolo_conv_top.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "116000"
-// RTL Simulation : 1 / 1 [100.00%] @ "210506000"
+// RTL Simulation : 1 / 1 [100.00%] @ "209036000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 210551250 ps : File "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top.autotb.v" Line 392
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1475.250 ; gain = 0.000 ; free physical = 18242 ; free virtual = 60068
+$finish called at time : 209081250 ps : File "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_conv/yolo_conv_prj/solution1/sim/verilog/yolo_conv_top.autotb.v" Line 488
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1475.250 ; gain = 0.000 ; free physical = 16726 ; free virtual = 58427
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Nov 18 23:57:21 2024...
+INFO: [Common 17-206] Exiting xsim at Tue Nov 19 23:15:15 2024...
 INFO: [COSIM 212-316] Starting C post checking ...
 4991
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4992
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 75.08 seconds. CPU system time: 1.4 seconds. Elapsed time: 24.37 seconds; current allocated memory: 10.211 MB.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 85.48 seconds. CPU system time: 1.62 seconds. Elapsed time: 26.81 seconds; current allocated memory: 12.215 MB.
 INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
@@ -1247,8 +1277,8 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 23:57:28 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 23:15:22 2024...
 INFO: [HLS 200-802] Generated output file yolo_conv_prj/solution1/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 7.48 seconds. CPU system time: 0.3 seconds. Elapsed time: 17.17 seconds; current allocated memory: 3.855 MB.
-INFO: [HLS 200-112] Total CPU user time: 138.33 seconds. Total CPU system time: 2.85 seconds. Total elapsed time: 108.71 seconds; peak allocated memory: 631.254 MB.
-INFO: [Common 17-206] Exiting vitis_hls at Mon Nov 18 23:57:38 2024...
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 7.97 seconds. CPU system time: 0.33 seconds. Elapsed time: 17.67 seconds; current allocated memory: 8.660 MB.
+INFO: [HLS 200-112] Total CPU user time: 151.74 seconds. Total CPU system time: 3.33 seconds. Total elapsed time: 114.38 seconds; peak allocated memory: 643.664 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Nov 19 23:15:33 2024...

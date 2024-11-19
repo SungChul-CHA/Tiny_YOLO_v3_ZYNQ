@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date         : Tue Nov 19 11:52:16 2024
+| Date         : Wed Nov 20 02:00:21 2024
 | Host         : tony running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -177,11 +177,11 @@ Table of Contents
 +---------------------------------+------+
 |             Ref Name            | Used |
 +---------------------------------+------+
-| design_1_yolo_yolo_top_0_1      |    1 |
-| design_1_yolo_upsamp_top_0_1    |    1 |
-| design_1_yolo_max_pool_top_0_1  |    1 |
-| design_1_yolo_conv_top_0_1      |    1 |
-| design_1_yolo_acc_top_0_1       |    1 |
+| design_1_yolo_yolo_top_0_0      |    1 |
+| design_1_yolo_upsamp_top_0_0    |    1 |
+| design_1_yolo_max_pool_top_0_0  |    1 |
+| design_1_yolo_conv_top_0_0      |    1 |
+| design_1_yolo_acc_top_0_0       |    1 |
 | design_1_xbar_1                 |    1 |
 | design_1_xbar_0                 |    1 |
 | design_1_rst_ps7_0_100M_0       |    1 |
@@ -189,8 +189,8 @@ Table of Contents
 | design_1_axis_switch_2_0        |    1 |
 | design_1_axis_switch_1_0        |    1 |
 | design_1_axis_switch_0_0        |    1 |
-| design_1_axi_dma_0_1            |    1 |
-| design_1_axi_dma_0_0            |    1 |
+| design_1_axi_dma_1_0            |    1 |
+| design_1_axi_dma_0              |    1 |
 | design_1_auto_pc_2              |    1 |
 | design_1_auto_pc_1              |    1 |
 | design_1_auto_pc_0              |    1 |

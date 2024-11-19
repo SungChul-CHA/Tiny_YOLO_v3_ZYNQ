@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/yolo_acc_prj/solution1/./sim/autowrap/testbench/yolo_acc.cpp_pre.cpp.tb.cpp

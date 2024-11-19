@@ -1,0 +1,487 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3'" level="0">
+<item name = "Date">Tue Nov 19 23:14:37 2024
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">yolo_conv_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">7.50 ns, 5.124 ns, 2.03 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">147, 147, 1.103 us, 1.103 us, 147, 147, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3">145, 145, 3, 1, 1, 144, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 174, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 99, -</column>
+<column name="Register">-, -, 240, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln1027_1_fu_1367_p2">+, 0, 0, 20, 15, 1</column>
+<column name="add_ln1027_fu_1513_p2">+, 0, 0, 14, 9, 1</column>
+<column name="add_ln49_fu_1382_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln52_fu_1435_p2">+, 0, 0, 14, 6, 1</column>
+<column name="add_ln55_fu_1582_p2">+, 0, 0, 11, 3, 1</column>
+<column name="empty_43_fu_1607_p2">+, 0, 0, 14, 7, 7</column>
+<column name="ap_block_pp0_stage0_01001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state2_pp0_stage0_iter1">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln1027_3_fu_1388_p2">icmp, 0, 0, 11, 9, 9</column>
+<column name="icmp_ln1027_4_fu_1423_p2">icmp, 0, 0, 8, 3, 3</column>
+<column name="icmp_ln1027_fu_1362_p2">icmp, 0, 0, 12, 15, 15</column>
+<column name="icmp_ln61_fu_1572_p2">icmp, 0, 0, 8, 3, 2</column>
+<column name="icmp_ln63_fu_1577_p2">icmp, 0, 0, 8, 3, 1</column>
+<column name="or_ln1027_fu_1441_p2">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln1027_14_fu_1519_p3">select, 0, 0, 9, 1, 1</column>
+<column name="select_ln1027_1_fu_1401_p3">select, 0, 0, 6, 1, 6</column>
+<column name="select_ln1027_3_fu_1428_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln1027_4_fu_1447_p3">select, 0, 0, 3, 1, 1</column>
+<column name="select_ln1027_5_fu_1567_p3">select, 0, 0, 6, 1, 6</column>
+<column name="select_ln1027_fu_1393_p3">select, 0, 0, 6, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_i_load">9, 2, 6, 12</column>
+<column name="ap_sig_allocacmp_j_load">9, 2, 3, 6</column>
+<column name="i_fu_302">9, 2, 6, 12</column>
+<column name="inStream_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="indvar_flatten95_fu_314">9, 2, 15, 30</column>
+<column name="indvar_flatten_fu_306">9, 2, 9, 18</column>
+<column name="j_fu_298">9, 2, 3, 6</column>
+<column name="k_fu_310">9, 2, 6, 12</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln52_reg_1817">6, 0, 6, 0</column>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter2_reg">1, 0, 1, 0</column>
+<column name="curr_input_data_sub_data_0_V_reg_1829">16, 0, 16, 0</column>
+<column name="curr_input_data_sub_data_0_V_reg_1829_pp0_iter2_reg">16, 0, 16, 0</column>
+<column name="curr_input_data_sub_data_1_V_reg_1857">16, 0, 16, 0</column>
+<column name="curr_input_data_sub_data_1_V_reg_1857_pp0_iter2_reg">16, 0, 16, 0</column>
+<column name="curr_input_data_sub_data_2_V_reg_1877">16, 0, 16, 0</column>
+<column name="curr_input_data_sub_data_2_V_reg_1877_pp0_iter2_reg">16, 0, 16, 0</column>
+<column name="curr_input_data_sub_data_3_V_reg_1897">16, 0, 16, 0</column>
+<column name="curr_input_data_sub_data_3_V_reg_1897_pp0_iter2_reg">16, 0, 16, 0</column>
+<column name="curr_input_dest_V_fu_278">6, 0, 6, 0</column>
+<column name="curr_input_id_V_fu_282">5, 0, 5, 0</column>
+<column name="curr_input_keep_V_fu_294">8, 0, 8, 0</column>
+<column name="curr_input_strb_V_fu_290">8, 0, 8, 0</column>
+<column name="curr_input_user_V_fu_286">2, 0, 2, 0</column>
+<column name="empty_reg_1803">2, 0, 2, 0</column>
+<column name="empty_reg_1803_pp0_iter2_reg">2, 0, 2, 0</column>
+<column name="i_fu_302">6, 0, 6, 0</column>
+<column name="icmp_ln1027_reg_1794">1, 0, 1, 0</column>
+<column name="icmp_ln61_reg_1922">1, 0, 1, 0</column>
+<column name="icmp_ln63_reg_1926">1, 0, 1, 0</column>
+<column name="indvar_flatten95_fu_314">15, 0, 15, 0</column>
+<column name="indvar_flatten_fu_306">9, 0, 9, 0</column>
+<column name="j_fu_298">3, 0, 3, 0</column>
+<column name="k_fu_310">6, 0, 6, 0</column>
+<column name="p_cast_mid2_reg_1808">3, 0, 3, 0</column>
+<column name="p_cast_mid2_reg_1808_pp0_iter2_reg">3, 0, 3, 0</column>
+<column name="select_ln1027_3_reg_1812">1, 0, 1, 0</column>
+<column name="select_ln1027_4_reg_1822">3, 0, 3, 0</column>
+<column name="select_ln1027_4_reg_1822_pp0_iter2_reg">3, 0, 3, 0</column>
+<column name="select_ln1027_5_reg_1917">6, 0, 6, 0</column>
+<column name="select_ln1027_reg_1798">6, 0, 6, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3, return value</column>
+<column name="inStream_TVALID">in, 1, axis, inStream_V_data_V, pointer</column>
+<column name="inStream_TDATA">in, 64, axis, inStream_V_data_V, pointer</column>
+<column name="mul_ln4_1">in, 15, ap_none, mul_ln4_1, scalar</column>
+<column name="mul_ln4">in, 9, ap_none, mul_ln4, scalar</column>
+<column name="fold_win_area">in, 3, ap_none, fold_win_area, scalar</column>
+<column name="icmp_ln1027_1">in, 1, ap_none, icmp_ln1027_1, scalar</column>
+<column name="local_mem_group_data_V_address0">out, 7, ap_memory, local_mem_group_data_V, array</column>
+<column name="local_mem_group_data_V_ce0">out, 1, ap_memory, local_mem_group_data_V, array</column>
+<column name="local_mem_group_data_V_we0">out, 1, ap_memory, local_mem_group_data_V, array</column>
+<column name="local_mem_group_data_V_d0">out, 16, ap_memory, local_mem_group_data_V, array</column>
+<column name="local_mem_group_data_V_1_address0">out, 7, ap_memory, local_mem_group_data_V_1, array</column>
+<column name="local_mem_group_data_V_1_ce0">out, 1, ap_memory, local_mem_group_data_V_1, array</column>
+<column name="local_mem_group_data_V_1_we0">out, 1, ap_memory, local_mem_group_data_V_1, array</column>
+<column name="local_mem_group_data_V_1_d0">out, 16, ap_memory, local_mem_group_data_V_1, array</column>
+<column name="local_mem_group_data_V_2_address0">out, 7, ap_memory, local_mem_group_data_V_2, array</column>
+<column name="local_mem_group_data_V_2_ce0">out, 1, ap_memory, local_mem_group_data_V_2, array</column>
+<column name="local_mem_group_data_V_2_we0">out, 1, ap_memory, local_mem_group_data_V_2, array</column>
+<column name="local_mem_group_data_V_2_d0">out, 16, ap_memory, local_mem_group_data_V_2, array</column>
+<column name="local_mem_group_data_V_3_address0">out, 7, ap_memory, local_mem_group_data_V_3, array</column>
+<column name="local_mem_group_data_V_3_ce0">out, 1, ap_memory, local_mem_group_data_V_3, array</column>
+<column name="local_mem_group_data_V_3_we0">out, 1, ap_memory, local_mem_group_data_V_3, array</column>
+<column name="local_mem_group_data_V_3_d0">out, 16, ap_memory, local_mem_group_data_V_3, array</column>
+<column name="local_mem_group_data_V_4_address0">out, 7, ap_memory, local_mem_group_data_V_4, array</column>
+<column name="local_mem_group_data_V_4_ce0">out, 1, ap_memory, local_mem_group_data_V_4, array</column>
+<column name="local_mem_group_data_V_4_we0">out, 1, ap_memory, local_mem_group_data_V_4, array</column>
+<column name="local_mem_group_data_V_4_d0">out, 16, ap_memory, local_mem_group_data_V_4, array</column>
+<column name="local_mem_group_data_V_5_address0">out, 7, ap_memory, local_mem_group_data_V_5, array</column>
+<column name="local_mem_group_data_V_5_ce0">out, 1, ap_memory, local_mem_group_data_V_5, array</column>
+<column name="local_mem_group_data_V_5_we0">out, 1, ap_memory, local_mem_group_data_V_5, array</column>
+<column name="local_mem_group_data_V_5_d0">out, 16, ap_memory, local_mem_group_data_V_5, array</column>
+<column name="local_mem_group_data_V_6_address0">out, 7, ap_memory, local_mem_group_data_V_6, array</column>
+<column name="local_mem_group_data_V_6_ce0">out, 1, ap_memory, local_mem_group_data_V_6, array</column>
+<column name="local_mem_group_data_V_6_we0">out, 1, ap_memory, local_mem_group_data_V_6, array</column>
+<column name="local_mem_group_data_V_6_d0">out, 16, ap_memory, local_mem_group_data_V_6, array</column>
+<column name="local_mem_group_data_V_7_address0">out, 7, ap_memory, local_mem_group_data_V_7, array</column>
+<column name="local_mem_group_data_V_7_ce0">out, 1, ap_memory, local_mem_group_data_V_7, array</column>
+<column name="local_mem_group_data_V_7_we0">out, 1, ap_memory, local_mem_group_data_V_7, array</column>
+<column name="local_mem_group_data_V_7_d0">out, 16, ap_memory, local_mem_group_data_V_7, array</column>
+<column name="local_mem_group_data_V_8_address0">out, 7, ap_memory, local_mem_group_data_V_8, array</column>
+<column name="local_mem_group_data_V_8_ce0">out, 1, ap_memory, local_mem_group_data_V_8, array</column>
+<column name="local_mem_group_data_V_8_we0">out, 1, ap_memory, local_mem_group_data_V_8, array</column>
+<column name="local_mem_group_data_V_8_d0">out, 16, ap_memory, local_mem_group_data_V_8, array</column>
+<column name="local_mem_group_data_V_9_address0">out, 7, ap_memory, local_mem_group_data_V_9, array</column>
+<column name="local_mem_group_data_V_9_ce0">out, 1, ap_memory, local_mem_group_data_V_9, array</column>
+<column name="local_mem_group_data_V_9_we0">out, 1, ap_memory, local_mem_group_data_V_9, array</column>
+<column name="local_mem_group_data_V_9_d0">out, 16, ap_memory, local_mem_group_data_V_9, array</column>
+<column name="local_mem_group_data_V_10_address0">out, 7, ap_memory, local_mem_group_data_V_10, array</column>
+<column name="local_mem_group_data_V_10_ce0">out, 1, ap_memory, local_mem_group_data_V_10, array</column>
+<column name="local_mem_group_data_V_10_we0">out, 1, ap_memory, local_mem_group_data_V_10, array</column>
+<column name="local_mem_group_data_V_10_d0">out, 16, ap_memory, local_mem_group_data_V_10, array</column>
+<column name="local_mem_group_data_V_11_address0">out, 7, ap_memory, local_mem_group_data_V_11, array</column>
+<column name="local_mem_group_data_V_11_ce0">out, 1, ap_memory, local_mem_group_data_V_11, array</column>
+<column name="local_mem_group_data_V_11_we0">out, 1, ap_memory, local_mem_group_data_V_11, array</column>
+<column name="local_mem_group_data_V_11_d0">out, 16, ap_memory, local_mem_group_data_V_11, array</column>
+<column name="local_mem_group_data_V_12_address0">out, 7, ap_memory, local_mem_group_data_V_12, array</column>
+<column name="local_mem_group_data_V_12_ce0">out, 1, ap_memory, local_mem_group_data_V_12, array</column>
+<column name="local_mem_group_data_V_12_we0">out, 1, ap_memory, local_mem_group_data_V_12, array</column>
+<column name="local_mem_group_data_V_12_d0">out, 16, ap_memory, local_mem_group_data_V_12, array</column>
+<column name="local_mem_group_data_V_13_address0">out, 7, ap_memory, local_mem_group_data_V_13, array</column>
+<column name="local_mem_group_data_V_13_ce0">out, 1, ap_memory, local_mem_group_data_V_13, array</column>
+<column name="local_mem_group_data_V_13_we0">out, 1, ap_memory, local_mem_group_data_V_13, array</column>
+<column name="local_mem_group_data_V_13_d0">out, 16, ap_memory, local_mem_group_data_V_13, array</column>
+<column name="local_mem_group_data_V_14_address0">out, 7, ap_memory, local_mem_group_data_V_14, array</column>
+<column name="local_mem_group_data_V_14_ce0">out, 1, ap_memory, local_mem_group_data_V_14, array</column>
+<column name="local_mem_group_data_V_14_we0">out, 1, ap_memory, local_mem_group_data_V_14, array</column>
+<column name="local_mem_group_data_V_14_d0">out, 16, ap_memory, local_mem_group_data_V_14, array</column>
+<column name="local_mem_group_data_V_15_address0">out, 7, ap_memory, local_mem_group_data_V_15, array</column>
+<column name="local_mem_group_data_V_15_ce0">out, 1, ap_memory, local_mem_group_data_V_15, array</column>
+<column name="local_mem_group_data_V_15_we0">out, 1, ap_memory, local_mem_group_data_V_15, array</column>
+<column name="local_mem_group_data_V_15_d0">out, 16, ap_memory, local_mem_group_data_V_15, array</column>
+<column name="local_mem_group_data_V_16_address0">out, 7, ap_memory, local_mem_group_data_V_16, array</column>
+<column name="local_mem_group_data_V_16_ce0">out, 1, ap_memory, local_mem_group_data_V_16, array</column>
+<column name="local_mem_group_data_V_16_we0">out, 1, ap_memory, local_mem_group_data_V_16, array</column>
+<column name="local_mem_group_data_V_16_d0">out, 16, ap_memory, local_mem_group_data_V_16, array</column>
+<column name="local_mem_group_data_V_17_address0">out, 7, ap_memory, local_mem_group_data_V_17, array</column>
+<column name="local_mem_group_data_V_17_ce0">out, 1, ap_memory, local_mem_group_data_V_17, array</column>
+<column name="local_mem_group_data_V_17_we0">out, 1, ap_memory, local_mem_group_data_V_17, array</column>
+<column name="local_mem_group_data_V_17_d0">out, 16, ap_memory, local_mem_group_data_V_17, array</column>
+<column name="local_mem_group_data_V_18_address0">out, 7, ap_memory, local_mem_group_data_V_18, array</column>
+<column name="local_mem_group_data_V_18_ce0">out, 1, ap_memory, local_mem_group_data_V_18, array</column>
+<column name="local_mem_group_data_V_18_we0">out, 1, ap_memory, local_mem_group_data_V_18, array</column>
+<column name="local_mem_group_data_V_18_d0">out, 16, ap_memory, local_mem_group_data_V_18, array</column>
+<column name="local_mem_group_data_V_19_address0">out, 7, ap_memory, local_mem_group_data_V_19, array</column>
+<column name="local_mem_group_data_V_19_ce0">out, 1, ap_memory, local_mem_group_data_V_19, array</column>
+<column name="local_mem_group_data_V_19_we0">out, 1, ap_memory, local_mem_group_data_V_19, array</column>
+<column name="local_mem_group_data_V_19_d0">out, 16, ap_memory, local_mem_group_data_V_19, array</column>
+<column name="local_mem_group_data_V_20_address0">out, 7, ap_memory, local_mem_group_data_V_20, array</column>
+<column name="local_mem_group_data_V_20_ce0">out, 1, ap_memory, local_mem_group_data_V_20, array</column>
+<column name="local_mem_group_data_V_20_we0">out, 1, ap_memory, local_mem_group_data_V_20, array</column>
+<column name="local_mem_group_data_V_20_d0">out, 16, ap_memory, local_mem_group_data_V_20, array</column>
+<column name="local_mem_group_data_V_21_address0">out, 7, ap_memory, local_mem_group_data_V_21, array</column>
+<column name="local_mem_group_data_V_21_ce0">out, 1, ap_memory, local_mem_group_data_V_21, array</column>
+<column name="local_mem_group_data_V_21_we0">out, 1, ap_memory, local_mem_group_data_V_21, array</column>
+<column name="local_mem_group_data_V_21_d0">out, 16, ap_memory, local_mem_group_data_V_21, array</column>
+<column name="local_mem_group_data_V_22_address0">out, 7, ap_memory, local_mem_group_data_V_22, array</column>
+<column name="local_mem_group_data_V_22_ce0">out, 1, ap_memory, local_mem_group_data_V_22, array</column>
+<column name="local_mem_group_data_V_22_we0">out, 1, ap_memory, local_mem_group_data_V_22, array</column>
+<column name="local_mem_group_data_V_22_d0">out, 16, ap_memory, local_mem_group_data_V_22, array</column>
+<column name="local_mem_group_data_V_23_address0">out, 7, ap_memory, local_mem_group_data_V_23, array</column>
+<column name="local_mem_group_data_V_23_ce0">out, 1, ap_memory, local_mem_group_data_V_23, array</column>
+<column name="local_mem_group_data_V_23_we0">out, 1, ap_memory, local_mem_group_data_V_23, array</column>
+<column name="local_mem_group_data_V_23_d0">out, 16, ap_memory, local_mem_group_data_V_23, array</column>
+<column name="local_mem_group_data_V_24_address0">out, 7, ap_memory, local_mem_group_data_V_24, array</column>
+<column name="local_mem_group_data_V_24_ce0">out, 1, ap_memory, local_mem_group_data_V_24, array</column>
+<column name="local_mem_group_data_V_24_we0">out, 1, ap_memory, local_mem_group_data_V_24, array</column>
+<column name="local_mem_group_data_V_24_d0">out, 16, ap_memory, local_mem_group_data_V_24, array</column>
+<column name="local_mem_group_data_V_25_address0">out, 7, ap_memory, local_mem_group_data_V_25, array</column>
+<column name="local_mem_group_data_V_25_ce0">out, 1, ap_memory, local_mem_group_data_V_25, array</column>
+<column name="local_mem_group_data_V_25_we0">out, 1, ap_memory, local_mem_group_data_V_25, array</column>
+<column name="local_mem_group_data_V_25_d0">out, 16, ap_memory, local_mem_group_data_V_25, array</column>
+<column name="local_mem_group_data_V_26_address0">out, 7, ap_memory, local_mem_group_data_V_26, array</column>
+<column name="local_mem_group_data_V_26_ce0">out, 1, ap_memory, local_mem_group_data_V_26, array</column>
+<column name="local_mem_group_data_V_26_we0">out, 1, ap_memory, local_mem_group_data_V_26, array</column>
+<column name="local_mem_group_data_V_26_d0">out, 16, ap_memory, local_mem_group_data_V_26, array</column>
+<column name="local_mem_group_data_V_27_address0">out, 7, ap_memory, local_mem_group_data_V_27, array</column>
+<column name="local_mem_group_data_V_27_ce0">out, 1, ap_memory, local_mem_group_data_V_27, array</column>
+<column name="local_mem_group_data_V_27_we0">out, 1, ap_memory, local_mem_group_data_V_27, array</column>
+<column name="local_mem_group_data_V_27_d0">out, 16, ap_memory, local_mem_group_data_V_27, array</column>
+<column name="local_mem_group_data_V_28_address0">out, 7, ap_memory, local_mem_group_data_V_28, array</column>
+<column name="local_mem_group_data_V_28_ce0">out, 1, ap_memory, local_mem_group_data_V_28, array</column>
+<column name="local_mem_group_data_V_28_we0">out, 1, ap_memory, local_mem_group_data_V_28, array</column>
+<column name="local_mem_group_data_V_28_d0">out, 16, ap_memory, local_mem_group_data_V_28, array</column>
+<column name="local_mem_group_data_V_29_address0">out, 7, ap_memory, local_mem_group_data_V_29, array</column>
+<column name="local_mem_group_data_V_29_ce0">out, 1, ap_memory, local_mem_group_data_V_29, array</column>
+<column name="local_mem_group_data_V_29_we0">out, 1, ap_memory, local_mem_group_data_V_29, array</column>
+<column name="local_mem_group_data_V_29_d0">out, 16, ap_memory, local_mem_group_data_V_29, array</column>
+<column name="local_mem_group_data_V_30_address0">out, 7, ap_memory, local_mem_group_data_V_30, array</column>
+<column name="local_mem_group_data_V_30_ce0">out, 1, ap_memory, local_mem_group_data_V_30, array</column>
+<column name="local_mem_group_data_V_30_we0">out, 1, ap_memory, local_mem_group_data_V_30, array</column>
+<column name="local_mem_group_data_V_30_d0">out, 16, ap_memory, local_mem_group_data_V_30, array</column>
+<column name="local_mem_group_data_V_31_address0">out, 7, ap_memory, local_mem_group_data_V_31, array</column>
+<column name="local_mem_group_data_V_31_ce0">out, 1, ap_memory, local_mem_group_data_V_31, array</column>
+<column name="local_mem_group_data_V_31_we0">out, 1, ap_memory, local_mem_group_data_V_31, array</column>
+<column name="local_mem_group_data_V_31_d0">out, 16, ap_memory, local_mem_group_data_V_31, array</column>
+<column name="local_mem_group_data_V_32_address0">out, 7, ap_memory, local_mem_group_data_V_32, array</column>
+<column name="local_mem_group_data_V_32_ce0">out, 1, ap_memory, local_mem_group_data_V_32, array</column>
+<column name="local_mem_group_data_V_32_we0">out, 1, ap_memory, local_mem_group_data_V_32, array</column>
+<column name="local_mem_group_data_V_32_d0">out, 16, ap_memory, local_mem_group_data_V_32, array</column>
+<column name="local_mem_group_data_V_33_address0">out, 7, ap_memory, local_mem_group_data_V_33, array</column>
+<column name="local_mem_group_data_V_33_ce0">out, 1, ap_memory, local_mem_group_data_V_33, array</column>
+<column name="local_mem_group_data_V_33_we0">out, 1, ap_memory, local_mem_group_data_V_33, array</column>
+<column name="local_mem_group_data_V_33_d0">out, 16, ap_memory, local_mem_group_data_V_33, array</column>
+<column name="local_mem_group_data_V_34_address0">out, 7, ap_memory, local_mem_group_data_V_34, array</column>
+<column name="local_mem_group_data_V_34_ce0">out, 1, ap_memory, local_mem_group_data_V_34, array</column>
+<column name="local_mem_group_data_V_34_we0">out, 1, ap_memory, local_mem_group_data_V_34, array</column>
+<column name="local_mem_group_data_V_34_d0">out, 16, ap_memory, local_mem_group_data_V_34, array</column>
+<column name="local_mem_group_data_V_35_address0">out, 7, ap_memory, local_mem_group_data_V_35, array</column>
+<column name="local_mem_group_data_V_35_ce0">out, 1, ap_memory, local_mem_group_data_V_35, array</column>
+<column name="local_mem_group_data_V_35_we0">out, 1, ap_memory, local_mem_group_data_V_35, array</column>
+<column name="local_mem_group_data_V_35_d0">out, 16, ap_memory, local_mem_group_data_V_35, array</column>
+<column name="local_mem_group_data_V_36_address0">out, 7, ap_memory, local_mem_group_data_V_36, array</column>
+<column name="local_mem_group_data_V_36_ce0">out, 1, ap_memory, local_mem_group_data_V_36, array</column>
+<column name="local_mem_group_data_V_36_we0">out, 1, ap_memory, local_mem_group_data_V_36, array</column>
+<column name="local_mem_group_data_V_36_d0">out, 16, ap_memory, local_mem_group_data_V_36, array</column>
+<column name="local_mem_group_data_V_37_address0">out, 7, ap_memory, local_mem_group_data_V_37, array</column>
+<column name="local_mem_group_data_V_37_ce0">out, 1, ap_memory, local_mem_group_data_V_37, array</column>
+<column name="local_mem_group_data_V_37_we0">out, 1, ap_memory, local_mem_group_data_V_37, array</column>
+<column name="local_mem_group_data_V_37_d0">out, 16, ap_memory, local_mem_group_data_V_37, array</column>
+<column name="local_mem_group_data_V_38_address0">out, 7, ap_memory, local_mem_group_data_V_38, array</column>
+<column name="local_mem_group_data_V_38_ce0">out, 1, ap_memory, local_mem_group_data_V_38, array</column>
+<column name="local_mem_group_data_V_38_we0">out, 1, ap_memory, local_mem_group_data_V_38, array</column>
+<column name="local_mem_group_data_V_38_d0">out, 16, ap_memory, local_mem_group_data_V_38, array</column>
+<column name="local_mem_group_data_V_39_address0">out, 7, ap_memory, local_mem_group_data_V_39, array</column>
+<column name="local_mem_group_data_V_39_ce0">out, 1, ap_memory, local_mem_group_data_V_39, array</column>
+<column name="local_mem_group_data_V_39_we0">out, 1, ap_memory, local_mem_group_data_V_39, array</column>
+<column name="local_mem_group_data_V_39_d0">out, 16, ap_memory, local_mem_group_data_V_39, array</column>
+<column name="local_mem_group_data_V_40_address0">out, 7, ap_memory, local_mem_group_data_V_40, array</column>
+<column name="local_mem_group_data_V_40_ce0">out, 1, ap_memory, local_mem_group_data_V_40, array</column>
+<column name="local_mem_group_data_V_40_we0">out, 1, ap_memory, local_mem_group_data_V_40, array</column>
+<column name="local_mem_group_data_V_40_d0">out, 16, ap_memory, local_mem_group_data_V_40, array</column>
+<column name="local_mem_group_data_V_41_address0">out, 7, ap_memory, local_mem_group_data_V_41, array</column>
+<column name="local_mem_group_data_V_41_ce0">out, 1, ap_memory, local_mem_group_data_V_41, array</column>
+<column name="local_mem_group_data_V_41_we0">out, 1, ap_memory, local_mem_group_data_V_41, array</column>
+<column name="local_mem_group_data_V_41_d0">out, 16, ap_memory, local_mem_group_data_V_41, array</column>
+<column name="local_mem_group_data_V_42_address0">out, 7, ap_memory, local_mem_group_data_V_42, array</column>
+<column name="local_mem_group_data_V_42_ce0">out, 1, ap_memory, local_mem_group_data_V_42, array</column>
+<column name="local_mem_group_data_V_42_we0">out, 1, ap_memory, local_mem_group_data_V_42, array</column>
+<column name="local_mem_group_data_V_42_d0">out, 16, ap_memory, local_mem_group_data_V_42, array</column>
+<column name="local_mem_group_data_V_43_address0">out, 7, ap_memory, local_mem_group_data_V_43, array</column>
+<column name="local_mem_group_data_V_43_ce0">out, 1, ap_memory, local_mem_group_data_V_43, array</column>
+<column name="local_mem_group_data_V_43_we0">out, 1, ap_memory, local_mem_group_data_V_43, array</column>
+<column name="local_mem_group_data_V_43_d0">out, 16, ap_memory, local_mem_group_data_V_43, array</column>
+<column name="local_mem_group_data_V_44_address0">out, 7, ap_memory, local_mem_group_data_V_44, array</column>
+<column name="local_mem_group_data_V_44_ce0">out, 1, ap_memory, local_mem_group_data_V_44, array</column>
+<column name="local_mem_group_data_V_44_we0">out, 1, ap_memory, local_mem_group_data_V_44, array</column>
+<column name="local_mem_group_data_V_44_d0">out, 16, ap_memory, local_mem_group_data_V_44, array</column>
+<column name="local_mem_group_data_V_45_address0">out, 7, ap_memory, local_mem_group_data_V_45, array</column>
+<column name="local_mem_group_data_V_45_ce0">out, 1, ap_memory, local_mem_group_data_V_45, array</column>
+<column name="local_mem_group_data_V_45_we0">out, 1, ap_memory, local_mem_group_data_V_45, array</column>
+<column name="local_mem_group_data_V_45_d0">out, 16, ap_memory, local_mem_group_data_V_45, array</column>
+<column name="local_mem_group_data_V_46_address0">out, 7, ap_memory, local_mem_group_data_V_46, array</column>
+<column name="local_mem_group_data_V_46_ce0">out, 1, ap_memory, local_mem_group_data_V_46, array</column>
+<column name="local_mem_group_data_V_46_we0">out, 1, ap_memory, local_mem_group_data_V_46, array</column>
+<column name="local_mem_group_data_V_46_d0">out, 16, ap_memory, local_mem_group_data_V_46, array</column>
+<column name="local_mem_group_data_V_47_address0">out, 7, ap_memory, local_mem_group_data_V_47, array</column>
+<column name="local_mem_group_data_V_47_ce0">out, 1, ap_memory, local_mem_group_data_V_47, array</column>
+<column name="local_mem_group_data_V_47_we0">out, 1, ap_memory, local_mem_group_data_V_47, array</column>
+<column name="local_mem_group_data_V_47_d0">out, 16, ap_memory, local_mem_group_data_V_47, array</column>
+<column name="local_mem_group_data_V_48_address0">out, 7, ap_memory, local_mem_group_data_V_48, array</column>
+<column name="local_mem_group_data_V_48_ce0">out, 1, ap_memory, local_mem_group_data_V_48, array</column>
+<column name="local_mem_group_data_V_48_we0">out, 1, ap_memory, local_mem_group_data_V_48, array</column>
+<column name="local_mem_group_data_V_48_d0">out, 16, ap_memory, local_mem_group_data_V_48, array</column>
+<column name="local_mem_group_data_V_49_address0">out, 7, ap_memory, local_mem_group_data_V_49, array</column>
+<column name="local_mem_group_data_V_49_ce0">out, 1, ap_memory, local_mem_group_data_V_49, array</column>
+<column name="local_mem_group_data_V_49_we0">out, 1, ap_memory, local_mem_group_data_V_49, array</column>
+<column name="local_mem_group_data_V_49_d0">out, 16, ap_memory, local_mem_group_data_V_49, array</column>
+<column name="local_mem_group_data_V_50_address0">out, 7, ap_memory, local_mem_group_data_V_50, array</column>
+<column name="local_mem_group_data_V_50_ce0">out, 1, ap_memory, local_mem_group_data_V_50, array</column>
+<column name="local_mem_group_data_V_50_we0">out, 1, ap_memory, local_mem_group_data_V_50, array</column>
+<column name="local_mem_group_data_V_50_d0">out, 16, ap_memory, local_mem_group_data_V_50, array</column>
+<column name="local_mem_group_data_V_51_address0">out, 7, ap_memory, local_mem_group_data_V_51, array</column>
+<column name="local_mem_group_data_V_51_ce0">out, 1, ap_memory, local_mem_group_data_V_51, array</column>
+<column name="local_mem_group_data_V_51_we0">out, 1, ap_memory, local_mem_group_data_V_51, array</column>
+<column name="local_mem_group_data_V_51_d0">out, 16, ap_memory, local_mem_group_data_V_51, array</column>
+<column name="local_mem_group_data_V_52_address0">out, 7, ap_memory, local_mem_group_data_V_52, array</column>
+<column name="local_mem_group_data_V_52_ce0">out, 1, ap_memory, local_mem_group_data_V_52, array</column>
+<column name="local_mem_group_data_V_52_we0">out, 1, ap_memory, local_mem_group_data_V_52, array</column>
+<column name="local_mem_group_data_V_52_d0">out, 16, ap_memory, local_mem_group_data_V_52, array</column>
+<column name="local_mem_group_data_V_53_address0">out, 7, ap_memory, local_mem_group_data_V_53, array</column>
+<column name="local_mem_group_data_V_53_ce0">out, 1, ap_memory, local_mem_group_data_V_53, array</column>
+<column name="local_mem_group_data_V_53_we0">out, 1, ap_memory, local_mem_group_data_V_53, array</column>
+<column name="local_mem_group_data_V_53_d0">out, 16, ap_memory, local_mem_group_data_V_53, array</column>
+<column name="local_mem_group_data_V_54_address0">out, 7, ap_memory, local_mem_group_data_V_54, array</column>
+<column name="local_mem_group_data_V_54_ce0">out, 1, ap_memory, local_mem_group_data_V_54, array</column>
+<column name="local_mem_group_data_V_54_we0">out, 1, ap_memory, local_mem_group_data_V_54, array</column>
+<column name="local_mem_group_data_V_54_d0">out, 16, ap_memory, local_mem_group_data_V_54, array</column>
+<column name="local_mem_group_data_V_55_address0">out, 7, ap_memory, local_mem_group_data_V_55, array</column>
+<column name="local_mem_group_data_V_55_ce0">out, 1, ap_memory, local_mem_group_data_V_55, array</column>
+<column name="local_mem_group_data_V_55_we0">out, 1, ap_memory, local_mem_group_data_V_55, array</column>
+<column name="local_mem_group_data_V_55_d0">out, 16, ap_memory, local_mem_group_data_V_55, array</column>
+<column name="local_mem_group_data_V_56_address0">out, 7, ap_memory, local_mem_group_data_V_56, array</column>
+<column name="local_mem_group_data_V_56_ce0">out, 1, ap_memory, local_mem_group_data_V_56, array</column>
+<column name="local_mem_group_data_V_56_we0">out, 1, ap_memory, local_mem_group_data_V_56, array</column>
+<column name="local_mem_group_data_V_56_d0">out, 16, ap_memory, local_mem_group_data_V_56, array</column>
+<column name="local_mem_group_data_V_57_address0">out, 7, ap_memory, local_mem_group_data_V_57, array</column>
+<column name="local_mem_group_data_V_57_ce0">out, 1, ap_memory, local_mem_group_data_V_57, array</column>
+<column name="local_mem_group_data_V_57_we0">out, 1, ap_memory, local_mem_group_data_V_57, array</column>
+<column name="local_mem_group_data_V_57_d0">out, 16, ap_memory, local_mem_group_data_V_57, array</column>
+<column name="local_mem_group_data_V_58_address0">out, 7, ap_memory, local_mem_group_data_V_58, array</column>
+<column name="local_mem_group_data_V_58_ce0">out, 1, ap_memory, local_mem_group_data_V_58, array</column>
+<column name="local_mem_group_data_V_58_we0">out, 1, ap_memory, local_mem_group_data_V_58, array</column>
+<column name="local_mem_group_data_V_58_d0">out, 16, ap_memory, local_mem_group_data_V_58, array</column>
+<column name="local_mem_group_data_V_59_address0">out, 7, ap_memory, local_mem_group_data_V_59, array</column>
+<column name="local_mem_group_data_V_59_ce0">out, 1, ap_memory, local_mem_group_data_V_59, array</column>
+<column name="local_mem_group_data_V_59_we0">out, 1, ap_memory, local_mem_group_data_V_59, array</column>
+<column name="local_mem_group_data_V_59_d0">out, 16, ap_memory, local_mem_group_data_V_59, array</column>
+<column name="local_mem_group_data_V_60_address0">out, 7, ap_memory, local_mem_group_data_V_60, array</column>
+<column name="local_mem_group_data_V_60_ce0">out, 1, ap_memory, local_mem_group_data_V_60, array</column>
+<column name="local_mem_group_data_V_60_we0">out, 1, ap_memory, local_mem_group_data_V_60, array</column>
+<column name="local_mem_group_data_V_60_d0">out, 16, ap_memory, local_mem_group_data_V_60, array</column>
+<column name="local_mem_group_data_V_61_address0">out, 7, ap_memory, local_mem_group_data_V_61, array</column>
+<column name="local_mem_group_data_V_61_ce0">out, 1, ap_memory, local_mem_group_data_V_61, array</column>
+<column name="local_mem_group_data_V_61_we0">out, 1, ap_memory, local_mem_group_data_V_61, array</column>
+<column name="local_mem_group_data_V_61_d0">out, 16, ap_memory, local_mem_group_data_V_61, array</column>
+<column name="local_mem_group_data_V_62_address0">out, 7, ap_memory, local_mem_group_data_V_62, array</column>
+<column name="local_mem_group_data_V_62_ce0">out, 1, ap_memory, local_mem_group_data_V_62, array</column>
+<column name="local_mem_group_data_V_62_we0">out, 1, ap_memory, local_mem_group_data_V_62, array</column>
+<column name="local_mem_group_data_V_62_d0">out, 16, ap_memory, local_mem_group_data_V_62, array</column>
+<column name="local_mem_group_data_V_63_address0">out, 7, ap_memory, local_mem_group_data_V_63, array</column>
+<column name="local_mem_group_data_V_63_ce0">out, 1, ap_memory, local_mem_group_data_V_63, array</column>
+<column name="local_mem_group_data_V_63_we0">out, 1, ap_memory, local_mem_group_data_V_63, array</column>
+<column name="local_mem_group_data_V_63_d0">out, 16, ap_memory, local_mem_group_data_V_63, array</column>
+<column name="local_mem_group_data_V_64_address0">out, 7, ap_memory, local_mem_group_data_V_64, array</column>
+<column name="local_mem_group_data_V_64_ce0">out, 1, ap_memory, local_mem_group_data_V_64, array</column>
+<column name="local_mem_group_data_V_64_we0">out, 1, ap_memory, local_mem_group_data_V_64, array</column>
+<column name="local_mem_group_data_V_64_d0">out, 16, ap_memory, local_mem_group_data_V_64, array</column>
+<column name="local_mem_group_data_V_65_address0">out, 7, ap_memory, local_mem_group_data_V_65, array</column>
+<column name="local_mem_group_data_V_65_ce0">out, 1, ap_memory, local_mem_group_data_V_65, array</column>
+<column name="local_mem_group_data_V_65_we0">out, 1, ap_memory, local_mem_group_data_V_65, array</column>
+<column name="local_mem_group_data_V_65_d0">out, 16, ap_memory, local_mem_group_data_V_65, array</column>
+<column name="local_mem_group_data_V_66_address0">out, 7, ap_memory, local_mem_group_data_V_66, array</column>
+<column name="local_mem_group_data_V_66_ce0">out, 1, ap_memory, local_mem_group_data_V_66, array</column>
+<column name="local_mem_group_data_V_66_we0">out, 1, ap_memory, local_mem_group_data_V_66, array</column>
+<column name="local_mem_group_data_V_66_d0">out, 16, ap_memory, local_mem_group_data_V_66, array</column>
+<column name="local_mem_group_data_V_67_address0">out, 7, ap_memory, local_mem_group_data_V_67, array</column>
+<column name="local_mem_group_data_V_67_ce0">out, 1, ap_memory, local_mem_group_data_V_67, array</column>
+<column name="local_mem_group_data_V_67_we0">out, 1, ap_memory, local_mem_group_data_V_67, array</column>
+<column name="local_mem_group_data_V_67_d0">out, 16, ap_memory, local_mem_group_data_V_67, array</column>
+<column name="local_mem_group_data_V_68_address0">out, 7, ap_memory, local_mem_group_data_V_68, array</column>
+<column name="local_mem_group_data_V_68_ce0">out, 1, ap_memory, local_mem_group_data_V_68, array</column>
+<column name="local_mem_group_data_V_68_we0">out, 1, ap_memory, local_mem_group_data_V_68, array</column>
+<column name="local_mem_group_data_V_68_d0">out, 16, ap_memory, local_mem_group_data_V_68, array</column>
+<column name="local_mem_group_data_V_69_address0">out, 7, ap_memory, local_mem_group_data_V_69, array</column>
+<column name="local_mem_group_data_V_69_ce0">out, 1, ap_memory, local_mem_group_data_V_69, array</column>
+<column name="local_mem_group_data_V_69_we0">out, 1, ap_memory, local_mem_group_data_V_69, array</column>
+<column name="local_mem_group_data_V_69_d0">out, 16, ap_memory, local_mem_group_data_V_69, array</column>
+<column name="local_mem_group_data_V_70_address0">out, 7, ap_memory, local_mem_group_data_V_70, array</column>
+<column name="local_mem_group_data_V_70_ce0">out, 1, ap_memory, local_mem_group_data_V_70, array</column>
+<column name="local_mem_group_data_V_70_we0">out, 1, ap_memory, local_mem_group_data_V_70, array</column>
+<column name="local_mem_group_data_V_70_d0">out, 16, ap_memory, local_mem_group_data_V_70, array</column>
+<column name="local_mem_group_data_V_71_address0">out, 7, ap_memory, local_mem_group_data_V_71, array</column>
+<column name="local_mem_group_data_V_71_ce0">out, 1, ap_memory, local_mem_group_data_V_71, array</column>
+<column name="local_mem_group_data_V_71_we0">out, 1, ap_memory, local_mem_group_data_V_71, array</column>
+<column name="local_mem_group_data_V_71_d0">out, 16, ap_memory, local_mem_group_data_V_71, array</column>
+<column name="inStream_TREADY">out, 1, axis, inStream_V_dest_V, pointer</column>
+<column name="inStream_TDEST">in, 6, axis, inStream_V_dest_V, pointer</column>
+<column name="inStream_TKEEP">in, 8, axis, inStream_V_keep_V, pointer</column>
+<column name="inStream_TSTRB">in, 8, axis, inStream_V_strb_V, pointer</column>
+<column name="inStream_TUSER">in, 2, axis, inStream_V_user_V, pointer</column>
+<column name="inStream_TLAST">in, 1, axis, inStream_V_last_V, pointer</column>
+<column name="inStream_TID">in, 5, axis, inStream_V_id_V, pointer</column>
+<column name="curr_input_keep_V_out">out, 8, ap_vld, curr_input_keep_V_out, pointer</column>
+<column name="curr_input_keep_V_out_ap_vld">out, 1, ap_vld, curr_input_keep_V_out, pointer</column>
+<column name="curr_input_strb_V_out">out, 8, ap_vld, curr_input_strb_V_out, pointer</column>
+<column name="curr_input_strb_V_out_ap_vld">out, 1, ap_vld, curr_input_strb_V_out, pointer</column>
+<column name="curr_input_user_V_out">out, 2, ap_vld, curr_input_user_V_out, pointer</column>
+<column name="curr_input_user_V_out_ap_vld">out, 1, ap_vld, curr_input_user_V_out, pointer</column>
+<column name="curr_input_id_V_out">out, 5, ap_vld, curr_input_id_V_out, pointer</column>
+<column name="curr_input_id_V_out_ap_vld">out, 1, ap_vld, curr_input_id_V_out, pointer</column>
+<column name="curr_input_dest_V_out">out, 6, ap_vld, curr_input_dest_V_out, pointer</column>
+<column name="curr_input_dest_V_out_ap_vld">out, 1, ap_vld, curr_input_dest_V_out, pointer</column>
+</table>
+</item>
+</section>
+</profile>

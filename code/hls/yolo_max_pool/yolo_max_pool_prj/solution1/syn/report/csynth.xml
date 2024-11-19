@@ -268,19 +268,19 @@
         </RtlPorts>
         <RtlPorts>
             <name>inStream_TDATA</name>
-            <Object>inStream</Object>
+            <Object>inStream_V_data_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>in</Dir>
-            <Bits>112</Bits>
+            <Bits>64</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
             <name>inStream_TVALID</name>
-            <Object>inStream</Object>
+            <Object>inStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -292,7 +292,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>inStream_TREADY</name>
-            <Object>inStream</Object>
+            <Object>inStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -303,20 +303,92 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
+            <name>inStream_TDEST</name>
+            <Object>inStream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TKEEP</name>
+            <Object>inStream_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TSTRB</name>
+            <Object>inStream_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TUSER</name>
+            <Object>inStream_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TLAST</name>
+            <Object>inStream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TID</name>
+            <Object>inStream_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>5</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
             <name>outStream_TDATA</name>
-            <Object>outStream</Object>
+            <Object>outStream_V_data_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>out</Dir>
-            <Bits>112</Bits>
+            <Bits>64</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
             <name>outStream_TVALID</name>
-            <Object>outStream</Object>
+            <Object>outStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -328,7 +400,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>outStream_TREADY</name>
-            <Object>outStream</Object>
+            <Object>outStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -338,34 +410,106 @@
             <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TDEST</name>
+            <Object>outStream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TKEEP</name>
+            <Object>outStream_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TSTRB</name>
+            <Object>outStream_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TUSER</name>
+            <Object>outStream_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TLAST</name>
+            <Object>outStream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TID</name>
+            <Object>outStream_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>5</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
     </InterfaceSummary>
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="3">
             <ModuleName>yolo_max_pool_top</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_fu_568</InstName>
+                    <InstName>grp_yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_fu_598</InstName>
                     <ModuleName>yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>568</ID>
+                    <ID>598</ID>
                     <InstancesList>
                         <Instance>
-                            <InstName>grp_window_max_pool_fu_715</InstName>
+                            <InstName>grp_window_max_pool_fu_743</InstName>
                             <ModuleName>window_max_pool</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>715</ID>
+                            <ID>743</ID>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_max_pool_fu_716</InstName>
+                            <InstName>grp_window_max_pool_fu_744</InstName>
                             <ModuleName>window_max_pool</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>716</ID>
+                            <ID>744</ID>
                         </Instance>
                     </InstancesList>
-                    <BindInstances>mul_9ns_2ns_11_1_1_U5 row_idx_fu_935_p2 mul_9ns_2ns_11_1_1_U6 col_idx_fu_972_p2 conv_count_fu_1147_p2 add_ln144_fu_1709_p2 add_ln1027_3_fu_1189_p2 out_row_3_fu_876_p2 mul_9ns_2ns_11_1_1_U7 row_stride_3_fu_1049_p2 row_idx_mid1_fu_1065_p2 out_col_3_fu_1089_p2 mul_9ns_2ns_11_1_1_U8 conv_count_mid125_fu_1325_p2 add_ln144_1_fu_1746_p2 col_stride_3_fu_1399_p2 col_idx_mid1_fu_1425_p2 conv_count_mid1_fu_1435_p2 add_ln144_2_fu_1779_p2 mul_4ns_10ns_12_1_1_U9 add_ln871_fu_1801_p2 add_ln984_fu_1806_p2 add_ln984_1_fu_1823_p2 add_ln39_fu_1848_p2 add_ln1027_fu_1628_p2 add_ln1027_1_fu_1640_p2 add_ln1027_2_fu_1652_p2</BindInstances>
+                    <BindInstances>mul_9ns_2ns_11_1_1_U5 row_idx_fu_963_p2 mul_9ns_2ns_11_1_1_U6 col_idx_fu_1000_p2 conv_count_fu_1175_p2 add_ln144_fu_1711_p2 add_ln1027_3_fu_1217_p2 out_row_3_fu_904_p2 mul_9ns_2ns_11_1_1_U7 row_stride_3_fu_1077_p2 row_idx_mid1_fu_1093_p2 out_col_3_fu_1117_p2 mul_9ns_2ns_11_1_1_U8 conv_count_mid125_fu_1353_p2 add_ln144_1_fu_1748_p2 col_stride_3_fu_1427_p2 col_idx_mid1_fu_1453_p2 conv_count_mid1_fu_1463_p2 add_ln144_2_fu_1781_p2 mul_4ns_10ns_12_1_1_U9 add_ln871_fu_1803_p2 add_ln984_fu_1808_p2 add_ln984_1_fu_1825_p2 add_ln39_fu_1850_p2 add_ln1027_fu_1630_p2 add_ln1027_1_fu_1642_p2 add_ln1027_2_fu_1654_p2</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>line_buff_group_0_val_V_U line_buff_group_0_val_V_1_U line_buff_group_1_val_V_U line_buff_group_1_val_V_1_U line_buff_group_2_val_V_U line_buff_group_2_val_V_1_U line_buff_group_3_val_V_U line_buff_group_3_val_V_1_U sub_i_i270_fu_658_p2 sub_i_i87_fu_668_p2 sub_i_i56_fu_678_p2 sub_i_i_fu_688_p2 mul_2ns_4ns_6_1_1_U40 mul_9ns_6ns_15_1_1_U41 mul_2ns_15ns_17_1_1_U42 mul_mul_9ns_17ns_26_4_1_U43</BindInstances>
+            <BindInstances>line_buff_group_0_val_V_U line_buff_group_0_val_V_1_U line_buff_group_1_val_V_U line_buff_group_1_val_V_1_U line_buff_group_2_val_V_U line_buff_group_2_val_V_1_U line_buff_group_3_val_V_U line_buff_group_3_val_V_1_U sub_i_i270_fu_712_p2 sub_i_i87_fu_722_p2 sub_i_i56_fu_732_p2 sub_i_i_fu_742_p2 mul_2ns_4ns_6_1_1_U52 mul_9ns_6ns_15_1_1_U53 mul_2ns_15ns_17_1_1_U54 mul_mul_9ns_17ns_26_4_1_U55</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -442,8 +586,8 @@
                         <PipelineDepth>9</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList>
-                            <Instance>grp_window_max_pool_fu_715</Instance>
-                            <Instance>grp_window_max_pool_fu_716</Instance>
+                            <Instance>grp_window_max_pool_fu_743</Instance>
+                            <Instance>grp_window_max_pool_fu_744</Instance>
                         </InstanceList>
                     </VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5>
                 </SummaryOfLoopLatency>
@@ -468,33 +612,33 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_2ns_11_1_1_U5" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv3_i_i_i2821604"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="row_idx_fu_935_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="row_idx"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_2ns_11_1_1_U6" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv3_i_i_i3291606"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="col_idx_fu_972_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="col_idx"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="conv_count_fu_1147_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv_count"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln144_fu_1709_p2" SOURCE="src/yolo_max_pool.cpp:144" URAM="0" VARIABLE="add_ln144"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_3_fu_1189_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="out_row_3_fu_876_p2" SOURCE="src/yolo_max_pool.cpp:27" URAM="0" VARIABLE="out_row_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_2ns_11_1_1_U7" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv3_i_i_i2821604_mid1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="row_stride_3_fu_1049_p2" SOURCE="src/yolo_max_pool.cpp:30" URAM="0" VARIABLE="row_stride_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="row_idx_mid1_fu_1065_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="row_idx_mid1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="out_col_3_fu_1089_p2" SOURCE="src/yolo_max_pool.cpp:33" URAM="0" VARIABLE="out_col_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_2ns_11_1_1_U8" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv3_i_i_i3291606_mid1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="conv_count_mid125_fu_1325_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv_count_mid125"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln144_1_fu_1746_p2" SOURCE="src/yolo_max_pool.cpp:144" URAM="0" VARIABLE="add_ln144_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="col_stride_3_fu_1399_p2" SOURCE="src/yolo_max_pool.cpp:36" URAM="0" VARIABLE="col_stride_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="col_idx_mid1_fu_1425_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="col_idx_mid1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="conv_count_mid1_fu_1435_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv_count_mid1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln144_2_fu_1779_p2" SOURCE="src/yolo_max_pool.cpp:144" URAM="0" VARIABLE="add_ln144_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_2ns_11_1_1_U5" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv3_i_i_i2821607"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="row_idx_fu_963_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="row_idx"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_2ns_11_1_1_U6" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv3_i_i_i3291609"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="col_idx_fu_1000_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="col_idx"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="conv_count_fu_1175_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv_count"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln144_fu_1711_p2" SOURCE="src/yolo_max_pool.cpp:144" URAM="0" VARIABLE="add_ln144"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_3_fu_1217_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="out_row_3_fu_904_p2" SOURCE="src/yolo_max_pool.cpp:27" URAM="0" VARIABLE="out_row_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_2ns_11_1_1_U7" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv3_i_i_i2821607_mid1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="row_stride_3_fu_1077_p2" SOURCE="src/yolo_max_pool.cpp:30" URAM="0" VARIABLE="row_stride_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="row_idx_mid1_fu_1093_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="row_idx_mid1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="out_col_3_fu_1117_p2" SOURCE="src/yolo_max_pool.cpp:33" URAM="0" VARIABLE="out_col_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_2ns_11_1_1_U8" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv3_i_i_i3291609_mid1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="conv_count_mid125_fu_1353_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv_count_mid125"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln144_1_fu_1748_p2" SOURCE="src/yolo_max_pool.cpp:144" URAM="0" VARIABLE="add_ln144_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="col_stride_3_fu_1427_p2" SOURCE="src/yolo_max_pool.cpp:36" URAM="0" VARIABLE="col_stride_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="col_idx_mid1_fu_1453_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="col_idx_mid1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="conv_count_mid1_fu_1463_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="conv_count_mid1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln144_2_fu_1781_p2" SOURCE="src/yolo_max_pool.cpp:144" URAM="0" VARIABLE="add_ln144_2"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="mul" PRAGMA="" RTLNAME="mul_4ns_10ns_12_1_1_U9" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:871" URAM="0" VARIABLE="mul_ln871"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln871_fu_1801_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:871" URAM="0" VARIABLE="add_ln871"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln984_fu_1806_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="add_ln984"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln984_1_fu_1823_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="add_ln984_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_fu_1848_p2" SOURCE="src/yolo_max_pool.cpp:39" URAM="0" VARIABLE="add_ln39"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_fu_1628_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_1_fu_1640_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_2_fu_1652_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln871_fu_1803_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:871" URAM="0" VARIABLE="add_ln871"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln984_fu_1808_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="add_ln984"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln984_1_fu_1825_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="add_ln984_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln39_fu_1850_p2" SOURCE="src/yolo_max_pool.cpp:39" URAM="0" VARIABLE="add_ln39"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_fu_1630_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_1_fu_1642_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_2_fu_1654_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027_2"/>
             </BindNodes>
         </Module>
         <Module>
@@ -544,26 +688,26 @@
                 <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="yes" RTLNAME="line_buff_group_2_val_V_1_U" SOURCE="src/yolo_max_pool.cpp:21" URAM="0" VARIABLE="line_buff_group_2_val_V_1"/>
                 <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="yes" RTLNAME="line_buff_group_3_val_V_U" SOURCE="src/yolo_max_pool.cpp:22" URAM="0" VARIABLE="line_buff_group_3_val_V"/>
                 <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="yes" RTLNAME="line_buff_group_3_val_V_1_U" SOURCE="src/yolo_max_pool.cpp:22" URAM="0" VARIABLE="line_buff_group_3_val_V_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i270_fu_658_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i270"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i87_fu_668_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i87"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i56_fu_678_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i56"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i_fu_688_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_2ns_4ns_6_1_1_U40" SOURCE="src/yolo_max_pool.cpp:4" URAM="0" VARIABLE="mul_ln4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_6ns_15_1_1_U41" SOURCE="src/yolo_max_pool.cpp:4" URAM="0" VARIABLE="mul_ln4_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_2ns_15ns_17_1_1_U42" SOURCE="src/yolo_max_pool.cpp:4" URAM="0" VARIABLE="mul_ln4_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_9ns_17ns_26_4_1_U43" SOURCE="src/yolo_max_pool.cpp:4" URAM="0" VARIABLE="mul_ln4_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i270_fu_712_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i270"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i87_fu_722_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i87"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i56_fu_732_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i56"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i_fu_742_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_2ns_4ns_6_1_1_U52" SOURCE="src/yolo_max_pool.cpp:4" URAM="0" VARIABLE="mul_ln4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_6ns_15_1_1_U53" SOURCE="src/yolo_max_pool.cpp:4" URAM="0" VARIABLE="mul_ln4_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_2ns_15ns_17_1_1_U54" SOURCE="src/yolo_max_pool.cpp:4" URAM="0" VARIABLE="mul_ln4_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_9ns_17ns_26_4_1_U55" SOURCE="src/yolo_max_pool.cpp:4" URAM="0" VARIABLE="mul_ln4_3"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
     <FIFOInformation/>
     <UserConfigCommands/>
     <Args>
-        <Arg ArgName="inStream" index="0" direction="in" srcType="stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
+        <Arg ArgName="inStream" index="0" direction="in" srcType="stream&lt;hls::axis&lt;quad_fp_pack, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
             <hwRefs>
                 <hwRef type="interface" interface="inStream" name="" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="outStream" index="1" direction="out" srcType="stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
+        <Arg ArgName="outStream" index="1" direction="out" srcType="stream&lt;hls::axis&lt;quad_fp_pack, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
             <hwRefs>
                 <hwRef type="interface" interface="outStream" name="" usage="data" direction="out"/>
             </hwRefs>
@@ -734,20 +878,32 @@
                 <port>interrupt</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="inStream" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="112" portPrefix="inStream_">
+        <Interface InterfaceName="inStream" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="64" portPrefix="inStream_">
             <ports>
                 <port>inStream_TDATA</port>
+                <port>inStream_TDEST</port>
+                <port>inStream_TID</port>
+                <port>inStream_TKEEP</port>
+                <port>inStream_TLAST</port>
                 <port>inStream_TREADY</port>
+                <port>inStream_TSTRB</port>
+                <port>inStream_TUSER</port>
                 <port>inStream_TVALID</port>
             </ports>
             <constraints>
                 <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="inStream"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="outStream" type="axi4stream" busTypeName="axis" mode="master" dataWidth="112" portPrefix="outStream_">
+        <Interface InterfaceName="outStream" type="axi4stream" busTypeName="axis" mode="master" dataWidth="64" portPrefix="outStream_">
             <ports>
                 <port>outStream_TDATA</port>
+                <port>outStream_TDEST</port>
+                <port>outStream_TID</port>
+                <port>outStream_TKEEP</port>
+                <port>outStream_TLAST</port>
                 <port>outStream_TREADY</port>
+                <port>outStream_TSTRB</port>
+                <port>outStream_TUSER</port>
                 <port>outStream_TVALID</port>
             </ports>
             <constraints>
@@ -780,9 +936,9 @@
             </item>
             <item name="AXIS">
                 <table isCollapsed="0">
-                    <keys size="5">Interface, Register Mode, TDATA, TREADY, TVALID</keys>
-                    <column name="inStream">both, 112, 1, 1, , , , , , , </column>
-                    <column name="outStream">both, 112, 1, 1, , , , , , , </column>
+                    <keys size="11">Interface, Register Mode, TDATA, TDEST, TID, TKEEP, TLAST, TREADY, TSTRB, TUSER, TVALID</keys>
+                    <column name="inStream">both, 64, 6, 5, 8, 1, 1, 8, 2, 1, </column>
+                    <column name="outStream">both, 64, 6, 5, 8, 1, 1, 8, 2, 1, </column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -801,8 +957,8 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="inStream">in, stream&lt;ap_axi_fp&lt;64 2 5 6&gt; 0&gt;&amp;</column>
-                    <column name="outStream">out, stream&lt;ap_axi_fp&lt;64 2 5 6&gt; 0&gt;&amp;</column>
+                    <column name="inStream">in, stream&lt;hls::axis&lt;quad_fp_pack 2 5 6&gt; 0&gt;&amp;</column>
+                    <column name="outStream">out, stream&lt;hls::axis&lt;quad_fp_pack 2 5 6&gt; 0&gt;&amp;</column>
                     <column name="output_h">in, ap_uint&lt;9&gt;</column>
                     <column name="output_w">in, ap_uint&lt;9&gt;</column>
                     <column name="input_h">in, ap_uint&lt;9&gt;</column>

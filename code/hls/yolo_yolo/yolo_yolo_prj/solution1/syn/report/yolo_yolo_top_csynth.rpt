@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'yolo_yolo_top'
 ================================================================
-* Date:           Tue Nov 19 00:00:42 2024
+* Date:           Tue Nov 19 23:19:10 2024
 
 * Version:        2022.2 (Build 3670227 on Oct 13 2022)
 * Project:        yolo_yolo_prj
@@ -34,12 +34,12 @@
 
     + Detail: 
         * Instance: 
-        +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
-        |                                                                                  |                                                                        |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
-        |                                     Instance                                     |                                 Module                                 |   min   |   max   |    min    |    max    |  min |  max |   Type  |
-        +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
-        |grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82  |yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3  |     5439|     5439|  54.390 us|  54.390 us|  5439|  5439|       no|
-        +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+        +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+        |                                                                                   |                                                                        |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |                                      Instance                                     |                                 Module                                 |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+        |grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112  |yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3  |     5439|     5439|  54.390 us|  54.390 us|  5439|  5439|       no|
+        +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
 
         * Loop: 
         N/A
@@ -56,12 +56,12 @@
 |DSP              |        -|    -|       -|      -|    -|
 |Expression       |        -|    -|       0|     40|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        0|    2|    3463|   2854|    -|
+|Instance         |        0|    2|    3591|   2918|    -|
 |Memory           |        -|    -|       -|      -|    -|
 |Multiplexer      |        -|    -|       -|     34|    -|
 |Register         |        -|    -|      97|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    2|    3560|   2928|    0|
+|Total            |        0|    2|    3688|   2992|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
@@ -70,15 +70,15 @@
 
 + Detail: 
     * Instance: 
-    +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
-    |                                     Instance                                     |                                 Module                                 | BRAM_18K| DSP|  FF  |  LUT | URAM|
-    +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
-    |CTRL_BUS_s_axi_U                                                                  |CTRL_BUS_s_axi                                                          |        0|   0|    96|   124|    0|
-    |mul_5ns_8ns_13_1_1_U21                                                            |mul_5ns_8ns_13_1_1                                                      |        0|   0|     0|    41|    0|
-    |grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82  |yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3  |        0|   2|  3367|  2689|    0|
-    +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
-    |Total                                                                             |                                                                        |        0|   2|  3463|  2854|    0|
-    +----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
+    |                                      Instance                                     |                                 Module                                 | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
+    |CTRL_BUS_s_axi_U                                                                   |CTRL_BUS_s_axi                                                          |        0|   0|    96|   124|    0|
+    |mul_5ns_8ns_13_1_1_U33                                                             |mul_5ns_8ns_13_1_1                                                      |        0|   0|     0|    41|    0|
+    |grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112  |yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3  |        0|   2|  3495|  2753|    0|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
+    |Total                                                                              |                                                                        |        0|   2|  3591|  2918|    0|
+    +-----------------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+------+-----+
 
     * DSP: 
     N/A
@@ -90,16 +90,16 @@
     N/A
 
     * Expression: 
-    +---------------------------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
-    |                                           Variable Name                                           | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
-    +---------------------------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
-    |sub_i_i59_fu_111_p2                                                                                |         +|   0|  0|  14|           6|           2|
-    |sub_i_i_fu_121_p2                                                                                  |         +|   0|  0|  14|           6|           2|
-    |grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TREADY  |       and|   0|  0|   2|           1|           1|
-    |cmp_i_i36_mid111_fu_149_p2                                                                         |      icmp|   0|  0|  10|           6|           1|
-    +---------------------------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
-    |Total                                                                                              |          |   0|  0|  40|          19|           6|
-    +---------------------------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    +----------------------------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                                            Variable Name                                           | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |sub_i_i60_fu_165_p2                                                                                 |         +|   0|  0|  14|           6|           2|
+    |sub_i_i_fu_175_p2                                                                                   |         +|   0|  0|  14|           6|           2|
+    |grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TREADY  |       and|   0|  0|   2|           1|           1|
+    |cmp_i_i37_mid111_fu_203_p2                                                                          |      icmp|   0|  0|  10|           6|           1|
+    +----------------------------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                                               |          |   0|  0|  40|          19|           6|
+    +----------------------------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
     +------------------------------+----+-----------+-----+-----------+
@@ -112,21 +112,21 @@
     +------------------------------+----+-----------+-----+-----------+
 
     * Register: 
-    +-----------------------------------------------------------------------------------------------+----+----+-----+-----------+
-    |                                              Name                                             | FF | LUT| Bits| Const Bits|
-    +-----------------------------------------------------------------------------------------------+----+----+-----+-----------+
-    |activate_en_read_reg_155                                                                       |  32|   0|   32|          0|
-    |ap_CS_fsm                                                                                      |   4|   0|    4|          0|
-    |cmp_i_i36_mid111_reg_185                                                                       |   1|   0|    1|          0|
-    |grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg  |   1|   0|    1|          0|
-    |mul_ln3_reg_180                                                                                |  13|   0|   13|          0|
-    |sub_i_i59_reg_165                                                                              |   6|   0|    6|          0|
-    |sub_i_i_reg_170                                                                                |   6|   0|    6|          0|
-    |tmp_reg_175                                                                                    |   5|   0|    8|          3|
-    |trunc_ln3_reg_160                                                                              |  29|   0|   29|          0|
-    +-----------------------------------------------------------------------------------------------+----+----+-----+-----------+
-    |Total                                                                                          |  97|   0|  100|          3|
-    +-----------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                              Name                                              | FF | LUT| Bits| Const Bits|
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |activate_en_read_reg_209                                                                        |  32|   0|   32|          0|
+    |ap_CS_fsm                                                                                       |   4|   0|    4|          0|
+    |cmp_i_i37_mid111_reg_239                                                                        |   1|   0|    1|          0|
+    |grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg  |   1|   0|    1|          0|
+    |mul_ln3_reg_234                                                                                 |  13|   0|   13|          0|
+    |sub_i_i60_reg_219                                                                               |   6|   0|    6|          0|
+    |sub_i_i_reg_224                                                                                 |   6|   0|    6|          0|
+    |tmp_reg_229                                                                                     |   5|   0|    8|          3|
+    |trunc_ln3_reg_214                                                                               |  29|   0|   29|          0|
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                                           |  97|   0|  100|          3|
+    +------------------------------------------------------------------------------------------------+----+----+-----+-----------+
 
 
 
@@ -134,34 +134,46 @@
 == Interface
 ================================================================
 * Summary: 
-+------------------------+-----+-----+------------+---------------+--------------+
-|        RTL Ports       | Dir | Bits|  Protocol  | Source Object |    C Type    |
-+------------------------+-----+-----+------------+---------------+--------------+
-|s_axi_CTRL_BUS_AWVALID  |   in|    1|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_AWREADY  |  out|    1|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_AWADDR   |   in|    6|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_WVALID   |   in|    1|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_WREADY   |  out|    1|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_WDATA    |   in|   32|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_WSTRB    |   in|    4|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_ARVALID  |   in|    1|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_ARREADY  |  out|    1|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_ARADDR   |   in|    6|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_RVALID   |  out|    1|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_RREADY   |   in|    1|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_RDATA    |  out|   32|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_RRESP    |  out|    2|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_BVALID   |  out|    1|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_BREADY   |   in|    1|       s_axi|       CTRL_BUS|        scalar|
-|s_axi_CTRL_BUS_BRESP    |  out|    2|       s_axi|       CTRL_BUS|        scalar|
-|ap_clk                  |   in|    1|  ap_ctrl_hs|  yolo_yolo_top|  return value|
-|ap_rst_n                |   in|    1|  ap_ctrl_hs|  yolo_yolo_top|  return value|
-|interrupt               |  out|    1|  ap_ctrl_hs|  yolo_yolo_top|  return value|
-|inStream_TDATA          |   in|  112|        axis|       inStream|       pointer|
-|inStream_TVALID         |   in|    1|        axis|       inStream|       pointer|
-|inStream_TREADY         |  out|    1|        axis|       inStream|       pointer|
-|outStream_TDATA         |  out|  112|        axis|      outStream|       pointer|
-|outStream_TVALID        |  out|    1|        axis|      outStream|       pointer|
-|outStream_TREADY        |   in|    1|        axis|      outStream|       pointer|
-+------------------------+-----+-----+------------+---------------+--------------+
++------------------------+-----+-----+------------+--------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++------------------------+-----+-----+------------+--------------------+--------------+
+|s_axi_CTRL_BUS_AWVALID  |   in|    1|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_AWREADY  |  out|    1|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_AWADDR   |   in|    6|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_WVALID   |   in|    1|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_WREADY   |  out|    1|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_WDATA    |   in|   32|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_WSTRB    |   in|    4|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_ARVALID  |   in|    1|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_ARREADY  |  out|    1|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_ARADDR   |   in|    6|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_RVALID   |  out|    1|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_RREADY   |   in|    1|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_RDATA    |  out|   32|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_RRESP    |  out|    2|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_BVALID   |  out|    1|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_BREADY   |   in|    1|       s_axi|            CTRL_BUS|        scalar|
+|s_axi_CTRL_BUS_BRESP    |  out|    2|       s_axi|            CTRL_BUS|        scalar|
+|ap_clk                  |   in|    1|  ap_ctrl_hs|       yolo_yolo_top|  return value|
+|ap_rst_n                |   in|    1|  ap_ctrl_hs|       yolo_yolo_top|  return value|
+|interrupt               |  out|    1|  ap_ctrl_hs|       yolo_yolo_top|  return value|
+|inStream_TDATA          |   in|   64|        axis|   inStream_V_data_V|       pointer|
+|inStream_TVALID         |   in|    1|        axis|   inStream_V_dest_V|       pointer|
+|inStream_TREADY         |  out|    1|        axis|   inStream_V_dest_V|       pointer|
+|inStream_TDEST          |   in|    6|        axis|   inStream_V_dest_V|       pointer|
+|inStream_TKEEP          |   in|    8|        axis|   inStream_V_keep_V|       pointer|
+|inStream_TSTRB          |   in|    8|        axis|   inStream_V_strb_V|       pointer|
+|inStream_TUSER          |   in|    2|        axis|   inStream_V_user_V|       pointer|
+|inStream_TLAST          |   in|    1|        axis|   inStream_V_last_V|       pointer|
+|inStream_TID            |   in|    5|        axis|     inStream_V_id_V|       pointer|
+|outStream_TDATA         |  out|   64|        axis|  outStream_V_data_V|       pointer|
+|outStream_TVALID        |  out|    1|        axis|  outStream_V_dest_V|       pointer|
+|outStream_TREADY        |   in|    1|        axis|  outStream_V_dest_V|       pointer|
+|outStream_TDEST         |  out|    6|        axis|  outStream_V_dest_V|       pointer|
+|outStream_TKEEP         |  out|    8|        axis|  outStream_V_keep_V|       pointer|
+|outStream_TSTRB         |  out|    8|        axis|  outStream_V_strb_V|       pointer|
+|outStream_TUSER         |  out|    2|        axis|  outStream_V_user_V|       pointer|
+|outStream_TLAST         |  out|    1|        axis|  outStream_V_last_V|       pointer|
+|outStream_TID           |  out|    5|        axis|    outStream_V_id_V|       pointer|
++------------------------+-----+-----+------------+--------------------+--------------+
 

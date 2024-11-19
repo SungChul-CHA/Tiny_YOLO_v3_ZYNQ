@@ -7,7 +7,37 @@
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>
+        <name>inStream_TDEST</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>inStream_TID</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>inStream_TKEEP</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>inStream_TLAST</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
         <name>inStream_TREADY</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>inStream_TSTRB</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>inStream_TUSER</name>
         <type>Signed</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
@@ -22,7 +52,37 @@
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>
+        <name>outStream_TDEST</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>outStream_TID</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>outStream_TKEEP</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>outStream_TLAST</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
         <name>outStream_TREADY</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>outStream_TSTRB</name>
+        <type>Signed</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>outStream_TUSER</name>
         <type>Signed</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
@@ -38,7 +98,7 @@
   <Machine>64</Machine>
   <modelParameters>
     <combinational>0</combinational>
-    <latency>1926700</latency>
-    <II>1926701 ~ 1927037</II>
+    <latency>1926751</latency>
+    <II>1926752</II>
   </modelParameters>
 </AdditionalInfo>

@@ -1,0 +1,99 @@
+03:44:03 DEBUG : Logs will be stored at '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/IDE.log'.
+03:44:04 INFO  : Launching XSCT server: xsct -n  -interactive /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/temp_xsdb_launch_script.tcl
+03:44:04 INFO  : Platform repository initialization has completed.
+03:44:04 INFO  : Registering command handlers for Vitis TCF services
+03:44:05 INFO  : XSCT server has started successfully.
+03:44:05 INFO  : Successfully done setting XSCT server connection channel  
+03:44:05 INFO  : Successfully done setting workspace for the tool. 
+03:44:05 INFO  : Successfully done query RDI_DATADIR 
+03:44:06 INFO  : plnx-install-location is set to ''
+03:44:47 INFO  : Result from executing command 'getProjects': design_1_wrapper
+03:44:47 INFO  : Result from executing command 'getPlatforms': 
+03:44:47 WARN  : An unexpected exception occurred in the module 'platform project logging'
+03:44:47 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+03:44:52 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+03:47:20 INFO  : Result from executing command 'getProjects': design_1_wrapper
+03:47:20 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+03:47:23 INFO  : Checking for BSP changes to sync application flags for project 'yolo'...
+03:47:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:47:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE54A' is selected.
+03:47:52 INFO  : 'jtag frequency' command is executed.
+03:47:52 INFO  : Context for 'APU' is selected.
+03:47:52 INFO  : System reset is completed.
+03:47:55 INFO  : 'after 3000' command is executed.
+03:47:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE54A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B7BE54A-23727093-0"}' command is executed.
+03:47:56 ERROR : 'fpga -file /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/_ide/bitstream/design_1_wrapper.bit' is cancelled.
+03:47:56 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: 'fpga -file /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/_ide/bitstream/design_1_wrapper.bit' is cancelled.
+03:47:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+03:47:56 ERROR : 'fpga -file /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/_ide/bitstream/design_1_wrapper.bit' is cancelled.
+03:48:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:48:11 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE54A' is selected.
+03:48:11 INFO  : 'jtag frequency' command is executed.
+03:48:11 INFO  : Context for 'APU' is selected.
+03:48:11 INFO  : System reset is completed.
+03:48:14 INFO  : 'after 3000' command is executed.
+03:48:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE54A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B7BE54A-23727093-0"}' command is executed.
+03:48:15 ERROR : 'fpga -file /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/_ide/bitstream/design_1_wrapper.bit' is cancelled.
+03:48:15 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: 'fpga -file /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/_ide/bitstream/design_1_wrapper.bit' is cancelled.
+03:48:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+03:48:15 ERROR : 'fpga -file /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/_ide/bitstream/design_1_wrapper.bit' is cancelled.
+03:48:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:48:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351B7BE54A' is selected.
+03:48:28 INFO  : 'jtag frequency' command is executed.
+03:48:28 INFO  : Context for 'APU' is selected.
+03:48:28 INFO  : System reset is completed.
+03:48:31 INFO  : 'after 3000' command is executed.
+03:48:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE54A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B7BE54A-23727093-0"}' command is executed.
+03:48:33 INFO  : Device configured successfully with "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/_ide/bitstream/design_1_wrapper.bit"
+03:48:33 INFO  : Context for 'APU' is selected.
+03:48:33 INFO  : Hardware design and registers information is loaded from '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+03:48:33 INFO  : 'configparams force-mem-access 1' command is executed.
+03:48:33 INFO  : Context for 'APU' is selected.
+03:48:33 INFO  : Sourcing of '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/_ide/psinit/ps7_init.tcl' is done.
+03:48:34 INFO  : 'ps7_init' command is executed.
+03:48:34 INFO  : 'ps7_post_config' command is executed.
+03:48:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:49:47 INFO  : The application '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/Debug/yolo.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:49:47 INFO  : 'configparams force-mem-access 0' command is executed.
+03:49:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B7BE54A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B7BE54A-23727093-0"}
+fpga -file /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo/Debug/yolo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:49:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:49:47 INFO  : 'con' command is executed.
+03:49:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+03:49:48 INFO  : Launch script is exported to file '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/Vitis/yolo_system/_ide/scripts/debugger_yolo-default.tcl'
+03:51:05 INFO  : Disconnected from the channel tcfchan#2.

@@ -1,0 +1,185 @@
+
+
+================================================================
+== Synthesis Summary Report of 'yolo_acc_top'
+================================================================
++ General Information: 
+    * Date:           Tue Nov 19 23:11:32 2024
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        yolo_acc_prj
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+------+---------+-----------+-----------+-----+
+    |                                  Modules                                 | Issue|      | Latency |  Latency  | Iteration|         |  Trip  |          |      |         |           |           |     |
+    |                                  & Loops                                 | Type | Slack| (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +--------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+------+---------+-----------+-----------+-----+
+    |+ yolo_acc_top                                                            |     -|  0.65|  1384472|  1.384e+07|         -|  1384473|       -|        no|     -|   3 (1%)|  1687 (1%)|  2172 (4%)|    -|
+    | + yolo_acc_top_Pipeline_VITIS_LOOP_25_1                                  |     -|  3.98|       10|    100.000|         -|       10|       -|        no|     -|        -|   48 (~0%)|  178 (~0%)|    -|
+    |  o VITIS_LOOP_25_1                                                       |    II|  7.30|        8|     80.000|         3|        2|       4|       yes|     -|        -|          -|          -|    -|
+    | + yolo_acc_top_Pipeline_VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4  |     -|  0.75|  1384456|  1.384e+07|         -|  1384456|       -|        no|     -|  2 (~0%)|  1427 (1%)|  1660 (3%)|    -|
+    |  o VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4                       |    II|  7.30|  1384454|  1.384e+07|         9|        2|  692224|       yes|     -|        -|          -|          -|    -|
+    |   + post_process_unit                                                    |    II|  2.09|        4|     40.000|         -|        1|       -|       yes|     -|  1 (~0%)|  381 (~0%)|  337 (~0%)|    -|
+    |   + post_process_unit                                                    |    II|  2.09|        4|     40.000|         -|        1|       -|       yes|     -|  1 (~0%)|  381 (~0%)|  337 (~0%)|    -|
+    +--------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+--------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++----------------+------------+---------------+--------+----------+
+| Interface      | Data Width | Address Width | Offset | Register |
++----------------+------------+---------------+--------+----------+
+| s_axi_CTRL_BUS | 32         | 6             | 16     | 0        |
++----------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++----------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface      | Register      | Offset | Width | Access | Description                      | Bit Fields                                                           |
++----------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CTRL_BUS | CTRL          | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL_BUS | GIER          | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CTRL_BUS | IP_IER        | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CTRL_BUS | IP_ISR        | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_CTRL_BUS | input_h       | 0x10   | 32    | W      | Data signal of input_h           |                                                                      |
+| s_axi_CTRL_BUS | input_w       | 0x18   | 32    | W      | Data signal of input_w           |                                                                      |
+| s_axi_CTRL_BUS | fold_input_ch | 0x20   | 32    | W      | Data signal of fold_input_ch     |                                                                      |
+| s_axi_CTRL_BUS | leaky         | 0x28   | 32    | W      | Data signal of leaky             |                                                                      |
+| s_axi_CTRL_BUS | bias_en       | 0x30   | 32    | W      | Data signal of bias_en           |                                                                      |
++----------------+---------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface  | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| inStream_a | both          | 64    | 6     | 5   | 8     | 1     | 1      | 8     | 2     | 1      |
+| inStream_b | both          | 64    | 6     | 5   | 8     | 1     | 1      | 8     | 2     | 1      |
+| outStream  | both          | 64    | 6     | 5   | 8     | 1     | 1      | 8     | 2     | 1      |
++------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------+-----------+----------------------------------------------+
+| Argument      | Direction | Datatype                                     |
++---------------+-----------+----------------------------------------------+
+| inStream_a    | in        | stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0>& |
+| inStream_b    | in        | stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0>& |
+| outStream     | out       | stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0>& |
+| input_h       | in        | ap_uint<9>                                   |
+| input_w       | in        | ap_uint<9>                                   |
+| fold_input_ch | in        | ap_uint<4>                                   |
+| leaky         | in        | ap_uint<1>                                   |
+| bias_en       | in        | ap_uint<1>                                   |
++---------------+-----------+----------------------------------------------+
+
+* SW-to-HW Mapping
++---------------+----------------+-----------+-----------------------------------------+
+| Argument      | HW Interface   | HW Type   | HW Info                                 |
++---------------+----------------+-----------+-----------------------------------------+
+| inStream_a    | inStream_a     | interface |                                         |
+| inStream_b    | inStream_b     | interface |                                         |
+| outStream     | outStream      | interface |                                         |
+| input_h       | s_axi_CTRL_BUS | register  | name=input_h offset=0x10 range=32       |
+| input_w       | s_axi_CTRL_BUS | register  | name=input_w offset=0x18 range=32       |
+| fold_input_ch | s_axi_CTRL_BUS | register  | name=fold_input_ch offset=0x20 range=32 |
+| leaky         | s_axi_CTRL_BUS | register  | name=leaky offset=0x28 range=32         |
+| bias_en       | s_axi_CTRL_BUS | register  | name=bias_en offset=0x30 range=32       |
++---------------+----------------+-----------+-----------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| Name                                                                     | DSP | Pragma | Variable     | Op  | Impl   | Latency |
++--------------------------------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+| + yolo_acc_top                                                           | 3   |        |              |     |        |         |
+|   sub_i_i55_fu_249_p2                                                    | -   |        | sub_i_i55    | add | fabric | 0       |
+|   sub_i_i_fu_259_p2                                                      | -   |        | sub_i_i      | add | fabric | 0       |
+|   mul_9ns_4ns_13_1_1_U48                                                 | -   |        | bound        | mul | auto   | 0       |
+|   mul_mul_9ns_13ns_22_4_1_U49                                            | 1   |        | bound4       | mul | dsp48  | 3       |
+|  + yolo_acc_top_Pipeline_VITIS_LOOP_25_1                                 | 0   |        |              |     |        |         |
+|    i_V_fu_173_p2                                                         | -   |        | i_V          | add | fabric | 0       |
+|  + yolo_acc_top_Pipeline_VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4 | 2   |        |              |     |        |         |
+|    add_ln1027_1_fu_397_p2                                                | -   |        | add_ln1027_1 | add | fabric | 0       |
+|    add_ln42_fu_504_p2                                                    | -   |        | add_ln42     | add | fabric | 0       |
+|    col_idx_3_fu_539_p2                                                   | -   |        | col_idx_3    | add | fabric | 0       |
+|    ret_V_fu_672_p2                                                       | -   |        | ret_V        | add | fabric | 0       |
+|    p_Val2_1_fu_686_p2                                                    | -   |        | p_Val2_1     | add | fabric | 0       |
+|    ret_V_1_fu_742_p2                                                     | -   |        | ret_V_1      | add | fabric | 0       |
+|    p_Val2_3_fu_756_p2                                                    | -   |        | p_Val2_3     | add | fabric | 0       |
+|    ret_V_2_fu_812_p2                                                     | -   |        | ret_V_2      | add | fabric | 0       |
+|    p_Val2_5_fu_826_p2                                                    | -   |        | p_Val2_5     | add | fabric | 0       |
+|    ret_V_3_fu_882_p2                                                     | -   |        | ret_V_3      | add | fabric | 0       |
+|    p_Val2_7_fu_896_p2                                                    | -   |        | p_Val2_7     | add | fabric | 0       |
+|    add_ln48_fu_981_p2                                                    | -   |        | add_ln48     | add | fabric | 0       |
+|    add_ln1027_fu_986_p2                                                  | -   |        | add_ln1027   | add | fabric | 0       |
+|   + post_process_unit (grp_post_process_unit_fu_348)                     | 1   |        |              |     |        |         |
+|     ret_V_fu_76_p2                                                       | -   |        | ret_V        | add | fabric | 0       |
+|     p_Val2_8_fu_90_p2                                                    | -   |        | p_Val2_8     | add | fabric | 0       |
+|     mul_mul_16s_5ns_22_4_0_U11                                           | 1   |        | r_V          | mul | dsp48  | 3       |
+|     p_Val2_11_fu_201_p2                                                  | -   |        | p_Val2_11    | add | fabric | 0       |
+|   + post_process_unit (grp_post_process_unit_fu_356)                     | 1   |        |              |     |        |         |
+|     ret_V_fu_76_p2                                                       | -   |        | ret_V        | add | fabric | 0       |
+|     p_Val2_8_fu_90_p2                                                    | -   |        | p_Val2_8     | add | fabric | 0       |
+|     mul_mul_16s_5ns_22_4_0_U11                                           | 1   |        | r_V          | mul | dsp48  | 3       |
+|     p_Val2_11_fu_201_p2                                                  | -   |        | p_Val2_11    | add | fabric | 0       |
++--------------------------------------------------------------------------+-----+--------+--------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++----------------------+------+------+--------+------------------+---------+------+---------+
+| Name                 | BRAM | URAM | Pragma | Variable         | Storage | Impl | Latency |
++----------------------+------+------+--------+------------------+---------+------+---------+
+| + yolo_acc_top       | 0    | 0    |        |                  |         |      |         |
+|   kernel_bias_fp_V_U | -    | -    |        | kernel_bias_fp_V | ram_t2p | auto | 1       |
++----------------------+------+------+--------+------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-----------------------------------------------+-----------------------------------------------------+
+| Type            | Options                                       | Location                                            |
++-----------------+-----------------------------------------------+-----------------------------------------------------+
+| interface       | s_axilite port=bias_en bundle=CTRL_BUS        | src/yolo_acc.cpp:10 in yolo_acc_top, bias_en        |
+| interface       | s_axilite port=leaky bundle=CTRL_BUS          | src/yolo_acc.cpp:11 in yolo_acc_top, leaky          |
+| interface       | s_axilite port=fold_input_ch bundle=CTRL_BUS  | src/yolo_acc.cpp:12 in yolo_acc_top, fold_input_ch  |
+| interface       | s_axilite port=input_w bundle=CTRL_BUS        | src/yolo_acc.cpp:13 in yolo_acc_top, input_w        |
+| interface       | s_axilite port=input_h bundle=CTRL_BUS        | src/yolo_acc.cpp:14 in yolo_acc_top, input_h        |
+| interface       | s_axilite port=return bundle=CTRL_BUS         | src/yolo_acc.cpp:15 in yolo_acc_top, return         |
+| interface       | axis register both port=outStream             | src/yolo_acc.cpp:16 in yolo_acc_top, outStream      |
+| interface       | axis register both port=inStream_a            | src/yolo_acc.cpp:17 in yolo_acc_top, inStream_a     |
+| interface       | axis register both port=inStream_b            | src/yolo_acc.cpp:18 in yolo_acc_top, inStream_b     |
+| array_partition | variable=kernel_bias_fp cyclic factor=1 dim=1 | src/yolo_acc.cpp:22 in yolo_acc_top, kernel_bias_fp |
+| loop_tripcount  | min=4 max=4                                   | src/yolo_acc.cpp:27 in yolo_acc_top                 |
+| pipeline        |                                               | src/yolo_acc.cpp:28 in yolo_acc_top                 |
+| loop_tripcount  | min=416 max=416                               | src/yolo_acc.cpp:44 in yolo_acc_top                 |
+| loop_tripcount  | min=416 max=416                               | src/yolo_acc.cpp:47 in yolo_acc_top                 |
+| loop_tripcount  | min=4 max=4                                   | src/yolo_acc.cpp:50 in yolo_acc_top                 |
+| pipeline        |                                               | src/yolo_acc.cpp:51 in yolo_acc_top                 |
++-----------------+-----------------------------------------------+-----------------------------------------------------+
+
+

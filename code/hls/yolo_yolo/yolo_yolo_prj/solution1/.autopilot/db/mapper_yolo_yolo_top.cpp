@@ -236,25 +236,89 @@ class AESL_RUNTIME_BC {
     fstream file_token;
     string mName;
 };
-unsigned int ap_apatb_inStream_cap_bc;
-static AESL_RUNTIME_BC __xlx_inStream_V_size_Reader("../tv/stream_size/stream_size_in_inStream.dat");
-unsigned int ap_apatb_outStream_cap_bc;
-static AESL_RUNTIME_BC __xlx_outStream_V_size_Reader("../tv/stream_size/stream_size_out_outStream.dat");
+unsigned int ap_apatb_inStream_V_data_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_inStream_V_data_V_V_size_Reader("../tv/stream_size/stream_size_in_inStream_V_data_V.dat");
+unsigned int ap_apatb_inStream_V_keep_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_inStream_V_keep_V_V_size_Reader("../tv/stream_size/stream_size_in_inStream_V_keep_V.dat");
+unsigned int ap_apatb_inStream_V_strb_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_inStream_V_strb_V_V_size_Reader("../tv/stream_size/stream_size_in_inStream_V_strb_V.dat");
+unsigned int ap_apatb_inStream_V_user_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_inStream_V_user_V_V_size_Reader("../tv/stream_size/stream_size_in_inStream_V_user_V.dat");
+unsigned int ap_apatb_inStream_V_last_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_inStream_V_last_V_V_size_Reader("../tv/stream_size/stream_size_in_inStream_V_last_V.dat");
+unsigned int ap_apatb_inStream_V_id_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_inStream_V_id_V_V_size_Reader("../tv/stream_size/stream_size_in_inStream_V_id_V.dat");
+unsigned int ap_apatb_inStream_V_dest_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_inStream_V_dest_V_V_size_Reader("../tv/stream_size/stream_size_in_inStream_V_dest_V.dat");
+unsigned int ap_apatb_outStream_V_data_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_outStream_V_data_V_V_size_Reader("../tv/stream_size/stream_size_out_outStream_V_data_V.dat");
+unsigned int ap_apatb_outStream_V_keep_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_outStream_V_keep_V_V_size_Reader("../tv/stream_size/stream_size_out_outStream_V_keep_V.dat");
+unsigned int ap_apatb_outStream_V_strb_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_outStream_V_strb_V_V_size_Reader("../tv/stream_size/stream_size_out_outStream_V_strb_V.dat");
+unsigned int ap_apatb_outStream_V_user_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_outStream_V_user_V_V_size_Reader("../tv/stream_size/stream_size_out_outStream_V_user_V.dat");
+unsigned int ap_apatb_outStream_V_last_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_outStream_V_last_V_V_size_Reader("../tv/stream_size/stream_size_out_outStream_V_last_V.dat");
+unsigned int ap_apatb_outStream_V_id_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_outStream_V_id_V_V_size_Reader("../tv/stream_size/stream_size_out_outStream_V_id_V.dat");
+unsigned int ap_apatb_outStream_V_dest_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_outStream_V_dest_V_V_size_Reader("../tv/stream_size/stream_size_out_outStream_V_dest_V.dat");
 using hls::sim::Byte;
-struct __cosim_s14__ { char data[14]; };
 struct __cosim_s4__ { char data[4]; };
 struct __cosim_s1__ { char data[1]; };
-struct __cosim_s16__ { char data[16]; };
-extern "C" void yolo_yolo_top(__cosim_s14__*, __cosim_s14__*, __cosim_s4__, __cosim_s1__, __cosim_s1__);
-extern "C" void apatb_yolo_yolo_top_hw(volatile void * __xlx_apatb_param_inStream, volatile void * __xlx_apatb_param_outStream, __cosim_s4__* __xlx_apatb_param_activate_en, __cosim_s1__* __xlx_apatb_param_input_h, __cosim_s1__* __xlx_apatb_param_input_w) {
+extern "C" void yolo_yolo_top(volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, __cosim_s4__, __cosim_s1__, __cosim_s1__);
+extern "C" void apatb_yolo_yolo_top_hw(volatile void * __xlx_apatb_param_inStream_V_data_V, volatile void * __xlx_apatb_param_inStream_V_keep_V, volatile void * __xlx_apatb_param_inStream_V_strb_V, volatile void * __xlx_apatb_param_inStream_V_user_V, volatile void * __xlx_apatb_param_inStream_V_last_V, volatile void * __xlx_apatb_param_inStream_V_id_V, volatile void * __xlx_apatb_param_inStream_V_dest_V, volatile void * __xlx_apatb_param_outStream_V_data_V, volatile void * __xlx_apatb_param_outStream_V_keep_V, volatile void * __xlx_apatb_param_outStream_V_strb_V, volatile void * __xlx_apatb_param_outStream_V_user_V, volatile void * __xlx_apatb_param_outStream_V_last_V, volatile void * __xlx_apatb_param_outStream_V_id_V, volatile void * __xlx_apatb_param_outStream_V_dest_V, __cosim_s4__* __xlx_apatb_param_activate_en, __cosim_s1__* __xlx_apatb_param_input_h, __cosim_s1__* __xlx_apatb_param_input_w) {
 using hls::sim::createStream;
-auto* sinStream = createStream((hls::stream<__cosim_s14__>*)__xlx_apatb_param_inStream);
-  //Create input buffer for outStream
-  ap_apatb_outStream_cap_bc = __xlx_outStream_V_size_Reader.read_size();
-  __cosim_s14__* __xlx_outStream_input_buffer= new __cosim_s14__[ap_apatb_outStream_cap_bc];
-auto* soutStream = createStream((hls::stream<__cosim_s14__>*)__xlx_apatb_param_outStream);
+auto* sinStream_V_data_V = createStream((hls::stream<long long>*)__xlx_apatb_param_inStream_V_data_V);
+auto* sinStream_V_keep_V = createStream((hls::stream<char>*)__xlx_apatb_param_inStream_V_keep_V);
+auto* sinStream_V_strb_V = createStream((hls::stream<char>*)__xlx_apatb_param_inStream_V_strb_V);
+auto* sinStream_V_user_V = createStream((hls::stream<char>*)__xlx_apatb_param_inStream_V_user_V);
+auto* sinStream_V_last_V = createStream((hls::stream<char>*)__xlx_apatb_param_inStream_V_last_V);
+auto* sinStream_V_id_V = createStream((hls::stream<char>*)__xlx_apatb_param_inStream_V_id_V);
+auto* sinStream_V_dest_V = createStream((hls::stream<char>*)__xlx_apatb_param_inStream_V_dest_V);
+  //Create input buffer for outStream_V_data_V
+  ap_apatb_outStream_V_data_V_cap_bc = __xlx_outStream_V_data_V_V_size_Reader.read_size();
+  long long* __xlx_outStream_V_data_V_input_buffer= new long long[ap_apatb_outStream_V_data_V_cap_bc];
+auto* soutStream_V_data_V = createStream((hls::stream<long long>*)__xlx_apatb_param_outStream_V_data_V);
+  //Create input buffer for outStream_V_keep_V
+  ap_apatb_outStream_V_keep_V_cap_bc = __xlx_outStream_V_keep_V_V_size_Reader.read_size();
+  char* __xlx_outStream_V_keep_V_input_buffer= new char[ap_apatb_outStream_V_keep_V_cap_bc];
+auto* soutStream_V_keep_V = createStream((hls::stream<char>*)__xlx_apatb_param_outStream_V_keep_V);
+  //Create input buffer for outStream_V_strb_V
+  ap_apatb_outStream_V_strb_V_cap_bc = __xlx_outStream_V_strb_V_V_size_Reader.read_size();
+  char* __xlx_outStream_V_strb_V_input_buffer= new char[ap_apatb_outStream_V_strb_V_cap_bc];
+auto* soutStream_V_strb_V = createStream((hls::stream<char>*)__xlx_apatb_param_outStream_V_strb_V);
+  //Create input buffer for outStream_V_user_V
+  ap_apatb_outStream_V_user_V_cap_bc = __xlx_outStream_V_user_V_V_size_Reader.read_size();
+  char* __xlx_outStream_V_user_V_input_buffer= new char[ap_apatb_outStream_V_user_V_cap_bc];
+auto* soutStream_V_user_V = createStream((hls::stream<char>*)__xlx_apatb_param_outStream_V_user_V);
+  //Create input buffer for outStream_V_last_V
+  ap_apatb_outStream_V_last_V_cap_bc = __xlx_outStream_V_last_V_V_size_Reader.read_size();
+  char* __xlx_outStream_V_last_V_input_buffer= new char[ap_apatb_outStream_V_last_V_cap_bc];
+auto* soutStream_V_last_V = createStream((hls::stream<char>*)__xlx_apatb_param_outStream_V_last_V);
+  //Create input buffer for outStream_V_id_V
+  ap_apatb_outStream_V_id_V_cap_bc = __xlx_outStream_V_id_V_V_size_Reader.read_size();
+  char* __xlx_outStream_V_id_V_input_buffer= new char[ap_apatb_outStream_V_id_V_cap_bc];
+auto* soutStream_V_id_V = createStream((hls::stream<char>*)__xlx_apatb_param_outStream_V_id_V);
+  //Create input buffer for outStream_V_dest_V
+  ap_apatb_outStream_V_dest_V_cap_bc = __xlx_outStream_V_dest_V_V_size_Reader.read_size();
+  char* __xlx_outStream_V_dest_V_input_buffer= new char[ap_apatb_outStream_V_dest_V_cap_bc];
+auto* soutStream_V_dest_V = createStream((hls::stream<char>*)__xlx_apatb_param_outStream_V_dest_V);
   // DUT call
-  yolo_yolo_top(sinStream->data<__cosim_s14__>(), soutStream->data<__cosim_s14__>(), *__xlx_apatb_param_activate_en, *__xlx_apatb_param_input_h, *__xlx_apatb_param_input_w);
-sinStream->transfer((hls::stream<__cosim_s14__>*)__xlx_apatb_param_inStream);
-soutStream->transfer((hls::stream<__cosim_s14__>*)__xlx_apatb_param_outStream);
+  yolo_yolo_top(sinStream_V_data_V->data<long long>(), sinStream_V_keep_V->data<char>(), sinStream_V_strb_V->data<char>(), sinStream_V_user_V->data<char>(), sinStream_V_last_V->data<char>(), sinStream_V_id_V->data<char>(), sinStream_V_dest_V->data<char>(), soutStream_V_data_V->data<long long>(), soutStream_V_keep_V->data<char>(), soutStream_V_strb_V->data<char>(), soutStream_V_user_V->data<char>(), soutStream_V_last_V->data<char>(), soutStream_V_id_V->data<char>(), soutStream_V_dest_V->data<char>(), *__xlx_apatb_param_activate_en, *__xlx_apatb_param_input_h, *__xlx_apatb_param_input_w);
+sinStream_V_data_V->transfer((hls::stream<long long>*)__xlx_apatb_param_inStream_V_data_V);
+sinStream_V_keep_V->transfer((hls::stream<char>*)__xlx_apatb_param_inStream_V_keep_V);
+sinStream_V_strb_V->transfer((hls::stream<char>*)__xlx_apatb_param_inStream_V_strb_V);
+sinStream_V_user_V->transfer((hls::stream<char>*)__xlx_apatb_param_inStream_V_user_V);
+sinStream_V_last_V->transfer((hls::stream<char>*)__xlx_apatb_param_inStream_V_last_V);
+sinStream_V_id_V->transfer((hls::stream<char>*)__xlx_apatb_param_inStream_V_id_V);
+sinStream_V_dest_V->transfer((hls::stream<char>*)__xlx_apatb_param_inStream_V_dest_V);
+soutStream_V_data_V->transfer((hls::stream<long long>*)__xlx_apatb_param_outStream_V_data_V);
+soutStream_V_keep_V->transfer((hls::stream<char>*)__xlx_apatb_param_outStream_V_keep_V);
+soutStream_V_strb_V->transfer((hls::stream<char>*)__xlx_apatb_param_outStream_V_strb_V);
+soutStream_V_user_V->transfer((hls::stream<char>*)__xlx_apatb_param_outStream_V_user_V);
+soutStream_V_last_V->transfer((hls::stream<char>*)__xlx_apatb_param_outStream_V_last_V);
+soutStream_V_id_V->transfer((hls::stream<char>*)__xlx_apatb_param_outStream_V_id_V);
+soutStream_V_dest_V->transfer((hls::stream<char>*)__xlx_apatb_param_outStream_V_dest_V);
 }

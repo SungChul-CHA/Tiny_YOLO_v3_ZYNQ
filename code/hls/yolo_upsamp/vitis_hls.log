@@ -6,7 +6,7 @@
 
 source /tools/Xilinx/Vitis_HLS/2022.2/scripts/vitis_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
-INFO: [HLS 200-10] For user 'tony' on host 'tony' (Linux_x86_64 version 4.18.0-553.27.1.el8_10.x86_64) on Mon Nov 18 23:59:08 KST 2024
+INFO: [HLS 200-10] For user 'tony' on host 'tony' (Linux_x86_64 version 4.18.0-553.27.1.el8_10.x86_64) on Tue Nov 19 23:17:31 KST 2024
 INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.10 (Ootpa)"
 INFO: [HLS 200-10] In directory '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp'
 Sourcing Tcl script 'run_hls.tcl'
@@ -39,7 +39,7 @@ INFO: [HLS 200-1510] Running: create_clock -period 10 -name default
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
 INFO: [HLS 200-1510] Running: csim_design 
-Running Dispatch Server on port: 34461
+Running Dispatch Server on port: 37053
 INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
    Compiling ../../../../tb/yolo_upsamp_tb.cpp in debug mode
@@ -49,9 +49,9 @@ INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 5408
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.46 seconds. CPU system time: 0.17 seconds. Elapsed time: 1.65 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.63 seconds. CPU system time: 0.19 seconds. Elapsed time: 1.85 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 198.406 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 198.441 MB.
 INFO: [HLS 200-10] Analyzing design file 'src/yolo_upsamp.cpp' ... 
 WARNING: [HLS 207-5529] 'factor' in '#pragma HLS array_reshape' is ignored (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:759:47)
 WARNING: [HLS 207-5292] unused parameter 'src' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:517:30)
@@ -61,21 +61,21 @@ WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2
 WARNING: [HLS 207-5292] unused parameter 'stride' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1036:41)
 WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1224:102)
 WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1530:34)
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.15 seconds. CPU system time: 0.29 seconds. Elapsed time: 2.44 seconds; current allocated memory: 203.809 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.37 seconds. CPU system time: 0.31 seconds. Elapsed time: 2.68 seconds; current allocated memory: 203.750 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_bottom_row(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1042:2)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:9:17)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:47:68)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:46:68)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:45:68)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:44:68)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:33:38)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:32:38)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:31:38)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:30:38)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:12:17)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:11:17)
-INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)' (src/yolo_upsamp.cpp:10:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:9:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:47:68)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:46:68)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:45:68)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:44:68)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:33:38)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:32:38)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:31:38)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:30:38)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:12:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:11:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)' (src/yolo_upsamp.cpp:10:17)
 INFO: [HLS 214-377] Adding 'line_buff_group_1' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9)
 INFO: [HLS 214-377] Adding 'line_buff_group_2' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9)
 INFO: [HLS 214-377] Adding 'line_buff_group_3' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9)
@@ -92,14 +92,14 @@ INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_0': Complete pa
 INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_1': Complete partitioning on dimension 2. (src/yolo_upsamp.cpp:10:17)
 INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_2': Complete partitioning on dimension 2. (src/yolo_upsamp.cpp:11:17)
 INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_3': Complete partitioning on dimension 2. (src/yolo_upsamp.cpp:12:17)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1.68 seconds. CPU system time: 0.15 seconds. Elapsed time: 1.84 seconds; current allocated memory: 204.027 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 204.027 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0.2 seconds. Elapsed time: 2.22 seconds; current allocated memory: 203.969 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 203.969 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 212.824 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 212.773 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 222.426 MB.
-INFO: [XFORM 203-11] Balancing expressions in function 'yolo_upsamp_top' (src/yolo_upsamp.cpp:3)...8 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 254.941 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 222.590 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_upsamp_top' (src/yolo_upsamp.cpp:3:21)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 255.000 MB.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_21_4' (src/yolo_upsamp.cpp:14:23) in function 'yolo_upsamp_top'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_19_3' (src/yolo_upsamp.cpp:14:23) in function 'yolo_upsamp_top'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_17_2' (src/yolo_upsamp.cpp:14:23) in function 'yolo_upsamp_top'.
@@ -233,7 +233,7 @@ WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_upsamp.cpp:12).
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_upsamp.cpp:12).
 WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_upsamp.cpp:12).
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 255.438 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 255.473 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'yolo_upsamp_top' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -244,7 +244,7 @@ INFO: [HLS 200-486] Changing DSP latency (root=mul_ln908) to 3 in order to utili
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 8, loop 'VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 255.438 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 255.473 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
@@ -254,27 +254,39 @@ WARNING: [BIND 205-102] The specified resource core for memory 'line_buff_group_
 WARNING: [BIND 205-102] The specified resource core for memory 'line_buff_group_3_val_V' will be ignored if a simpler one can be used.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 255.438 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 255.473 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'yolo_upsamp_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/inStream' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/outStream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_upsamp_top/outStream_V_dest_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on function 'yolo_upsamp_top' to 's_axilite & ap_ctrl_hs'.
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_upsamp_top' pipeline 'VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CTRL_BUS.
 INFO: [RTGEN 206-100] Generating core module 'mac_muladd_4ns_4ns_4ns_7_4_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_upsamp_top'.
 INFO: [RTMG 210-278] Implementing memory 'yolo_upsamp_top_line_buff_group_0_val_V_RAM_S2P_BRAM_1R1W' using block RAMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 255.438 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.58 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.6 seconds; current allocated memory: 258.973 MB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 262.926 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 255.473 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.68 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.7 seconds; current allocated memory: 259.141 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 263.699 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for yolo_upsamp_top.
 INFO: [VLOG 209-307] Generating Verilog RTL for yolo_upsamp_top.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 137.74 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5.12 seconds. CPU system time: 0.49 seconds. Elapsed time: 5.67 seconds; current allocated memory: 65.156 MB.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5.97 seconds. CPU system time: 0.58 seconds. Elapsed time: 6.59 seconds; current allocated memory: 65.891 MB.
 INFO: [HLS 200-1510] Running: cosim_design 
 WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined
 INFO: [COSIM 212-47] Using XSIM for RTL simulation.
@@ -344,10 +356,25 @@ Compiling module xil_defaultlib.yolo_upsamp_top_mac_muladd_4ns_4...
 Compiling module xil_defaultlib.yolo_upsamp_top_mac_muladd_4ns_4...
 Compiling module xil_defaultlib.yolo_upsamp_top_flow_control_loo...
 Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
+Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
+Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
+Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
+Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
+Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
 Compiling module xil_defaultlib.yolo_upsamp_top
-Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=112)
+Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=1352)
+Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=6)
 Compiling module xil_defaultlib.AESL_axi_s_inStream
-Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=112)
+Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=5408)
+Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=6)
 Compiling module xil_defaultlib.AESL_axi_s_outStream
 Compiling module xil_defaultlib.AESL_axi_slave_CTRL_BUS
 Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
@@ -378,15 +405,15 @@ source yolo_upsamp_top.tcl
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
 // RTL Simulation : 1 / 1 [100.00%] @ "54425000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 54485 ns : File "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/sim/verilog/yolo_upsamp_top.autotb.v" Line 350
+$finish called at time : 54485 ns : File "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/sim/verilog/yolo_upsamp_top.autotb.v" Line 446
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Nov 18 23:59:38 2024...
+INFO: [Common 17-206] Exiting xsim at Tue Nov 19 23:18:04 2024...
 INFO: [COSIM 212-316] Starting C post checking ...
 5407
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 5408
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
 INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
-INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 11.13 seconds. CPU system time: 0.89 seconds. Elapsed time: 12.41 seconds; current allocated memory: 11.406 MB.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 15.2 seconds. CPU system time: 1.14 seconds. Elapsed time: 14.72 seconds; current allocated memory: 11.352 MB.
 INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 
@@ -399,8 +426,8 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 23:59:44 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 23:18:10 2024...
 INFO: [HLS 200-802] Generated output file yolo_upsamp_prj/solution1/impl/export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 5.97 seconds. CPU system time: 0.27 seconds. Elapsed time: 15.6 seconds; current allocated memory: 0.000 MB.
-INFO: [HLS 200-112] Total CPU user time: 24.27 seconds. Total CPU system time: 1.89 seconds. Total elapsed time: 45.93 seconds; peak allocated memory: 274.969 MB.
-INFO: [Common 17-206] Exiting vitis_hls at Mon Nov 18 23:59:54 2024...
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 6.37 seconds. CPU system time: 0.3 seconds. Elapsed time: 16 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 29.76 seconds. Total CPU system time: 2.32 seconds. Total elapsed time: 49.8 seconds; peak allocated memory: 275.684 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Nov 19 23:18:21 2024...

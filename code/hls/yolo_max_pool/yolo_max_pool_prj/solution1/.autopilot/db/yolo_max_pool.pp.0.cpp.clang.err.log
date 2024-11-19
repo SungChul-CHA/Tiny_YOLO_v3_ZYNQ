@@ -12,9 +12,8 @@ In file included from /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot
 #pragma HLS unroll
         ^
 In file included from src/yolo_max_pool.cpp:1:
-In file included from src/yolo_max_pool.h:6:
-In file included from /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_common.hpp:20:
-In file included from /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:27:
+In file included from src/yolo_max_pool.h:4:
+In file included from src/yolo_stream.h:7:
 /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:76:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=inline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=get_user_ptr_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
 #pragma HLS inline
         ^

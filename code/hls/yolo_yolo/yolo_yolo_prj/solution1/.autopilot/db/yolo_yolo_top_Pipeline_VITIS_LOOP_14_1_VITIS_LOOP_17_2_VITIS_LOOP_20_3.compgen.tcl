@@ -12,16 +12,73 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 15 \
-    name outStream \
+    name outStream_V_data_V \
     reset_level 1 \
     sync_rst true \
-    corename {} \
+    corename {outStream} \
     metadata {  } \
     op interface \
-    ports { outStream_TDATA { O 112 vector } outStream_TVALID { O 1 bit } outStream_TREADY { I 1 bit } } \
+    ports { outStream_TDATA { O 64 vector } outStream_TREADY { I 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'outStream'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'outStream_V_data_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 16 \
+    name outStream_V_keep_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {outStream} \
+    metadata {  } \
+    op interface \
+    ports { outStream_TKEEP { O 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'outStream_V_keep_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 17 \
+    name outStream_V_strb_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {outStream} \
+    metadata {  } \
+    op interface \
+    ports { outStream_TSTRB { O 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'outStream_V_strb_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 18 \
+    name outStream_V_user_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {outStream} \
+    metadata {  } \
+    op interface \
+    ports { outStream_TUSER { O 2 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'outStream_V_user_V'"
 }
 }
 
@@ -31,16 +88,187 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 19 \
-    name inStream \
+    name outStream_V_last_V \
     reset_level 1 \
     sync_rst true \
-    corename {} \
+    corename {outStream} \
     metadata {  } \
     op interface \
-    ports { inStream_TDATA { I 112 vector } inStream_TVALID { I 1 bit } inStream_TREADY { O 1 bit } } \
+    ports { outStream_TLAST { O 1 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'inStream'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'outStream_V_last_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 20 \
+    name outStream_V_id_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {outStream} \
+    metadata {  } \
+    op interface \
+    ports { outStream_TID { O 5 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'outStream_V_id_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 21 \
+    name outStream_V_dest_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {outStream} \
+    metadata {  } \
+    op interface \
+    ports { outStream_TVALID { O 1 bit } outStream_TDEST { O 6 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'outStream_V_dest_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 25 \
+    name inStream_V_data_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {inStream} \
+    metadata {  } \
+    op interface \
+    ports { inStream_TDATA { I 64 vector } inStream_TVALID { I 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'inStream_V_data_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 26 \
+    name inStream_V_keep_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {inStream} \
+    metadata {  } \
+    op interface \
+    ports { inStream_TKEEP { I 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'inStream_V_keep_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 27 \
+    name inStream_V_strb_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {inStream} \
+    metadata {  } \
+    op interface \
+    ports { inStream_TSTRB { I 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'inStream_V_strb_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 28 \
+    name inStream_V_user_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {inStream} \
+    metadata {  } \
+    op interface \
+    ports { inStream_TUSER { I 2 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'inStream_V_user_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 29 \
+    name inStream_V_last_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {inStream} \
+    metadata {  } \
+    op interface \
+    ports { inStream_TLAST { I 1 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'inStream_V_last_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 30 \
+    name inStream_V_id_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {inStream} \
+    metadata {  } \
+    op interface \
+    ports { inStream_TID { I 5 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'inStream_V_id_V'"
+}
+}
+
+
+# Native AXIS:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 31 \
+    name inStream_V_dest_V \
+    reset_level 1 \
+    sync_rst true \
+    corename {inStream} \
+    metadata {  } \
+    op interface \
+    ports { inStream_TREADY { O 1 bit } inStream_TDEST { I 6 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'inStream_V_dest_V'"
 }
 }
 
@@ -64,14 +292,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 13 \
-    name sub_i_i59 \
+    name sub_i_i60 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_sub_i_i59 \
+    corename dc_sub_i_i60 \
     op interface \
-    ports { sub_i_i59 { I 6 vector } } \
+    ports { sub_i_i60 { I 6 vector } } \
 } "
 }
 
@@ -93,7 +321,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 16 \
+    id 22 \
     name activate_en \
     type other \
     dir I \
@@ -108,7 +336,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 17 \
+    id 23 \
     name zext_ln3 \
     type other \
     dir I \
@@ -123,22 +351,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 18 \
-    name cmp_i_i36_mid111 \
+    id 24 \
+    name cmp_i_i37_mid111 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_cmp_i_i36_mid111 \
+    corename dc_cmp_i_i37_mid111 \
     op interface \
-    ports { cmp_i_i36_mid111 { I 1 vector } } \
+    ports { cmp_i_i37_mid111 { I 1 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 20 \
+    id 32 \
     name trunc_ln3 \
     type other \
     dir I \

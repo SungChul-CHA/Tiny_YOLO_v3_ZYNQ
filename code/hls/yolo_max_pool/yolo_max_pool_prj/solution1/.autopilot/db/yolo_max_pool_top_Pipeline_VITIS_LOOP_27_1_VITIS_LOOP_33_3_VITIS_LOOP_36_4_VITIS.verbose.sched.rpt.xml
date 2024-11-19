@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS'" level="0">
-<item name = "Date">Mon Nov 18 23:57:59 2024
+<item name = "Date">Tue Nov 19 23:15:54 2024
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">yolo_max_pool_prj</item>

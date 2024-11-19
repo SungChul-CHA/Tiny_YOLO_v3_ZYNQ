@@ -1,6 +1,6 @@
 `timescale 1 ns / 1 ps
 
-module yolo_conv_top_hls_deadlock_idx2_monitor ( // for module yolo_conv_top_yolo_conv_top_inst.grp_yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6_fu_1608
+module yolo_conv_top_hls_deadlock_idx2_monitor ( // for module yolo_conv_top_yolo_conv_top_inst.grp_yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6_fu_1509
     input wire clock,
     input wire reset,
     input wire [3:0] axis_block_sigs,

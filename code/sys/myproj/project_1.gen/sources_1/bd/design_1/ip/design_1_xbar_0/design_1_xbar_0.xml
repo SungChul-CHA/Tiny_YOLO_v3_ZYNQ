@@ -27340,7 +27340,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 19 02:49:03 UTC 2024</spirit:value>
+            <spirit:value>Tue Nov 19 16:55:18 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -27358,7 +27358,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 19 02:49:03 UTC 2024</spirit:value>
+            <spirit:value>Tue Nov 19 16:55:18 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -27378,7 +27378,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 19 02:49:03 UTC 2024</spirit:value>
+            <spirit:value>Tue Nov 19 16:55:18 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -27413,7 +27413,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 19 02:49:03 UTC 2024</spirit:value>
+            <spirit:value>Tue Nov 19 16:55:18 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -27433,7 +27433,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 19 02:49:03 UTC 2024</spirit:value>
+            <spirit:value>Tue Nov 19 16:55:18 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -27461,7 +27461,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 19 02:49:03 UTC 2024</spirit:value>
+            <spirit:value>Tue Nov 19 16:55:18 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -27481,7 +27481,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 19 02:49:03 UTC 2024</spirit:value>
+            <spirit:value>Tue Nov 19 16:55:18 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -27503,7 +27503,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 19 02:50:07 UTC 2024</spirit:value>
+            <spirit:value>Tue Nov 19 16:56:26 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
@@ -47740,12 +47740,12 @@
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.NUM_SI" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.PROTOCOL" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.RUSER_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S00_READ_ACCEPTANCE" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S00_READ_ACCEPTANCE" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S00_THREAD_ID_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="none"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S00_WRITE_ACCEPTANCE" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S01_READ_ACCEPTANCE" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S01_THREAD_ID_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="none"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S01_WRITE_ACCEPTANCE" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S01_WRITE_ACCEPTANCE" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S02_READ_ACCEPTANCE" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S02_THREAD_ID_WIDTH" xilinx:valuePermission="none"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.S02_WRITE_ACCEPTANCE" xilinx:valuePermission="bd_and_user"/>

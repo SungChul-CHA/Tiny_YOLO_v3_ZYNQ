@@ -23,5 +23,7 @@ obj/yolo_yolo_tb.o: ../../../../tb/yolo_yolo_tb.cpp \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed_special.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/hls_stream.h \
  ../../../../tb/../src/yolo_fp.h \
+ /tools/Xilinx/Vitis_HLS/2022.2/include/ap_axi_sdata.h \
+ /tools/Xilinx/Vitis_HLS/2022.2/include/ap_int.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/hls_exp_apfixed.h \
  /tools/Xilinx/Vitis_HLS/2022.2/include/ap_fixed.h

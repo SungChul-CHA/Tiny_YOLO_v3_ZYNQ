@@ -279,7 +279,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>inStream_TVALID</name>
-            <Object>inStream</Object>
+            <Object>inStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -287,23 +287,11 @@
             <Dir>in</Dir>
             <Bits>1</Bits>
             <Attribute>control</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>inStream_TDATA</name>
-            <Object>inStream</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>axis</IOProtocol>
-            <IOConfig>register, both mode</IOConfig>
-            <Dir>in</Dir>
-            <Bits>112</Bits>
-            <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
             <name>inStream_TREADY</name>
-            <Object>inStream</Object>
+            <Object>inStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -314,8 +302,20 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
+            <name>inStream_TDEST</name>
+            <Object>inStream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
             <name>outStream_TREADY</name>
-            <Object>outStream</Object>
+            <Object>outStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -326,20 +326,8 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
-            <name>outStream_TDATA</name>
-            <Object>outStream</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>axis</IOProtocol>
-            <IOConfig>register, both mode</IOConfig>
-            <Dir>out</Dir>
-            <Bits>112</Bits>
-            <Attribute>data</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
             <name>outStream_TVALID</name>
-            <Object>outStream</Object>
+            <Object>outStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -347,13 +335,169 @@
             <Dir>out</Dir>
             <Bits>1</Bits>
             <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TDEST</name>
+            <Object>outStream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TDATA</name>
+            <Object>inStream_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TKEEP</name>
+            <Object>inStream_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TSTRB</name>
+            <Object>inStream_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TUSER</name>
+            <Object>inStream_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TLAST</name>
+            <Object>inStream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TID</name>
+            <Object>inStream_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>5</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TDATA</name>
+            <Object>outStream_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TKEEP</name>
+            <Object>outStream_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TSTRB</name>
+            <Object>outStream_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TUSER</name>
+            <Object>outStream_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TLAST</name>
+            <Object>outStream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TID</name>
+            <Object>outStream_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>5</Bits>
+            <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
     </InterfaceSummary>
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="2">
             <ModuleName>yolo_upsamp_top</ModuleName>
-            <BindInstances>line_buff_group_0_val_V_U line_buff_group_1_val_V_U line_buff_group_2_val_V_U line_buff_group_3_val_V_U add_ln15_fu_643_p2 row_idx_3_fu_877_p2 row_stride_3_fu_945_p2 add_ln19_fu_768_p2 col_stride_3_fu_1052_p2 mac_muladd_4ns_4ns_4ns_7_4_1_U1 mac_muladd_4ns_4ns_4ns_7_4_1_U1 add_ln23_fu_1150_p2 add_ln21_1_fu_792_p2 add_ln19_1_fu_679_p2 add_ln17_1_fu_693_p2</BindInstances>
+            <BindInstances>line_buff_group_0_val_V_U line_buff_group_1_val_V_U line_buff_group_2_val_V_U line_buff_group_3_val_V_U add_ln15_fu_671_p2 row_idx_3_fu_905_p2 row_stride_3_fu_973_p2 add_ln19_fu_796_p2 col_stride_3_fu_1080_p2 mac_muladd_4ns_4ns_4ns_7_4_1_U1 mac_muladd_4ns_4ns_4ns_7_4_1_U1 add_ln23_fu_1178_p2 add_ln21_1_fu_820_p2 add_ln19_1_fu_707_p2 add_ln17_1_fu_721_p2</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
@@ -416,29 +560,29 @@
                 <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="yes" RTLNAME="line_buff_group_1_val_V_U" SOURCE="src/yolo_upsamp.cpp:10" URAM="0" VARIABLE="line_buff_group_1_val_V"/>
                 <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="yes" RTLNAME="line_buff_group_2_val_V_U" SOURCE="src/yolo_upsamp.cpp:11" URAM="0" VARIABLE="line_buff_group_2_val_V"/>
                 <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="yes" RTLNAME="line_buff_group_3_val_V_U" SOURCE="src/yolo_upsamp.cpp:12" URAM="0" VARIABLE="line_buff_group_3_val_V"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_fu_643_p2" SOURCE="src/yolo_upsamp.cpp:15" URAM="0" VARIABLE="add_ln15"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="row_idx_3_fu_877_p2" SOURCE="src/yolo_upsamp.cpp:15" URAM="0" VARIABLE="row_idx_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="row_stride_3_fu_945_p2" SOURCE="src/yolo_upsamp.cpp:17" URAM="0" VARIABLE="row_stride_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln19_fu_768_p2" SOURCE="src/yolo_upsamp.cpp:19" URAM="0" VARIABLE="add_ln19"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="col_stride_3_fu_1052_p2" SOURCE="src/yolo_upsamp.cpp:21" URAM="0" VARIABLE="col_stride_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_fu_671_p2" SOURCE="src/yolo_upsamp.cpp:15" URAM="0" VARIABLE="add_ln15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="row_idx_3_fu_905_p2" SOURCE="src/yolo_upsamp.cpp:15" URAM="0" VARIABLE="row_idx_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="row_stride_3_fu_973_p2" SOURCE="src/yolo_upsamp.cpp:17" URAM="0" VARIABLE="row_stride_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln19_fu_796_p2" SOURCE="src/yolo_upsamp.cpp:19" URAM="0" VARIABLE="add_ln19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="col_stride_3_fu_1080_p2" SOURCE="src/yolo_upsamp.cpp:21" URAM="0" VARIABLE="col_stride_3"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_4ns_4ns_4ns_7_4_1_U1" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:908" URAM="0" VARIABLE="mul_ln908"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_4ns_4ns_4ns_7_4_1_U1" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:908" URAM="0" VARIABLE="add_ln908"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_fu_1150_p2" SOURCE="src/yolo_upsamp.cpp:23" URAM="0" VARIABLE="add_ln23"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln21_1_fu_792_p2" SOURCE="src/yolo_upsamp.cpp:21" URAM="0" VARIABLE="add_ln21_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln19_1_fu_679_p2" SOURCE="src/yolo_upsamp.cpp:19" URAM="0" VARIABLE="add_ln19_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln17_1_fu_693_p2" SOURCE="src/yolo_upsamp.cpp:17" URAM="0" VARIABLE="add_ln17_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln23_fu_1178_p2" SOURCE="src/yolo_upsamp.cpp:23" URAM="0" VARIABLE="add_ln23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln21_1_fu_820_p2" SOURCE="src/yolo_upsamp.cpp:21" URAM="0" VARIABLE="add_ln21_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln19_1_fu_707_p2" SOURCE="src/yolo_upsamp.cpp:19" URAM="0" VARIABLE="add_ln19_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln17_1_fu_721_p2" SOURCE="src/yolo_upsamp.cpp:17" URAM="0" VARIABLE="add_ln17_1"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
     <FIFOInformation/>
     <UserConfigCommands/>
     <Args>
-        <Arg ArgName="inStream" index="0" direction="in" srcType="stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
+        <Arg ArgName="inStream" index="0" direction="in" srcType="stream&lt;hls::axis&lt;quad_fp_pack, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
             <hwRefs>
                 <hwRef type="interface" interface="inStream" name="" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="outStream" index="1" direction="out" srcType="stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
+        <Arg ArgName="outStream" index="1" direction="out" srcType="stream&lt;hls::axis&lt;quad_fp_pack, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
             <hwRefs>
                 <hwRef type="interface" interface="outStream" name="" usage="data" direction="out"/>
             </hwRefs>
@@ -535,20 +679,32 @@
                 <port>interrupt</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="inStream" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="112" portPrefix="inStream_">
+        <Interface InterfaceName="inStream" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="64" portPrefix="inStream_">
             <ports>
                 <port>inStream_TDATA</port>
+                <port>inStream_TDEST</port>
+                <port>inStream_TID</port>
+                <port>inStream_TKEEP</port>
+                <port>inStream_TLAST</port>
                 <port>inStream_TREADY</port>
+                <port>inStream_TSTRB</port>
+                <port>inStream_TUSER</port>
                 <port>inStream_TVALID</port>
             </ports>
             <constraints>
                 <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="inStream"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="outStream" type="axi4stream" busTypeName="axis" mode="master" dataWidth="112" portPrefix="outStream_">
+        <Interface InterfaceName="outStream" type="axi4stream" busTypeName="axis" mode="master" dataWidth="64" portPrefix="outStream_">
             <ports>
                 <port>outStream_TDATA</port>
+                <port>outStream_TDEST</port>
+                <port>outStream_TID</port>
+                <port>outStream_TKEEP</port>
+                <port>outStream_TLAST</port>
                 <port>outStream_TREADY</port>
+                <port>outStream_TSTRB</port>
+                <port>outStream_TUSER</port>
                 <port>outStream_TVALID</port>
             </ports>
             <constraints>
@@ -575,9 +731,9 @@
             </item>
             <item name="AXIS">
                 <table isCollapsed="0">
-                    <keys size="5">Interface, Register Mode, TDATA, TREADY, TVALID</keys>
-                    <column name="inStream">both, 112, 1, 1, , , , , , , </column>
-                    <column name="outStream">both, 112, 1, 1, , , , , , , </column>
+                    <keys size="11">Interface, Register Mode, TDATA, TDEST, TID, TKEEP, TLAST, TREADY, TSTRB, TUSER, TVALID</keys>
+                    <column name="inStream">both, 64, 6, 5, 8, 1, 1, 8, 2, 1, </column>
+                    <column name="outStream">both, 64, 6, 5, 8, 1, 1, 8, 2, 1, </column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -596,8 +752,8 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="inStream">in, stream&lt;ap_axi_fp&lt;64 2 5 6&gt; 0&gt;&amp;</column>
-                    <column name="outStream">out, stream&lt;ap_axi_fp&lt;64 2 5 6&gt; 0&gt;&amp;</column>
+                    <column name="inStream">in, stream&lt;hls::axis&lt;quad_fp_pack 2 5 6&gt; 0&gt;&amp;</column>
+                    <column name="outStream">out, stream&lt;hls::axis&lt;quad_fp_pack 2 5 6&gt; 0&gt;&amp;</column>
                 </table>
             </item>
             <item name="SW-to-HW Mapping">

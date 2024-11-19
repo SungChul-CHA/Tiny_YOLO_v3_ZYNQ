@@ -134,7 +134,7 @@ yolo_conv_top_mul_mul_16s_16s_32_4_0 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 32 ))
-mul_mul_16s_16s_32_4_0_U89(
+mul_mul_16s_16s_32_4_0_U100(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(p_read11_int_reg),
@@ -149,7 +149,7 @@ yolo_conv_top_mul_mul_16s_16s_32_4_0 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 32 ))
-mul_mul_16s_16s_32_4_0_U90(
+mul_mul_16s_16s_32_4_0_U101(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(p_read12_int_reg),
@@ -164,7 +164,7 @@ yolo_conv_top_mul_mul_16s_16s_32_4_0 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 32 ))
-mul_mul_16s_16s_32_4_0_U91(
+mul_mul_16s_16s_32_4_0_U102(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(p_read14_int_reg),
@@ -179,7 +179,7 @@ yolo_conv_top_mul_mul_16s_16s_32_4_0 #(
     .din0_WIDTH( 16 ),
     .din1_WIDTH( 16 ),
     .dout_WIDTH( 32 ))
-mul_mul_16s_16s_32_4_0_U92(
+mul_mul_16s_16s_32_4_0_U103(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(p_read17_int_reg),
@@ -195,7 +195,7 @@ yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0 #(
     .din1_WIDTH( 16 ),
     .din2_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-mac_muladd_16s_16s_32s_32_4_0_U93(
+mac_muladd_16s_16s_32s_32_4_0_U104(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(p_read_8_reg_306),
@@ -212,7 +212,7 @@ yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0 #(
     .din1_WIDTH( 16 ),
     .din2_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-mac_muladd_16s_16s_32s_32_4_0_U94(
+mac_muladd_16s_16s_32s_32_4_0_U105(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(p_read_5_reg_301),
@@ -229,7 +229,7 @@ yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0 #(
     .din1_WIDTH( 16 ),
     .din2_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-mac_muladd_16s_16s_32s_32_4_0_U95(
+mac_muladd_16s_16s_32s_32_4_0_U106(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(p_read_3_reg_296),
@@ -246,7 +246,7 @@ yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0 #(
     .din1_WIDTH( 16 ),
     .din2_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-mac_muladd_16s_16s_32s_32_4_0_U96(
+mac_muladd_16s_16s_32s_32_4_0_U107(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(p_read_reg_286),
@@ -263,7 +263,7 @@ yolo_conv_top_mac_muladd_16s_16s_32ns_32_4_0 #(
     .din1_WIDTH( 16 ),
     .din2_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-mac_muladd_16s_16s_32ns_32_4_0_U97(
+mac_muladd_16s_16s_32ns_32_4_0_U108(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(p_read_2_reg_291_pp0_iter1_reg),

@@ -15,11 +15,11 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-111] Finished Command csim_design CPU user time: 14.19 seconds. CPU system time: 0.61 seconds. Elapsed time: 14.86 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 14.8 seconds. CPU system time: 0.64 seconds. Elapsed time: 15.5 seconds; current allocated memory: 0.000 MB.
 INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 198.410 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 198.441 MB.
 INFO: [HLS 200-10] Analyzing design file 'src/yolo_yolo.cpp' ... 
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 13.67 seconds. CPU system time: 0.7 seconds. Elapsed time: 14.43 seconds; current allocated memory: 202.359 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 14.19 seconds. CPU system time: 0.67 seconds. Elapsed time: 14.91 seconds; current allocated memory: 202.945 MB.
 INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 INFO: [HLS 214-291] Loop 'VITIS_LOOP_279_11' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:279:36)
 INFO: [HLS 214-291] Loop 'VITIS_LOOP_275_10' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:275:36)
@@ -31,19 +31,18 @@ INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_275_10' (/tools/Xilinx/Vitis_HLS/
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_269_9' (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:269:31) in function 'exp_reduce::exp<16, 8>' completely with a factor of 4 (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:40:0)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_204_8' (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:204:35) in function 'exp_reduce::exp<16, 8>' completely with a factor of 22 (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:40:0)
 INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_196_7' (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:196:27) in function 'exp_reduce::exp<16, 8>' completely with a factor of 8 (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:40:0)
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.62 seconds. CPU system time: 0.24 seconds. Elapsed time: 4.88 seconds; current allocated memory: 202.453 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 202.453 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.88 seconds. CPU system time: 0.23 seconds. Elapsed time: 5.13 seconds; current allocated memory: 203.152 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 203.152 MB.
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 227.977 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 231.680 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 259.367 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 259.680 MB.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:41:9) to (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:953:1) in function 'exp_reduce::exp<16, 8>'... converting 5 basic blocks.
-INFO: [XFORM 203-11] Balancing expressions in function 'yolo_yolo_top' (src/yolo_yolo.cpp:3)...5 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<16, 8>' (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:41:1)...8 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 313.852 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 314.730 MB.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_17_2' (src/yolo_yolo.cpp:17:27) in function 'yolo_yolo_top'.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_14_1' (src/yolo_yolo.cpp:14:27) in function 'yolo_yolo_top'.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 350.273 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 351.059 MB.
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'yolo_yolo_top' ...
 WARNING: [SYN 201-103] Legalizing function name 'exp<16, 8>' to 'exp_16_8_s'.
@@ -54,13 +53,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'exp<16, 8>'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, function 'exp<16, 8>'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 350.273 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 351.059 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.273 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 351.059 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'logistic_activate' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -68,13 +67,13 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'logistic_activate'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 30, function 'logistic_activate'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 350.273 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 351.059 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 350.273 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 351.059 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -85,26 +84,26 @@ WARNING: [HLS 200-885] The II Violation in module 'yolo_yolo_top_Pipeline_VITIS_
 WARNING: [HLS 200-885] The II Violation in module 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' (loop 'VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3'): Unable to schedule 'call' operation ('curr_output.data.sub_data_3.V', src/yolo_yolo.cpp:47) to 'logistic_activate' due to limited resources (II = 3).
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 34, loop 'VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 350.750 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 351.723 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Starting global binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 350.750 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 351.723 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'yolo_yolo_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 350.750 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 351.723 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 350.750 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 351.723 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'exp_16_8_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -115,46 +114,43 @@ INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_16_8_s'.
 INFO: [RTMG 210-279] Implementing memory 'yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R' using auto ROMs.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 350.754 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 351.820 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'logistic_activate' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'logistic_activate' pipeline 'logistic_activate' pipeline type 'function pipeline'
 INFO: [RTGEN 206-100] Generating core module 'sdiv_18ns_17s_18_22_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'logistic_activate'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 352.848 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 353.930 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' pipeline 'VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 355.777 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 356.871 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'yolo_yolo_top' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/inStream' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/outStream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/outStream_V_dest_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/activate_en' to 's_axilite & ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/input_h' to 's_axilite & ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/input_w' to 's_axilite & ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'yolo_yolo_top' to 's_axilite & ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'activate_en', 'input_h', 'input_w' to AXI-Lite port CTRL_BUS.
+INFO: [RTGEN 206-100] Bundling port 'activate_en', 'input_h', 'input_w' and 'return' to AXI-Lite port CTRL_BUS.
 INFO: [RTGEN 206-100] Generating core module 'mul_5ns_8ns_13_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_yolo_top'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.28 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 358.547 MB.
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.3 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 361.945 MB.
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 366.215 MB.
-INFO: [VHDL 208-304] Generating VHDL RTL for yolo_yolo_top.
-INFO: [VLOG 209-307] Generating Verilog RTL for yolo_yolo_top.
-INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
-INFO: [HLS 200-789] **** Estimated Fmax: 150.38 MHz
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 20.64 seconds. CPU system time: 1.02 seconds. Elapsed time: 21.81 seconds; current allocated memory: 168.035 MB.
-INFO: [HLS 200-1510] Running: cosim_design 
-INFO: [COSIM 212-47] Using XSIM for RTL simulation.
-INFO: [COSIM 212-14] Instrumenting C test bench ...
-INFO: [COSIM 212-302] Starting C TB testing ... 
-INFO: [COSIM 212-333] Generating C post check test bench ...
-INFO: [COSIM 212-12] Generating RTL test bench ...
-INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
-INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [HLS 200-111]

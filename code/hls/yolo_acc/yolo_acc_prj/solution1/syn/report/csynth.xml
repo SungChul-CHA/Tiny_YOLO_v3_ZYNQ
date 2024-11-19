@@ -1,0 +1,1169 @@
+<profile>
+    <ReportVersion>
+        <Version>2022.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg400-1</Part>
+        <TopModelName>yolo_acc_top</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.648</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>1384472</Best-caseLatency>
+            <Average-caseLatency>1384472</Average-caseLatency>
+            <Worst-caseLatency>1384472</Worst-caseLatency>
+            <Best-caseRealTimeLatency>13.845 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>13.845 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>13.845 ms</Worst-caseRealTimeLatency>
+            <Interval-min>1384473</Interval-min>
+            <Interval-max>1384473</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>3</DSP>
+            <FF>1687</FF>
+            <LUT>2172</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_AWVALID</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_AWREADY</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_AWADDR</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_WVALID</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_WREADY</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_WDATA</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_WSTRB</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_ARVALID</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_ARREADY</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_ARADDR</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_RVALID</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_RREADY</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_RDATA</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_RRESP</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_BVALID</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_BREADY</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BUS_BRESP</name>
+            <Object>CTRL_BUS</Object>
+            <Type>scalar</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>yolo_acc_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>yolo_acc_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>yolo_acc_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_a_TDATA</name>
+            <Object>inStream_a_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_a_TVALID</name>
+            <Object>inStream_a_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_a_TREADY</name>
+            <Object>inStream_a_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_a_TDEST</name>
+            <Object>inStream_a_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_a_TKEEP</name>
+            <Object>inStream_a_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_a_TSTRB</name>
+            <Object>inStream_a_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_a_TUSER</name>
+            <Object>inStream_a_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_a_TLAST</name>
+            <Object>inStream_a_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_a_TID</name>
+            <Object>inStream_a_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>5</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_b_TDATA</name>
+            <Object>inStream_b_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_b_TVALID</name>
+            <Object>inStream_b_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_b_TREADY</name>
+            <Object>inStream_b_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_b_TDEST</name>
+            <Object>inStream_b_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_b_TKEEP</name>
+            <Object>inStream_b_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_b_TSTRB</name>
+            <Object>inStream_b_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_b_TUSER</name>
+            <Object>inStream_b_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_b_TLAST</name>
+            <Object>inStream_b_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_b_TID</name>
+            <Object>inStream_b_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>5</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TDATA</name>
+            <Object>outStream_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TVALID</name>
+            <Object>outStream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TREADY</name>
+            <Object>outStream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TDEST</name>
+            <Object>outStream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TKEEP</name>
+            <Object>outStream_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TSTRB</name>
+            <Object>outStream_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TUSER</name>
+            <Object>outStream_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TLAST</name>
+            <Object>outStream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TID</name>
+            <Object>outStream_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>5</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="4">
+            <ModuleName>yolo_acc_top</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_yolo_acc_top_Pipeline_VITIS_LOOP_25_1_fu_150</InstName>
+                    <ModuleName>yolo_acc_top_Pipeline_VITIS_LOOP_25_1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>150</ID>
+                    <BindInstances>i_V_fu_173_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_yolo_acc_top_Pipeline_VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4_fu_171</InstName>
+                    <ModuleName>yolo_acc_top_Pipeline_VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>171</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_post_process_unit_fu_348</InstName>
+                            <ModuleName>post_process_unit</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>348</ID>
+                            <BindInstances>ret_V_fu_76_p2 p_Val2_8_fu_90_p2 mul_mul_16s_5ns_22_4_0_U11 p_Val2_11_fu_201_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_post_process_unit_fu_356</InstName>
+                            <ModuleName>post_process_unit</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>356</ID>
+                            <BindInstances>ret_V_fu_76_p2 p_Val2_8_fu_90_p2 mul_mul_16s_5ns_22_4_0_U11 p_Val2_11_fu_201_p2</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>add_ln1027_1_fu_397_p2 add_ln42_fu_504_p2 col_idx_3_fu_539_p2 ret_V_fu_672_p2 p_Val2_1_fu_686_p2 ret_V_1_fu_742_p2 p_Val2_3_fu_756_p2 ret_V_2_fu_812_p2 p_Val2_5_fu_826_p2 ret_V_3_fu_882_p2 p_Val2_7_fu_896_p2 add_ln48_fu_981_p2 add_ln1027_fu_986_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>kernel_bias_fp_V_U sub_i_i55_fu_249_p2 sub_i_i_fu_259_p2 mul_9ns_4ns_13_1_1_U48 mul_mul_9ns_13ns_22_4_1_U49</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>yolo_acc_top_Pipeline_VITIS_LOOP_25_1</Name>
+            <Loops>
+                <VITIS_LOOP_25_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>3.323</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>10</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_25_1>
+                        <Name>VITIS_LOOP_25_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>8</Latency>
+                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_25_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>48</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>178</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_25_1" OPTYPE="add" PRAGMA="" RTLNAME="i_V_fu_173_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:840" URAM="0" VARIABLE="i_V"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>post_process_unit</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <TargetInitiationInterval>4294967295</TargetInitiationInterval>
+                    <EstimatedClockPeriod>5.205</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>4</Best-caseLatency>
+                    <Average-caseLatency>4</Average-caseLatency>
+                    <Worst-caseLatency>4</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>40.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>40.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>40.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>5</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>381</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>337</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_76_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1347" URAM="0" VARIABLE="ret_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="p_Val2_8_fu_90_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="p_Val2_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_5ns_22_4_0_U11" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="p_Val2_11_fu_201_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:377" URAM="0" VARIABLE="p_Val2_11"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>yolo_acc_top_Pipeline_VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4</Name>
+            <Loops>
+                <VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.547</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1384456</Best-caseLatency>
+                    <Average-caseLatency>1384456</Average-caseLatency>
+                    <Worst-caseLatency>1384456</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>13.845 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>13.845 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>13.845 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1384456</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4>
+                        <Name>VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>692224</TripCount>
+                        <Latency>1384454</Latency>
+                        <AbsoluteTimeLatency>13.845 ms</AbsoluteTimeLatency>
+                        <PipelineII>2</PipelineII>
+                        <PipelineDepth>9</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList>
+                            <Instance>grp_post_process_unit_fu_348</Instance>
+                            <Instance>grp_post_process_unit_fu_356</Instance>
+                        </InstanceList>
+                    </VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>2</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>1427</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>1660</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_1_fu_397_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln42_fu_504_p2" SOURCE="src/yolo_acc.cpp:42" URAM="0" VARIABLE="add_ln42"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="col_idx_3_fu_539_p2" SOURCE="src/yolo_acc.cpp:45" URAM="0" VARIABLE="col_idx_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_672_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1347" URAM="0" VARIABLE="ret_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="p_Val2_1_fu_686_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="p_Val2_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_1_fu_742_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1347" URAM="0" VARIABLE="ret_V_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="p_Val2_3_fu_756_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="p_Val2_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_2_fu_812_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1347" URAM="0" VARIABLE="ret_V_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="p_Val2_5_fu_826_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="p_Val2_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_3_fu_882_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1347" URAM="0" VARIABLE="ret_V_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="p_Val2_7_fu_896_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="p_Val2_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln48_fu_981_p2" SOURCE="src/yolo_acc.cpp:48" URAM="0" VARIABLE="add_ln48"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_42_2_VITIS_LOOP_45_3_VITIS_LOOP_48_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_fu_986_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>yolo_acc_top</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.648</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1384472</Best-caseLatency>
+                    <Average-caseLatency>1384472</Average-caseLatency>
+                    <Worst-caseLatency>1384472</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>13.845 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>13.845 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>13.845 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1384473</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>3</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>1687</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>2172</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>4</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="kernel_bias_fp_V_U" SOURCE="src/yolo_acc.cpp:20" URAM="0" VARIABLE="kernel_bias_fp_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i55_fu_249_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i55"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i_fu_259_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_4ns_13_1_1_U48" SOURCE="" URAM="0" VARIABLE="bound"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_9ns_13ns_22_4_1_U49" SOURCE="" URAM="0" VARIABLE="bound4"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="inStream_a" index="0" direction="in" srcType="stream&lt;hls::axis&lt;quad_fp_pack, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
+            <hwRefs>
+                <hwRef type="interface" interface="inStream_a" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="inStream_b" index="1" direction="in" srcType="stream&lt;hls::axis&lt;quad_fp_pack, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
+            <hwRefs>
+                <hwRef type="interface" interface="inStream_b" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="outStream" index="2" direction="out" srcType="stream&lt;hls::axis&lt;quad_fp_pack, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
+            <hwRefs>
+                <hwRef type="interface" interface="outStream" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="input_h" index="3" direction="in" srcType="ap_uint&lt;9&gt;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL_BUS" name="input_h" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="input_w" index="4" direction="in" srcType="ap_uint&lt;9&gt;" srcSize="16">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL_BUS" name="input_w" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="fold_input_ch" index="5" direction="in" srcType="ap_uint&lt;4&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL_BUS" name="fold_input_ch" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="leaky" index="6" direction="in" srcType="ap_uint&lt;1&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL_BUS" name="leaky" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="bias_en" index="7" direction="in" srcType="ap_uint&lt;1&gt;" srcSize="8">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_CTRL_BUS" name="bias_en" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_CTRL_BUS" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="6" portPrefix="s_axi_CTRL_BUS_" paramPrefix="C_S_AXI_CTRL_BUS_">
+            <ports>
+                <port>s_axi_CTRL_BUS_ARADDR</port>
+                <port>s_axi_CTRL_BUS_ARREADY</port>
+                <port>s_axi_CTRL_BUS_ARVALID</port>
+                <port>s_axi_CTRL_BUS_AWADDR</port>
+                <port>s_axi_CTRL_BUS_AWREADY</port>
+                <port>s_axi_CTRL_BUS_AWVALID</port>
+                <port>s_axi_CTRL_BUS_BREADY</port>
+                <port>s_axi_CTRL_BUS_BRESP</port>
+                <port>s_axi_CTRL_BUS_BVALID</port>
+                <port>s_axi_CTRL_BUS_RDATA</port>
+                <port>s_axi_CTRL_BUS_RREADY</port>
+                <port>s_axi_CTRL_BUS_RRESP</port>
+                <port>s_axi_CTRL_BUS_RVALID</port>
+                <port>s_axi_CTRL_BUS_WDATA</port>
+                <port>s_axi_CTRL_BUS_WREADY</port>
+                <port>s_axi_CTRL_BUS_WSTRB</port>
+                <port>s_axi_CTRL_BUS_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="RTOW" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="RTOW" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x10" name="input_h" access="W" description="Data signal of input_h" range="32">
+                    <fields>
+                        <field offset="0" width="9" name="input_h" access="W" description="Bit 8 to 0 of input_h"/>
+                        <field offset="9" width="23" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x18" name="input_w" access="W" description="Data signal of input_w" range="32">
+                    <fields>
+                        <field offset="0" width="9" name="input_w" access="W" description="Bit 8 to 0 of input_w"/>
+                        <field offset="9" width="23" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x20" name="fold_input_ch" access="W" description="Data signal of fold_input_ch" range="32">
+                    <fields>
+                        <field offset="0" width="4" name="fold_input_ch" access="W" description="Bit 3 to 0 of fold_input_ch"/>
+                        <field offset="4" width="28" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x28" name="leaky" access="W" description="Data signal of leaky" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="leaky" access="W" description="Bit 0 to 0 of leaky"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x30" name="bias_en" access="W" description="Data signal of bias_en" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="bias_en" access="W" description="Bit 0 to 0 of bias_en"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="input_h"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24" argName="input_w"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32" argName="fold_input_ch"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="40" argName="leaky"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="48" argName="bias_en"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_CTRL_BUS:inStream_a:inStream_b:outStream</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="inStream_a" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="64" portPrefix="inStream_a_">
+            <ports>
+                <port>inStream_a_TDATA</port>
+                <port>inStream_a_TDEST</port>
+                <port>inStream_a_TID</port>
+                <port>inStream_a_TKEEP</port>
+                <port>inStream_a_TLAST</port>
+                <port>inStream_a_TREADY</port>
+                <port>inStream_a_TSTRB</port>
+                <port>inStream_a_TUSER</port>
+                <port>inStream_a_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="inStream_a"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="inStream_b" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="64" portPrefix="inStream_b_">
+            <ports>
+                <port>inStream_b_TDATA</port>
+                <port>inStream_b_TDEST</port>
+                <port>inStream_b_TID</port>
+                <port>inStream_b_TKEEP</port>
+                <port>inStream_b_TLAST</port>
+                <port>inStream_b_TREADY</port>
+                <port>inStream_b_TSTRB</port>
+                <port>inStream_b_TUSER</port>
+                <port>inStream_b_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="inStream_b"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="outStream" type="axi4stream" busTypeName="axis" mode="master" dataWidth="64" portPrefix="outStream_">
+            <ports>
+                <port>outStream_TDATA</port>
+                <port>outStream_TDEST</port>
+                <port>outStream_TID</port>
+                <port>outStream_TKEEP</port>
+                <port>outStream_TLAST</port>
+                <port>outStream_TREADY</port>
+                <port>outStream_TSTRB</port>
+                <port>outStream_TUSER</port>
+                <port>outStream_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="outStream"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE Interfaces">
+                <table isCollapsed="0">
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_CTRL_BUS">32, 6, 16, 0, , , , , </column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table isCollapsed="0">
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_CTRL_BUS">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_CTRL_BUS">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_CTRL_BUS">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_CTRL_BUS">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                    <column name="s_axi_CTRL_BUS">input_h, 0x10, 32, W, Data signal of input_h, </column>
+                    <column name="s_axi_CTRL_BUS">input_w, 0x18, 32, W, Data signal of input_w, </column>
+                    <column name="s_axi_CTRL_BUS">fold_input_ch, 0x20, 32, W, Data signal of fold_input_ch, </column>
+                    <column name="s_axi_CTRL_BUS">leaky, 0x28, 32, W, Data signal of leaky, </column>
+                    <column name="s_axi_CTRL_BUS">bias_en, 0x30, 32, W, Data signal of bias_en, </column>
+                </table>
+            </item>
+            <item name="AXIS">
+                <table isCollapsed="0">
+                    <keys size="11">Interface, Register Mode, TDATA, TDEST, TID, TKEEP, TLAST, TREADY, TSTRB, TUSER, TVALID</keys>
+                    <column name="inStream_a">both, 64, 6, 5, 8, 1, 1, 8, 2, 1, </column>
+                    <column name="inStream_b">both, 64, 6, 5, 8, 1, 1, 8, 2, 1, </column>
+                    <column name="outStream">both, 64, 6, 5, 8, 1, 1, 8, 2, 1, </column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk, </column>
+                    <column name="ap_rst_n">reset, ap_rst_n, </column>
+                    <column name="interrupt">interrupt, interrupt, </column>
+                    <column name="ap_ctrl">ap_ctrl_hs, , </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="inStream_a">in, stream&lt;hls::axis&lt;quad_fp_pack 2 5 6&gt; 0&gt;&amp;</column>
+                    <column name="inStream_b">in, stream&lt;hls::axis&lt;quad_fp_pack 2 5 6&gt; 0&gt;&amp;</column>
+                    <column name="outStream">out, stream&lt;hls::axis&lt;quad_fp_pack 2 5 6&gt; 0&gt;&amp;</column>
+                    <column name="input_h">in, ap_uint&lt;9&gt;</column>
+                    <column name="input_w">in, ap_uint&lt;9&gt;</column>
+                    <column name="fold_input_ch">in, ap_uint&lt;4&gt;</column>
+                    <column name="leaky">in, ap_uint&lt;1&gt;</column>
+                    <column name="bias_en">in, ap_uint&lt;1&gt;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
+                    <column name="inStream_a">inStream_a, interface, , </column>
+                    <column name="inStream_b">inStream_b, interface, , </column>
+                    <column name="outStream">outStream, interface, , </column>
+                    <column name="input_h">s_axi_CTRL_BUS, register, name=input_h offset=0x10 range=32, </column>
+                    <column name="input_w">s_axi_CTRL_BUS, register, name=input_w offset=0x18 range=32, </column>
+                    <column name="fold_input_ch">s_axi_CTRL_BUS, register, name=fold_input_ch offset=0x20 range=32, </column>
+                    <column name="leaky">s_axi_CTRL_BUS, register, name=leaky offset=0x28 range=32, </column>
+                    <column name="bias_en">s_axi_CTRL_BUS, register, name=bias_en offset=0x30 range=32, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <PragmaReport>
+        <Pragma type="interface" location="src/yolo_acc.cpp:10" status="valid" parentFunction="yolo_acc_top" variable="bias_en" isDirective="0" options="s_axilite port=bias_en bundle=CTRL_BUS"/>
+        <Pragma type="interface" location="src/yolo_acc.cpp:11" status="valid" parentFunction="yolo_acc_top" variable="leaky" isDirective="0" options="s_axilite port=leaky bundle=CTRL_BUS"/>
+        <Pragma type="interface" location="src/yolo_acc.cpp:12" status="valid" parentFunction="yolo_acc_top" variable="fold_input_ch" isDirective="0" options="s_axilite port=fold_input_ch bundle=CTRL_BUS"/>
+        <Pragma type="interface" location="src/yolo_acc.cpp:13" status="valid" parentFunction="yolo_acc_top" variable="input_w" isDirective="0" options="s_axilite port=input_w bundle=CTRL_BUS"/>
+        <Pragma type="interface" location="src/yolo_acc.cpp:14" status="valid" parentFunction="yolo_acc_top" variable="input_h" isDirective="0" options="s_axilite port=input_h bundle=CTRL_BUS"/>
+        <Pragma type="interface" location="src/yolo_acc.cpp:15" status="valid" parentFunction="yolo_acc_top" variable="return" isDirective="0" options="s_axilite port=return bundle=CTRL_BUS"/>
+        <Pragma type="interface" location="src/yolo_acc.cpp:16" status="valid" parentFunction="yolo_acc_top" variable="outStream" isDirective="0" options="axis register both port=outStream"/>
+        <Pragma type="interface" location="src/yolo_acc.cpp:17" status="valid" parentFunction="yolo_acc_top" variable="inStream_a" isDirective="0" options="axis register both port=inStream_a"/>
+        <Pragma type="interface" location="src/yolo_acc.cpp:18" status="valid" parentFunction="yolo_acc_top" variable="inStream_b" isDirective="0" options="axis register both port=inStream_b"/>
+        <Pragma type="array_partition" location="src/yolo_acc.cpp:22" status="valid" parentFunction="yolo_acc_top" variable="kernel_bias_fp" isDirective="0" options="variable=kernel_bias_fp cyclic factor=1 dim=1"/>
+        <Pragma type="loop_tripcount" location="src/yolo_acc.cpp:27" status="valid" parentFunction="yolo_acc_top" variable="" isDirective="0" options="min=4 max=4"/>
+        <Pragma type="pipeline" location="src/yolo_acc.cpp:28" status="valid" parentFunction="yolo_acc_top" variable="" isDirective="0" options=""/>
+        <Pragma type="loop_tripcount" location="src/yolo_acc.cpp:44" status="valid" parentFunction="yolo_acc_top" variable="" isDirective="0" options="min=416 max=416"/>
+        <Pragma type="loop_tripcount" location="src/yolo_acc.cpp:47" status="valid" parentFunction="yolo_acc_top" variable="" isDirective="0" options="min=416 max=416"/>
+        <Pragma type="loop_tripcount" location="src/yolo_acc.cpp:50" status="valid" parentFunction="yolo_acc_top" variable="" isDirective="0" options="min=4 max=4"/>
+        <Pragma type="pipeline" location="src/yolo_acc.cpp:51" status="valid" parentFunction="yolo_acc_top" variable="" isDirective="0" options=""/>
+    </PragmaReport>
+</profile>
+

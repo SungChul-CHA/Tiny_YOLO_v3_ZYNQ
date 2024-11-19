@@ -1,6 +1,6 @@
 `timescale 1 ns / 1 ps
 
-module AESL_deadlock_idx1_monitor ( // for module AESL_inst_yolo_max_pool_top.grp_yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_fu_568
+module AESL_deadlock_idx1_monitor ( // for module AESL_inst_yolo_max_pool_top.grp_yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_fu_598
     input wire clock,
     input wire reset,
     input wire [1:0] axis_block_sigs,

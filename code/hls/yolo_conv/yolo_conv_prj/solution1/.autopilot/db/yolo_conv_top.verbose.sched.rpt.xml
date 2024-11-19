@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'yolo_conv_top'" level="0">
-<item name = "Date">Mon Nov 18 23:56:44 2024
+<item name = "Date">Tue Nov 19 23:14:35 2024
 </item>
 <item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
 <item name = "Project">yolo_conv_prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1926700, 1927036, 14.450 ms, 14.453 ms, 1926701, 1927037, no</column>
+<column name="">1926751, 1926751, 14.451 ms, 14.451 ms, 1926752, 1926752, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,6 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_49_1_VITIS_LOOP_52_2">96, 432, 2 ~ 9, -, -, 48, no</column>
 </table>
 </item>
 </section>

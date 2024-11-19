@@ -50,10 +50,25 @@ Compiling module xil_defaultlib.yolo_upsamp_top_mac_muladd_4ns_4...
 Compiling module xil_defaultlib.yolo_upsamp_top_mac_muladd_4ns_4...
 Compiling module xil_defaultlib.yolo_upsamp_top_flow_control_loo...
 Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
+Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
+Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
+Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
+Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
+Compiling module xil_defaultlib.yolo_upsamp_top_regslice_both(Da...
 Compiling module xil_defaultlib.yolo_upsamp_top
-Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=112)
+Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=1352)
+Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=6)
 Compiling module xil_defaultlib.AESL_axi_s_inStream
-Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=112)
+Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=64)
+Compiling module xil_defaultlib.fifo(DEPTH=5408)
+Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=5408,WIDTH=6)
 Compiling module xil_defaultlib.AESL_axi_s_outStream
 Compiling module xil_defaultlib.AESL_axi_slave_CTRL_BUS
 Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
@@ -84,8 +99,8 @@ source yolo_upsamp_top.tcl
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
 // RTL Simulation : 1 / 1 [100.00%] @ "54425000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 54485 ns : File "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/sim/verilog/yolo_upsamp_top.autotb.v" Line 350
+$finish called at time : 54485 ns : File "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/sim/verilog/yolo_upsamp_top.autotb.v" Line 446
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Nov 18 23:59:38 2024...
+INFO: [Common 17-206] Exiting xsim at Tue Nov 19 23:18:04 2024...
 5407
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 5408

@@ -143,14 +143,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 28, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 698, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+  - Caller:          'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
     DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
   - String:          ''''
 ...
@@ -158,14 +158,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 29, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 698, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+  - Caller:          'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
     DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
   - String:          ''''
 ...
@@ -173,14 +173,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 30, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 698, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+  - Caller:          'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
     DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
   - String:          ''''
 ...
@@ -188,14 +188,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 31, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 698, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+  - Caller:          'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
     DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
   - String:          ''''
 ...
@@ -203,14 +203,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 70 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 44, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+  - Caller:          'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
     DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
   - String:          ''''
 ...
@@ -218,14 +218,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 53 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 44, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+  - Caller:          'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
     DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
   - String:          ''''
 ...
@@ -233,14 +233,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 36 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 44, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+  - Caller:          'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
     DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
   - String:          ''''
 ...
@@ -248,14 +248,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 19 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 44, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+  - Caller:          'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
     DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
   - String:          ''''
 ...
@@ -263,7 +263,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 141, Column: 25 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            ref.tmp177
@@ -274,7 +274,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 142, Column: 25 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            ref.tmp180
@@ -285,7 +285,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 143, Column: 25 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            ref.tmp183
@@ -296,7 +296,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 144, Column: 25 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            ref.tmp186
@@ -307,7 +307,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 141, Column: 25 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            ref.tmp177
@@ -318,7 +318,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 142, Column: 25 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            ref.tmp180
@@ -329,7 +329,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 143, Column: 25 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            ref.tmp183
@@ -340,7 +340,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 144, Column: 25 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            ref.tmp186
@@ -352,7 +352,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 48, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            kernel_window_0
@@ -364,7 +364,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 47, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            kernel_window_0
@@ -376,7 +376,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 48, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            kernel_window_1
@@ -388,7 +388,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 47, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            kernel_window_1
@@ -400,7 +400,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 48, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            kernel_window_2
@@ -412,7 +412,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 47, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            kernel_window_2
@@ -424,7 +424,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 48, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            kernel_window_3
@@ -436,7 +436,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 47, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            kernel_window_3
@@ -448,7 +448,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 755, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            line_buff_group_3
@@ -460,7 +460,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 755, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            line_buff_group_2
@@ -472,7 +472,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 755, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            line_buff_group_1
@@ -484,7 +484,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 755, Column: 9 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Adding '''
   - Name:            line_buff_group_0
@@ -494,7 +494,7 @@ Args:
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            ref.tmp186
@@ -503,7 +503,7 @@ Args:
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            ref.tmp183
@@ -512,7 +512,7 @@ Args:
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            ref.tmp180
@@ -521,7 +521,7 @@ Args:
 --- !Passed
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            ref.tmp177
@@ -531,7 +531,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 70 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            kernel_window_3
@@ -541,7 +541,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 53 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            kernel_window_2
@@ -551,7 +551,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 36 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            kernel_window_1
@@ -561,7 +561,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 19 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            kernel_window_0
@@ -571,7 +571,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 31, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            line_buff_group_3
@@ -581,7 +581,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 30, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            line_buff_group_2
@@ -591,7 +591,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 29, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            line_buff_group_1
@@ -601,7 +601,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 28, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            line_buff_group_0
@@ -612,7 +612,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 44, Column: 5 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -623,7 +623,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 44, Column: 5 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -634,7 +634,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 44, Column: 5 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -645,7 +645,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 44, Column: 5 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -656,7 +656,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 44, Column: 5 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -667,7 +667,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 44, Column: 5 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -678,7 +678,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 44, Column: 5 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -689,7 +689,7 @@ Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 44, Column: 5 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Loop '''
   - LoopName:        anonymous
@@ -699,7 +699,7 @@ Args:
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 148, Column: 25 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_148_7
@@ -709,7 +709,7 @@ Args:
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 296, Column: 20 }
-Function:        _Z16out_stream_mergePN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_I9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEEiS8_7ap_uintILi1EEii
+Function:        _Z16out_stream_mergePN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_INS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEEiS9_7ap_uintILi1EEii
 Args:            
   - String:          'Loop '''
   - LoopName:        VITIS_LOOP_296_1
@@ -792,7 +792,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -808,7 +808,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -824,7 +824,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -840,7 +840,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -856,7 +856,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -872,7 +872,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -888,7 +888,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -904,7 +904,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -920,7 +920,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -936,7 +936,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -952,7 +952,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -968,7 +968,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -984,7 +984,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -1000,7 +1000,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -1016,7 +1016,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -1032,7 +1032,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        anonymous
@@ -1048,7 +1048,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_148_7
@@ -1064,7 +1064,7 @@ Args:
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 291, Column: 0 }
-Function:        _Z16out_stream_mergePN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_I9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEEiS8_7ap_uintILi1EEii
+Function:        _Z16out_stream_mergePN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_INS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEEiS9_7ap_uintILi1EEii
 Args:            
   - String:          'Unrolling loop '''
   - LoopName:        VITIS_LOOP_296_1
@@ -1288,13 +1288,13 @@ Args:
 Pass:            reflow-inliner
 Name:            AutoInline
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*, int)'
     DebugLoc:        { File: src/yolo_conv.cpp, Line: 247, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+  - Caller:          'yolo_conv_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
     DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
   - String:          ''''
 ...
@@ -1302,7 +1302,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1320,7 +1320,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 28, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1338,7 +1338,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 29, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1356,7 +1356,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 30, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1374,7 +1374,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 31, Column: 17 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1392,7 +1392,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 33, Column: 14 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1410,7 +1410,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 38, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1436,7 +1436,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 19 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1460,7 +1460,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 36 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1484,7 +1484,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 53 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1508,7 +1508,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 70 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1531,7 +1531,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1554,7 +1554,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1577,7 +1577,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1600,7 +1600,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1624,7 +1624,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1640,7 +1640,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1656,7 +1656,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1672,7 +1672,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1688,7 +1688,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1704,7 +1704,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1720,7 +1720,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1736,7 +1736,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1752,7 +1752,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1768,7 +1768,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1784,7 +1784,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1800,7 +1800,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1816,7 +1816,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1832,7 +1832,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1848,7 +1848,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1864,7 +1864,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1880,7 +1880,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1896,7 +1896,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1912,7 +1912,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1928,7 +1928,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1944,7 +1944,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1960,7 +1960,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1976,7 +1976,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -1992,7 +1992,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -2008,7 +2008,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -2024,7 +2024,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -2040,7 +2040,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -2056,7 +2056,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -2072,7 +2072,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -2088,7 +2088,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -2104,7 +2104,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'
@@ -2120,7 +2120,7 @@ Args:
 Pass:            reflow-aggr
 Name:            AggrSucc
 DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
-Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Function:        _Z13yolo_conv_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_7ap_uintILi6EES7_S6_ILi4EES8_S6_ILi9EES9_S9_S6_ILi3EE
 Args:            
   - String:          'Aggregating '
   - HwTyName:        'fifo (hls::stream)'

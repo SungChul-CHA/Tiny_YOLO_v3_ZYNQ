@@ -19,47 +19,22 @@
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
-            <Best-caseLatency>1926700</Best-caseLatency>
-            <Average-caseLatency>1926892</Average-caseLatency>
-            <Worst-caseLatency>1927036</Worst-caseLatency>
-            <Best-caseRealTimeLatency>14.450 ms</Best-caseRealTimeLatency>
-            <Average-caseRealTimeLatency>14.452 ms</Average-caseRealTimeLatency>
-            <Worst-caseRealTimeLatency>14.453 ms</Worst-caseRealTimeLatency>
-            <Interval-min>1926701</Interval-min>
-            <Interval-max>1927037</Interval-max>
+            <Best-caseLatency>1926751</Best-caseLatency>
+            <Average-caseLatency>1926751</Average-caseLatency>
+            <Worst-caseLatency>1926751</Worst-caseLatency>
+            <Best-caseRealTimeLatency>14.451 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>14.451 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>14.451 ms</Worst-caseRealTimeLatency>
+            <Interval-min>1926752</Interval-min>
+            <Interval-max>1926752</Interval-max>
         </SummaryOfOverallLatency>
-        <SummaryOfLoopLatency>
-            <VITIS_LOOP_49_1_VITIS_LOOP_52_2>
-                <Slack>5.47</Slack>
-                <TripCount>48</TripCount>
-                <Latency>
-                    <range>
-                        <min>96</min>
-                        <max>432</max>
-                    </range>
-                </Latency>
-                <AbsoluteTimeLatency>
-                    <range>
-                        <min>720</min>
-                        <max>3240</max>
-                    </range>
-                </AbsoluteTimeLatency>
-                <IterationLatency>
-                    <range>
-                        <min>2</min>
-                        <max>9</max>
-                    </range>
-                </IterationLatency>
-                <InstanceList/>
-            </VITIS_LOOP_49_1_VITIS_LOOP_52_2>
-        </SummaryOfLoopLatency>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
             <BRAM_18K>120</BRAM_18K>
             <DSP>110</DSP>
-            <FF>44333</FF>
-            <LUT>36373</LUT>
+            <FF>44374</FF>
+            <LUT>36597</LUT>
             <URAM>0</URAM>
         </Resources>
         <AvailableResources>
@@ -293,19 +268,19 @@
         </RtlPorts>
         <RtlPorts>
             <name>inStream_TDATA</name>
-            <Object>inStream</Object>
+            <Object>inStream_V_data_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>in</Dir>
-            <Bits>112</Bits>
+            <Bits>64</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
             <name>inStream_TVALID</name>
-            <Object>inStream</Object>
+            <Object>inStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -317,7 +292,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>inStream_TREADY</name>
-            <Object>inStream</Object>
+            <Object>inStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -328,20 +303,92 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
+            <name>inStream_TDEST</name>
+            <Object>inStream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TKEEP</name>
+            <Object>inStream_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TSTRB</name>
+            <Object>inStream_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TUSER</name>
+            <Object>inStream_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TLAST</name>
+            <Object>inStream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>inStream_TID</name>
+            <Object>inStream_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>5</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
             <name>outStream_TDATA</name>
-            <Object>outStream</Object>
+            <Object>outStream_V_data_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>out</Dir>
-            <Bits>112</Bits>
+            <Bits>64</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
             <name>outStream_TVALID</name>
-            <Object>outStream</Object>
+            <Object>outStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -353,7 +400,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>outStream_TREADY</name>
-            <Object>outStream</Object>
+            <Object>outStream_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -363,151 +410,211 @@
             <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TDEST</name>
+            <Object>outStream_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>6</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TKEEP</name>
+            <Object>outStream_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TSTRB</name>
+            <Object>outStream_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TUSER</name>
+            <Object>outStream_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TLAST</name>
+            <Object>outStream_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>outStream_TID</name>
+            <Object>outStream_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>5</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
     </InterfaceSummary>
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="4">
             <ModuleName>yolo_conv_top</ModuleName>
             <InstancesList>
                 <Instance>
-                    <InstName>grp_yolo_conv_top_Pipeline_VITIS_LOOP_55_3_fu_1526</InstName>
-                    <ModuleName>yolo_conv_top_Pipeline_VITIS_LOOP_55_3</ModuleName>
+                    <InstName>grp_yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3_fu_1410</InstName>
+                    <ModuleName>yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>1526</ID>
-                    <BindInstances>add_ln55_fu_1281_p2</BindInstances>
+                    <ID>1410</ID>
+                    <BindInstances>add_ln1027_1_fu_1367_p2 add_ln49_fu_1382_p2 add_ln52_fu_1435_p2 empty_43_fu_1607_p2 add_ln55_fu_1582_p2 add_ln1027_fu_1513_p2</BindInstances>
                 </Instance>
                 <Instance>
-                    <InstName>grp_yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6_fu_1608</InstName>
+                    <InstName>grp_yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6_fu_1509</InstName>
                     <ModuleName>yolo_conv_top_Pipeline_VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>1608</ID>
+                    <ID>1509</ID>
                     <InstancesList>
-                        <Instance>
-                            <InstName>grp_slide_window_fu_11764</InstName>
-                            <ModuleName>slide_window</ModuleName>
-                            <IsCompInst>true</IsCompInst>
-                            <ID>11764</ID>
-                            <BindInstances>mul_3ns_10ns_12_1_1_U78 mul_3ns_10ns_12_1_1_U79 mul_3ns_10ns_12_1_1_U80 add_ln984_fu_181_p2 add_ln984_1_fu_191_p2 add_ln984_2_fu_201_p2 add_ln262_fu_211_p2 add_ln984_3_fu_220_p2 add_ln984_4_fu_230_p2 add_ln984_5_fu_240_p2 add_ln262_1_fu_250_p2 add_ln984_6_fu_259_p2 add_ln984_7_fu_264_p2 add_ln984_8_fu_269_p2</BindInstances>
-                        </Instance>
                         <Instance>
                             <InstName>grp_slide_window_fu_11778</InstName>
                             <ModuleName>slide_window</ModuleName>
                             <IsCompInst>true</IsCompInst>
                             <ID>11778</ID>
-                            <BindInstances>mul_3ns_10ns_12_1_1_U78 mul_3ns_10ns_12_1_1_U79 mul_3ns_10ns_12_1_1_U80 add_ln984_fu_181_p2 add_ln984_1_fu_191_p2 add_ln984_2_fu_201_p2 add_ln262_fu_211_p2 add_ln984_3_fu_220_p2 add_ln984_4_fu_230_p2 add_ln984_5_fu_240_p2 add_ln262_1_fu_250_p2 add_ln984_6_fu_259_p2 add_ln984_7_fu_264_p2 add_ln984_8_fu_269_p2</BindInstances>
+                            <BindInstances>mul_3ns_10ns_12_1_1_U89 mul_3ns_10ns_12_1_1_U90 mul_3ns_10ns_12_1_1_U91 add_ln984_fu_181_p2 add_ln984_1_fu_191_p2 add_ln984_2_fu_201_p2 add_ln262_fu_211_p2 add_ln984_3_fu_220_p2 add_ln984_4_fu_230_p2 add_ln984_5_fu_240_p2 add_ln262_1_fu_250_p2 add_ln984_6_fu_259_p2 add_ln984_7_fu_264_p2 add_ln984_8_fu_269_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_11798</InstName>
+                            <InstName>grp_slide_window_fu_11792</InstName>
+                            <ModuleName>slide_window</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>11792</ID>
+                            <BindInstances>mul_3ns_10ns_12_1_1_U89 mul_3ns_10ns_12_1_1_U90 mul_3ns_10ns_12_1_1_U91 add_ln984_fu_181_p2 add_ln984_1_fu_191_p2 add_ln984_2_fu_201_p2 add_ln262_fu_211_p2 add_ln984_3_fu_220_p2 add_ln984_4_fu_230_p2 add_ln984_5_fu_240_p2 add_ln262_1_fu_250_p2 add_ln984_6_fu_259_p2 add_ln984_7_fu_264_p2 add_ln984_8_fu_269_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_window_macc_fu_11812</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>11798</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>11812</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_11820</InstName>
+                            <InstName>grp_window_macc_fu_11834</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>11820</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>11834</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_11842</InstName>
+                            <InstName>grp_window_macc_fu_11856</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>11842</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>11856</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_11864</InstName>
+                            <InstName>grp_window_macc_fu_11878</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>11864</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>11878</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_11886</InstName>
+                            <InstName>grp_window_macc_fu_11900</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>11886</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>11900</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_11908</InstName>
+                            <InstName>grp_window_macc_fu_11922</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>11908</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>11922</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_11930</InstName>
+                            <InstName>grp_window_macc_fu_11944</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>11930</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>11944</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_11952</InstName>
+                            <InstName>grp_window_macc_fu_11966</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>11952</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>11966</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_11974</InstName>
+                            <InstName>grp_window_macc_fu_11988</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>11974</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>11988</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_11996</InstName>
+                            <InstName>grp_window_macc_fu_12010</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>11996</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>12010</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_12018</InstName>
+                            <InstName>grp_window_macc_fu_12032</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>12018</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>12032</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_window_macc_fu_12040</InstName>
+                            <InstName>grp_window_macc_fu_12054</InstName>
                             <ModuleName>window_macc</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>12040</ID>
-                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U93 mul_mul_16s_16s_32_4_0_U89 mul_mul_16s_16s_32_4_0_U90 mac_muladd_16s_16s_32s_32_4_0_U94 mul_mul_16s_16s_32_4_0_U91 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32ns_32_4_0_U97 mul_mul_16s_16s_32_4_0_U92 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32s_32_4_0_U93 mac_muladd_16s_16s_32s_32_4_0_U94 mac_muladd_16s_16s_32s_32_4_0_U95 mac_muladd_16s_16s_32s_32_4_0_U96 mac_muladd_16s_16s_32ns_32_4_0_U97 add_ln813_6_fu_208_p2</BindInstances>
+                            <ID>12054</ID>
+                            <BindInstances>mac_muladd_16s_16s_32s_32_4_0_U104 mul_mul_16s_16s_32_4_0_U100 mul_mul_16s_16s_32_4_0_U101 mac_muladd_16s_16s_32s_32_4_0_U105 mul_mul_16s_16s_32_4_0_U102 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32ns_32_4_0_U108 mul_mul_16s_16s_32_4_0_U103 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32s_32_4_0_U104 mac_muladd_16s_16s_32s_32_4_0_U105 mac_muladd_16s_16s_32s_32_4_0_U106 mac_muladd_16s_16s_32s_32_4_0_U107 mac_muladd_16s_16s_32ns_32_4_0_U108 add_ln813_6_fu_208_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>grp_post_process_fu_12062</InstName>
+                            <InstName>grp_post_process_fu_12076</InstName>
                             <ModuleName>post_process</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>12062</ID>
+                            <ID>12076</ID>
                         </Instance>
                         <Instance>
-                            <InstName>grp_post_process_fu_12073</InstName>
+                            <InstName>grp_post_process_fu_12087</InstName>
                             <ModuleName>post_process</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>12073</ID>
+                            <ID>12087</ID>
                         </Instance>
                         <Instance>
-                            <InstName>grp_post_process_fu_12084</InstName>
+                            <InstName>grp_post_process_fu_12098</InstName>
                             <ModuleName>post_process</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>12084</ID>
-                        </Instance>
-                        <Instance>
-                            <InstName>call_ln179_write_output_fu_12124</InstName>
-                            <ModuleName>write_output</ModuleName>
-                            <IsCompInst>true</IsCompInst>
-                            <ID>12124</ID>
-                        </Instance>
-                        <Instance>
-                            <InstName>call_ln179_write_output_fu_12131</InstName>
-                            <ModuleName>write_output</ModuleName>
-                            <IsCompInst>true</IsCompInst>
-                            <ID>12131</ID>
+                            <ID>12098</ID>
                         </Instance>
                         <Instance>
                             <InstName>call_ln179_write_output_fu_12138</InstName>
@@ -690,61 +797,73 @@
                             <ID>12341</ID>
                         </Instance>
                         <Instance>
-                            <InstName>grp_out_stream_merge_fu_12348</InstName>
-                            <ModuleName>out_stream_merge</ModuleName>
+                            <InstName>call_ln179_write_output_fu_12348</InstName>
+                            <ModuleName>write_output</ModuleName>
                             <IsCompInst>true</IsCompInst>
                             <ID>12348</ID>
-                            <BindInstances>kernel_idx_fu_745_p2 sub_fu_915_p2 sub_ln299_fu_763_p2 kernel_idx_2_fu_988_p2 add_ln299_fu_823_p2 kernel_idx_3_fu_1005_p2 add_ln299_1_fu_845_p2 kernel_idx_4_fu_1022_p2 add_ln299_2_fu_867_p2 kernel_idx_5_fu_1039_p2 add_ln299_3_fu_889_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>call_ln179_write_output_fu_12355</InstName>
+                            <ModuleName>write_output</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>12355</ID>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_out_stream_merge_fu_12362</InstName>
+                            <ModuleName>out_stream_merge</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>12362</ID>
+                            <BindInstances>kernel_idx_fu_780_p2 sub_fu_950_p2 sub_ln299_fu_798_p2 kernel_idx_2_fu_1002_p2 add_ln299_fu_858_p2 kernel_idx_3_fu_1019_p2 add_ln299_1_fu_880_p2 kernel_idx_4_fu_1036_p2 add_ln299_2_fu_902_p2 kernel_idx_5_fu_1053_p2 add_ln299_3_fu_924_p2</BindInstances>
                         </Instance>
                     </InstancesList>
-                    <BindInstances>conv_row_count_fu_13746_p2 empty_fu_13764_p2 add_ln84_fu_13349_p2 row_idx_3_fu_13455_p2 conv_row_count_mid1_fu_13806_p2 add_ln88_fu_13529_p2 p_mid19_fu_13857_p2 mac_muladd_4ns_9ns_9ns_12_4_1_U168 mac_muladd_4ns_9ns_9ns_12_4_1_U168 add_ln157_fu_14389_p2 add_ln158_fu_14560_p2 add_ln159_fu_14650_p2 add_ln166_fu_13664_p2 output_rec_V_97_fu_15386_p2 output_rec_V_99_fu_15525_p2 output_rec_V_101_fu_15664_p2 output_rec_V_103_fu_15989_p2 output_rec_V_105_fu_16128_p2 output_rec_V_107_fu_16267_p2 output_rec_V_109_fu_16562_p2 output_rec_V_111_fu_16701_p2 output_rec_V_113_fu_16840_p2 output_rec_V_115_fu_17135_p2 output_rec_V_117_fu_17274_p2 output_rec_V_119_fu_17413_p2 output_rec_V_121_fu_17708_p2 output_rec_V_123_fu_17847_p2 output_rec_V_125_fu_17986_p2 output_rec_V_127_fu_18281_p2 output_rec_V_129_fu_18420_p2 output_rec_V_131_fu_18559_p2 output_rec_V_133_fu_18854_p2 output_rec_V_135_fu_18993_p2 output_rec_V_137_fu_19132_p2 output_rec_V_139_fu_19427_p2 output_rec_V_141_fu_19566_p2 output_rec_V_143_fu_19705_p2 output_rec_V_145_fu_19996_p2 output_rec_V_147_fu_20135_p2 output_rec_V_149_fu_20274_p2 output_rec_V_151_fu_20552_p2 output_rec_V_153_fu_20691_p2 output_rec_V_155_fu_20830_p2 output_rec_V_157_fu_20976_p2 output_rec_V_159_fu_21038_p2 add_ln91_fu_15237_p2 add_ln1027_fu_15242_p2</BindInstances>
+                    <BindInstances>conv_row_count_fu_13772_p2 empty_fu_13790_p2 add_ln84_fu_13375_p2 row_idx_3_fu_13481_p2 conv_row_count_mid1_fu_13832_p2 add_ln88_fu_13555_p2 p_mid1105_fu_13883_p2 mac_muladd_4ns_9ns_9ns_12_4_1_U185 mac_muladd_4ns_9ns_9ns_12_4_1_U185 add_ln157_fu_14389_p2 add_ln158_fu_14560_p2 add_ln159_fu_14650_p2 add_ln166_fu_13690_p2 output_rec_V_97_fu_15386_p2 output_rec_V_99_fu_15525_p2 output_rec_V_101_fu_15664_p2 output_rec_V_103_fu_15989_p2 output_rec_V_105_fu_16128_p2 output_rec_V_107_fu_16267_p2 output_rec_V_109_fu_16562_p2 output_rec_V_111_fu_16701_p2 output_rec_V_113_fu_16840_p2 output_rec_V_115_fu_17135_p2 output_rec_V_117_fu_17274_p2 output_rec_V_119_fu_17413_p2 output_rec_V_121_fu_17708_p2 output_rec_V_123_fu_17847_p2 output_rec_V_125_fu_17986_p2 output_rec_V_127_fu_18281_p2 output_rec_V_129_fu_18420_p2 output_rec_V_131_fu_18559_p2 output_rec_V_133_fu_18854_p2 output_rec_V_135_fu_18993_p2 output_rec_V_137_fu_19132_p2 output_rec_V_139_fu_19427_p2 output_rec_V_141_fu_19566_p2 output_rec_V_143_fu_19705_p2 output_rec_V_145_fu_19996_p2 output_rec_V_147_fu_20135_p2 output_rec_V_149_fu_20274_p2 output_rec_V_151_fu_20552_p2 output_rec_V_153_fu_20691_p2 output_rec_V_155_fu_20830_p2 output_rec_V_157_fu_20976_p2 output_rec_V_159_fu_21038_p2 add_ln91_fu_15237_p2 add_ln1027_fu_15242_p2</BindInstances>
                 </Instance>
             </InstancesList>
-            <BindInstances>out_stream_group_0_fifo_U out_stream_group_1_fifo_U out_stream_group_2_fifo_U out_stream_group_3_fifo_U out_stream_group_4_fifo_U out_stream_group_5_fifo_U out_stream_group_6_fifo_U out_stream_group_7_fifo_U out_stream_group_8_fifo_U out_stream_group_9_fifo_U out_stream_group_10_fifo_U out_stream_group_11_fifo_U out_stream_group_12_fifo_U out_stream_group_13_fifo_U out_stream_group_14_fifo_U out_stream_group_15_fifo_U out_stream_group_16_fifo_U out_stream_group_17_fifo_U out_stream_group_18_fifo_U out_stream_group_19_fifo_U out_stream_group_20_fifo_U out_stream_group_21_fifo_U out_stream_group_22_fifo_U out_stream_group_23_fifo_U out_stream_group_24_fifo_U out_stream_group_25_fifo_U out_stream_group_26_fifo_U out_stream_group_27_fifo_U out_stream_group_28_fifo_U out_stream_group_29_fifo_U out_stream_group_30_fifo_U out_stream_group_31_fifo_U line_buff_group_0_val_V_U line_buff_group_0_val_V_1_U line_buff_group_0_val_V_2_U line_buff_group_1_val_V_U line_buff_group_1_val_V_1_U line_buff_group_1_val_V_2_U line_buff_group_2_val_V_U line_buff_group_2_val_V_1_U line_buff_group_2_val_V_2_U line_buff_group_3_val_V_U line_buff_group_3_val_V_1_U line_buff_group_3_val_V_2_U local_mem_group_data_V_U local_mem_group_data_V_1_U local_mem_group_data_V_2_U local_mem_group_data_V_3_U local_mem_group_data_V_4_U local_mem_group_data_V_5_U local_mem_group_data_V_6_U local_mem_group_data_V_7_U local_mem_group_data_V_8_U local_mem_group_data_V_9_U local_mem_group_data_V_10_U local_mem_group_data_V_11_U local_mem_group_data_V_12_U local_mem_group_data_V_13_U local_mem_group_data_V_14_U local_mem_group_data_V_15_U local_mem_group_data_V_16_U local_mem_group_data_V_17_U local_mem_group_data_V_18_U local_mem_group_data_V_19_U local_mem_group_data_V_20_U local_mem_group_data_V_21_U local_mem_group_data_V_22_U local_mem_group_data_V_23_U local_mem_group_data_V_24_U local_mem_group_data_V_25_U local_mem_group_data_V_26_U local_mem_group_data_V_27_U local_mem_group_data_V_28_U local_mem_group_data_V_29_U local_mem_group_data_V_30_U local_mem_group_data_V_31_U local_mem_group_data_V_32_U local_mem_group_data_V_33_U local_mem_group_data_V_34_U local_mem_group_data_V_35_U local_mem_group_data_V_36_U local_mem_group_data_V_37_U local_mem_group_data_V_38_U local_mem_group_data_V_39_U local_mem_group_data_V_40_U local_mem_group_data_V_41_U local_mem_group_data_V_42_U local_mem_group_data_V_43_U local_mem_group_data_V_44_U local_mem_group_data_V_45_U local_mem_group_data_V_46_U local_mem_group_data_V_47_U local_mem_group_data_V_48_U local_mem_group_data_V_49_U local_mem_group_data_V_50_U local_mem_group_data_V_51_U local_mem_group_data_V_52_U local_mem_group_data_V_53_U local_mem_group_data_V_54_U local_mem_group_data_V_55_U local_mem_group_data_V_56_U local_mem_group_data_V_57_U local_mem_group_data_V_58_U local_mem_group_data_V_59_U local_mem_group_data_V_60_U local_mem_group_data_V_61_U local_mem_group_data_V_62_U local_mem_group_data_V_63_U local_mem_group_data_V_64_U local_mem_group_data_V_65_U local_mem_group_data_V_66_U local_mem_group_data_V_67_U local_mem_group_data_V_68_U local_mem_group_data_V_69_U local_mem_group_data_V_70_U local_mem_group_data_V_71_U mul_6ns_6ns_12_1_1_U335 add_ln1027_fu_1828_p2 add_ln49_fu_1840_p2 empty_75_fu_1893_p2 add_ln52_fu_2001_p2 sub_i_i281_fu_2042_p2 sub_i_i_fu_2052_p2 sub_i_i379_fu_2062_p2 am_addmul_9ns_1ns_13ns_22_4_1_U337 mul_9ns_4ns_13_1_1_U336 am_addmul_9ns_1ns_13ns_22_4_1_U337</BindInstances>
+            <BindInstances>out_stream_group_0_fifo_U out_stream_group_1_fifo_U out_stream_group_2_fifo_U out_stream_group_3_fifo_U out_stream_group_4_fifo_U out_stream_group_5_fifo_U out_stream_group_6_fifo_U out_stream_group_7_fifo_U out_stream_group_8_fifo_U out_stream_group_9_fifo_U out_stream_group_10_fifo_U out_stream_group_11_fifo_U out_stream_group_12_fifo_U out_stream_group_13_fifo_U out_stream_group_14_fifo_U out_stream_group_15_fifo_U out_stream_group_16_fifo_U out_stream_group_17_fifo_U out_stream_group_18_fifo_U out_stream_group_19_fifo_U out_stream_group_20_fifo_U out_stream_group_21_fifo_U out_stream_group_22_fifo_U out_stream_group_23_fifo_U out_stream_group_24_fifo_U out_stream_group_25_fifo_U out_stream_group_26_fifo_U out_stream_group_27_fifo_U out_stream_group_28_fifo_U out_stream_group_29_fifo_U out_stream_group_30_fifo_U out_stream_group_31_fifo_U line_buff_group_0_val_V_U line_buff_group_0_val_V_1_U line_buff_group_0_val_V_2_U line_buff_group_1_val_V_U line_buff_group_1_val_V_1_U line_buff_group_1_val_V_2_U line_buff_group_2_val_V_U line_buff_group_2_val_V_1_U line_buff_group_2_val_V_2_U line_buff_group_3_val_V_U line_buff_group_3_val_V_1_U line_buff_group_3_val_V_2_U local_mem_group_data_V_U local_mem_group_data_V_1_U local_mem_group_data_V_2_U local_mem_group_data_V_3_U local_mem_group_data_V_4_U local_mem_group_data_V_5_U local_mem_group_data_V_6_U local_mem_group_data_V_7_U local_mem_group_data_V_8_U local_mem_group_data_V_9_U local_mem_group_data_V_10_U local_mem_group_data_V_11_U local_mem_group_data_V_12_U local_mem_group_data_V_13_U local_mem_group_data_V_14_U local_mem_group_data_V_15_U local_mem_group_data_V_16_U local_mem_group_data_V_17_U local_mem_group_data_V_18_U local_mem_group_data_V_19_U local_mem_group_data_V_20_U local_mem_group_data_V_21_U local_mem_group_data_V_22_U local_mem_group_data_V_23_U local_mem_group_data_V_24_U local_mem_group_data_V_25_U local_mem_group_data_V_26_U local_mem_group_data_V_27_U local_mem_group_data_V_28_U local_mem_group_data_V_29_U local_mem_group_data_V_30_U local_mem_group_data_V_31_U local_mem_group_data_V_32_U local_mem_group_data_V_33_U local_mem_group_data_V_34_U local_mem_group_data_V_35_U local_mem_group_data_V_36_U local_mem_group_data_V_37_U local_mem_group_data_V_38_U local_mem_group_data_V_39_U local_mem_group_data_V_40_U local_mem_group_data_V_41_U local_mem_group_data_V_42_U local_mem_group_data_V_43_U local_mem_group_data_V_44_U local_mem_group_data_V_45_U local_mem_group_data_V_46_U local_mem_group_data_V_47_U local_mem_group_data_V_48_U local_mem_group_data_V_49_U local_mem_group_data_V_50_U local_mem_group_data_V_51_U local_mem_group_data_V_52_U local_mem_group_data_V_53_U local_mem_group_data_V_54_U local_mem_group_data_V_55_U local_mem_group_data_V_56_U local_mem_group_data_V_57_U local_mem_group_data_V_58_U local_mem_group_data_V_59_U local_mem_group_data_V_60_U local_mem_group_data_V_61_U local_mem_group_data_V_62_U local_mem_group_data_V_63_U local_mem_group_data_V_64_U local_mem_group_data_V_65_U local_mem_group_data_V_66_U local_mem_group_data_V_67_U local_mem_group_data_V_68_U local_mem_group_data_V_69_U local_mem_group_data_V_70_U local_mem_group_data_V_71_U mul_6ns_3ns_9_1_1_U364 mul_6ns_9ns_15_1_1_U365 sub_i_i281_fu_1863_p2 sub_i_i_fu_1873_p2 sub_i_i395_fu_1883_p2 am_addmul_9ns_1ns_13ns_22_4_1_U367 mul_9ns_4ns_13_1_1_U366 am_addmul_9ns_1ns_13ns_22_4_1_U367</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
-            <Name>yolo_conv_top_Pipeline_VITIS_LOOP_55_3</Name>
+            <Name>yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3</Name>
             <Loops>
-                <VITIS_LOOP_55_3/>
+                <VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>7.50</TargetClockPeriod>
                     <ClockUncertainty>2.03</ClockUncertainty>
-                    <EstimatedClockPeriod>5.362</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>5.124</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>5</Best-caseLatency>
-                    <Average-caseLatency>5</Average-caseLatency>
-                    <Worst-caseLatency>5</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>37.500 ns</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>37.500 ns</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>37.500 ns</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>5</PipelineInitiationInterval>
+                    <Best-caseLatency>147</Best-caseLatency>
+                    <Average-caseLatency>147</Average-caseLatency>
+                    <Worst-caseLatency>147</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>1.103 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>1.103 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>1.103 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>147</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_55_3>
-                        <Name>VITIS_LOOP_55_3</Name>
+                    <VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3>
+                        <Name>VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3</Name>
                         <Slack>5.47</Slack>
-                        <TripCount>3</TripCount>
-                        <Latency>3</Latency>
-                        <AbsoluteTimeLatency>22.500 ns</AbsoluteTimeLatency>
+                        <TripCount>144</TripCount>
+                        <Latency>145</Latency>
+                        <AbsoluteTimeLatency>1.087 us</AbsoluteTimeLatency>
                         <PipelineII>1</PipelineII>
-                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineDepth>3</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_55_3>
+                    </VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3>
                 </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>115</FF>
+                    <FF>240</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>75</LUT>
+                    <LUT>273</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -759,7 +878,12 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_55_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln55_fu_1281_p2" SOURCE="src/yolo_conv.cpp:55" URAM="0" VARIABLE="add_ln55"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_1_fu_1367_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln49_fu_1382_p2" SOURCE="src/yolo_conv.cpp:49" URAM="0" VARIABLE="add_ln49"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_fu_1435_p2" SOURCE="src/yolo_conv.cpp:52" URAM="0" VARIABLE="add_ln52"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3" OPTYPE="add" PRAGMA="" RTLNAME="empty_43_fu_1607_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="empty_43"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln55_fu_1582_p2" SOURCE="src/yolo_conv.cpp:55" URAM="0" VARIABLE="add_ln55"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_fu_1513_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027"/>
             </BindNodes>
         </Module>
         <Module>
@@ -803,9 +927,9 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_3ns_10ns_12_1_1_U78" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="mul_ln984"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_3ns_10ns_12_1_1_U79" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="mul_ln984_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_3ns_10ns_12_1_1_U80" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="mul_ln984_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_3ns_10ns_12_1_1_U89" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="mul_ln984"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_3ns_10ns_12_1_1_U90" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="mul_ln984_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_3ns_10ns_12_1_1_U91" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="mul_ln984_2"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln984_fu_181_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="add_ln984"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln984_1_fu_191_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="add_ln984_1"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln984_2_fu_201_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:984" URAM="0" VARIABLE="add_ln984_2"/>
@@ -860,20 +984,20 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U93" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_16s_32_4_0_U89" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_16s_32_4_0_U90" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U94" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_16s_32_4_0_U91" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U95" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_0_U97" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_6"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_16s_32_4_0_U92" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_7"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U96" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_8"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U93" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="add_ln813"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U94" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="add_ln813_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U95" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="add_ln813_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U96" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="add_ln813_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_0_U97" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="add_ln813_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U104" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_16s_32_4_0_U100" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_16s_32_4_0_U101" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U105" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_16s_32_4_0_U102" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U106" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_0_U108" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_mul_16s_16s_32_4_0_U103" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U107" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:1273" URAM="0" VARIABLE="r_V_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U104" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="add_ln813"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U105" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="add_ln813_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U106" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="add_ln813_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_0_U107" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="add_ln813_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_0_U108" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="add_ln813_5"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln813_6_fu_208_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:813" URAM="0" VARIABLE="add_ln813_6"/>
             </BindNodes>
         </Module>
@@ -985,7 +1109,7 @@
                     <FF>269</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>1079</LUT>
+                    <LUT>1186</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>2</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -1000,17 +1124,17 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="kernel_idx_fu_745_p2" SOURCE="" URAM="0" VARIABLE="kernel_idx"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_fu_915_p2" SOURCE="" URAM="0" VARIABLE="sub"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln299_fu_763_p2" SOURCE="src/yolo_conv.cpp:299" URAM="0" VARIABLE="sub_ln299"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="kernel_idx_2_fu_988_p2" SOURCE="src/yolo_conv.cpp:298" URAM="0" VARIABLE="kernel_idx_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln299_fu_823_p2" SOURCE="src/yolo_conv.cpp:299" URAM="0" VARIABLE="add_ln299"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="kernel_idx_3_fu_1005_p2" SOURCE="src/yolo_conv.cpp:298" URAM="0" VARIABLE="kernel_idx_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln299_1_fu_845_p2" SOURCE="src/yolo_conv.cpp:299" URAM="0" VARIABLE="add_ln299_1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="kernel_idx_4_fu_1022_p2" SOURCE="src/yolo_conv.cpp:298" URAM="0" VARIABLE="kernel_idx_4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln299_2_fu_867_p2" SOURCE="src/yolo_conv.cpp:299" URAM="0" VARIABLE="add_ln299_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="kernel_idx_5_fu_1039_p2" SOURCE="src/yolo_conv.cpp:298" URAM="0" VARIABLE="kernel_idx_5"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln299_3_fu_889_p2" SOURCE="src/yolo_conv.cpp:299" URAM="0" VARIABLE="add_ln299_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="kernel_idx_fu_780_p2" SOURCE="" URAM="0" VARIABLE="kernel_idx"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_fu_950_p2" SOURCE="" URAM="0" VARIABLE="sub"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln299_fu_798_p2" SOURCE="src/yolo_conv.cpp:299" URAM="0" VARIABLE="sub_ln299"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="kernel_idx_2_fu_1002_p2" SOURCE="src/yolo_conv.cpp:298" URAM="0" VARIABLE="kernel_idx_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln299_fu_858_p2" SOURCE="src/yolo_conv.cpp:299" URAM="0" VARIABLE="add_ln299"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="kernel_idx_3_fu_1019_p2" SOURCE="src/yolo_conv.cpp:298" URAM="0" VARIABLE="kernel_idx_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln299_1_fu_880_p2" SOURCE="src/yolo_conv.cpp:299" URAM="0" VARIABLE="add_ln299_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="kernel_idx_4_fu_1036_p2" SOURCE="src/yolo_conv.cpp:298" URAM="0" VARIABLE="kernel_idx_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln299_2_fu_902_p2" SOURCE="src/yolo_conv.cpp:299" URAM="0" VARIABLE="add_ln299_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="kernel_idx_5_fu_1053_p2" SOURCE="src/yolo_conv.cpp:298" URAM="0" VARIABLE="kernel_idx_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln299_3_fu_924_p2" SOURCE="src/yolo_conv.cpp:299" URAM="0" VARIABLE="add_ln299_3"/>
             </BindNodes>
         </Module>
         <Module>
@@ -1045,25 +1169,23 @@
                         <PipelineDepth>45</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList>
-                            <Instance>grp_slide_window_fu_11764</Instance>
                             <Instance>grp_slide_window_fu_11778</Instance>
-                            <Instance>grp_window_macc_fu_11798</Instance>
-                            <Instance>grp_window_macc_fu_11820</Instance>
-                            <Instance>grp_window_macc_fu_11842</Instance>
-                            <Instance>grp_window_macc_fu_11864</Instance>
-                            <Instance>grp_window_macc_fu_11886</Instance>
-                            <Instance>grp_window_macc_fu_11908</Instance>
-                            <Instance>grp_window_macc_fu_11930</Instance>
-                            <Instance>grp_window_macc_fu_11952</Instance>
-                            <Instance>grp_window_macc_fu_11974</Instance>
-                            <Instance>grp_window_macc_fu_11996</Instance>
-                            <Instance>grp_window_macc_fu_12018</Instance>
-                            <Instance>grp_window_macc_fu_12040</Instance>
-                            <Instance>grp_post_process_fu_12062</Instance>
-                            <Instance>grp_post_process_fu_12073</Instance>
-                            <Instance>grp_post_process_fu_12084</Instance>
-                            <Instance>call_ln179_write_output_fu_12124</Instance>
-                            <Instance>call_ln179_write_output_fu_12131</Instance>
+                            <Instance>grp_slide_window_fu_11792</Instance>
+                            <Instance>grp_window_macc_fu_11812</Instance>
+                            <Instance>grp_window_macc_fu_11834</Instance>
+                            <Instance>grp_window_macc_fu_11856</Instance>
+                            <Instance>grp_window_macc_fu_11878</Instance>
+                            <Instance>grp_window_macc_fu_11900</Instance>
+                            <Instance>grp_window_macc_fu_11922</Instance>
+                            <Instance>grp_window_macc_fu_11944</Instance>
+                            <Instance>grp_window_macc_fu_11966</Instance>
+                            <Instance>grp_window_macc_fu_11988</Instance>
+                            <Instance>grp_window_macc_fu_12010</Instance>
+                            <Instance>grp_window_macc_fu_12032</Instance>
+                            <Instance>grp_window_macc_fu_12054</Instance>
+                            <Instance>grp_post_process_fu_12076</Instance>
+                            <Instance>grp_post_process_fu_12087</Instance>
+                            <Instance>grp_post_process_fu_12098</Instance>
                             <Instance>call_ln179_write_output_fu_12138</Instance>
                             <Instance>call_ln179_write_output_fu_12145</Instance>
                             <Instance>call_ln179_write_output_fu_12152</Instance>
@@ -1094,7 +1216,9 @@
                             <Instance>call_ln179_write_output_fu_12327</Instance>
                             <Instance>call_ln179_write_output_fu_12334</Instance>
                             <Instance>call_ln179_write_output_fu_12341</Instance>
-                            <Instance>grp_out_stream_merge_fu_12348</Instance>
+                            <Instance>call_ln179_write_output_fu_12348</Instance>
+                            <Instance>call_ln179_write_output_fu_12355</Instance>
+                            <Instance>grp_out_stream_merge_fu_12362</Instance>
                         </InstanceList>
                     </VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6>
                 </SummaryOfLoopLatency>
@@ -1107,7 +1231,7 @@
                     <FF>40659</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>38</UTIL_FF>
-                    <LUT>29127</LUT>
+                    <LUT>29234</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>54</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -1119,19 +1243,19 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="conv_row_count_fu_13746_p2" SOURCE="" URAM="0" VARIABLE="conv_row_count"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="empty_fu_13764_p2" SOURCE="" URAM="0" VARIABLE="empty"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln84_fu_13349_p2" SOURCE="src/yolo_conv.cpp:84" URAM="0" VARIABLE="add_ln84"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="row_idx_3_fu_13455_p2" SOURCE="src/yolo_conv.cpp:84" URAM="0" VARIABLE="row_idx_3"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="conv_row_count_mid1_fu_13806_p2" SOURCE="" URAM="0" VARIABLE="conv_row_count_mid1"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln88_fu_13529_p2" SOURCE="src/yolo_conv.cpp:88" URAM="0" VARIABLE="add_ln88"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="p_mid19_fu_13857_p2" SOURCE="src/yolo_conv.cpp:88" URAM="0" VARIABLE="p_mid19"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_4ns_9ns_9ns_12_4_1_U168" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:871" URAM="0" VARIABLE="mul_ln871"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_4ns_9ns_9ns_12_4_1_U168" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:871" URAM="0" VARIABLE="add_ln871"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="conv_row_count_fu_13772_p2" SOURCE="" URAM="0" VARIABLE="conv_row_count"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="empty_fu_13790_p2" SOURCE="" URAM="0" VARIABLE="empty"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln84_fu_13375_p2" SOURCE="src/yolo_conv.cpp:84" URAM="0" VARIABLE="add_ln84"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="row_idx_3_fu_13481_p2" SOURCE="src/yolo_conv.cpp:84" URAM="0" VARIABLE="row_idx_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="conv_row_count_mid1_fu_13832_p2" SOURCE="" URAM="0" VARIABLE="conv_row_count_mid1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln88_fu_13555_p2" SOURCE="src/yolo_conv.cpp:88" URAM="0" VARIABLE="add_ln88"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="p_mid1105_fu_13883_p2" SOURCE="src/yolo_conv.cpp:88" URAM="0" VARIABLE="p_mid1105"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_4ns_9ns_9ns_12_4_1_U185" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:871" URAM="0" VARIABLE="mul_ln871"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_4ns_9ns_9ns_12_4_1_U185" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:871" URAM="0" VARIABLE="add_ln871"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln157_fu_14389_p2" SOURCE="src/yolo_conv.cpp:157" URAM="0" VARIABLE="add_ln157"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln158_fu_14560_p2" SOURCE="src/yolo_conv.cpp:158" URAM="0" VARIABLE="add_ln158"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln159_fu_14650_p2" SOURCE="src/yolo_conv.cpp:159" URAM="0" VARIABLE="add_ln159"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln166_fu_13664_p2" SOURCE="src/yolo_conv.cpp:166" URAM="0" VARIABLE="add_ln166"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln166_fu_13690_p2" SOURCE="src/yolo_conv.cpp:166" URAM="0" VARIABLE="add_ln166"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="output_rec_V_97_fu_15386_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:377" URAM="0" VARIABLE="output_rec_V_97"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="output_rec_V_99_fu_15525_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:377" URAM="0" VARIABLE="output_rec_V_99"/>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_84_4_VITIS_LOOP_88_5_VITIS_LOOP_91_6" OPTYPE="add" PRAGMA="" RTLNAME="output_rec_V_101_fu_15664_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h:377" URAM="0" VARIABLE="output_rec_V_101"/>
@@ -1170,9 +1294,6 @@
         </Module>
         <Module>
             <Name>yolo_conv_top</Name>
-            <Loops>
-                <VITIS_LOOP_49_1_VITIS_LOOP_52_2/>
-            </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>7.50</TargetClockPeriod>
@@ -1180,35 +1301,15 @@
                     <EstimatedClockPeriod>7.469</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
-                    <Best-caseLatency>1926700</Best-caseLatency>
-                    <Average-caseLatency>1926892</Average-caseLatency>
-                    <Worst-caseLatency>1927036</Worst-caseLatency>
-                    <Best-caseRealTimeLatency>14.450 ms</Best-caseRealTimeLatency>
-                    <Average-caseRealTimeLatency>14.452 ms</Average-caseRealTimeLatency>
-                    <Worst-caseRealTimeLatency>14.453 ms</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>1926701 ~ 1927037</PipelineInitiationInterval>
+                    <Best-caseLatency>1926751</Best-caseLatency>
+                    <Average-caseLatency>1926751</Average-caseLatency>
+                    <Worst-caseLatency>1926751</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>14.451 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>14.451 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>14.451 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1926752</PipelineInitiationInterval>
                     <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
-                <SummaryOfLoopLatency>
-                    <VITIS_LOOP_49_1_VITIS_LOOP_52_2>
-                        <Name>VITIS_LOOP_49_1_VITIS_LOOP_52_2</Name>
-                        <Slack>5.47</Slack>
-                        <TripCount>48</TripCount>
-                        <Latency>96 ~ 432</Latency>
-                        <AbsoluteTimeLatency>0.720 us ~ 3.240 us</AbsoluteTimeLatency>
-                        <IterationLatency>
-                            <range>
-                                <min>2</min>
-                                <max>9</max>
-                            </range>
-                        </IterationLatency>
-                        <PipelineDepth>2 ~ 9</PipelineDepth>
-                        <PipelineType>no</PipelineType>
-                        <InstanceList>
-                            <Instance>grp_yolo_conv_top_Pipeline_VITIS_LOOP_55_3_fu_1526</Instance>
-                        </InstanceList>
-                    </VITIS_LOOP_49_1_VITIS_LOOP_52_2>
-                </SummaryOfLoopLatency>
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
@@ -1218,10 +1319,10 @@
                     <DSP>110</DSP>
                     <AVAIL_DSP>220</AVAIL_DSP>
                     <UTIL_DSP>50</UTIL_DSP>
-                    <FF>44333</FF>
+                    <FF>44374</FF>
                     <AVAIL_FF>106400</AVAIL_FF>
                     <UTIL_FF>41</UTIL_FF>
-                    <LUT>36373</LUT>
+                    <LUT>36597</LUT>
                     <AVAIL_LUT>53200</AVAIL_LUT>
                     <UTIL_LUT>68</UTIL_LUT>
                     <URAM>0</URAM>
@@ -1346,29 +1447,26 @@
                 <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="local_mem_group_data_V_69_U" SOURCE="src/yolo_conv.cpp:38" URAM="0" VARIABLE="local_mem_group_data_V_69"/>
                 <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="local_mem_group_data_V_70_U" SOURCE="src/yolo_conv.cpp:38" URAM="0" VARIABLE="local_mem_group_data_V_70"/>
                 <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage rom_np" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_np" PRAGMA="" RTLNAME="local_mem_group_data_V_71_U" SOURCE="src/yolo_conv.cpp:38" URAM="0" VARIABLE="local_mem_group_data_V_71"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_6ns_12_1_1_U335" SOURCE="src/yolo_conv.cpp:4" URAM="0" VARIABLE="mul_ln4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1_VITIS_LOOP_52_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln1027_fu_1828_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="add_ln1027"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1_VITIS_LOOP_52_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln49_fu_1840_p2" SOURCE="src/yolo_conv.cpp:49" URAM="0" VARIABLE="add_ln49"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1_VITIS_LOOP_52_2" OPTYPE="add" PRAGMA="" RTLNAME="empty_75_fu_1893_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="empty_75"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_49_1_VITIS_LOOP_52_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_fu_2001_p2" SOURCE="src/yolo_conv.cpp:52" URAM="0" VARIABLE="add_ln52"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i281_fu_2042_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i281"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i_fu_2052_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i379_fu_2062_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i379"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="am_addmul_9ns_1ns_13ns_22_4_1_U337" SOURCE="src/yolo_conv.cpp:84" URAM="0" VARIABLE="add_ln84"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_4ns_13_1_1_U336" SOURCE="" URAM="0" VARIABLE="bound4"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="am_addmul_9ns_1ns_13ns_22_4_1_U337" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="mul_ln1027"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_3ns_9_1_1_U364" SOURCE="src/yolo_conv.cpp:4" URAM="0" VARIABLE="mul_ln4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_9ns_15_1_1_U365" SOURCE="src/yolo_conv.cpp:4" URAM="0" VARIABLE="mul_ln4_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i281_fu_1863_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i281"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i_fu_1873_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_i_i395_fu_1883_p2" SOURCE="" URAM="0" VARIABLE="sub_i_i395"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="am_addmul_9ns_1ns_13ns_22_4_1_U367" SOURCE="src/yolo_conv.cpp:84" URAM="0" VARIABLE="add_ln84"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_4ns_13_1_1_U366" SOURCE="" URAM="0" VARIABLE="bound100"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="am_addmul_9ns_1ns_13ns_22_4_1_U367" SOURCE="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h:1027" URAM="0" VARIABLE="mul_ln1027"/>
             </BindNodes>
         </Module>
     </ModuleInformation>
     <FIFOInformation/>
     <UserConfigCommands/>
     <Args>
-        <Arg ArgName="inStream" index="0" direction="in" srcType="stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
+        <Arg ArgName="inStream" index="0" direction="in" srcType="stream&lt;hls::axis&lt;quad_fp_pack, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
             <hwRefs>
                 <hwRef type="interface" interface="inStream" name="" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="outStream" index="1" direction="out" srcType="stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
+        <Arg ArgName="outStream" index="1" direction="out" srcType="stream&lt;hls::axis&lt;quad_fp_pack, 2, 5, 6&gt;, 0&gt;&amp;" srcSize="112">
             <hwRefs>
                 <hwRef type="interface" interface="outStream" name="" usage="data" direction="out"/>
             </hwRefs>
@@ -1563,20 +1661,32 @@
                 <port>interrupt</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="inStream" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="112" portPrefix="inStream_">
+        <Interface InterfaceName="inStream" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="64" portPrefix="inStream_">
             <ports>
                 <port>inStream_TDATA</port>
+                <port>inStream_TDEST</port>
+                <port>inStream_TID</port>
+                <port>inStream_TKEEP</port>
+                <port>inStream_TLAST</port>
                 <port>inStream_TREADY</port>
+                <port>inStream_TSTRB</port>
+                <port>inStream_TUSER</port>
                 <port>inStream_TVALID</port>
             </ports>
             <constraints>
                 <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="inStream"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="outStream" type="axi4stream" busTypeName="axis" mode="master" dataWidth="112" portPrefix="outStream_">
+        <Interface InterfaceName="outStream" type="axi4stream" busTypeName="axis" mode="master" dataWidth="64" portPrefix="outStream_">
             <ports>
                 <port>outStream_TDATA</port>
+                <port>outStream_TDEST</port>
+                <port>outStream_TID</port>
+                <port>outStream_TKEEP</port>
+                <port>outStream_TLAST</port>
                 <port>outStream_TREADY</port>
+                <port>outStream_TSTRB</port>
+                <port>outStream_TUSER</port>
                 <port>outStream_TVALID</port>
             </ports>
             <constraints>
@@ -1611,9 +1721,9 @@
             </item>
             <item name="AXIS">
                 <table isCollapsed="0">
-                    <keys size="5">Interface, Register Mode, TDATA, TREADY, TVALID</keys>
-                    <column name="inStream">both, 112, 1, 1, , , , , , , </column>
-                    <column name="outStream">both, 112, 1, 1, , , , , , , </column>
+                    <keys size="11">Interface, Register Mode, TDATA, TDEST, TID, TKEEP, TLAST, TREADY, TSTRB, TUSER, TVALID</keys>
+                    <column name="inStream">both, 64, 6, 5, 8, 1, 1, 8, 2, 1, </column>
+                    <column name="outStream">both, 64, 6, 5, 8, 1, 1, 8, 2, 1, </column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -1632,8 +1742,8 @@
             <item name="Top Function Arguments">
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="inStream">in, stream&lt;ap_axi_fp&lt;64 2 5 6&gt; 0&gt;&amp;</column>
-                    <column name="outStream">out, stream&lt;ap_axi_fp&lt;64 2 5 6&gt; 0&gt;&amp;</column>
+                    <column name="inStream">in, stream&lt;hls::axis&lt;quad_fp_pack 2 5 6&gt; 0&gt;&amp;</column>
+                    <column name="outStream">out, stream&lt;hls::axis&lt;quad_fp_pack 2 5 6&gt; 0&gt;&amp;</column>
                     <column name="output_ch">in, ap_uint&lt;6&gt;</column>
                     <column name="input_ch">in, ap_uint&lt;6&gt;</column>
                     <column name="fold_output_ch">in, ap_uint&lt;4&gt;</column>

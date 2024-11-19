@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_auto_pc_0_synth_1" START { ROLLUP_AUTO }
-set_param gui.addressMap 0
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -86,7 +85,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
-set_property ip_repo_paths /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/ip_example [current_project]
+set_property ip_repo_paths /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/ip [current_project]
 update_ip_catalog
 set_property ip_output_repo /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/sys/myproj/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

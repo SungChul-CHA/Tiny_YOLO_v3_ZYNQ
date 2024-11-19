@@ -16,12 +16,24 @@ generic (
 port (
     ap_clk : IN STD_LOGIC;
     ap_rst_n : IN STD_LOGIC;
-    inStream_TDATA : IN STD_LOGIC_VECTOR (111 downto 0);
+    inStream_TDATA : IN STD_LOGIC_VECTOR (63 downto 0);
     inStream_TVALID : IN STD_LOGIC;
     inStream_TREADY : OUT STD_LOGIC;
-    outStream_TDATA : OUT STD_LOGIC_VECTOR (111 downto 0);
+    inStream_TKEEP : IN STD_LOGIC_VECTOR (7 downto 0);
+    inStream_TSTRB : IN STD_LOGIC_VECTOR (7 downto 0);
+    inStream_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
+    inStream_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
+    inStream_TID : IN STD_LOGIC_VECTOR (4 downto 0);
+    inStream_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
+    outStream_TDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
     outStream_TVALID : OUT STD_LOGIC;
     outStream_TREADY : IN STD_LOGIC;
+    outStream_TKEEP : OUT STD_LOGIC_VECTOR (7 downto 0);
+    outStream_TSTRB : OUT STD_LOGIC_VECTOR (7 downto 0);
+    outStream_TUSER : OUT STD_LOGIC_VECTOR (1 downto 0);
+    outStream_TLAST : OUT STD_LOGIC_VECTOR (0 downto 0);
+    outStream_TID : OUT STD_LOGIC_VECTOR (4 downto 0);
+    outStream_TDEST : OUT STD_LOGIC_VECTOR (5 downto 0);
     s_axi_CTRL_BUS_AWVALID : IN STD_LOGIC;
     s_axi_CTRL_BUS_AWREADY : OUT STD_LOGIC;
     s_axi_CTRL_BUS_AWADDR : IN STD_LOGIC_VECTOR (C_S_AXI_CTRL_BUS_ADDR_WIDTH-1 downto 0);
@@ -46,7 +58,7 @@ end;
 architecture behav of yolo_yolo_top is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "yolo_yolo_top_yolo_yolo_top,hls_ip_2022_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.650000,HLS_SYN_LAT=5442,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=3560,HLS_SYN_LUT=2928,HLS_VERSION=2022_2}";
+    "yolo_yolo_top_yolo_yolo_top,hls_ip_2022_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z020-clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.650000,HLS_SYN_LAT=5442,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=3688,HLS_SYN_LUT=2992,HLS_VERSION=2022_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (3 downto 0) := "0001";
@@ -76,53 +88,102 @@ architecture behav of yolo_yolo_top is
     signal activate_en : STD_LOGIC_VECTOR (31 downto 0);
     signal input_h : STD_LOGIC_VECTOR (4 downto 0);
     signal input_w : STD_LOGIC_VECTOR (4 downto 0);
-    signal activate_en_read_reg_155 : STD_LOGIC_VECTOR (31 downto 0);
-    signal trunc_ln3_fu_103_p1 : STD_LOGIC_VECTOR (28 downto 0);
-    signal trunc_ln3_reg_160 : STD_LOGIC_VECTOR (28 downto 0);
-    signal sub_i_i59_fu_111_p2 : STD_LOGIC_VECTOR (5 downto 0);
-    signal sub_i_i59_reg_165 : STD_LOGIC_VECTOR (5 downto 0);
-    signal sub_i_i_fu_121_p2 : STD_LOGIC_VECTOR (5 downto 0);
-    signal sub_i_i_reg_170 : STD_LOGIC_VECTOR (5 downto 0);
-    signal tmp_fu_127_p3 : STD_LOGIC_VECTOR (7 downto 0);
-    signal tmp_reg_175 : STD_LOGIC_VECTOR (7 downto 0);
-    signal mul_ln3_fu_143_p2 : STD_LOGIC_VECTOR (12 downto 0);
-    signal mul_ln3_reg_180 : STD_LOGIC_VECTOR (12 downto 0);
-    signal cmp_i_i36_mid111_fu_149_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal cmp_i_i36_mid111_reg_185 : STD_LOGIC_VECTOR (0 downto 0);
-    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start : STD_LOGIC;
-    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_done : STD_LOGIC;
-    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_idle : STD_LOGIC;
-    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_ready : STD_LOGIC;
-    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TDATA : STD_LOGIC_VECTOR (111 downto 0);
-    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TVALID : STD_LOGIC;
-    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TREADY : STD_LOGIC;
-    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_inStream_TREADY : STD_LOGIC;
-    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg : STD_LOGIC := '0';
+    signal activate_en_read_reg_209 : STD_LOGIC_VECTOR (31 downto 0);
+    signal trunc_ln3_fu_157_p1 : STD_LOGIC_VECTOR (28 downto 0);
+    signal trunc_ln3_reg_214 : STD_LOGIC_VECTOR (28 downto 0);
+    signal sub_i_i60_fu_165_p2 : STD_LOGIC_VECTOR (5 downto 0);
+    signal sub_i_i60_reg_219 : STD_LOGIC_VECTOR (5 downto 0);
+    signal sub_i_i_fu_175_p2 : STD_LOGIC_VECTOR (5 downto 0);
+    signal sub_i_i_reg_224 : STD_LOGIC_VECTOR (5 downto 0);
+    signal tmp_fu_181_p3 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_reg_229 : STD_LOGIC_VECTOR (7 downto 0);
+    signal mul_ln3_fu_197_p2 : STD_LOGIC_VECTOR (12 downto 0);
+    signal mul_ln3_reg_234 : STD_LOGIC_VECTOR (12 downto 0);
+    signal cmp_i_i37_mid111_fu_203_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal cmp_i_i37_mid111_reg_239 : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start : STD_LOGIC;
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_done : STD_LOGIC;
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_idle : STD_LOGIC;
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_ready : STD_LOGIC;
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDATA : STD_LOGIC_VECTOR (63 downto 0);
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID : STD_LOGIC;
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TREADY : STD_LOGIC;
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TKEEP : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TSTRB : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TUSER : STD_LOGIC_VECTOR (1 downto 0);
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TLAST : STD_LOGIC_VECTOR (0 downto 0);
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TID : STD_LOGIC_VECTOR (4 downto 0);
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDEST : STD_LOGIC_VECTOR (5 downto 0);
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_inStream_TREADY : STD_LOGIC;
+    signal grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal input_w_cast_fu_107_p1 : STD_LOGIC_VECTOR (5 downto 0);
-    signal input_h_cast_fu_117_p1 : STD_LOGIC_VECTOR (5 downto 0);
-    signal mul_ln3_fu_143_p0 : STD_LOGIC_VECTOR (4 downto 0);
-    signal mul_ln3_fu_143_p1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal input_w_cast_fu_161_p1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal input_h_cast_fu_171_p1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal mul_ln3_fu_197_p0 : STD_LOGIC_VECTOR (4 downto 0);
+    signal mul_ln3_fu_197_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal ap_CS_fsm_state4 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
-    signal regslice_both_outStream_U_apdone_blk : STD_LOGIC;
+    signal regslice_both_outStream_V_data_V_U_apdone_blk : STD_LOGIC;
     signal ap_NS_fsm : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
     signal ap_ST_fsm_state3_blk : STD_LOGIC;
     signal ap_ST_fsm_state4_blk : STD_LOGIC;
-    signal regslice_both_inStream_U_apdone_blk : STD_LOGIC;
-    signal inStream_TDATA_int_regslice : STD_LOGIC_VECTOR (111 downto 0);
+    signal regslice_both_inStream_V_data_V_U_apdone_blk : STD_LOGIC;
+    signal inStream_TDATA_int_regslice : STD_LOGIC_VECTOR (63 downto 0);
     signal inStream_TVALID_int_regslice : STD_LOGIC;
     signal inStream_TREADY_int_regslice : STD_LOGIC;
-    signal regslice_both_inStream_U_ack_in : STD_LOGIC;
+    signal regslice_both_inStream_V_data_V_U_ack_in : STD_LOGIC;
+    signal regslice_both_inStream_V_keep_V_U_apdone_blk : STD_LOGIC;
+    signal inStream_TKEEP_int_regslice : STD_LOGIC_VECTOR (7 downto 0);
+    signal regslice_both_inStream_V_keep_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_inStream_V_keep_V_U_ack_in : STD_LOGIC;
+    signal regslice_both_inStream_V_strb_V_U_apdone_blk : STD_LOGIC;
+    signal inStream_TSTRB_int_regslice : STD_LOGIC_VECTOR (7 downto 0);
+    signal regslice_both_inStream_V_strb_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_inStream_V_strb_V_U_ack_in : STD_LOGIC;
+    signal regslice_both_inStream_V_user_V_U_apdone_blk : STD_LOGIC;
+    signal inStream_TUSER_int_regslice : STD_LOGIC_VECTOR (1 downto 0);
+    signal regslice_both_inStream_V_user_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_inStream_V_user_V_U_ack_in : STD_LOGIC;
+    signal regslice_both_inStream_V_last_V_U_apdone_blk : STD_LOGIC;
+    signal inStream_TLAST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
+    signal regslice_both_inStream_V_last_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_inStream_V_last_V_U_ack_in : STD_LOGIC;
+    signal regslice_both_inStream_V_id_V_U_apdone_blk : STD_LOGIC;
+    signal inStream_TID_int_regslice : STD_LOGIC_VECTOR (4 downto 0);
+    signal regslice_both_inStream_V_id_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_inStream_V_id_V_U_ack_in : STD_LOGIC;
+    signal regslice_both_inStream_V_dest_V_U_apdone_blk : STD_LOGIC;
+    signal inStream_TDEST_int_regslice : STD_LOGIC_VECTOR (5 downto 0);
+    signal regslice_both_inStream_V_dest_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_inStream_V_dest_V_U_ack_in : STD_LOGIC;
+    signal outStream_TVALID_int_regslice : STD_LOGIC;
     signal outStream_TREADY_int_regslice : STD_LOGIC;
-    signal regslice_both_outStream_U_vld_out : STD_LOGIC;
-    signal mul_ln3_fu_143_p00 : STD_LOGIC_VECTOR (12 downto 0);
-    signal mul_ln3_fu_143_p10 : STD_LOGIC_VECTOR (12 downto 0);
+    signal regslice_both_outStream_V_data_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_outStream_V_keep_V_U_apdone_blk : STD_LOGIC;
+    signal regslice_both_outStream_V_keep_V_U_ack_in_dummy : STD_LOGIC;
+    signal regslice_both_outStream_V_keep_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_outStream_V_strb_V_U_apdone_blk : STD_LOGIC;
+    signal regslice_both_outStream_V_strb_V_U_ack_in_dummy : STD_LOGIC;
+    signal regslice_both_outStream_V_strb_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_outStream_V_user_V_U_apdone_blk : STD_LOGIC;
+    signal regslice_both_outStream_V_user_V_U_ack_in_dummy : STD_LOGIC;
+    signal regslice_both_outStream_V_user_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_outStream_V_last_V_U_apdone_blk : STD_LOGIC;
+    signal regslice_both_outStream_V_last_V_U_ack_in_dummy : STD_LOGIC;
+    signal regslice_both_outStream_V_last_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_outStream_V_id_V_U_apdone_blk : STD_LOGIC;
+    signal regslice_both_outStream_V_id_V_U_ack_in_dummy : STD_LOGIC;
+    signal regslice_both_outStream_V_id_V_U_vld_out : STD_LOGIC;
+    signal regslice_both_outStream_V_dest_V_U_apdone_blk : STD_LOGIC;
+    signal regslice_both_outStream_V_dest_V_U_ack_in_dummy : STD_LOGIC;
+    signal regslice_both_outStream_V_dest_V_U_vld_out : STD_LOGIC;
+    signal mul_ln3_fu_197_p00 : STD_LOGIC_VECTOR (12 downto 0);
+    signal mul_ln3_fu_197_p10 : STD_LOGIC_VECTOR (12 downto 0);
     signal ap_ce_reg : STD_LOGIC;
 
     component yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 IS
@@ -134,17 +195,29 @@ architecture behav of yolo_yolo_top is
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
         sub_i_i : IN STD_LOGIC_VECTOR (5 downto 0);
-        sub_i_i59 : IN STD_LOGIC_VECTOR (5 downto 0);
+        sub_i_i60 : IN STD_LOGIC_VECTOR (5 downto 0);
         mul_ln3 : IN STD_LOGIC_VECTOR (12 downto 0);
-        outStream_TDATA : OUT STD_LOGIC_VECTOR (111 downto 0);
+        outStream_TDATA : OUT STD_LOGIC_VECTOR (63 downto 0);
         outStream_TVALID : OUT STD_LOGIC;
         outStream_TREADY : IN STD_LOGIC;
+        outStream_TKEEP : OUT STD_LOGIC_VECTOR (7 downto 0);
+        outStream_TSTRB : OUT STD_LOGIC_VECTOR (7 downto 0);
+        outStream_TUSER : OUT STD_LOGIC_VECTOR (1 downto 0);
+        outStream_TLAST : OUT STD_LOGIC_VECTOR (0 downto 0);
+        outStream_TID : OUT STD_LOGIC_VECTOR (4 downto 0);
+        outStream_TDEST : OUT STD_LOGIC_VECTOR (5 downto 0);
         activate_en : IN STD_LOGIC_VECTOR (31 downto 0);
         zext_ln3 : IN STD_LOGIC_VECTOR (7 downto 0);
-        cmp_i_i36_mid111 : IN STD_LOGIC_VECTOR (0 downto 0);
-        inStream_TDATA : IN STD_LOGIC_VECTOR (111 downto 0);
+        cmp_i_i37_mid111 : IN STD_LOGIC_VECTOR (0 downto 0);
+        inStream_TDATA : IN STD_LOGIC_VECTOR (63 downto 0);
         inStream_TVALID : IN STD_LOGIC;
         inStream_TREADY : OUT STD_LOGIC;
+        inStream_TKEEP : IN STD_LOGIC_VECTOR (7 downto 0);
+        inStream_TSTRB : IN STD_LOGIC_VECTOR (7 downto 0);
+        inStream_TUSER : IN STD_LOGIC_VECTOR (1 downto 0);
+        inStream_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
+        inStream_TID : IN STD_LOGIC_VECTOR (4 downto 0);
+        inStream_TDEST : IN STD_LOGIC_VECTOR (5 downto 0);
         trunc_ln3 : IN STD_LOGIC_VECTOR (28 downto 0) );
     end component;
 
@@ -217,27 +290,39 @@ architecture behav of yolo_yolo_top is
 
 
 begin
-    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82 : component yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3
+    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112 : component yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        ap_start => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start,
-        ap_done => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_done,
-        ap_idle => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_idle,
-        ap_ready => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_ready,
-        sub_i_i => sub_i_i_reg_170,
-        sub_i_i59 => sub_i_i59_reg_165,
-        mul_ln3 => mul_ln3_reg_180,
-        outStream_TDATA => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TDATA,
-        outStream_TVALID => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TVALID,
-        outStream_TREADY => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TREADY,
-        activate_en => activate_en_read_reg_155,
-        zext_ln3 => tmp_reg_175,
-        cmp_i_i36_mid111 => cmp_i_i36_mid111_reg_185,
+        ap_start => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start,
+        ap_done => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_done,
+        ap_idle => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_idle,
+        ap_ready => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_ready,
+        sub_i_i => sub_i_i_reg_224,
+        sub_i_i60 => sub_i_i60_reg_219,
+        mul_ln3 => mul_ln3_reg_234,
+        outStream_TDATA => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDATA,
+        outStream_TVALID => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID,
+        outStream_TREADY => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TREADY,
+        outStream_TKEEP => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TKEEP,
+        outStream_TSTRB => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TSTRB,
+        outStream_TUSER => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TUSER,
+        outStream_TLAST => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TLAST,
+        outStream_TID => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TID,
+        outStream_TDEST => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDEST,
+        activate_en => activate_en_read_reg_209,
+        zext_ln3 => tmp_reg_229,
+        cmp_i_i37_mid111 => cmp_i_i37_mid111_reg_239,
         inStream_TDATA => inStream_TDATA_int_regslice,
         inStream_TVALID => inStream_TVALID_int_regslice,
-        inStream_TREADY => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_inStream_TREADY,
-        trunc_ln3 => trunc_ln3_reg_160);
+        inStream_TREADY => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_inStream_TREADY,
+        inStream_TKEEP => inStream_TKEEP_int_regslice,
+        inStream_TSTRB => inStream_TSTRB_int_regslice,
+        inStream_TUSER => inStream_TUSER_int_regslice,
+        inStream_TLAST => inStream_TLAST_int_regslice,
+        inStream_TID => inStream_TID_int_regslice,
+        inStream_TDEST => inStream_TDEST_int_regslice,
+        trunc_ln3 => trunc_ln3_reg_214);
 
     CTRL_BUS_s_axi_U : component yolo_yolo_top_CTRL_BUS_s_axi
     generic map (
@@ -273,7 +358,7 @@ begin
         ap_done => ap_done,
         ap_idle => ap_idle);
 
-    mul_5ns_8ns_13_1_1_U21 : component yolo_yolo_top_mul_5ns_8ns_13_1_1
+    mul_5ns_8ns_13_1_1_U33 : component yolo_yolo_top_mul_5ns_8ns_13_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -281,37 +366,205 @@ begin
         din1_WIDTH => 8,
         dout_WIDTH => 13)
     port map (
-        din0 => mul_ln3_fu_143_p0,
-        din1 => mul_ln3_fu_143_p1,
-        dout => mul_ln3_fu_143_p2);
+        din0 => mul_ln3_fu_197_p0,
+        din1 => mul_ln3_fu_197_p1,
+        dout => mul_ln3_fu_197_p2);
 
-    regslice_both_inStream_U : component yolo_yolo_top_regslice_both
+    regslice_both_inStream_V_data_V_U : component yolo_yolo_top_regslice_both
     generic map (
-        DataWidth => 112)
+        DataWidth => 64)
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
         data_in => inStream_TDATA,
         vld_in => inStream_TVALID,
-        ack_in => regslice_both_inStream_U_ack_in,
+        ack_in => regslice_both_inStream_V_data_V_U_ack_in,
         data_out => inStream_TDATA_int_regslice,
         vld_out => inStream_TVALID_int_regslice,
         ack_out => inStream_TREADY_int_regslice,
-        apdone_blk => regslice_both_inStream_U_apdone_blk);
+        apdone_blk => regslice_both_inStream_V_data_V_U_apdone_blk);
 
-    regslice_both_outStream_U : component yolo_yolo_top_regslice_both
+    regslice_both_inStream_V_keep_V_U : component yolo_yolo_top_regslice_both
     generic map (
-        DataWidth => 112)
+        DataWidth => 8)
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
-        data_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TDATA,
-        vld_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TVALID,
+        data_in => inStream_TKEEP,
+        vld_in => inStream_TVALID,
+        ack_in => regslice_both_inStream_V_keep_V_U_ack_in,
+        data_out => inStream_TKEEP_int_regslice,
+        vld_out => regslice_both_inStream_V_keep_V_U_vld_out,
+        ack_out => inStream_TREADY_int_regslice,
+        apdone_blk => regslice_both_inStream_V_keep_V_U_apdone_blk);
+
+    regslice_both_inStream_V_strb_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 8)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => inStream_TSTRB,
+        vld_in => inStream_TVALID,
+        ack_in => regslice_both_inStream_V_strb_V_U_ack_in,
+        data_out => inStream_TSTRB_int_regslice,
+        vld_out => regslice_both_inStream_V_strb_V_U_vld_out,
+        ack_out => inStream_TREADY_int_regslice,
+        apdone_blk => regslice_both_inStream_V_strb_V_U_apdone_blk);
+
+    regslice_both_inStream_V_user_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 2)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => inStream_TUSER,
+        vld_in => inStream_TVALID,
+        ack_in => regslice_both_inStream_V_user_V_U_ack_in,
+        data_out => inStream_TUSER_int_regslice,
+        vld_out => regslice_both_inStream_V_user_V_U_vld_out,
+        ack_out => inStream_TREADY_int_regslice,
+        apdone_blk => regslice_both_inStream_V_user_V_U_apdone_blk);
+
+    regslice_both_inStream_V_last_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 1)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => inStream_TLAST,
+        vld_in => inStream_TVALID,
+        ack_in => regslice_both_inStream_V_last_V_U_ack_in,
+        data_out => inStream_TLAST_int_regslice,
+        vld_out => regslice_both_inStream_V_last_V_U_vld_out,
+        ack_out => inStream_TREADY_int_regslice,
+        apdone_blk => regslice_both_inStream_V_last_V_U_apdone_blk);
+
+    regslice_both_inStream_V_id_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 5)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => inStream_TID,
+        vld_in => inStream_TVALID,
+        ack_in => regslice_both_inStream_V_id_V_U_ack_in,
+        data_out => inStream_TID_int_regslice,
+        vld_out => regslice_both_inStream_V_id_V_U_vld_out,
+        ack_out => inStream_TREADY_int_regslice,
+        apdone_blk => regslice_both_inStream_V_id_V_U_apdone_blk);
+
+    regslice_both_inStream_V_dest_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 6)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => inStream_TDEST,
+        vld_in => inStream_TVALID,
+        ack_in => regslice_both_inStream_V_dest_V_U_ack_in,
+        data_out => inStream_TDEST_int_regslice,
+        vld_out => regslice_both_inStream_V_dest_V_U_vld_out,
+        ack_out => inStream_TREADY_int_regslice,
+        apdone_blk => regslice_both_inStream_V_dest_V_U_apdone_blk);
+
+    regslice_both_outStream_V_data_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 64)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDATA,
+        vld_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID,
         ack_in => outStream_TREADY_int_regslice,
         data_out => outStream_TDATA,
-        vld_out => regslice_both_outStream_U_vld_out,
+        vld_out => regslice_both_outStream_V_data_V_U_vld_out,
         ack_out => outStream_TREADY,
-        apdone_blk => regslice_both_outStream_U_apdone_blk);
+        apdone_blk => regslice_both_outStream_V_data_V_U_apdone_blk);
+
+    regslice_both_outStream_V_keep_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 8)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TKEEP,
+        vld_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID,
+        ack_in => regslice_both_outStream_V_keep_V_U_ack_in_dummy,
+        data_out => outStream_TKEEP,
+        vld_out => regslice_both_outStream_V_keep_V_U_vld_out,
+        ack_out => outStream_TREADY,
+        apdone_blk => regslice_both_outStream_V_keep_V_U_apdone_blk);
+
+    regslice_both_outStream_V_strb_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 8)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TSTRB,
+        vld_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID,
+        ack_in => regslice_both_outStream_V_strb_V_U_ack_in_dummy,
+        data_out => outStream_TSTRB,
+        vld_out => regslice_both_outStream_V_strb_V_U_vld_out,
+        ack_out => outStream_TREADY,
+        apdone_blk => regslice_both_outStream_V_strb_V_U_apdone_blk);
+
+    regslice_both_outStream_V_user_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 2)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TUSER,
+        vld_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID,
+        ack_in => regslice_both_outStream_V_user_V_U_ack_in_dummy,
+        data_out => outStream_TUSER,
+        vld_out => regslice_both_outStream_V_user_V_U_vld_out,
+        ack_out => outStream_TREADY,
+        apdone_blk => regslice_both_outStream_V_user_V_U_apdone_blk);
+
+    regslice_both_outStream_V_last_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 1)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TLAST,
+        vld_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID,
+        ack_in => regslice_both_outStream_V_last_V_U_ack_in_dummy,
+        data_out => outStream_TLAST,
+        vld_out => regslice_both_outStream_V_last_V_U_vld_out,
+        ack_out => outStream_TREADY,
+        apdone_blk => regslice_both_outStream_V_last_V_U_apdone_blk);
+
+    regslice_both_outStream_V_id_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 5)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TID,
+        vld_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID,
+        ack_in => regslice_both_outStream_V_id_V_U_ack_in_dummy,
+        data_out => outStream_TID,
+        vld_out => regslice_both_outStream_V_id_V_U_vld_out,
+        ack_out => outStream_TREADY,
+        apdone_blk => regslice_both_outStream_V_id_V_U_apdone_blk);
+
+    regslice_both_outStream_V_dest_V_U : component yolo_yolo_top_regslice_both
+    generic map (
+        DataWidth => 6)
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst_n_inv,
+        data_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TDEST,
+        vld_in => grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID,
+        ack_in => regslice_both_outStream_V_dest_V_U_ack_in_dummy,
+        data_out => outStream_TDEST,
+        vld_out => regslice_both_outStream_V_dest_V_U_vld_out,
+        ack_out => outStream_TREADY,
+        apdone_blk => regslice_both_outStream_V_dest_V_U_apdone_blk);
 
 
 
@@ -329,16 +582,16 @@ begin
     end process;
 
 
-    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg_assign_proc : process(ap_clk)
+    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst_n_inv = '1') then
-                grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg <= ap_const_logic_0;
+                grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg <= ap_const_logic_0;
             else
                 if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-                    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_ready = ap_const_logic_1)) then 
-                    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg <= ap_const_logic_0;
+                    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_ready = ap_const_logic_1)) then 
+                    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -348,19 +601,19 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state1)) then
-                activate_en_read_reg_155 <= activate_en;
-                cmp_i_i36_mid111_reg_185 <= cmp_i_i36_mid111_fu_149_p2;
-                mul_ln3_reg_180 <= mul_ln3_fu_143_p2;
-                sub_i_i59_reg_165 <= sub_i_i59_fu_111_p2;
-                sub_i_i_reg_170 <= sub_i_i_fu_121_p2;
-                    tmp_reg_175(7 downto 3) <= tmp_fu_127_p3(7 downto 3);
-                trunc_ln3_reg_160 <= trunc_ln3_fu_103_p1;
+                activate_en_read_reg_209 <= activate_en;
+                cmp_i_i37_mid111_reg_239 <= cmp_i_i37_mid111_fu_203_p2;
+                mul_ln3_reg_234 <= mul_ln3_fu_197_p2;
+                sub_i_i60_reg_219 <= sub_i_i60_fu_165_p2;
+                sub_i_i_reg_224 <= sub_i_i_fu_175_p2;
+                    tmp_reg_229(7 downto 3) <= tmp_fu_181_p3(7 downto 3);
+                trunc_ln3_reg_214 <= trunc_ln3_fu_157_p1;
             end if;
         end if;
     end process;
-    tmp_reg_175(2 downto 0) <= "000";
+    tmp_reg_229(2 downto 0) <= "000";
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_done, ap_CS_fsm_state3, ap_CS_fsm_state4, regslice_both_outStream_U_apdone_blk)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_CS_fsm, ap_CS_fsm_state1, grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_done, ap_CS_fsm_state3, ap_CS_fsm_state4, regslice_both_outStream_V_data_V_U_apdone_blk)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -372,13 +625,13 @@ begin
             when ap_ST_fsm_state2 => 
                 ap_NS_fsm <= ap_ST_fsm_state3;
             when ap_ST_fsm_state3 => 
-                if (((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
+                if (((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
                     ap_NS_fsm <= ap_ST_fsm_state4;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state3;
                 end if;
             when ap_ST_fsm_state4 => 
-                if (((ap_const_logic_1 = ap_CS_fsm_state4) and (regslice_both_outStream_U_apdone_blk = ap_const_logic_0))) then
+                if (((regslice_both_outStream_V_data_V_U_apdone_blk = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state4;
@@ -403,9 +656,9 @@ begin
 
     ap_ST_fsm_state2_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state3_blk_assign_proc : process(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_done)
+    ap_ST_fsm_state3_blk_assign_proc : process(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_done)
     begin
-        if ((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_done = ap_const_logic_0)) then 
+        if ((grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state3_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state3_blk <= ap_const_logic_0;
@@ -413,9 +666,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state4_blk_assign_proc : process(regslice_both_outStream_U_apdone_blk)
+    ap_ST_fsm_state4_blk_assign_proc : process(regslice_both_outStream_V_data_V_U_apdone_blk)
     begin
-        if ((regslice_both_outStream_U_apdone_blk = ap_const_logic_1)) then 
+        if ((regslice_both_outStream_V_data_V_U_apdone_blk = ap_const_logic_1)) then 
             ap_ST_fsm_state4_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state4_blk <= ap_const_logic_0;
@@ -423,9 +676,9 @@ begin
     end process;
 
 
-    ap_done_assign_proc : process(ap_CS_fsm_state4, regslice_both_outStream_U_apdone_blk)
+    ap_done_assign_proc : process(ap_CS_fsm_state4, regslice_both_outStream_V_data_V_U_apdone_blk)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (regslice_both_outStream_U_apdone_blk = ap_const_logic_0))) then 
+        if (((regslice_both_outStream_V_data_V_U_apdone_blk = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -443,9 +696,9 @@ begin
     end process;
 
 
-    ap_ready_assign_proc : process(ap_CS_fsm_state4, regslice_both_outStream_U_apdone_blk)
+    ap_ready_assign_proc : process(ap_CS_fsm_state4, regslice_both_outStream_V_data_V_U_apdone_blk)
     begin
-        if (((ap_const_logic_1 = ap_CS_fsm_state4) and (regslice_both_outStream_U_apdone_blk = ap_const_logic_0))) then 
+        if (((regslice_both_outStream_V_data_V_U_apdone_blk = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -458,29 +711,30 @@ begin
                 ap_rst_n_inv <= not(ap_rst_n);
     end process;
 
-    cmp_i_i36_mid111_fu_149_p2 <= "1" when (sub_i_i59_fu_111_p2 = ap_const_lv6_0) else "0";
-    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start <= grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_ap_start_reg;
-    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_outStream_TREADY <= (outStream_TREADY_int_regslice and ap_CS_fsm_state3);
-    inStream_TREADY <= regslice_both_inStream_U_ack_in;
+    cmp_i_i37_mid111_fu_203_p2 <= "1" when (sub_i_i60_fu_165_p2 = ap_const_lv6_0) else "0";
+    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start <= grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_ap_start_reg;
+    grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TREADY <= (outStream_TREADY_int_regslice and ap_CS_fsm_state3);
+    inStream_TREADY <= regslice_both_inStream_V_data_V_U_ack_in;
 
-    inStream_TREADY_int_regslice_assign_proc : process(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_inStream_TREADY, ap_CS_fsm_state3)
+    inStream_TREADY_int_regslice_assign_proc : process(grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_inStream_TREADY, ap_CS_fsm_state3)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
-            inStream_TREADY_int_regslice <= grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_82_inStream_TREADY;
+            inStream_TREADY_int_regslice <= grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_inStream_TREADY;
         else 
             inStream_TREADY_int_regslice <= ap_const_logic_0;
         end if; 
     end process;
 
-    input_h_cast_fu_117_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(input_h),6));
-    input_w_cast_fu_107_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(input_w),6));
-    mul_ln3_fu_143_p0 <= mul_ln3_fu_143_p00(5 - 1 downto 0);
-    mul_ln3_fu_143_p00 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(input_h),13));
-    mul_ln3_fu_143_p1 <= mul_ln3_fu_143_p10(8 - 1 downto 0);
-    mul_ln3_fu_143_p10 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_fu_127_p3),13));
-    outStream_TVALID <= regslice_both_outStream_U_vld_out;
-    sub_i_i59_fu_111_p2 <= std_logic_vector(unsigned(input_w_cast_fu_107_p1) + unsigned(ap_const_lv6_3F));
-    sub_i_i_fu_121_p2 <= std_logic_vector(unsigned(input_h_cast_fu_117_p1) + unsigned(ap_const_lv6_3F));
-    tmp_fu_127_p3 <= (input_w & ap_const_lv3_0);
-    trunc_ln3_fu_103_p1 <= activate_en(29 - 1 downto 0);
+    input_h_cast_fu_171_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(input_h),6));
+    input_w_cast_fu_161_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(input_w),6));
+    mul_ln3_fu_197_p0 <= mul_ln3_fu_197_p00(5 - 1 downto 0);
+    mul_ln3_fu_197_p00 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(input_h),13));
+    mul_ln3_fu_197_p1 <= mul_ln3_fu_197_p10(8 - 1 downto 0);
+    mul_ln3_fu_197_p10 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_fu_181_p3),13));
+    outStream_TVALID <= regslice_both_outStream_V_data_V_U_vld_out;
+    outStream_TVALID_int_regslice <= grp_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3_fu_112_outStream_TVALID;
+    sub_i_i60_fu_165_p2 <= std_logic_vector(unsigned(input_w_cast_fu_161_p1) + unsigned(ap_const_lv6_3F));
+    sub_i_i_fu_175_p2 <= std_logic_vector(unsigned(input_h_cast_fu_171_p1) + unsigned(ap_const_lv6_3F));
+    tmp_fu_181_p3 <= (input_w & ap_const_lv3_0);
+    trunc_ln3_fu_157_p1 <= activate_en(29 - 1 downto 0);
 end behav;

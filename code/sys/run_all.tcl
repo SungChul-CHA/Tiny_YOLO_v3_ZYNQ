@@ -767,10 +767,12 @@ create_root_design ""
 
 make_wrapper -files [get_files design_1.bd] -top -import
 
-launch_runs synth_1
+# launch_runs synth_1
+launch_runs synth_1 -jobs 20
 wait_on_run synth_1
 
-launch_runs impl_1 -to_step write_bitstream
+# launch_runs impl_1 -to_step write_bitstream
+launch_runs impl_1 -jobs 20
 wait_on_run impl_1
 
 # file mkdir myproj/project_1.sdk
@@ -778,5 +780,12 @@ wait_on_run impl_1
 
 # launch_sdk -workspace myproj/project_1.sdk -hwspec myproj/project_1.sdk/design_1_wrapper.hdf
 
-# exit
-start_gui
+set_property strategy Performance_ExploreWithRemap [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1 -jobs 20 -to_step write_bitstream
+wait_on_run impl_1
+
+file mkdir Vitis
+write_hw_platform -fixed -include_bit -force -file myproj/design_1_wrapper.xsa
+
+exit

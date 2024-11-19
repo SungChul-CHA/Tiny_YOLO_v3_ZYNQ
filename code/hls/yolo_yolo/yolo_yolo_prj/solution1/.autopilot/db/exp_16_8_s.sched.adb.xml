@@ -814,7 +814,7 @@ entry_ifconv:47 %y_lo_s_V = partselect i25 @_ssdm_op_PartSelect.i25.i50.i32.i32,
 
 <Node id="5" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-entry_ifconv:0 %specpipeline_ln41 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_6
+entry_ifconv:0 %specpipeline_ln41 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_3
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln41"/></StgValue>
@@ -934,10 +934,10 @@ entry_ifconv:54 %y_V_3 = select i1 %or_ln202_3, i22 %select_ln190, i22 %y_V_1
 
 <Node id="60" bw="2" op_0_bw="2" op_1_bw="22" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-entry_ifconv:55 %tmp_10 = partselect i2 @_ssdm_op_PartSelect.i2.i22.i32.i32, i22 %y_V_3, i32 20, i32 21
+entry_ifconv:55 %tmp_11 = partselect i2 @_ssdm_op_PartSelect.i2.i22.i32.i32, i22 %y_V_3, i32 20, i32 21
 
 ]]></Node>
-<StgValue><ssdm name="tmp_10"/></StgValue>
+<StgValue><ssdm name="tmp_11"/></StgValue>
 </operation>
 
 <operation id="66" st_id="6" stage="1" lat="1">
@@ -949,7 +949,7 @@ entry_ifconv:55 %tmp_10 = partselect i2 @_ssdm_op_PartSelect.i2.i22.i32.i32, i22
 
 <Node id="61" bw="1" op_0_bw="2" op_1_bw="2">
 <![CDATA[
-entry_ifconv:56 %overf_1 = icmp_ne  i2 %tmp_10, i2 0
+entry_ifconv:56 %overf_1 = icmp_ne  i2 %tmp_11, i2 0
 
 ]]></Node>
 <StgValue><ssdm name="overf_1"/></StgValue>
@@ -1024,10 +1024,10 @@ entry_ifconv:60 %overf_2 = or i1 %or_ln271, i1 %p_Result_14
 
 <Node id="66" bw="16" op_0_bw="16" op_1_bw="22" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-entry_ifconv:61 %tmp_s = partselect i16 @_ssdm_op_PartSelect.i16.i22.i32.i32, i22 %y_V_3, i32 3, i32 18
+entry_ifconv:61 %tmp_9 = partselect i16 @_ssdm_op_PartSelect.i16.i22.i32.i32, i22 %y_V_3, i32 3, i32 18
 
 ]]></Node>
-<StgValue><ssdm name="tmp_s"/></StgValue>
+<StgValue><ssdm name="tmp_9"/></StgValue>
 </operation>
 
 <operation id="72" st_id="6" stage="1" lat="1">
@@ -1039,7 +1039,7 @@ entry_ifconv:61 %tmp_s = partselect i16 @_ssdm_op_PartSelect.i16.i22.i32.i32, i2
 
 <Node id="67" bw="16" op_0_bw="1" op_1_bw="16" op_2_bw="16">
 <![CDATA[
-entry_ifconv:62 %select_ln274 = select i1 %overf_2, i16 32767, i16 %tmp_s
+entry_ifconv:62 %select_ln274 = select i1 %overf_2, i16 32767, i16 %tmp_9
 
 ]]></Node>
 <StgValue><ssdm name="select_ln274"/></StgValue>

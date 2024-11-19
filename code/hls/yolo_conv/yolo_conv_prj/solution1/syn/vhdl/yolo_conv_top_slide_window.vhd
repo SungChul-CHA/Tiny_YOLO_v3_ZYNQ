@@ -166,7 +166,7 @@ attribute shreg_extract : string;
 
 
 begin
-    mul_3ns_10ns_12_1_1_U78 : component yolo_conv_top_mul_3ns_10ns_12_1_1
+    mul_3ns_10ns_12_1_1_U89 : component yolo_conv_top_mul_3ns_10ns_12_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -178,7 +178,7 @@ begin
         din1 => mul_ln984_fu_151_p1,
         dout => mul_ln984_fu_151_p2);
 
-    mul_3ns_10ns_12_1_1_U79 : component yolo_conv_top_mul_3ns_10ns_12_1_1
+    mul_3ns_10ns_12_1_1_U90 : component yolo_conv_top_mul_3ns_10ns_12_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -190,7 +190,7 @@ begin
         din1 => mul_ln984_1_fu_161_p1,
         dout => mul_ln984_1_fu_161_p2);
 
-    mul_3ns_10ns_12_1_1_U80 : component yolo_conv_top_mul_3ns_10ns_12_1_1
+    mul_3ns_10ns_12_1_1_U91 : component yolo_conv_top_mul_3ns_10ns_12_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

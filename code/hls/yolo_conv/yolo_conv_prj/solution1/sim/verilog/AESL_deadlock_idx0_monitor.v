@@ -13,8 +13,8 @@ module AESL_deadlock_idx0_monitor ( // for module AESL_inst_yolo_conv_top
 // signal declare
 reg [3:0] monitor_axis_block_info;
 reg monitor_find_block;
-wire idx2_block;
 wire idx1_block;
+wire idx2_block;
 wire sub_parallel_block;
 wire all_sub_parallel_has_block;
 wire all_sub_single_has_block;
@@ -25,7 +25,7 @@ assign axis_block_info = (monitor_find_block == 1'b1) ? monitor_axis_block_info 
 assign block = monitor_find_block;
 assign idx1_block = axis_block_sigs[0];
 assign all_sub_parallel_has_block = 1'b0;
-assign all_sub_single_has_block = 1'b0 | (idx2_block & (axis_block_sigs[1] | axis_block_sigs[2] | axis_block_sigs[3])) | (idx1_block & (axis_block_sigs[0]));
+assign all_sub_single_has_block = 1'b0 | (idx1_block & (axis_block_sigs[0])) | (idx2_block & (axis_block_sigs[1] | axis_block_sigs[2] | axis_block_sigs[3]));
 assign cur_axis_has_block = 1'b0;
 assign seq_is_axis_block = all_sub_parallel_has_block | all_sub_single_has_block | cur_axis_has_block;
 
@@ -41,7 +41,7 @@ end
 always @(posedge clock) begin
     if (reset == 1'b1)
         monitor_axis_block_info[1:0] <= 2'h0;
-    else if (axis_block_sigs[1] | axis_block_sigs[0])
+    else if (axis_block_sigs[0] | axis_block_sigs[1])
         monitor_axis_block_info[1:0] <= ~(2'h1 << 0);
     else
         monitor_axis_block_info[1:0] <= 2'h0;

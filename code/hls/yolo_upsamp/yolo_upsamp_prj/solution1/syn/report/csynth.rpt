@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'yolo_upsamp_top'
 ================================================================
 + General Information: 
-    * Date:           Mon Nov 18 23:59:26 2024
+    * Date:           Tue Nov 19 23:17:49 2024
     * Version:        2022.2 (Build 3670227 on Oct 13 2022)
     * Project:        yolo_upsamp_prj
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -45,12 +45,12 @@
 +----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
 
 * AXIS
-+-----------+---------------+-------+--------+--------+
-| Interface | Register Mode | TDATA | TREADY | TVALID |
-+-----------+---------------+-------+--------+--------+
-| inStream  | both          | 112   | 1      | 1      |
-| outStream | both          | 112   | 1      | 1      |
-+-----------+---------------+-------+--------+--------+
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| inStream  | both          | 64    | 6     | 5   | 8     | 1     | 1      | 8     | 2     | 1      |
+| outStream | both          | 64    | 6     | 5   | 8     | 1     | 1      | 8     | 2     | 1      |
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
 
 * TOP LEVEL CONTROL
 +-----------+------------+-----------+
@@ -67,12 +67,12 @@
 == SW I/O Information
 ================================================================
 * Top Function Arguments
-+-----------+-----------+------------------------------------+
-| Argument  | Direction | Datatype                           |
-+-----------+-----------+------------------------------------+
-| inStream  | in        | stream<ap_axi_fp<64, 2, 5, 6>, 0>& |
-| outStream | out       | stream<ap_axi_fp<64, 2, 5, 6>, 0>& |
-+-----------+-----------+------------------------------------+
++-----------+-----------+----------------------------------------------+
+| Argument  | Direction | Datatype                                     |
++-----------+-----------+----------------------------------------------+
+| inStream  | in        | stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0>& |
+| outStream | out       | stream<hls::axis<quad_fp_pack, 2, 5, 6>, 0>& |
++-----------+-----------+----------------------------------------------+
 
 * SW-to-HW Mapping
 +-----------+--------------+-----------+
@@ -90,17 +90,17 @@
 | Name                              | DSP | Pragma | Variable     | Op  | Impl   | Latency |
 +-----------------------------------+-----+--------+--------------+-----+--------+---------+
 | + yolo_upsamp_top                 | 1   |        |              |     |        |         |
-|   add_ln15_fu_643_p2              | -   |        | add_ln15     | add | fabric | 0       |
-|   row_idx_3_fu_877_p2             | -   |        | row_idx_3    | add | fabric | 0       |
-|   row_stride_3_fu_945_p2          | -   |        | row_stride_3 | add | fabric | 0       |
-|   add_ln19_fu_768_p2              | -   |        | add_ln19     | add | fabric | 0       |
-|   col_stride_3_fu_1052_p2         | -   |        | col_stride_3 | add | fabric | 0       |
+|   add_ln15_fu_671_p2              | -   |        | add_ln15     | add | fabric | 0       |
+|   row_idx_3_fu_905_p2             | -   |        | row_idx_3    | add | fabric | 0       |
+|   row_stride_3_fu_973_p2          | -   |        | row_stride_3 | add | fabric | 0       |
+|   add_ln19_fu_796_p2              | -   |        | add_ln19     | add | fabric | 0       |
+|   col_stride_3_fu_1080_p2         | -   |        | col_stride_3 | add | fabric | 0       |
 |   mac_muladd_4ns_4ns_4ns_7_4_1_U1 | 1   |        | mul_ln908    | mul | dsp48  | 3       |
 |   mac_muladd_4ns_4ns_4ns_7_4_1_U1 | 1   |        | add_ln908    | add | dsp48  | 3       |
-|   add_ln23_fu_1150_p2             | -   |        | add_ln23     | add | fabric | 0       |
-|   add_ln21_1_fu_792_p2            | -   |        | add_ln21_1   | add | fabric | 0       |
-|   add_ln19_1_fu_679_p2            | -   |        | add_ln19_1   | add | fabric | 0       |
-|   add_ln17_1_fu_693_p2            | -   |        | add_ln17_1   | add | fabric | 0       |
+|   add_ln23_fu_1178_p2             | -   |        | add_ln23     | add | fabric | 0       |
+|   add_ln21_1_fu_820_p2            | -   |        | add_ln21_1   | add | fabric | 0       |
+|   add_ln19_1_fu_707_p2            | -   |        | add_ln19_1   | add | fabric | 0       |
+|   add_ln17_1_fu_721_p2            | -   |        | add_ln17_1   | add | fabric | 0       |
 +-----------------------------------+-----+--------+--------------+-----+--------+---------+
 
 

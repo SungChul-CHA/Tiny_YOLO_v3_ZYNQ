@@ -5,8 +5,8 @@
 // ==============================================================
 
 extern "C" void AESL_WRAP_yolo_conv_top (
-hls::stream<int > inStream,
-hls::stream<int > outStream,
+hls::stream<struct ap_axis<32, 0, 0, 0 > > (&inStream),
+hls::stream<struct ap_axis<32, 0, 0, 0 > > (&outStream),
 char output_ch,
 char input_ch,
 char fold_output_ch,

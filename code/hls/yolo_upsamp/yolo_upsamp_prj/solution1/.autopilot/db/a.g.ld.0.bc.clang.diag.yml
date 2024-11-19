@@ -19,14 +19,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 9, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 698, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -34,14 +34,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 47, Column: 68 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 979, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -49,14 +49,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 46, Column: 68 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 979, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -64,14 +64,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 45, Column: 68 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 979, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -79,14 +79,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 44, Column: 68 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 979, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -94,14 +94,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 33, Column: 38 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 1038, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -109,14 +109,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 32, Column: 38 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 1038, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -124,14 +124,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 31, Column: 38 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 1038, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -139,14 +139,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 30, Column: 38 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 1038, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -154,14 +154,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 12, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 698, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -169,14 +169,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 11, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 698, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -184,14 +184,14 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 10, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::LineBuffer<1, 13, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()'
     DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                        Line: 698, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'yolo_upsamp_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&)'
+  - Caller:          'yolo_upsamp_top(hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&, hls::stream<hls::axis<quad_fp_pack, 2ul, 5ul, 6ul>, 0>&)'
     DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 4, Column: 0 }
   - String:          ''''
 ...
@@ -200,7 +200,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 755, Column: 9 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Adding '''
   - Name:            line_buff_group_1
@@ -212,7 +212,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 755, Column: 9 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Adding '''
   - Name:            line_buff_group_2
@@ -224,7 +224,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 755, Column: 9 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Adding '''
   - Name:            line_buff_group_3
@@ -236,7 +236,7 @@ Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
                    Line: 755, Column: 9 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Adding '''
   - Name:            line_buff_group_0
@@ -247,7 +247,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 12, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            line_buff_group_3
@@ -257,7 +257,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 11, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            line_buff_group_2
@@ -267,7 +267,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 10, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            line_buff_group_1
@@ -277,7 +277,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 9, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            line_buff_group_0
@@ -287,7 +287,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 9, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -305,7 +305,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 10, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -323,7 +323,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 11, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -341,7 +341,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: src/yolo_upsamp.cpp, Line: 12, Column: 17 }
-Function:        _Z15yolo_upsamp_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_
+Function:        _Z15yolo_upsamp_topRN3hls6streamINS_4axisI12quad_fp_packLm2ELm5ELm6EEELi0EEES5_
 Args:            
   - String:          'Applying '
   - String:          array_partition

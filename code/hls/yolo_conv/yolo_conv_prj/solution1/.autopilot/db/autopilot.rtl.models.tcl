@@ -1,5 +1,5 @@
 set SynModuleInfo {
-  {SRCNAME yolo_conv_top_Pipeline_VITIS_LOOP_55_3 MODELNAME yolo_conv_top_Pipeline_VITIS_LOOP_55_3 RTLNAME yolo_conv_top_yolo_conv_top_Pipeline_VITIS_LOOP_55_3
+  {SRCNAME yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3 MODELNAME yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3 RTLNAME yolo_conv_top_yolo_conv_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_52_2_VITIS_LOOP_55_3
     SUBMODULES {
       {MODELNAME yolo_conv_top_flow_control_loop_pipe_sequential_init RTLNAME yolo_conv_top_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME yolo_conv_top_flow_control_loop_pipe_sequential_init_U}
     }
@@ -26,7 +26,8 @@ set SynModuleInfo {
   }
   {SRCNAME yolo_conv_top MODELNAME yolo_conv_top RTLNAME yolo_conv_top IS_TOP 1
     SUBMODULES {
-      {MODELNAME yolo_conv_top_mul_6ns_6ns_12_1_1 RTLNAME yolo_conv_top_mul_6ns_6ns_12_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME yolo_conv_top_mul_6ns_3ns_9_1_1 RTLNAME yolo_conv_top_mul_6ns_3ns_9_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME yolo_conv_top_mul_6ns_9ns_15_1_1 RTLNAME yolo_conv_top_mul_6ns_9ns_15_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME yolo_conv_top_mul_9ns_4ns_13_1_1 RTLNAME yolo_conv_top_mul_9ns_4ns_13_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME yolo_conv_top_am_addmul_9ns_1ns_13ns_22_4_1 RTLNAME yolo_conv_top_am_addmul_9ns_1ns_13ns_22_4_1 BINDTYPE op TYPE all IMPL dsp48 LATENCY 3 ALLOW_PRAGMA 1}
       {MODELNAME yolo_conv_top_line_buff_group_0_val_V_RAM_S2P_BRAM_1R1W RTLNAME yolo_conv_top_line_buff_group_0_val_V_RAM_S2P_BRAM_1R1W BINDTYPE storage TYPE ram_s2p IMPL bram LATENCY 2 ALLOW_PRAGMA 1}

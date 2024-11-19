@@ -173,7 +173,7 @@ attribute shreg_extract : string;
 
 
 begin
-    mul_mul_16s_16s_32_4_0_U89 : component yolo_conv_top_mul_mul_16s_16s_32_4_0
+    mul_mul_16s_16s_32_4_0_U100 : component yolo_conv_top_mul_mul_16s_16s_32_4_0
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -188,7 +188,7 @@ begin
         ce => grp_fu_221_ce,
         dout => grp_fu_221_p2);
 
-    mul_mul_16s_16s_32_4_0_U90 : component yolo_conv_top_mul_mul_16s_16s_32_4_0
+    mul_mul_16s_16s_32_4_0_U101 : component yolo_conv_top_mul_mul_16s_16s_32_4_0
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -203,7 +203,7 @@ begin
         ce => grp_fu_227_ce,
         dout => grp_fu_227_p2);
 
-    mul_mul_16s_16s_32_4_0_U91 : component yolo_conv_top_mul_mul_16s_16s_32_4_0
+    mul_mul_16s_16s_32_4_0_U102 : component yolo_conv_top_mul_mul_16s_16s_32_4_0
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -218,7 +218,7 @@ begin
         ce => grp_fu_233_ce,
         dout => grp_fu_233_p2);
 
-    mul_mul_16s_16s_32_4_0_U92 : component yolo_conv_top_mul_mul_16s_16s_32_4_0
+    mul_mul_16s_16s_32_4_0_U103 : component yolo_conv_top_mul_mul_16s_16s_32_4_0
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -233,7 +233,7 @@ begin
         ce => grp_fu_239_ce,
         dout => grp_fu_239_p2);
 
-    mac_muladd_16s_16s_32s_32_4_0_U93 : component yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0
+    mac_muladd_16s_16s_32s_32_4_0_U104 : component yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -250,7 +250,7 @@ begin
         ce => grp_fu_245_ce,
         dout => grp_fu_245_p3);
 
-    mac_muladd_16s_16s_32s_32_4_0_U94 : component yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0
+    mac_muladd_16s_16s_32s_32_4_0_U105 : component yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -267,7 +267,7 @@ begin
         ce => grp_fu_253_ce,
         dout => grp_fu_253_p3);
 
-    mac_muladd_16s_16s_32s_32_4_0_U95 : component yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0
+    mac_muladd_16s_16s_32s_32_4_0_U106 : component yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -284,7 +284,7 @@ begin
         ce => grp_fu_261_ce,
         dout => grp_fu_261_p3);
 
-    mac_muladd_16s_16s_32s_32_4_0_U96 : component yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0
+    mac_muladd_16s_16s_32s_32_4_0_U107 : component yolo_conv_top_mac_muladd_16s_16s_32s_32_4_0
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -301,7 +301,7 @@ begin
         ce => grp_fu_269_ce,
         dout => grp_fu_269_p3);
 
-    mac_muladd_16s_16s_32ns_32_4_0_U97 : component yolo_conv_top_mac_muladd_16s_16s_32ns_32_4_0
+    mac_muladd_16s_16s_32ns_32_4_0_U108 : component yolo_conv_top_mac_muladd_16s_16s_32ns_32_4_0
     generic map (
         ID => 1,
         NUM_STAGE => 4,
