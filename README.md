@@ -36,64 +36,126 @@ some tools used for helping the test, not important
 
 ## Changes
 
-- target board : Zybo Z7-20
-- OS : RHEL 8
-- tool version : 2022.2
+-   target board : Zybo Z7-20
+-   OS : RHEL 8
+-   Vivado tool version : 2022.2
 
-**Original vivado tool version was 2019.1**
-**In 2022.2, there are some changes...**
+**Original vivado tool version was 2019.1 but**<br> **In 2022.2, there are some changes...**
 
-1. `run_all.py`
+1. `scripts/run_all.py`
 
 ```python
 # device = "xc7z020-clg484-1"
-device = "xc7z020-clg400-1" # Z7-20 core
+device = "xc7z020-clg400-1" # Zybo Z7-20 core
 clk_ns = "10"
+```
+
+> Change device by Original README
+
+```python
 ...
 
-# generate scripts to kick off HLS
-for hls_prj_name in os.listdir():
-    os.chdir(root_path + "/code/hls/" + hls_prj_name)
-    with open("run_hls.tcl", "w") as tcl_fp:
+# get optimal config
+with open("opt.conf", "r") as fp:
+    opt_conf = fp.readline().rstrip().split(",")
+    conf_cmd = {"N_max" : "#define MAX_KERNEL_NUM " + opt_conf[0] + "\n",
+                "P_mem" : "#pragma HLS ARRAY_PARTITION variable=local_mem_group block factor=" + opt_conf[1] + " dim=1\n",
+                "P_acc" : "#pragma HLS RESOURCE variable=kernel_bias_fp core=RAM_1P_BRAM" if opt_conf[2] == "1" else "#pragma HLS ARRAY_PARTITION variable=kernel_bias_fp cyclic factor=" + str(int(opt_conf[3])>>1) + " dim=1\n",
+                "P_pool" : "#pragma HLS ALLOCATION function instances=window_max_pool limit=" + opt_conf[3] + " \n",
+                "P_yolo" : "#pragma HLS ALLOCATION function instances=logistic_activate limit=" + opt_conf[5] + " \n"}
+                # "P_pool" : "#pragma HLS ALLOCATION instances=window_max_pool limit=" + opt_conf[3] + " function\n",
+                # "P_yolo" : "#pragma HLS ALLOCATION instances=logistic_activate limit=" + opt_conf[5] + " function\n"}
+```
 
-        ...
+> Change some pragma of Vitis HLS. <br>
+> [Vitis HLS docs of pramga HLs allocation](https://docs.amd.com/r/2022.2-English/ug1399-vitis-hls/pragma-HLS-allocation)
 
-        tcl_fp.write("open_solution \"solution1\"\n")
+```python
+...
+
+with open("run_hls.tcl", "w") as tcl_fp:
+        tcl_fp.write("set XF_PROJ_ROOT /tools/Xilinx/Vitis_HLS/2022.2/include/vision\n")
+        tcl_fp.write("open_project -reset " + hls_prj_name + "_prj\n")
+        tcl_fp.write("set_top " + hls_prj_name + "_top\n")
+
+        # for src_file in os.listdir("src"):
+        #     tcl_fp.write("add_files src/" + src_file + "\n")
+        for src_file in os.listdir("src"):
+            if src_file.endswith(".cpp"):
+                tcl_fp.write("add_files src/" + src_file + " -cflags -I${XF_PROJ_ROOT}/L1/include\n")
+            else:
+                tcl_fp.write("add_files src/" + src_file + "\n")        
+
+        # for tb_file in os.listdir("tb"):
+        #     tcl_fp.write("add_files -tb tb/" + tb_file + "\n")
+        for tb_file in os.listdir("tb"):
+            if tb_file.endswith(".cpp"):
+                tcl_fp.write("add_files -tb tb/" + tb_file + " -cflags -I${XF_PROJ_ROOT}/L1/include\n")
+            else:
+                tcl_fp.write("add_files -tb tb/" + tb_file + "\n")
+
+        # tcl_fp.write("open_solution \"solution1\"\n")
         # tcl_fp.write("set_part {" + device + "} -tool vivado\n")
+        tcl_fp.write("open_solution \"solution1\" -flow_target vivado\n")
         tcl_fp.write("set_part {" + device + "}\n")
+```
 
-        ...
+> In this project, the HLS codes use a `hls_video.h` header file. This is no longer supported after version 2020.1 [AMD Support](https://adaptivesupport.amd.com/s/article/75345?language=en_US)<br>
+> So, we need to Install [*Vitis Libraries*](#vitis-libraries) and add `-cflags` for compile. [Vitis Vision github (example of `run_all.tcl`)](https://github.com/Xilinx/Vitis_Libraries/blob/master/vision/L1/examples/accumulate/run_hls.tcl)<br>
+> No more support `-tool` option in Vitis HLS 2022.2 ([maybe from 2020.2 version](https://github.com/Xilinx/PYNQ/issues/1174))
+
+```python
+...
 
     # os.system("vivado_hls run_hls.tcl")
     os.system("vitis_hls run_hls.tcl")
     ip_directory = os.path.join(root_path, "code", "ip")
     if not os.path.exists(ip_directory):
-        os.makedirs(ip_directory)
+        os.makedirs(ip_directory)    
     shutil.copy(hls_prj_name + "_prj/solution1/impl/ip/xilinx_com_hls_" + hls_prj_name + "_top_1_0.zip", root_path + "/code/ip/xilinx_com_hls_" + hls_prj_name + "_top_1_0.zip")
+
 ```
 
-> change target device <br>
-> No more support `-tool` option in Vitis HLS 2022.2 <br>
-> program name was changed : `vivado_hls` &rarr; `vitis_hls` <br>
+> program name has been changed : `vivado_hls` &rarr; `vitis_hls` <br>
 > before copy, need to generate 'ip' folder in code : /code/ip &larr; I just used mkdir
 
-<br>
+---
 
 2. `code/sys/run_all.tcl`
 
 ```tcl
+...
+
+################################################################
+# Check if script is running in correct Vivado version.
+################################################################
 # set scripts_vivado_version 2019.1
 set scripts_vivado_version 2022.2
+set current_vivado_version [version -short]
 
+if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+   puts ""
+   catch {common::send_msg_id "BD_TCL-109" "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+
+   return 1
+}
+```
+
+> change version check value
+
+```tcl
 ...
 
 set list_projs [get_projects -quiet]
 if { $list_projs eq "" } {
-   # create_project project_1 myproj -part [lindex $argv 0] -force
-   create_project project_1 myproj -part xc7z020clg400-1 -force
+   create_project project_1 myproj -part [lindex $argv 0] -force
    set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
 }
+```
 
+> add `set_property` since I have board file. [how to install board file](https://velog.io/@tony0613/Vivado-2022.2-%EC%84%A4%EC%B9%98#zybo-z7-20-board-%EC%84%A4%EC%B9%98)
+
+```tcl
 ...
 
 # file mkdir myproj/project_1.sdk
@@ -103,12 +165,43 @@ if { $list_projs eq "" } {
 start_gui
 ```
 
-> sdk &rarr; Vitis IDE : `launch_sdk` &rarr; `vitis` <br>
+> no longer need `.sdk` folder<br>
 > `.hdf` &rarr; `.xsa`
+> `launch_sdk` &rarr; `vitis` <br> 
 
-<br>
+---
 
-### Vitis HLS
+#### 3. `code/hls`
+
+before compile hls code, you need to install additional library(vitis vision). [how to install](#vitis-libraries)
+
+1. `/yolo_conv/src/yolo_conv.h` ~ `/yolo_upsamp/src/yolo_upsamp.h`
+
+```cpp
+#include "yolo_stream.h"
+// #include "hls_video.h"
+#include "common/xf_common.hpp"
+#include "common/xf_utility.hpp"
+
+// typedef hls::Window<KERNEL_DIM,KERNEL_DIM,fp_data_type> window_type;
+// typedef hls::LineBuffer<KERNEL_DIM,MAX_IN_WIDTH,fp_data_type> line_buff_type;
+typedef xf::cv::Window<KERNEL_DIM,KERNEL_DIM,fp_data_type> window_type;
+typedef xf::cv::LineBuffer<KERNEL_DIM,MAX_IN_WIDTH,fp_data_type> line_buff_type;
+```
+
+> I'm not sure which header file need to be included.<br>
+> 1. `common/xf_utility.hpp`
+> 2. `common/xf_video_mem.hpp`
+
+2. AXI Stream
+
+> Tip: If you specify an hls::stream object with a data type other than ap_axis or ap_axiu, the tool will infer an AXI4-Stream interface without the TLAST signal, or any of the side-channel signals. This implementation of the AXI4-Stream interface consumes fewer device resources, but offers no visibility into when the stream is ending.
+
+---
+
+## Vitis Libraries
+
+- error message
 
 ```shell
 fatal error: hls_video.h: No such file or directory
@@ -117,21 +210,23 @@ fatal error: hls_video.h: No such file or directory
 compilation terminated.
 ```
 
-[`hls_video.h` has been deprecated.](https://adaptivesupport.amd.com/s/question/0D52E00006hpY1uSAE/where-can-i-find-the-header-file-hlsvideoh?language=en_US)
+> [`hls_video.h` has been deprecated.](https://adaptivesupport.amd.com/s/question/0D52E00006hpY1uSAE/where-can-i-find-the-header-file-hlsvideoh?language=en_US)
+
+<br>
 
 [**Install Vitis Vision!!**](#in-my-workspace)
 
-#### How to Install Vitis Vision
+### How to Install Vitis Vision
 
 From [Vitis Vision GitHub](https://github.com/Xilinx/Vitis_Libraries/tree/master/vision) README
 
-##### Prerequisites
+#### Prerequisites
 
-- Valid installation of Vitis™ 2022.2 or later version and the corresponding licenses.
+-   Valid installation of Vitis™ 2022.2 or later version and the corresponding licenses.
 
-- Xilinx® Runtime (XRT) must be installed. XRT provides software interface to Xilinx FPGAs.
+-   Xilinx® Runtime (XRT) must be installed. XRT provides software interface to Xilinx FPGAs.
 
-- Install OpenCV-4.4.0 x86 libraries(with compatible libjpeg.so). x86 libs have to be used for
+-   Install OpenCV-4.4.0 x86 libraries(with compatible libjpeg.so). x86 libs have to be used for
 
 ```
   a) L1 flow irrespective of target FPGA device being PCIe or embedded.
@@ -147,7 +242,7 @@ For L2/L3 flow targeting embedded platforms (for hardware emulationa and hardwar
 
 - If targeting an embedded platform, install it and set up the evaluation board.
 
-##### OpenCV Installation Guidance:
+#### OpenCV Installation Guidance:
 
 It is recommended to do a fresh installation of OpenCV 4.4.0 and not use existing libs of your system, as they may or may not work with Vitis environment.
 
@@ -166,14 +261,16 @@ The below steps can help install the basic libs required to compile and link the
 
 The OpenCV includes and libs will be in the install directory
 
-#### In My Workspace
+---
 
-- shell : cshell
-- OS : RHEL 8.10
-- CMake version : 3.3.2
-- No OpenCV
+### In My Workspace
 
-1. `mkdir opencv; mkdir opencv/source opencv/source_contrib opencv/build opencv/install`
+-   shell : cshell
+-   OS : RHEL 8.10
+-   CMake version : 3.3.2
+-   No OpenCV
+
+1. `mkdir /opencv; mkdir /opencv/source opencv/source_contrib opencv/build opencv/install`
 
 ```
 opencv
@@ -184,23 +281,26 @@ opencv
 ```
 
 2. git clone opencv-4.4.0, opencv-4.4.0-contrib <br>
-   _But I don't know how to change clone folder name_ <br>
-   So, I just make opencv and cd to opencv and then <br>
-   `git clone https://github.com/opencv/opencv/tree/4.4.0` <br>
-   `git clone https://github.com/opencv/opencv_contrib/tree/4.4.0` <br>
-   `mv opencv source` <br>
-   `mv opencv_contrib source_contrib`
+_But I don't know how to change clone folder name_<br>
+So, I just clone and change folder name
 
-3. `setenv LIBRARY_PATH /usr/lib/x86_64-linux-gnu/` &larr; I'm using C Shell !!
+```shell
+git clone https://github.com/opencv/opencv/tree/4.4.0
+git clone https://github.com/opencv/opencv_contrib/tree/4.4.0
+mv opencv source
+mv opencv_contrib source_co
+```
+
+3. `setenv LIBRARY_PATH /usr/lib/x86_64-linux-gnu/` &larr; I'm using C Shell !! [see no.5](#opencv-installation-guidance)
 
 4. Change the cmake command as the below. I arbitrarily modified the code to make it easier to read. <br>
-   Copy Vitis Vision README code and change _If you got some errors as me._
+Copy [no.6 code](#opencv-installation-guidance). _If you got some errors as me, change the code as below_
 
 ```
 cmake -D "CMAKE_BUILD_TYPE=RELEASE" \
-      -D "CMAKE_INSTALL_PREFIX=/home/tony/opencv/install" \
-      -D "CMAKE_CXX_COMPILER=/home/tony/tools/xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-6.2.0/bin/g++" \
-      -D "OPENCV_EXTRA_MODULES_PATH=/home/tony/opencv/source_contrib/modules/" \
+      -D "CMAKE_INSTALL_PREFIX=/opencv/install" \
+      -D "CMAKE_CXX_COMPILER=/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-6.2.0/bin/g++" \
+      -D "OPENCV_EXTRA_MODULES_PATH=/opencv/source_contrib/modules/" \
       -D "WITH_V4L=ON" \
       -D "BUILD_TESTS=OFF" \
       -D "BUILD_ZLIB=ON" \
@@ -228,61 +328,17 @@ CMake Error at CMakeLists.txt:25 (cmake_minimum_required):
 -- Configuring incomplete, errors occurred!
 ```
 
-update cmake. In my case, <br>
-`sudo dnf remove cmake` <br>
-`sudo dnf install cmake` <br>
-`cmake --version` : 3.20.x
+> update cmake. In my case, <br>
+> `> sudo dnf remove cmake` <br>
+> `> sudo dnf install cmake` <br>
+> `> cmake --version` : 3.20.x
 
-6. `make all -j8` : `-j` option is cpu core number to use
+6. `make all -j20` : `-j` option is cpu core number to use
 
 7. `make install`
 
-DONE!!!
-Now we can use `common/xf_common.hpp`, `common/xf_utility.hpp`
+DONE!!! Now we can use `common/xf_common.hpp`, `common/xf_utility.hpp`
+
+[anchor to code/hls](#3-codehls)
 
 ---
-
-#### code/hls, scripts/run_all.py Changes
-
-1. code/hls/yolo_conv/src/yolo_conv.h ~ yolo_upcamp.h
-
-```cpp
-#include "yolo_stream.h"
-// #include "hls_video.h"
-#include "common/xf_common.hpp"
-#include "common/xf_utility.hpp"
-
-// typedef hls::Window<KERNEL_DIM,KERNEL_DIM,fp_data_type> window_type;
-// typedef hls::LineBuffer<KERNEL_DIM,MAX_IN_WIDTH,fp_data_type> line_buff_type;
-typedef xf::cv::Window<KERNEL_DIM,KERNEL_DIM,fp_data_type> window_type;
-typedef xf::cv::LineBuffer<KERNEL_DIM,MAX_IN_WIDTH,fp_data_type> line_buff_type;
-```
-
-2. scripts/run_all.py line num 57 ~
-
-```python
-# generate scripts to kick off HLS
-for hls_prj_name in os.listdir():
-    os.chdir(root_path + "/code/hls/" + hls_prj_name)
-    with open("run_hls.tcl", "w") as tcl_fp:
-        tcl_fp.write("set OPENCV_INCLUDE /opencv/install/include\n")
-        tcl_fp.write("set XF_PROJ_ROOT /home/tony/tools/xilinx/Vitis_HLS/2022.2/include/vision\n")
-        tcl_fp.write("open_project -reset " + hls_prj_name + "_prj\n")
-        tcl_fp.write("set_top " + hls_prj_name + "_top\n")
-
-        # for src_file in os.listdir("src"):
-        #     tcl_fp.write("add_files src/" + src_file + "\n")
-        for src_file in os.listdir("src"):
-            if src_file.endswith(".cpp"):
-                tcl_fp.write("add_files src/" + src_file + " -cflags -I${XF_PROJ_ROOT}/L1/include -csimflags -I${XF_PROJ_ROOT}/L1/include\n")
-            else:
-                tcl_fp.write("add_files src/" + src_file + "\n")
-
-        # for tb_file in os.listdir("tb"):
-        #     tcl_fp.write("add_files -tb tb/" + tb_file + "\n")
-        for tb_file in os.listdir("tb"):
-            if tb_file.endswith(".cpp"):
-                tcl_fp.write("add_files -tb tb/" + tb_file + " -cflags \"-I${OPENCV_INCLUDE} -I${XF_PROJ_ROOT}/L1/include\" -csimflags -I${XF_PROJ_ROOT}/L1/include\n")
-            else:
-                tcl_fp.write("add_files -tb tb/" + tb_file + "\n")
-```
