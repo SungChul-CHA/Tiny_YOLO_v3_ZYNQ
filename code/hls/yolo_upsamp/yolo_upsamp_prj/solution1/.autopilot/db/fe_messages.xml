@@ -1,0 +1,627 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5529" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:759:47" msg_body="'factor' in '#pragma HLS array_reshape' is ignored">
+        <args ClangWarningOption="extra-tokens"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:517:30" msg_body="unused parameter 'src'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:528:30" msg_body="unused parameter '_data'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:541:14" msg_body="unused parameter 'index'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:552:20" msg_body="unused parameter 'index'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1036:41" msg_body="unused parameter 'stride'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1224:102" msg_body="unused parameter 'index'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1530:34" msg_body="unused parameter 'index'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:678:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:692:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h:706:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:84:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:114:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_strb_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:118:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:132:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:136:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:145:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:153:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:157:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:167:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:171:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:176:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:181:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:185:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:220:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:227:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:235:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:245:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:256:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:266:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:281:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:324:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:332:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:342:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:353:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:363:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_axi_sdata.h:379:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:245:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Scalar&lt;N, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:246:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Scalar&lt;N, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val dim=1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:252:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Scalar&lt;N, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:253:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Scalar&lt;N, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val dim=1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:260:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Scalar&lt;N, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val dim=1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:261:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Scalar&lt;N, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:269:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Scalar&lt;N, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val dim=1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:270:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Scalar&lt;N, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:279:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Scalar&lt;N, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val dim=1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:280:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Scalar&lt;N, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:305:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:309:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:318:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator+" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:323:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator+" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:333:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator+" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:338:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator+" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:348:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator-" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:353:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator-" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:363:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator-" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:368:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator-" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:378:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator*" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:383:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator*" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:393:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator*" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:398:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator*" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:408:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator/" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:413:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator/" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:423:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator/" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:428:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator/" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:584:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="type" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:592:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="depth" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:599:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="channels" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:607:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="init" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:654:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat&lt;T, ROWS, COLS, NPC, XFCVDEPTH&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:663:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat&lt;T, ROWS, COLS, NPC, XFCVDEPTH&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:672:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat&lt;T, ROWS, COLS, NPC, XFCVDEPTH&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:681:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat&lt;T, ROWS, COLS, NPC, XFCVDEPTH&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:708:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="copyTo" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:742:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="copyFrom" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:949:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="addrbound" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=mul_rows_cols op=mul impl=dsp latency=2" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:984:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Axi2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=ADDRBOUND" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:985:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Axi2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:998:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Axi2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=ADDRBOUND" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:999:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Axi2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1019:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Axi2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=ROWS" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1023:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Axi2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=COLS_ADDRBOUND" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1024:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Axi2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1056:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="AxiStream2MatStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=LOOPBOUND" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1057:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="AxiStream2MatStream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MatStream2Mat" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=LOOPBOUND" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1101:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MatStream2Mat" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1113:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="AxiStream2Mat" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="AxiStream2Mat" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1141:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Axi2Mat" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1164:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Axi2Mat" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1176:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Axi2Mat" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Axi2Mat" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1273:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat2MatStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=LOOPBOUND" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1274:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat2MatStream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1303:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MatStream2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=ROWS" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1308:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MatStream2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=COLS_BOUND_PER_NPC" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1309:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="MatStream2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1351:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1364:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat2AxiStream" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1381:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="AxiStream2Axi" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=ADDRBOUND" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1382:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="AxiStream2Axi" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1396:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="AxiStream2Axi" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=ADDRBOUND" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1397:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="AxiStream2Axi" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1411:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat2Axi" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1438:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat2Axi" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1469:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat2Axi" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1499:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Mat2Axi" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Window&lt;ROWS, COLS, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:47:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Window&lt;ROWS, COLS, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val dim=1 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="Window&lt;ROWS, COLS, T&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val dim=2 complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:112:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_left" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:124:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_left" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:128:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_left" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:156:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_right" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:168:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_right" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:172:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_right" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:200:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_up" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:212:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_up" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:216:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_up" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:244:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_down" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:256:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_down" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:260:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_down" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:287:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_pixel" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:320:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_row" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:332:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_row" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:359:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_top_row" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:392:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_bottom_row" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:425:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_col" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:437:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_col" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:464:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_left_col" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:497:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_right_col" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:530:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="getval" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:542:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator()" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:579:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_left" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:592:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_right" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:605:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_up" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:618:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_down" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:631:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:644:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_top" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:657:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_bottom" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:670:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_left" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:683:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_right" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:700:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:701:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:702:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val intra false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:711:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val type=RAM_1P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:716:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val type=RAM_1P impl=URAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:721:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val type=RAM_2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:726:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val type=RAM_2P impl=URAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:731:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val type=RAM_S2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:736:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val type=RAM_S2P impl=URAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:741:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val type=RAM_T2P impl=BRAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:746:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val type=RAM_T2P impl=URAM" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:759:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="LineBuffer&lt;ROWS, COLS, T, MEM_TYPE, RESHAPE_FACTOR&gt;" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=val factor=RESHAPE_FACTOR dim=1" ARG_PragmaType="array_reshape" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:813:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_down" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:826:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_down" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:856:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_up" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:869:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_pixels_up" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:898:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_bottom_row" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:931:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_top_row" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:964:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_col" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:970:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_col" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:981:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="getval" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:992:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator()" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1004:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_down" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1016:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="shift_up" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1028:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_bottom" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1040:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="insert_top" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/run_hls.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yolo_upsamp_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=yolo_upsamp_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_upsamp.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_upsamp_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL_BUS" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_upsamp.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_upsamp_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=outStream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_upsamp.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_upsamp_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register both port=inStream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/yolo_upsamp.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_upsamp_top" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1042:2" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_bottom_row(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)' into 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_top(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_bottom_row(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)" Caller="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_top(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:9:17" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::LineBuffer()' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::LineBuffer()" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:47:68" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::getval(int, int)' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::getval(int, int)" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:46:68" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::getval(int, int)' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::getval(int, int)" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:45:68" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::getval(int, int)' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::getval(int, int)" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:44:68" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::getval(int, int)' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::getval(int, int)" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:33:38" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_top(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_top(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:32:38" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_top(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_top(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:31:38" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_top(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_top(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:30:38" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_top(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::insert_top(ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, int)" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:12:17" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::LineBuffer()' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::LineBuffer()" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:11:17" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::LineBuffer()' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::LineBuffer()" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:10:17" msg_body="Inlining function 'xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::LineBuffer()' into 'yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)'">
+        <args Callee="xf::cv::LineBuffer&lt;1, 13, ap_fixed&lt;16, 8, (ap_q_mode)4, (ap_o_mode)0, 0&gt;, (_ramtype)6, 1&gt;::LineBuffer()" Caller="yolo_upsamp_top(hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;, hls::stream&lt;ap_axi_fp&lt;64, 2, 5, 6&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9" msg_body="Adding 'line_buff_group_1' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="line_buff_group_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9" msg_body="Adding 'line_buff_group_2' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="line_buff_group_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9" msg_body="Adding 'line_buff_group_3' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="line_buff_group_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9" msg_body="Adding 'line_buff_group_0' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="line_buff_group_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:12:17" msg_body="Disaggregating variable 'line_buff_group_3'">
+        <args Name="line_buff_group_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:11:17" msg_body="Disaggregating variable 'line_buff_group_2'">
+        <args Name="line_buff_group_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:10:17" msg_body="Disaggregating variable 'line_buff_group_1'">
+        <args Name="line_buff_group_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:9:17" msg_body="Disaggregating variable 'line_buff_group_0'">
+        <args Name="line_buff_group_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:9:17" msg_body="Applying array_partition to 'line_buff_group_0': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="line_buff_group_0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:10:17" msg_body="Applying array_partition to 'line_buff_group_1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="line_buff_group_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:11:17" msg_body="Applying array_partition to 'line_buff_group_2': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="line_buff_group_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="src/yolo_upsamp.cpp:12:17" msg_body="Applying array_partition to 'line_buff_group_3': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="line_buff_group_3"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

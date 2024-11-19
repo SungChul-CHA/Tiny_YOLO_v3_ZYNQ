@@ -1,0 +1,86 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb/yolo_acc_tb.cpp in debug mode
+In file included from ../../../../tb/../src/yolo_acc.h:4,
+                 from ../../../../tb/yolo_acc_tb.cpp:1:
+../../../../tb/../src/yolo_stream.h:29:14: error: ‘axis’ in namespace ‘hls’ does not name a template type
+ typedef hls::axis<quad_fp_side_channel> yolo_quad_stream;
+              ^~~~
+../../../../tb/../src/yolo_stream.h:30:14: error: ‘axis’ in namespace ‘hls’ does not name a template type
+ typedef hls::axis<fp_data_type> yolo_inter_stream;
+              ^~~~
+In file included from ../../../../tb/yolo_acc_tb.cpp:1:
+../../../../tb/../src/yolo_acc.h:13:19: error: variable or field ‘yolo_acc_top’ declared void
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                   ^~~~~~~~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:13:19: error: ‘yolo_quad_stream’ was not declared in this scope
+../../../../tb/../src/yolo_acc.h:13:37: error: ‘inStream_a’ was not declared in this scope
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                                     ^~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:13:37: note: suggested alternative: ‘intmax_t’
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                                     ^~~~~~~~~~
+                                     intmax_t
+../../../../tb/../src/yolo_acc.h:13:49: error: ‘yolo_quad_stream’ was not declared in this scope
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                                                 ^~~~~~~~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:13:67: error: ‘inStream_b’ was not declared in this scope
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                                                                   ^~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:13:67: note: suggested alternative: ‘intmax_t’
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                                                                   ^~~~~~~~~~
+                                                                   intmax_t
+../../../../tb/../src/yolo_acc.h:14:13: error: ‘yolo_quad_stream’ was not declared in this scope
+             yolo_quad_stream &outStream,
+             ^~~~~~~~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:14:31: error: ‘outStream’ was not declared in this scope
+             yolo_quad_stream &outStream,
+                               ^~~~~~~~~
+../../../../tb/../src/yolo_acc.h:15:18: error: expected primary-expression before ‘input_h’
+       ap_uint<9> input_h, ap_uint<9> input_w,
+                  ^~~~~~~
+../../../../tb/../src/yolo_acc.h:15:38: error: expected primary-expression before ‘input_w’
+       ap_uint<9> input_h, ap_uint<9> input_w,
+                                      ^~~~~~~
+../../../../tb/../src/yolo_acc.h:16:32: error: expected primary-expression before ‘fold_input_ch’
+       ap_uint<MAX_FOLD_CH_BIT> fold_input_ch,
+                                ^~~~~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:17:18: error: expected primary-expression before ‘leaky’
+       ap_uint<1> leaky, ap_uint<1> bias_en);
+                  ^~~~~
+../../../../tb/../src/yolo_acc.h:17:36: error: expected primary-expression before ‘bias_en’
+       ap_uint<1> leaky, ap_uint<1> bias_en);
+                                    ^~~~~~~
+../../../../tb/yolo_acc_tb.cpp: In function ‘int main()’:
+../../../../tb/yolo_acc_tb.cpp:11:2: error: ‘yolo_quad_stream’ was not declared in this scope
+  yolo_quad_stream inputStream_a("in_stream_a"), inputStream_b("in_stream_b"),
+  ^~~~~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:42:3: error: ‘inputStream_b’ was not declared in this scope
+   inputStream_b << curr_input;
+   ^~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:90:4: error: ‘inputStream_a’ was not declared in this scope
+    inputStream_a << curr_input_a;
+    ^~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:91:4: error: ‘inputStream_b’ was not declared in this scope
+    inputStream_b << curr_input_b;
+    ^~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:95:18: error: ‘inputStream_a’ was not declared in this scope
+     yolo_acc_top(inputStream_a,inputStream_b,
+                  ^~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:95:32: error: ‘inputStream_b’ was not declared in this scope
+     yolo_acc_top(inputStream_a,inputStream_b,
+                                ^~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:96:12: error: ‘outputStream’ was not declared in this scope
+            outputStream,
+            ^~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:96:12: note: suggested alternative: ‘output_data’
+            outputStream,
+            ^~~~~~~~~~~~
+            output_data
+../../../../tb/yolo_acc_tb.cpp:95:5: error: ‘yolo_acc_top’ was not declared in this scope
+     yolo_acc_top(inputStream_a,inputStream_b,
+     ^~~~~~~~~~~~
+make: *** [csim.mk:77: obj/yolo_acc_tb.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,134 @@
+
+
+================================================================
+== Synthesis Summary Report of 'yolo_upsamp_top'
+================================================================
++ General Information: 
+    * Date:           Mon Nov 18 23:59:26 2024
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        yolo_upsamp_prj
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+----------+-----+
+    |                               Modules                              | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |        |         |           |          |     |
+    |                               & Loops                              | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  |   DSP   |     FF    |    LUT   | URAM|
+    +--------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+----------+-----+
+    |+ yolo_upsamp_top                                                   |     -|  0.04|     5416|  5.416e+04|         -|     5417|     -|        no|  4 (1%)|  1 (~0%)|  798 (~0%)|  785 (1%)|    -|
+    | o VITIS_LOOP_15_1_VITIS_LOOP_19_3_VITIS_LOOP_21_4_VITIS_LOOP_23_5  |     -|  7.30|     5414|  5.414e+04|         8|        1|  5408|       yes|       -|        -|          -|         -|    -|
+    +--------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++----------------+------------+---------------+
+| Interface      | Data Width | Address Width |
++----------------+------------+---------------+
+| s_axi_CTRL_BUS | 32         | 4             |
++----------------+------------+---------------+
+
+* S_AXILITE Registers
++----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface      | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CTRL_BUS | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL_BUS | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CTRL_BUS | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CTRL_BUS | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++-----------+---------------+-------+--------+--------+
+| Interface | Register Mode | TDATA | TREADY | TVALID |
++-----------+---------------+-------+--------+--------+
+| inStream  | both          | 112   | 1      | 1      |
+| outStream | both          | 112   | 1      | 1      |
++-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------+-----------+------------------------------------+
+| Argument  | Direction | Datatype                           |
++-----------+-----------+------------------------------------+
+| inStream  | in        | stream<ap_axi_fp<64, 2, 5, 6>, 0>& |
+| outStream | out       | stream<ap_axi_fp<64, 2, 5, 6>, 0>& |
++-----------+-----------+------------------------------------+
+
+* SW-to-HW Mapping
++-----------+--------------+-----------+
+| Argument  | HW Interface | HW Type   |
++-----------+--------------+-----------+
+| inStream  | inStream     | interface |
+| outStream | outStream    | interface |
++-----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------+-----+--------+--------------+-----+--------+---------+
+| Name                              | DSP | Pragma | Variable     | Op  | Impl   | Latency |
++-----------------------------------+-----+--------+--------------+-----+--------+---------+
+| + yolo_upsamp_top                 | 1   |        |              |     |        |         |
+|   add_ln15_fu_643_p2              | -   |        | add_ln15     | add | fabric | 0       |
+|   row_idx_3_fu_877_p2             | -   |        | row_idx_3    | add | fabric | 0       |
+|   row_stride_3_fu_945_p2          | -   |        | row_stride_3 | add | fabric | 0       |
+|   add_ln19_fu_768_p2              | -   |        | add_ln19     | add | fabric | 0       |
+|   col_stride_3_fu_1052_p2         | -   |        | col_stride_3 | add | fabric | 0       |
+|   mac_muladd_4ns_4ns_4ns_7_4_1_U1 | 1   |        | mul_ln908    | mul | dsp48  | 3       |
+|   mac_muladd_4ns_4ns_4ns_7_4_1_U1 | 1   |        | add_ln908    | add | dsp48  | 3       |
+|   add_ln23_fu_1150_p2             | -   |        | add_ln23     | add | fabric | 0       |
+|   add_ln21_1_fu_792_p2            | -   |        | add_ln21_1   | add | fabric | 0       |
+|   add_ln19_1_fu_679_p2            | -   |        | add_ln19_1   | add | fabric | 0       |
+|   add_ln17_1_fu_693_p2            | -   |        | add_ln17_1   | add | fabric | 0       |
++-----------------------------------+-----+--------+--------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++-----------------------------+------+------+--------+-------------------------+---------+------+---------+
+| Name                        | BRAM | URAM | Pragma | Variable                | Storage | Impl | Latency |
++-----------------------------+------+------+--------+-------------------------+---------+------+---------+
+| + yolo_upsamp_top           | 4    | 0    |        |                         |         |      |         |
+|   line_buff_group_0_val_V_U | 1    | -    | yes    | line_buff_group_0_val_V | ram_s2p | bram | 1       |
+|   line_buff_group_1_val_V_U | 1    | -    | yes    | line_buff_group_1_val_V | ram_s2p | bram | 1       |
+|   line_buff_group_2_val_V_U | 1    | -    | yes    | line_buff_group_2_val_V | ram_s2p | bram | 1       |
+|   line_buff_group_3_val_V_U | 1    | -    | yes    | line_buff_group_3_val_V | ram_s2p | bram | 1       |
++-----------------------------+------+------+--------+-------------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------------------+-----------------------------------------------------+
+| Type      | Options                               | Location                                            |
++-----------+---------------------------------------+-----------------------------------------------------+
+| interface | s_axilite port=return bundle=CTRL_BUS | src/yolo_upsamp.cpp:5 in yolo_upsamp_top, return    |
+| interface | axis register both port=outStream     | src/yolo_upsamp.cpp:6 in yolo_upsamp_top, outStream |
+| interface | axis register both port=inStream      | src/yolo_upsamp.cpp:7 in yolo_upsamp_top, inStream  |
+| pipeline  |                                       | src/yolo_upsamp.cpp:25 in yolo_upsamp_top           |
++-----------+---------------------------------------+-----------------------------------------------------+
+
+

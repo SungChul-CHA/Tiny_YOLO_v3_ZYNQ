@@ -1,0 +1,140 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h, 
+                   Line: 279, Column: 36 }
+Function:        _ZN10exp_reduce3expILi16ELi8EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_279_11
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h, 
+                   Line: 275, Column: 36 }
+Function:        _ZN10exp_reduce3expILi16ELi8EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_275_10
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h, 
+                   Line: 269, Column: 31 }
+Function:        _ZN10exp_reduce3expILi16ELi8EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_269_9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h, 
+                   Line: 204, Column: 35 }
+Function:        _ZN10exp_reduce3expILi16ELi8EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_204_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h, 
+                   Line: 196, Column: 27 }
+Function:        _ZN10exp_reduce3expILi16ELi8EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_196_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h, 
+                   Line: 40, Column: 0 }
+Function:        _ZN10exp_reduce3expILi16ELi8EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_279_11
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:279:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'exp_reduce::exp<16, 8>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '18'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h, 
+                   Line: 40, Column: 0 }
+Function:        _ZN10exp_reduce3expILi16ELi8EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_275_10
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:275:36'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'exp_reduce::exp<16, 8>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h, 
+                   Line: 40, Column: 0 }
+Function:        _ZN10exp_reduce3expILi16ELi8EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_269_9
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:269:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'exp_reduce::exp<16, 8>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h, 
+                   Line: 40, Column: 0 }
+Function:        _ZN10exp_reduce3expILi16ELi8EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_204_8
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:204:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'exp_reduce::exp<16, 8>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '22'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h, 
+                   Line: 40, Column: 0 }
+Function:        _ZN10exp_reduce3expILi16ELi8EEE8ap_fixedIXT_EXT0_EL9ap_q_mode5EL9ap_o_mode3ELi0EES4_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_196_7
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:196:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'exp_reduce::exp<16, 8>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...

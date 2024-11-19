@@ -1,0 +1,4 @@
+1 warning and 9 errors generated.
+Error while processing /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp.
+clang-tidy applied 53 of 53 suggested fixes.
+Suppressed 1 warnings (1 with check filters).

@@ -1,0 +1,490 @@
+---
+MainSourceFile:  /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1211_1:  '
+    FileOffset:      1211
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          51857
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1211_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          258957
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          259396
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          259836
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1245_1:  '
+    FileOffset:      1245
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          521666
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1245_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_1:  '
+    FileOffset:      307
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1191255
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_321_1:  '
+    FileOffset:      321
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1191453
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_321_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_336_1:  '
+    FileOffset:      336
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1191687
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_336_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_351_1:  '
+    FileOffset:      351
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1191917
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_351_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_366_1:  '
+    FileOffset:      366
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1192151
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_366_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_381_1:  '
+    FileOffset:      381
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1192381
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_381_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_396_1:  '
+    FileOffset:      396
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1192615
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_396_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_411_1:  '
+    FileOffset:      411
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1192845
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_411_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_426_1:  '
+    FileOffset:      426
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1193079
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_426_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_511_1:  '
+    FileOffset:      511
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1194685
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_511_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_719_1:  '
+    FileOffset:      719
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1200257
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_719_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_720_2:  '
+    FileOffset:      720
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1200298
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_720_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_721_3:  '
+    FileOffset:      721
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1200347
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_721_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_723_4:  '
+    FileOffset:      723
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1200430
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_723_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_761_1:  '
+    FileOffset:      761
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1201652
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_761_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_762_2:  '
+    FileOffset:      762
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1201693
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_762_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_764_3:  '
+    FileOffset:      764
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1201782
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_764_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_765_4:  '
+    FileOffset:      765
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1201856
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_765_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_819_1:  '
+    FileOffset:      819
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1203586
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_819_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_820_2:  '
+    FileOffset:      820
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1203627
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_820_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_828_3:  '
+    FileOffset:      828
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1204054
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_828_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, mul + dsp is invalid combination for bind_op'
+    FileOffset:      949
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1021_1:  '
+    FileOffset:      1021
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1211681
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1021_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1429_1:  '
+    FileOffset:      1429
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1227249
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1429_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1457_1:  '
+    FileOffset:      1457
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1228327
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1457_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1487_1:  '
+    FileOffset:      1487
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1229538
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1487_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1517_1:  '
+    FileOffset:      1517
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1230725
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1517_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_122_1:  '
+    FileOffset:      122
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1245628
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_122_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_126_2:  '
+    FileOffset:      126
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1245679
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_126_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_166_1:  '
+    FileOffset:      166
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1246015
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_166_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_2:  '
+    FileOffset:      170
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1246066
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_210_1:  '
+    FileOffset:      210
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1246399
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_210_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_214_2:  '
+    FileOffset:      214
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1246454
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_214_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_254_1:  '
+    FileOffset:      254
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1246785
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_254_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_258_2:  '
+    FileOffset:      258
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1246840
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_258_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_330_1:  '
+    FileOffset:      330
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1247536
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_330_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_435_1:  '
+    FileOffset:      435
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1248371
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_435_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_1P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      711
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_1P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      716
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      721
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      726
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      731
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      736
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      741
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      746
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_824_1:  '
+    FileOffset:      824
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1253214
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_824_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_867_1:  '
+    FileOffset:      867
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1253687
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_867_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_968_1:  '
+    FileOffset:      968
+    FilePath:        /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1254953
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_968_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_15_1:  '
+    FileOffset:      15
+    FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/src/yolo_upsamp.cpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1257491
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_15_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_17_2:  '
+    FileOffset:      17
+    FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/src/yolo_upsamp.cpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1257535
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_17_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_19_3:  '
+    FileOffset:      19
+    FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/src/yolo_upsamp.cpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1257588
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_19_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_21_4:  '
+    FileOffset:      21
+    FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/src/yolo_upsamp.cpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1257634
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_21_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_23_5:  '
+    FileOffset:      23
+    FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/src/yolo_upsamp.cpp
+    Replacements:    
+      - FilePath:        /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp
+        Offset:          1257689
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_23_5: '
+...

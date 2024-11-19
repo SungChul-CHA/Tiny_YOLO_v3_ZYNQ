@@ -1,0 +1,343 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+  **** SW Build 3670227 on Oct 13 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'tony' on host 'tony' (Linux_x86_64 version 4.18.0-553.27.1.el8_10.x86_64) on Mon Nov 18 23:59:55 KST 2024
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.10 (Ootpa)"
+INFO: [HLS 200-10] In directory '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: source run_hls.tcl
+INFO: [HLS 200-1510] Running: open_project -reset yolo_yolo_prj 
+INFO: [HLS 200-10] Creating and opening project '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj'.
+INFO: [HLS 200-1510] Running: set_top yolo_yolo_top 
+INFO: [HLS 200-1510] Running: add_files src/yolo_fp.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_fp.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_stream.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_stream.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_yolo.cpp -cflags -I/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include 
+INFO: [HLS 200-10] Adding design file 'src/yolo_yolo.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_yolo.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_yolo.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/layer_input.dat 
+INFO: [HLS 200-10] Adding test bench file 'tb/layer_input.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/layer_output_sdk.dat 
+INFO: [HLS 200-10] Adding test bench file 'tb/layer_output_sdk.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/yolo_yolo_tb.cpp -cflags -I/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include 
+INFO: [HLS 200-10] Adding test bench file 'tb/yolo_yolo_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: csim_design 
+Running Dispatch Server on port: 38577
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb/yolo_yolo_tb.cpp in debug mode
+   Compiling ../../../../src/yolo_yolo.cpp in debug mode
+   Generating csim.exe
+last:1351
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1352
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 14.19 seconds. CPU system time: 0.61 seconds. Elapsed time: 14.86 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 198.410 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/yolo_yolo.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 13.67 seconds. CPU system time: 0.7 seconds. Elapsed time: 14.43 seconds; current allocated memory: 202.359 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_279_11' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:279:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_275_10' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:275:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_269_9' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:269:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_204_8' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:204:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_196_7' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:196:27)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_279_11' (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:279:36) in function 'exp_reduce::exp<16, 8>' completely with a factor of 18 (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:40:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_275_10' (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:275:36) in function 'exp_reduce::exp<16, 8>' completely with a factor of 4 (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:40:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_269_9' (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:269:31) in function 'exp_reduce::exp<16, 8>' completely with a factor of 4 (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:40:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_204_8' (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:204:35) in function 'exp_reduce::exp<16, 8>' completely with a factor of 22 (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:40:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_196_7' (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:196:27) in function 'exp_reduce::exp<16, 8>' completely with a factor of 8 (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:40:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.62 seconds. CPU system time: 0.24 seconds. Elapsed time: 4.88 seconds; current allocated memory: 202.453 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 202.453 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 227.977 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 259.367 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:41:9) to (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:953:1) in function 'exp_reduce::exp<16, 8>'... converting 5 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_yolo_top' (src/yolo_yolo.cpp:3)...5 expression(s) balanced.
+INFO: [XFORM 203-11] Balancing expressions in function 'exp_reduce::exp<16, 8>' (/tools/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot/hls_exp_apfixed.h:41:1)...8 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 313.852 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_17_2' (src/yolo_yolo.cpp:17:27) in function 'yolo_yolo_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_14_1' (src/yolo_yolo.cpp:14:27) in function 'yolo_yolo_top'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 350.273 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_yolo_top' ...
+WARNING: [SYN 201-103] Legalizing function name 'exp<16, 8>' to 'exp_16_8_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'exp_16_8_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'exp<16, 8>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 6, function 'exp<16, 8>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 350.273 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 350.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'logistic_activate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'logistic_activate'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 30, function 'logistic_activate'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 350.273 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 350.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3'.
+WARNING: [HLS 200-882] User specified resource constraint cannot be honored function 'logistic_activate' (II = 1)..
+Resolution: For help on HLS 200-882 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-882.html
+WARNING: [HLS 200-885] The II Violation in module 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' (loop 'VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3'): Unable to schedule 'call' operation ('curr_output.data.sub_data_2.V', src/yolo_yolo.cpp:42) to 'logistic_activate' due to limited resources (II = 2).
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html
+WARNING: [HLS 200-885] The II Violation in module 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' (loop 'VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3'): Unable to schedule 'call' operation ('curr_output.data.sub_data_3.V', src/yolo_yolo.cpp:47) to 'logistic_activate' due to limited resources (II = 3).
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 34, loop 'VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 350.750 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 350.750 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_yolo_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 350.750 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 350.750 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'exp_16_8_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'exp_16_8_s' pipeline 'exp<16, 8>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_25ns_18ns_43_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_25ns_25ns_50_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'exp_16_8_s'.
+INFO: [RTMG 210-279] Implementing memory 'yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 350.754 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'logistic_activate' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'logistic_activate' pipeline 'logistic_activate' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sdiv_18ns_17s_18_22_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'logistic_activate'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 352.848 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' pipeline 'VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 355.777 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_yolo_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/inStream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/outStream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/activate_en' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/input_h' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_yolo_top/input_w' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'yolo_yolo_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'activate_en', 'input_h', 'input_w' to AXI-Lite port CTRL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_8ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_yolo_top'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.28 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 358.547 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.3 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 361.945 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.18 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 366.215 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for yolo_yolo_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for yolo_yolo_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 150.38 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 20.64 seconds. CPU system time: 1.02 seconds. Elapsed time: 21.81 seconds; current allocated memory: 168.035 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_yolo_yolo_top_util.cpp
+   Compiling yolo_yolo.cpp_pre.cpp.tb.cpp
+   Compiling apatb_yolo_yolo_top.cpp
+   Compiling yolo_yolo_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_yolo_yolo_top_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+last:1351
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1352
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_yolo_yolo_top_top glbl -Oenable_linking_all_libraries -prj yolo_yolo_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s yolo_yolo_top 
+Multi-threading is on. Using 18 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_yolo_yolo_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/AESL_axi_s_inStream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_inStream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/AESL_axi_s_outStream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/AESL_axi_slave_CTRL_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CTRL_BUS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/AESL_deadlock_idx1_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx1_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_exp_16_8_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_exp_16_8_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_logistic_activate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_logistic_activate
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_regslice_both
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_mul_25ns_18ns_43_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_mul_25ns_18ns_43_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_mul_25ns_25ns_50_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_mul_25ns_25ns_50_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_exp_16_8_s_f_x_lsb_table_V_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_exp_16_8_s_exp_x_msb_2_m_1_table_V_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_exp_16_8_s_exp_x_msb_1_table_V_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_sdiv_18ns_17s_18_22_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_sdiv_18ns_17s_18_22_1_divider
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_sdiv_18ns_17s_18_22_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_mul_5ns_8ns_13_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_mul_5ns_8ns_13_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top_CTRL_BUS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_yolo_top_CTRL_BUS_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:20]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.yolo_yolo_top_exp_16_8_s_f_x_lsb...
+Compiling module xil_defaultlib.yolo_yolo_top_exp_16_8_s_exp_x_m...
+Compiling module xil_defaultlib.yolo_yolo_top_exp_16_8_s_exp_x_m...
+Compiling module xil_defaultlib.yolo_yolo_top_mul_25ns_18ns_43_1...
+Compiling module xil_defaultlib.yolo_yolo_top_mul_25ns_25ns_50_1...
+Compiling module xil_defaultlib.yolo_yolo_top_exp_16_8_s
+Compiling module xil_defaultlib.yolo_yolo_top_sdiv_18ns_17s_18_2...
+Compiling module xil_defaultlib.yolo_yolo_top_sdiv_18ns_17s_18_2...
+Compiling module xil_defaultlib.yolo_yolo_top_logistic_activate
+Compiling module xil_defaultlib.yolo_yolo_top_flow_control_loop_...
+Compiling module xil_defaultlib.yolo_yolo_top_yolo_yolo_top_Pipe...
+Compiling module xil_defaultlib.yolo_yolo_top_CTRL_BUS_s_axi
+Compiling module xil_defaultlib.yolo_yolo_top_mul_5ns_8ns_13_1_1...
+Compiling module xil_defaultlib.yolo_yolo_top_regslice_both(Data...
+Compiling module xil_defaultlib.yolo_yolo_top
+Compiling module xil_defaultlib.fifo(DEPTH=1352,WIDTH=112)
+Compiling module xil_defaultlib.AESL_axi_s_inStream
+Compiling module xil_defaultlib.AESL_axi_s_outStream
+Compiling module xil_defaultlib.AESL_axi_slave_CTRL_BUS
+Compiling module xil_defaultlib.AESL_deadlock_idx1_monitor
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=4)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_yolo_yolo_top_top
+Compiling module work.glbl
+Built simulation snapshot yolo_yolo_top
+
+****** xsim v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/yolo_yolo_top/xsim_script.tcl
+# xsim {yolo_yolo_top} -autoloadwcfg -tclbatch {yolo_yolo_top.tcl}
+Time resolution is 1 ps
+source yolo_yolo_top.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "55025000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 55085 ns : File "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_yolo/yolo_yolo_prj/solution1/sim/verilog/yolo_yolo_top.autotb.v" Line 367
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Nov 19 00:01:15 2024...
+INFO: [COSIM 212-316] Starting C post checking ...
+last:1351
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1352
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 32.03 seconds. CPU system time: 1.55 seconds. Elapsed time: 32.96 seconds; current allocated memory: 11.945 MB.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 00:01:21 2024...
+INFO: [HLS 200-802] Generated output file yolo_yolo_prj/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 6.01 seconds. CPU system time: 0.29 seconds. Elapsed time: 15.65 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-112] Total CPU user time: 73.47 seconds. Total CPU system time: 3.55 seconds. Total elapsed time: 95.89 seconds; peak allocated memory: 378.391 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Nov 19 00:01:31 2024...

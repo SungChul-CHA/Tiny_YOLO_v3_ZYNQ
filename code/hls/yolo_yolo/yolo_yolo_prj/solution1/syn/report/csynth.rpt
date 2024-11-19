@@ -1,0 +1,161 @@
+
+
+================================================================
+== Synthesis Summary Report of 'yolo_yolo_top'
+================================================================
++ General Information: 
+    * Date:           Tue Nov 19 00:00:42 2024
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        yolo_yolo_prj
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |                                  Modules                                  | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |         |           |           |     |
+    |                                  & Loops                                  | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +---------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ yolo_yolo_top                                                            |     -|  0.65|     5442|  5.442e+04|         -|     5443|     -|        no|     -|  2 (~0%)|  3560 (3%)|  2928 (5%)|    -|
+    | + yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3  |     -|  0.65|     5439|  5.439e+04|         -|     5439|     -|        no|     -|  2 (~0%)|  3367 (3%)|  2689 (5%)|    -|
+    |  o VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3                        |    II|  7.30|     5437|  5.437e+04|        34|        4|  1352|       yes|     -|        -|          -|          -|    -|
+    |   + logistic_activate                                                     |    II|  0.65|       29|    290.000|         -|        1|     -|       yes|     -|  2 (~0%)|  2043 (1%)|  1300 (2%)|    -|
+    |    + exp_16_8_s                                                           |    II|  0.65|        5|     50.000|         -|        1|     -|       yes|     -|  2 (~0%)|  592 (~0%)|  471 (~0%)|    -|
+    +---------------------------------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++----------------+------------+---------------+--------+----------+
+| Interface      | Data Width | Address Width | Offset | Register |
++----------------+------------+---------------+--------+----------+
+| s_axi_CTRL_BUS | 32         | 6             | 16     | 0        |
++----------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++----------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface      | Register    | Offset | Width | Access | Description                      | Bit Fields                                                           |
++----------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CTRL_BUS | CTRL        | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL_BUS | GIER        | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CTRL_BUS | IP_IER      | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CTRL_BUS | IP_ISR      | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_CTRL_BUS | activate_en | 0x10   | 32    | W      | Data signal of activate_en       |                                                                      |
+| s_axi_CTRL_BUS | input_h     | 0x18   | 32    | W      | Data signal of input_h           |                                                                      |
+| s_axi_CTRL_BUS | input_w     | 0x20   | 32    | W      | Data signal of input_w           |                                                                      |
++----------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++-----------+---------------+-------+--------+--------+
+| Interface | Register Mode | TDATA | TREADY | TVALID |
++-----------+---------------+-------+--------+--------+
+| inStream  | both          | 112   | 1      | 1      |
+| outStream | both          | 112   | 1      | 1      |
++-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+------------------------------------+
+| Argument    | Direction | Datatype                           |
++-------------+-----------+------------------------------------+
+| inStream    | in        | stream<ap_axi_fp<64, 2, 5, 6>, 0>& |
+| outStream   | out       | stream<ap_axi_fp<64, 2, 5, 6>, 0>& |
+| activate_en | in        | ap_uint<32>                        |
+| input_h     | in        | ap_uint<5>                         |
+| input_w     | in        | ap_uint<5>                         |
++-------------+-----------+------------------------------------+
+
+* SW-to-HW Mapping
++-------------+----------------+-----------+---------------------------------------+
+| Argument    | HW Interface   | HW Type   | HW Info                               |
++-------------+----------------+-----------+---------------------------------------+
+| inStream    | inStream       | interface |                                       |
+| outStream   | outStream      | interface |                                       |
+| activate_en | s_axi_CTRL_BUS | register  | name=activate_en offset=0x10 range=32 |
+| input_h     | s_axi_CTRL_BUS | register  | name=input_h offset=0x18 range=32     |
+| input_w     | s_axi_CTRL_BUS | register  | name=input_w offset=0x20 range=32     |
++-------------+----------------+-----------+---------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------------------------------------------+-----+--------+-----------------------+-----+--------+---------+
+| Name                                                                      | DSP | Pragma | Variable              | Op  | Impl   | Latency |
++---------------------------------------------------------------------------+-----+--------+-----------------------+-----+--------+---------+
+| + yolo_yolo_top                                                           | 2   |        |                       |     |        |         |
+|   sub_i_i59_fu_111_p2                                                     | -   |        | sub_i_i59             | add | fabric | 0       |
+|   sub_i_i_fu_121_p2                                                       | -   |        | sub_i_i               | add | fabric | 0       |
+|   mul_5ns_8ns_13_1_1_U21                                                  | -   |        | mul_ln3               | mul | auto   | 0       |
+|  + yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 | 2   |        |                       |     |        |         |
+|    add_ln1027_1_fu_340_p2                                                 | -   |        | add_ln1027_1          | add | fabric | 0       |
+|    add_ln14_fu_452_p2                                                     | -   |        | add_ln14              | add | fabric | 0       |
+|    col_idx_3_fu_487_p2                                                    | -   |        | col_idx_3             | add | fabric | 0       |
+|    input_ch_idx_1_fu_690_p2                                               | -   |        | input_ch_idx_1        | add | fabric | 0       |
+|    add_ln1027_fu_695_p2                                                   | -   |        | add_ln1027            | add | fabric | 0       |
+|   + logistic_activate                                                     | 2   |        |                       |     |        |         |
+|     grp_exp_16_8_s_fu_59_x                                                | -   |        | sub_ln813             | sub | fabric | 0       |
+|     ret_V_fu_85_p2                                                        | -   |        | ret_V                 | add | fabric | 0       |
+|    + exp_16_8_s                                                           | 2   |        |                       |     |        |         |
+|      mul_25ns_18ns_43_1_1_U1                                              | 1   |        | r_V                   | mul | auto   | 0       |
+|      ret_V_fu_368_p2                                                      | -   |        | ret_V                 | add | fabric | 0       |
+|      exp_x_msb_2_lsb_m_1_V_fu_378_p2                                      | -   |        | exp_x_msb_2_lsb_m_1_V | add | fabric | 0       |
+|      mul_25ns_25ns_50_1_1_U2                                              | 1   |        | r_V_4                 | mul | auto   | 0       |
+|      y_l_V_fu_422_p2                                                      | -   |        | y_l_V                 | add | fabric | 0       |
++---------------------------------------------------------------------------+-----+--------+-----------------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++---------------------------------------------------------------------------+------+------+--------+-------------------------+---------+------+---------+
+| Name                                                                      | BRAM | URAM | Pragma | Variable                | Storage | Impl | Latency |
++---------------------------------------------------------------------------+------+------+--------+-------------------------+---------+------+---------+
+| + yolo_yolo_top                                                           | 0    | 0    |        |                         |         |      |         |
+|  + yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3 | 0    | 0    |        |                         |         |      |         |
+|   + logistic_activate                                                     | 0    | 0    |        |                         |         |      |         |
+|    + exp_16_8_s                                                           | 0    | 0    |        |                         |         |      |         |
+|      f_x_lsb_table_V_U                                                    | -    | -    |        | f_x_lsb_table_V         | rom_1p  | auto | 1       |
+|      exp_x_msb_2_m_1_table_V_U                                            | -    | -    |        | exp_x_msb_2_m_1_table_V | rom_1p  | auto | 1       |
+|      exp_x_msb_1_table_V_U                                                | -    | -    |        | exp_x_msb_1_table_V     | rom_1p  | auto | 1       |
++---------------------------------------------------------------------------+------+------+--------+-------------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------+----------------------------------------------+---------------------------------------------------+
+| Type           | Options                                      | Location                                          |
++----------------+----------------------------------------------+---------------------------------------------------+
+| interface      | s_axilite port=input_w bundle=CTRL_BUS       | src/yolo_yolo.cpp:7 in yolo_yolo_top, input_w     |
+| interface      | s_axilite port=input_h bundle=CTRL_BUS       | src/yolo_yolo.cpp:8 in yolo_yolo_top, input_h     |
+| interface      | s_axilite port=activate_en bundle=CTRL_BUS   | src/yolo_yolo.cpp:9 in yolo_yolo_top, activate_en |
+| interface      | s_axilite port=return bundle=CTRL_BUS        | src/yolo_yolo.cpp:10 in yolo_yolo_top, return     |
+| interface      | axis register both port=outStream            | src/yolo_yolo.cpp:11 in yolo_yolo_top, outStream  |
+| interface      | axis register both port=inStream             | src/yolo_yolo.cpp:12 in yolo_yolo_top, inStream   |
+| loop_tripcount | min=13 max=13 avg=13                         | src/yolo_yolo.cpp:16 in yolo_yolo_top             |
+| loop_tripcount | min=13 max=13 avg=13                         | src/yolo_yolo.cpp:19 in yolo_yolo_top             |
+| allocation     | function instances=logistic_activate limit=1 | src/yolo_yolo.cpp:23 in yolo_yolo_top             |
+| pipeline       |                                              | src/yolo_yolo.cpp:25 in yolo_yolo_top             |
++----------------+----------------------------------------------+---------------------------------------------------+
+
+

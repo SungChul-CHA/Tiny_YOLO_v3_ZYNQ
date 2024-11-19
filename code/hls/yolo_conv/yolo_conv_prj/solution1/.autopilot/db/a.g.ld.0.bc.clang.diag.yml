@@ -1,0 +1,2134 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 1018, Column: 2 }
+Function:        _ZN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EE8shift_upEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::shift_pixels_up(int)'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 854, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::shift_up(int)'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 1042, Column: 2 }
+Function:        _ZN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EE10insert_topES5_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::insert_bottom_row(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int)'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 896, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int)'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 1038, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 249, Column: 13 }
+Function:        _Z16yolo_line_buffer8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPN2xf2cv10LineBufferILi3ELi418ES2_L8_ramtype6ELi1EEEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::shift_up(int)'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 1014, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*, int)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 247, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 250, Column: 13 }
+Function:        _Z16yolo_line_buffer8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPN2xf2cv10LineBufferILi3ELi418ES2_L8_ramtype6ELi1EEEi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int)'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 1038, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*, int)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 247, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 633, Column: 2 }
+Function:        _ZN2xf2cv6WindowILi3ELi3E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEE6insertES5_ii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::insert_pixel(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, int)'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 285, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::insert(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, int)'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 629, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 256, Column: 14 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 44, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'slide_window(int, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 255, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 263, Column: 18 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::insert(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, int)'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 629, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'slide_window(int, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 255, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 262, Column: 48 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::getval(int, int)'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 979, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'slide_window(int, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 255, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 278, Column: 33 }
+Function:        _Z11window_maccN2xf2cv6WindowILi3ELi3E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEEE17local_weight_type
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::getval(int, int)'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 528, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'window_macc(xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >, local_weight_type)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 271, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 28, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 698, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 29, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 698, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 30, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 698, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 31, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 698, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 70 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 44, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 53 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 44, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 36 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 44, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 19 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()'
+    DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                       Line: 44, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 141, Column: 25 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp177
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 142, Column: 25 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp180
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 143, Column: 25 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp183
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 144, Column: 25 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp186
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 141, Column: 25 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp177
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 142, Column: 25 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp180
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 143, Column: 25 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp183
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 144, Column: 25 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            ref.tmp186
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 48, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            kernel_window_0
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 47, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            kernel_window_0
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 48, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            kernel_window_1
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 47, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            kernel_window_1
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 48, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            kernel_window_2
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 47, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            kernel_window_2
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 48, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            kernel_window_3
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 47, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            kernel_window_3
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 755, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            line_buff_group_3
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 755, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            line_buff_group_2
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 755, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            line_buff_group_1
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 755, Column: 9 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Adding '''
+  - Name:            line_buff_group_0
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp186
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp183
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp180
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            ref.tmp177
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 70 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            kernel_window_3
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 53 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            kernel_window_2
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 36 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            kernel_window_1
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 19 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            kernel_window_0
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 31, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            line_buff_group_3
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 30, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            line_buff_group_2
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 29, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            line_buff_group_1
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 28, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            line_buff_group_0
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 44, Column: 5 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 44, Column: 5 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 44, Column: 5 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 44, Column: 5 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 44, Column: 5 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 44, Column: 5 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 44, Column: 5 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 44, Column: 5 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 148, Column: 25 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_148_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 296, Column: 20 }
+Function:        _Z16out_stream_mergePN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_I9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEEiS8_7ap_uintILi1EEii
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_296_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 274, Column: 20 }
+Function:        _Z11window_maccN2xf2cv6WindowILi3ELi3E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEEE17local_weight_type
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_274_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 276, Column: 21 }
+Function:        _Z11window_maccN2xf2cv6WindowILi3ELi3E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEEE17local_weight_type
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_276_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 258, Column: 20 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_258_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 260, Column: 21 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_260_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 44, Column: 5 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 44, Column: 5 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        anonymous
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp, 
+                   Line: 867, Column: 23 }
+Function:        _Z16yolo_line_buffer8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPN2xf2cv10LineBufferILi3ELi418ES2_L8_ramtype6ELi1EEEi
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_867_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_148_7
+  - String:          ''' ('
+  - LoopLoc:         'src/yolo_conv.cpp:148:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_conv_top
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 291, Column: 0 }
+Function:        _Z16out_stream_mergePN3hls6streamI8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EELi0EEERNS0_I9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEEiS8_7ap_uintILi1EEii
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_296_1
+  - String:          ''' ('
+  - LoopLoc:         'src/yolo_conv.cpp:296:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          out_stream_merge
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 271, Column: 0 }
+Function:        _Z11window_maccN2xf2cv6WindowILi3ELi3E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEEE17local_weight_type
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_274_1
+  - String:          ''' ('
+  - LoopLoc:         'src/yolo_conv.cpp:274:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          window_macc
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 271, Column: 0 }
+Function:        _Z11window_maccN2xf2cv6WindowILi3ELi3E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEEE17local_weight_type
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_276_2
+  - String:          ''' ('
+  - LoopLoc:         'src/yolo_conv.cpp:276:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          window_macc
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 271, Column: 0 }
+Function:        _Z11window_maccN2xf2cv6WindowILi3ELi3E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEEE17local_weight_type
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_276_2
+  - String:          ''' ('
+  - LoopLoc:         'src/yolo_conv.cpp:276:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          window_macc
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 271, Column: 0 }
+Function:        _Z11window_maccN2xf2cv6WindowILi3ELi3E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEEE17local_weight_type
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_276_2
+  - String:          ''' ('
+  - LoopLoc:         'src/yolo_conv.cpp:276:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          window_macc
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 255, Column: 0 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_258_1
+  - String:          ''' ('
+  - LoopLoc:         'src/yolo_conv.cpp:258:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          slide_window
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 255, Column: 0 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_260_2
+  - String:          ''' ('
+  - LoopLoc:         'src/yolo_conv.cpp:260:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          slide_window
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 255, Column: 0 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_260_2
+  - String:          ''' ('
+  - LoopLoc:         'src/yolo_conv.cpp:260:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          slide_window
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 255, Column: 0 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_260_2
+  - String:          ''' ('
+  - LoopLoc:         'src/yolo_conv.cpp:260:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          slide_window
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 255, Column: 0 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          slide_window
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 255, Column: 0 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          slide_window
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 255, Column: 0 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          slide_window
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 255, Column: 0 }
+Function:        _Z12slide_windowiPN2xf2cv10LineBufferILi3ELi418E8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEL8_ramtype6ELi1EEE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        anonymous
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          slide_window
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 247, Column: 0 }
+Function:        _Z16yolo_line_buffer8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPN2xf2cv10LineBufferILi3ELi418ES2_L8_ramtype6ELi1EEEi
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_867_1
+  - String:          ''' ('
+  - LoopLoc:         '/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:867:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          yolo_line_buffer
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*, int)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 247, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+    DebugLoc:        { File: src/yolo_conv.cpp, Line: 8, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          out_stream_group
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 28, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          line_buff_group_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 29, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          line_buff_group_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 30, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          line_buff_group_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 31, Column: 17 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          line_buff_group_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 33, Column: 14 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          val_output
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 38, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          local_mem_group
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '8'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 19 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          kernel_window_0
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 36 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          kernel_window_1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 53 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          kernel_window_2
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 139, Column: 70 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          kernel_window_3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          ref.tmp177
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          ref.tmp180
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          ref.tmp183
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          ref.tmp186
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_0
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_1
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_2
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_3
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_4
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_5
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_6
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_7
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_8
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_9
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_10
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_11
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_12
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_13
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_14
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_15
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_16
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_17
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_18
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_19
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_20
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_21
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_22
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_23
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_24
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_25
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_26
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_27
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_28
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_29
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_30
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: src/yolo_conv.cpp, Line: 23, Column: 20 }
+Function:        _Z13yolo_conv_topRN3hls6streamI9ap_axi_fpILi64ELi2ELi5ELi6EELi0EEES4_7ap_uintILi6EES6_S5_ILi4EES7_S5_ILi9EES8_S8_S5_ILi3EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            out_stream_group_31
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...

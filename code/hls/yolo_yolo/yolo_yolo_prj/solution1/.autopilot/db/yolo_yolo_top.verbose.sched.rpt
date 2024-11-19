@@ -1,0 +1,160 @@
+
+
+================================================================
+== Vitis HLS Report for 'yolo_yolo_top'
+================================================================
+* Date:           Tue Nov 19 00:00:41 2024
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        yolo_yolo_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.650 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     5442|     5442|  54.420 us|  54.420 us|  5443|  5443|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.17>
+ST_1 : Operation 5 [1/1] (1.00ns)   --->   "%input_w_read = read i5 @_ssdm_op_Read.s_axilite.i5, i5 %input_w" [src/yolo_yolo.cpp:3]   --->   Operation 5 'read' 'input_w_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 6 [1/1] (1.00ns)   --->   "%input_h_read = read i5 @_ssdm_op_Read.s_axilite.i5, i5 %input_h" [src/yolo_yolo.cpp:3]   --->   Operation 6 'read' 'input_h_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 7 [1/1] (1.00ns)   --->   "%activate_en_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %activate_en" [src/yolo_yolo.cpp:3]   --->   Operation 7 'read' 'activate_en_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%trunc_ln3 = trunc i32 %activate_en_read" [src/yolo_yolo.cpp:3]   --->   Operation 8 'trunc' 'trunc_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%input_w_cast = zext i5 %input_w_read" [src/yolo_yolo.cpp:3]   --->   Operation 9 'zext' 'input_w_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.78ns)   --->   "%sub_i_i59 = add i6 %input_w_cast, i6 63" [src/yolo_yolo.cpp:3]   --->   Operation 10 'add' 'sub_i_i59' <Predicate = true> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%input_h_cast = zext i5 %input_h_read" [src/yolo_yolo.cpp:3]   --->   Operation 11 'zext' 'input_h_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (1.78ns)   --->   "%sub_i_i = add i6 %input_h_cast, i6 63" [src/yolo_yolo.cpp:3]   --->   Operation 12 'add' 'sub_i_i' <Predicate = true> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i5.i3, i5 %input_w_read, i3 0" [src/yolo_yolo.cpp:3]   --->   Operation 13 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln3 = zext i5 %input_h_read" [src/yolo_yolo.cpp:3]   --->   Operation 14 'zext' 'zext_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln3_1 = zext i8 %tmp" [src/yolo_yolo.cpp:3]   --->   Operation 15 'zext' 'zext_ln3_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (4.17ns)   --->   "%mul_ln3 = mul i13 %zext_ln3, i13 %zext_ln3_1" [src/yolo_yolo.cpp:3]   --->   Operation 16 'mul' 'mul_ln3' <Predicate = true> <Delay = 4.17> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 4.17> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (1.42ns)   --->   "%cmp_i_i36_mid111 = icmp_eq  i6 %sub_i_i59, i6 0" [src/yolo_yolo.cpp:3]   --->   Operation 17 'icmp' 'cmp_i_i36_mid111' <Predicate = true> <Delay = 1.42> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 6.33>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 18 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (6.33ns)   --->   "%call_ln3 = call void @yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3, i6 %sub_i_i, i6 %sub_i_i59, i13 %mul_ln3, i112 %outStream, i32 %activate_en_read, i8 %tmp, i1 %cmp_i_i36_mid111, i112 %inStream, i29 %trunc_ln3, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [src/yolo_yolo.cpp:3]   --->   Operation 19 'call' 'call_ln3' <Predicate = true> <Delay = 6.33> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 4.27>
+ST_3 : Operation 20 [1/2] (4.27ns)   --->   "%call_ln3 = call void @yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3, i6 %sub_i_i, i6 %sub_i_i59, i13 %mul_ln3, i112 %outStream, i32 %activate_en_read, i8 %tmp, i1 %cmp_i_i36_mid111, i112 %inStream, i29 %trunc_ln3, i11 %f_x_lsb_table_V, i25 %exp_x_msb_2_m_1_table_V, i25 %exp_x_msb_1_table_V" [src/yolo_yolo.cpp:3]   --->   Operation 20 'call' 'call_ln3' <Predicate = true> <Delay = 4.27> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_0" [src/yolo_yolo.cpp:3]   --->   Operation 21 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i112 %inStream, void @empty_8, i32 1, i32 1, void @empty_7, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i112 %inStream"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i112 %outStream, void @empty_8, i32 1, i32 1, void @empty_7, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i112 %outStream"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %activate_en"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %activate_en, void @empty_5, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_4, void @empty_3, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %activate_en, void @empty_2, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %input_h"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %input_h, void @empty_5, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_4, void @empty_9, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %input_h, void @empty_2, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i5 %input_w"   --->   Operation 32 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %input_w, void @empty_5, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_4, void @empty_1, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i5 %input_w, void @empty_2, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_5, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_4, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%ret_ln71 = ret" [src/yolo_yolo.cpp:71]   --->   Operation 36 'ret' 'ret_ln71' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 5.17ns
+The critical path consists of the following:
+	s_axi read operation ('input_w_read', src/yolo_yolo.cpp:3) on port 'input_w' (src/yolo_yolo.cpp:3) [9]  (1 ns)
+	'mul' operation ('mul_ln3', src/yolo_yolo.cpp:3) [35]  (4.17 ns)
+
+ <State 2>: 6.33ns
+The critical path consists of the following:
+	'call' operation ('call_ln3', src/yolo_yolo.cpp:3) to 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' [38]  (6.33 ns)
+
+ <State 3>: 4.27ns
+The critical path consists of the following:
+	'call' operation ('call_ln3', src/yolo_yolo.cpp:3) to 'yolo_yolo_top_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_17_2_VITIS_LOOP_20_3' [38]  (4.27 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

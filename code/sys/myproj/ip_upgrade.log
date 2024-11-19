@@ -1,0 +1,603 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Nov 19 11:59:55 2024
+| Host         : tony running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_yolo_top_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_yolo_yolo_top_0_1 (xilinx.com:hls:yolo_yolo_top:1.0) from (Rev. 1907171038) to (Rev. 2113828681)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_yolo_yolo_top_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'inStream_TDATA' width 112 differs from original width 64
+
+-Upgraded port 'outStream_TDATA' width 112 differs from original width 64
+
+-Upgrade has removed port 'inStream_TDEST'
+
+-Upgrade has removed port 'inStream_TID'
+
+-Upgrade has removed port 'inStream_TKEEP'
+
+-Upgrade has removed port 'inStream_TLAST'
+
+-Upgrade has removed port 'inStream_TSTRB'
+
+-Upgrade has removed port 'inStream_TUSER'
+
+-Upgrade has removed port 'outStream_TDEST'
+
+-Upgrade has removed port 'outStream_TID'
+
+-Upgrade has removed port 'outStream_TKEEP'
+
+-Upgrade has removed port 'outStream_TLAST'
+
+-Upgrade has removed port 'outStream_TSTRB'
+
+-Upgrade has removed port 'outStream_TUSER'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Nov 19 11:59:55 2024
+| Host         : tony running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_upsamp_top_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_yolo_upsamp_top_0_1 (xilinx.com:hls:yolo_upsamp_top:1.0) from (Rev. 1907212111) to (Rev. 2113828679)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_yolo_upsamp_top_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'inStream_TDATA' width 112 differs from original width 64
+
+-Upgraded port 'outStream_TDATA' width 112 differs from original width 64
+
+-Upgrade has removed port 'inStream_TDEST'
+
+-Upgrade has removed port 'inStream_TID'
+
+-Upgrade has removed port 'inStream_TKEEP'
+
+-Upgrade has removed port 'inStream_TLAST'
+
+-Upgrade has removed port 'inStream_TSTRB'
+
+-Upgrade has removed port 'inStream_TUSER'
+
+-Upgrade has removed port 'outStream_TDEST'
+
+-Upgrade has removed port 'outStream_TID'
+
+-Upgrade has removed port 'outStream_TKEEP'
+
+-Upgrade has removed port 'outStream_TLAST'
+
+-Upgrade has removed port 'outStream_TSTRB'
+
+-Upgrade has removed port 'outStream_TUSER'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Nov 19 11:59:55 2024
+| Host         : tony running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_max_pool_top_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_yolo_max_pool_top_0_1 (xilinx.com:hls:yolo_max_pool_top:1.0) from (Rev. 1907191557) to (Rev. 2113828678)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_yolo_max_pool_top_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'inStream_TDATA' width 112 differs from original width 64
+
+-Upgraded port 'outStream_TDATA' width 112 differs from original width 64
+
+-Upgrade has removed port 'inStream_TDEST'
+
+-Upgrade has removed port 'inStream_TID'
+
+-Upgrade has removed port 'inStream_TKEEP'
+
+-Upgrade has removed port 'inStream_TLAST'
+
+-Upgrade has removed port 'inStream_TSTRB'
+
+-Upgrade has removed port 'inStream_TUSER'
+
+-Upgrade has removed port 'outStream_TDEST'
+
+-Upgrade has removed port 'outStream_TID'
+
+-Upgrade has removed port 'outStream_TKEEP'
+
+-Upgrade has removed port 'outStream_TLAST'
+
+-Upgrade has removed port 'outStream_TSTRB'
+
+-Upgrade has removed port 'outStream_TUSER'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Nov 19 11:59:55 2024
+| Host         : tony running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_conv_top_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_yolo_conv_top_0_1 (xilinx.com:hls:yolo_conv_top:1.0) from (Rev. 1907201908) to (Rev. 2113828677)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_yolo_conv_top_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'inStream_TDATA' width 112 differs from original width 64
+
+-Upgraded port 'outStream_TDATA' width 112 differs from original width 64
+
+-Upgrade has removed port 'inStream_TDEST'
+
+-Upgrade has removed port 'inStream_TID'
+
+-Upgrade has removed port 'inStream_TKEEP'
+
+-Upgrade has removed port 'inStream_TLAST'
+
+-Upgrade has removed port 'inStream_TSTRB'
+
+-Upgrade has removed port 'inStream_TUSER'
+
+-Upgrade has removed port 'outStream_TDEST'
+
+-Upgrade has removed port 'outStream_TID'
+
+-Upgrade has removed port 'outStream_TKEEP'
+
+-Upgrade has removed port 'outStream_TLAST'
+
+-Upgrade has removed port 'outStream_TSTRB'
+
+-Upgrade has removed port 'outStream_TUSER'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Nov 19 11:59:55 2024
+| Host         : tony running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_acc_top_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_yolo_acc_top_0_1 (xilinx.com:hls:yolo_acc_top:1.0) from (Rev. 1907202023) to (Rev. 2113828675)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_yolo_acc_top_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'inStream_a_TDATA' width 112 differs from original width 64
+
+-Upgraded port 'inStream_b_TDATA' width 112 differs from original width 64
+
+-Upgraded port 'outStream_TDATA' width 112 differs from original width 64
+
+-Upgrade has removed port 'inStream_a_TDEST'
+
+-Upgrade has removed port 'inStream_a_TID'
+
+-Upgrade has removed port 'inStream_a_TKEEP'
+
+-Upgrade has removed port 'inStream_a_TLAST'
+
+-Upgrade has removed port 'inStream_a_TSTRB'
+
+-Upgrade has removed port 'inStream_a_TUSER'
+
+-Upgrade has removed port 'inStream_b_TDEST'
+
+-Upgrade has removed port 'inStream_b_TID'
+
+-Upgrade has removed port 'inStream_b_TKEEP'
+
+-Upgrade has removed port 'inStream_b_TLAST'
+
+-Upgrade has removed port 'inStream_b_TSTRB'
+
+-Upgrade has removed port 'inStream_b_TUSER'
+
+-Upgrade has removed port 'outStream_TDEST'
+
+-Upgrade has removed port 'outStream_TID'
+
+-Upgrade has removed port 'outStream_TKEEP'
+
+-Upgrade has removed port 'outStream_TLAST'
+
+-Upgrade has removed port 'outStream_TSTRB'
+
+-Upgrade has removed port 'outStream_TUSER'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Nov 19 11:45:17 2024
+| Host         : tony running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_yolo_top_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_yolo_yolo_top_0_1 (xilinx.com:hls:yolo_yolo_top:1.0) from (Rev. 2113828681) to (Rev. 1907171038)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_yolo_yolo_top_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'inStream_TDATA' width 64 differs from original width 112
+
+-Upgraded port 'outStream_TDATA' width 64 differs from original width 112
+
+-Upgrade has added port 'inStream_TDEST'
+
+-Upgrade has added port 'inStream_TID'
+
+-Upgrade has added port 'inStream_TKEEP'
+
+-Upgrade has added port 'inStream_TLAST'
+
+-Upgrade has added port 'inStream_TSTRB'
+
+-Upgrade has added port 'inStream_TUSER'
+
+-Upgrade has added port 'outStream_TDEST'
+
+-Upgrade has added port 'outStream_TID'
+
+-Upgrade has added port 'outStream_TKEEP'
+
+-Upgrade has added port 'outStream_TLAST'
+
+-Upgrade has added port 'outStream_TSTRB'
+
+-Upgrade has added port 'outStream_TUSER'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Nov 19 11:45:17 2024
+| Host         : tony running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_upsamp_top_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_yolo_upsamp_top_0_1 (xilinx.com:hls:yolo_upsamp_top:1.0) from (Rev. 2113828679) to (Rev. 1907212111)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_yolo_upsamp_top_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'inStream_TDATA' width 64 differs from original width 112
+
+-Upgraded port 'outStream_TDATA' width 64 differs from original width 112
+
+-Upgrade has added port 'inStream_TDEST'
+
+-Upgrade has added port 'inStream_TID'
+
+-Upgrade has added port 'inStream_TKEEP'
+
+-Upgrade has added port 'inStream_TLAST'
+
+-Upgrade has added port 'inStream_TSTRB'
+
+-Upgrade has added port 'inStream_TUSER'
+
+-Upgrade has added port 'outStream_TDEST'
+
+-Upgrade has added port 'outStream_TID'
+
+-Upgrade has added port 'outStream_TKEEP'
+
+-Upgrade has added port 'outStream_TLAST'
+
+-Upgrade has added port 'outStream_TSTRB'
+
+-Upgrade has added port 'outStream_TUSER'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Nov 19 11:45:17 2024
+| Host         : tony running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_max_pool_top_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_yolo_max_pool_top_0_1 (xilinx.com:hls:yolo_max_pool_top:1.0) from (Rev. 2113828678) to (Rev. 1907191557)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_yolo_max_pool_top_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'inStream_TDATA' width 64 differs from original width 112
+
+-Upgraded port 'outStream_TDATA' width 64 differs from original width 112
+
+-Upgrade has added port 'inStream_TDEST'
+
+-Upgrade has added port 'inStream_TID'
+
+-Upgrade has added port 'inStream_TKEEP'
+
+-Upgrade has added port 'inStream_TLAST'
+
+-Upgrade has added port 'inStream_TSTRB'
+
+-Upgrade has added port 'inStream_TUSER'
+
+-Upgrade has added port 'outStream_TDEST'
+
+-Upgrade has added port 'outStream_TID'
+
+-Upgrade has added port 'outStream_TKEEP'
+
+-Upgrade has added port 'outStream_TLAST'
+
+-Upgrade has added port 'outStream_TSTRB'
+
+-Upgrade has added port 'outStream_TUSER'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Nov 19 11:45:17 2024
+| Host         : tony running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_conv_top_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_yolo_conv_top_0_1 (xilinx.com:hls:yolo_conv_top:1.0) from (Rev. 2113828677) to (Rev. 1907201908)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_yolo_conv_top_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'inStream_TDATA' width 64 differs from original width 112
+
+-Upgraded port 'outStream_TDATA' width 64 differs from original width 112
+
+-Upgrade has added port 'inStream_TDEST'
+
+-Upgrade has added port 'inStream_TID'
+
+-Upgrade has added port 'inStream_TKEEP'
+
+-Upgrade has added port 'inStream_TLAST'
+
+-Upgrade has added port 'inStream_TSTRB'
+
+-Upgrade has added port 'inStream_TUSER'
+
+-Upgrade has added port 'outStream_TDEST'
+
+-Upgrade has added port 'outStream_TID'
+
+-Upgrade has added port 'outStream_TKEEP'
+
+-Upgrade has added port 'outStream_TLAST'
+
+-Upgrade has added port 'outStream_TSTRB'
+
+-Upgrade has added port 'outStream_TUSER'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Tue Nov 19 11:45:17 2024
+| Host         : tony running 64-bit Red Hat Enterprise Linux release 8.10 (Ootpa)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_yolo_acc_top_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_yolo_acc_top_0_1 (xilinx.com:hls:yolo_acc_top:1.0) from (Rev. 2113828675) to (Rev. 1907202023)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_yolo_acc_top_0_1'. These changes may impact your design.
+
+
+-Upgraded port 'inStream_a_TDATA' width 64 differs from original width 112
+
+-Upgraded port 'inStream_b_TDATA' width 64 differs from original width 112
+
+-Upgraded port 'outStream_TDATA' width 64 differs from original width 112
+
+-Upgrade has added port 'inStream_a_TDEST'
+
+-Upgrade has added port 'inStream_a_TID'
+
+-Upgrade has added port 'inStream_a_TKEEP'
+
+-Upgrade has added port 'inStream_a_TLAST'
+
+-Upgrade has added port 'inStream_a_TSTRB'
+
+-Upgrade has added port 'inStream_a_TUSER'
+
+-Upgrade has added port 'inStream_b_TDEST'
+
+-Upgrade has added port 'inStream_b_TID'
+
+-Upgrade has added port 'inStream_b_TKEEP'
+
+-Upgrade has added port 'inStream_b_TLAST'
+
+-Upgrade has added port 'inStream_b_TSTRB'
+
+-Upgrade has added port 'inStream_b_TUSER'
+
+-Upgrade has added port 'outStream_TDEST'
+
+-Upgrade has added port 'outStream_TID'
+
+-Upgrade has added port 'outStream_TKEEP'
+
+-Upgrade has added port 'outStream_TLAST'
+
+-Upgrade has added port 'outStream_TSTRB'
+
+-Upgrade has added port 'outStream_TUSER'
+
+

@@ -1,0 +1,144 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+  **** SW Build 3670227 on Oct 13 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'tony' on host 'tony' (Linux_x86_64 version 4.18.0-553.27.1.el8_10.x86_64) on Tue Nov 19 12:22:19 KST 2024
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.10 (Ootpa)"
+INFO: [HLS 200-10] In directory '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: source run_hls.tcl
+INFO: [HLS 200-1510] Running: open_project -reset yolo_acc_prj 
+INFO: [HLS 200-10] Opening and resetting project '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/yolo_acc_prj'.
+INFO: [HLS 200-1510] Running: set_top yolo_acc_top 
+INFO: [HLS 200-1510] Running: add_files src/yolo_acc.cpp -cflags -I/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include 
+INFO: [HLS 200-10] Adding design file 'src/yolo_acc.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_acc.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_acc.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_fp.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_fp.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_stream.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_stream.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/layer_input.dat 
+INFO: [HLS 200-10] Adding test bench file 'tb/layer_input.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/layer_output_sdk.dat 
+INFO: [HLS 200-10] Adding test bench file 'tb/layer_output_sdk.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/weight_file.h 
+INFO: [HLS 200-10] Adding test bench file 'tb/weight_file.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/yolo_acc_tb.cpp -cflags -I/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include 
+INFO: [HLS 200-10] Adding test bench file 'tb/yolo_acc_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_acc/yolo_acc_prj/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: csim_design 
+Running Dispatch Server on port: 33357
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb/yolo_acc_tb.cpp in debug mode
+In file included from ../../../../tb/../src/yolo_acc.h:4,
+                 from ../../../../tb/yolo_acc_tb.cpp:1:
+../../../../tb/../src/yolo_stream.h:29:14: error: ‘axis’ in namespace ‘hls’ does not name a template type
+ typedef hls::axis<quad_fp_side_channel> yolo_quad_stream;
+              ^~~~
+../../../../tb/../src/yolo_stream.h:30:14: error: ‘axis’ in namespace ‘hls’ does not name a template type
+ typedef hls::axis<fp_data_type> yolo_inter_stream;
+              ^~~~
+In file included from ../../../../tb/yolo_acc_tb.cpp:1:
+../../../../tb/../src/yolo_acc.h:13:19: error: variable or field ‘yolo_acc_top’ declared void
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                   ^~~~~~~~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:13:19: error: ‘yolo_quad_stream’ was not declared in this scope
+../../../../tb/../src/yolo_acc.h:13:37: error: ‘inStream_a’ was not declared in this scope
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                                     ^~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:13:37: note: suggested alternative: ‘intmax_t’
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                                     ^~~~~~~~~~
+                                     intmax_t
+../../../../tb/../src/yolo_acc.h:13:49: error: ‘yolo_quad_stream’ was not declared in this scope
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                                                 ^~~~~~~~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:13:67: error: ‘inStream_b’ was not declared in this scope
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                                                                   ^~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:13:67: note: suggested alternative: ‘intmax_t’
+ void yolo_acc_top(yolo_quad_stream &inStream_a, yolo_quad_stream &inStream_b,
+                                                                   ^~~~~~~~~~
+                                                                   intmax_t
+../../../../tb/../src/yolo_acc.h:14:13: error: ‘yolo_quad_stream’ was not declared in this scope
+             yolo_quad_stream &outStream,
+             ^~~~~~~~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:14:31: error: ‘outStream’ was not declared in this scope
+             yolo_quad_stream &outStream,
+                               ^~~~~~~~~
+../../../../tb/../src/yolo_acc.h:15:18: error: expected primary-expression before ‘input_h’
+       ap_uint<9> input_h, ap_uint<9> input_w,
+                  ^~~~~~~
+../../../../tb/../src/yolo_acc.h:15:38: error: expected primary-expression before ‘input_w’
+       ap_uint<9> input_h, ap_uint<9> input_w,
+                                      ^~~~~~~
+../../../../tb/../src/yolo_acc.h:16:32: error: expected primary-expression before ‘fold_input_ch’
+       ap_uint<MAX_FOLD_CH_BIT> fold_input_ch,
+                                ^~~~~~~~~~~~~
+../../../../tb/../src/yolo_acc.h:17:18: error: expected primary-expression before ‘leaky’
+       ap_uint<1> leaky, ap_uint<1> bias_en);
+                  ^~~~~
+../../../../tb/../src/yolo_acc.h:17:36: error: expected primary-expression before ‘bias_en’
+       ap_uint<1> leaky, ap_uint<1> bias_en);
+                                    ^~~~~~~
+../../../../tb/yolo_acc_tb.cpp: In function ‘int main()’:
+../../../../tb/yolo_acc_tb.cpp:11:2: error: ‘yolo_quad_stream’ was not declared in this scope
+  yolo_quad_stream inputStream_a("in_stream_a"), inputStream_b("in_stream_b"),
+  ^~~~~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:42:3: error: ‘inputStream_b’ was not declared in this scope
+   inputStream_b << curr_input;
+   ^~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:90:4: error: ‘inputStream_a’ was not declared in this scope
+    inputStream_a << curr_input_a;
+    ^~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:91:4: error: ‘inputStream_b’ was not declared in this scope
+    inputStream_b << curr_input_b;
+    ^~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:95:18: error: ‘inputStream_a’ was not declared in this scope
+     yolo_acc_top(inputStream_a,inputStream_b,
+                  ^~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:95:32: error: ‘inputStream_b’ was not declared in this scope
+     yolo_acc_top(inputStream_a,inputStream_b,
+                                ^~~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:96:12: error: ‘outputStream’ was not declared in this scope
+            outputStream,
+            ^~~~~~~~~~~~
+../../../../tb/yolo_acc_tb.cpp:96:12: note: suggested alternative: ‘output_data’
+            outputStream,
+            ^~~~~~~~~~~~
+            output_data
+../../../../tb/yolo_acc_tb.cpp:95:5: error: ‘yolo_acc_top’ was not declared in this scope
+     yolo_acc_top(inputStream_a,inputStream_b,
+     ^~~~~~~~~~~~
+make: *** [csim.mk:77: obj/yolo_acc_tb.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.67 seconds. CPU system time: 0.12 seconds. Elapsed time: 0.84 seconds; current allocated memory: 0.000 MB.
+4
+    while executing
+"source run_hls.tcl"
+    invoked from within
+"hls::main run_hls.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 1.24 seconds. Total CPU system time: 0.23 seconds. Total elapsed time: 11.54 seconds; peak allocated memory: 198.496 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Nov 19 12:22:30 2024...

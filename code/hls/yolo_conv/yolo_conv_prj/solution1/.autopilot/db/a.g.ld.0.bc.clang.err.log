@@ -1,0 +1,145 @@
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1018:2: Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::shift_pixels_up(int)' into 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::shift_up(int)'
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1042:2: Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::insert_bottom_row(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int)' into 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int)'
+remark: src/yolo_conv.cpp:249:13: Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::shift_up(int)' into 'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*, int)'
+remark: src/yolo_conv.cpp:250:13: Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int)' into 'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*, int)'
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:633:2: Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::insert_pixel(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, int)' into 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::insert(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, int)'
+remark: src/yolo_conv.cpp:256:14: Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'slide_window(int, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*)'
+remark: src/yolo_conv.cpp:263:18: Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::insert(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, int, int)' into 'slide_window(int, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*)'
+remark: src/yolo_conv.cpp:262:48: Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::getval(int, int)' into 'slide_window(int, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*)'
+remark: src/yolo_conv.cpp:278:33: Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::getval(int, int)' into 'window_macc(xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >, local_weight_type)'
+remark: src/yolo_conv.cpp:28:17: Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+remark: src/yolo_conv.cpp:29:17: Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+remark: src/yolo_conv.cpp:30:17: Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+remark: src/yolo_conv.cpp:31:17: Inlining function 'xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+remark: src/yolo_conv.cpp:139:70: Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+remark: src/yolo_conv.cpp:139:53: Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+remark: src/yolo_conv.cpp:139:36: Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+remark: src/yolo_conv.cpp:139:19: Inlining function 'xf::cv::Window<3, 3, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::Window()' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+remark: src/yolo_conv.cpp:141:25: Adding 'ref.tmp177' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: src/yolo_conv.cpp:142:25: Adding 'ref.tmp180' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: src/yolo_conv.cpp:143:25: Adding 'ref.tmp183' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: src/yolo_conv.cpp:144:25: Adding 'ref.tmp186' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: src/yolo_conv.cpp:141:25: Adding 'ref.tmp177' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: src/yolo_conv.cpp:142:25: Adding 'ref.tmp180' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: src/yolo_conv.cpp:143:25: Adding 'ref.tmp183' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: src/yolo_conv.cpp:144:25: Adding 'ref.tmp186' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:48:9: Adding 'kernel_window_0' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:47:9: Adding 'kernel_window_0' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:48:9: Adding 'kernel_window_1' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:47:9: Adding 'kernel_window_1' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:48:9: Adding 'kernel_window_2' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:47:9: Adding 'kernel_window_2' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:48:9: Adding 'kernel_window_3' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:47:9: Adding 'kernel_window_3' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9: Adding 'line_buff_group_3' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9: Adding 'line_buff_group_2' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9: Adding 'line_buff_group_1' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9: Adding 'line_buff_group_0' into disaggregation list because there's array-partition pragma applied on the struct field
+remark: <unknown>:0:0: Disaggregating variable 'ref.tmp186'
+remark: <unknown>:0:0: Disaggregating variable 'ref.tmp183'
+remark: <unknown>:0:0: Disaggregating variable 'ref.tmp180'
+remark: <unknown>:0:0: Disaggregating variable 'ref.tmp177'
+remark: src/yolo_conv.cpp:139:70: Disaggregating variable 'kernel_window_3'
+remark: src/yolo_conv.cpp:139:53: Disaggregating variable 'kernel_window_2'
+remark: src/yolo_conv.cpp:139:36: Disaggregating variable 'kernel_window_1'
+remark: src/yolo_conv.cpp:139:19: Disaggregating variable 'kernel_window_0'
+remark: src/yolo_conv.cpp:31:17: Disaggregating variable 'line_buff_group_3'
+remark: src/yolo_conv.cpp:30:17: Disaggregating variable 'line_buff_group_2'
+remark: src/yolo_conv.cpp:29:17: Disaggregating variable 'line_buff_group_1'
+remark: src/yolo_conv.cpp:28:17: Disaggregating variable 'line_buff_group_0'
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: src/yolo_conv.cpp:148:25: Loop 'VITIS_LOOP_148_7' is marked as complete unroll implied by the pipeline pragma
+remark: src/yolo_conv.cpp:296:20: Loop 'VITIS_LOOP_296_1' is marked as complete unroll implied by the pipeline pragma
+remark: src/yolo_conv.cpp:274:20: Loop 'VITIS_LOOP_274_1' is marked as complete unroll implied by the pipeline pragma
+remark: src/yolo_conv.cpp:276:21: Loop 'VITIS_LOOP_276_2' is marked as complete unroll implied by the pipeline pragma
+remark: src/yolo_conv.cpp:258:20: Loop 'VITIS_LOOP_258_1' is marked as complete unroll implied by the pipeline pragma
+remark: src/yolo_conv.cpp:260:21: Loop 'VITIS_LOOP_260_2' is marked as complete unroll implied by the pipeline pragma
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5: Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+remark: /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:867:23: Loop 'VITIS_LOOP_867_1' is marked as complete unroll implied by the pipeline pragma
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_conv_top' completely with a factor of 3
+remark: src/yolo_conv.cpp:8:0: Unrolling loop 'VITIS_LOOP_148_7' (src/yolo_conv.cpp:148:25) in function 'yolo_conv_top' completely with a factor of 32
+remark: src/yolo_conv.cpp:291:0: Unrolling loop 'VITIS_LOOP_296_1' (src/yolo_conv.cpp:296:20) in function 'out_stream_merge' completely with a factor of 6
+remark: src/yolo_conv.cpp:271:0: Unrolling loop 'VITIS_LOOP_274_1' (src/yolo_conv.cpp:274:20) in function 'window_macc' completely with a factor of 3
+remark: src/yolo_conv.cpp:271:0: Unrolling loop 'VITIS_LOOP_276_2' (src/yolo_conv.cpp:276:21) in function 'window_macc' completely with a factor of 3
+remark: src/yolo_conv.cpp:271:0: Unrolling loop 'VITIS_LOOP_276_2' (src/yolo_conv.cpp:276:21) in function 'window_macc' completely with a factor of 3
+remark: src/yolo_conv.cpp:271:0: Unrolling loop 'VITIS_LOOP_276_2' (src/yolo_conv.cpp:276:21) in function 'window_macc' completely with a factor of 3
+remark: src/yolo_conv.cpp:255:0: Unrolling loop 'VITIS_LOOP_258_1' (src/yolo_conv.cpp:258:20) in function 'slide_window' completely with a factor of 3
+remark: src/yolo_conv.cpp:255:0: Unrolling loop 'VITIS_LOOP_260_2' (src/yolo_conv.cpp:260:21) in function 'slide_window' completely with a factor of 3
+remark: src/yolo_conv.cpp:255:0: Unrolling loop 'VITIS_LOOP_260_2' (src/yolo_conv.cpp:260:21) in function 'slide_window' completely with a factor of 3
+remark: src/yolo_conv.cpp:255:0: Unrolling loop 'VITIS_LOOP_260_2' (src/yolo_conv.cpp:260:21) in function 'slide_window' completely with a factor of 3
+remark: src/yolo_conv.cpp:255:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'slide_window' completely with a factor of 3
+remark: src/yolo_conv.cpp:255:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'slide_window' completely with a factor of 3
+remark: src/yolo_conv.cpp:255:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'slide_window' completely with a factor of 3
+remark: src/yolo_conv.cpp:255:0: Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'slide_window' completely with a factor of 3
+remark: src/yolo_conv.cpp:247:0: Unrolling loop 'VITIS_LOOP_867_1' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:867:23) in function 'yolo_line_buffer' completely with a factor of 2
+remark: src/yolo_conv.cpp:8:0: Inlining function 'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, xf::cv::LineBuffer<3, 418, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, (_ramtype)6, 1>*, int)' into 'yolo_conv_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<6>, ap_uint<6>, ap_uint<4>, ap_uint<4>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<3>)'
+remark: src/yolo_conv.cpp:23:20: Applying array_partition to 'out_stream_group': Complete partitioning on dimension 1.
+remark: src/yolo_conv.cpp:28:17: Applying array_partition to 'line_buff_group_0': Complete partitioning on dimension 2.
+remark: src/yolo_conv.cpp:29:17: Applying array_partition to 'line_buff_group_1': Complete partitioning on dimension 2.
+remark: src/yolo_conv.cpp:30:17: Applying array_partition to 'line_buff_group_2': Complete partitioning on dimension 2.
+remark: src/yolo_conv.cpp:31:17: Applying array_partition to 'line_buff_group_3': Complete partitioning on dimension 2.
+remark: src/yolo_conv.cpp:33:14: Applying array_partition to 'val_output': Complete partitioning on dimension 1.
+remark: src/yolo_conv.cpp:38:20: Applying array_partition to 'local_mem_group': Block partitioning with factor 8 on dimension 1. Complete partitioning on dimension 3.
+remark: src/yolo_conv.cpp:139:19: Applying array_partition to 'kernel_window_0': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+remark: src/yolo_conv.cpp:139:36: Applying array_partition to 'kernel_window_1': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+remark: src/yolo_conv.cpp:139:53: Applying array_partition to 'kernel_window_2': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+remark: src/yolo_conv.cpp:139:70: Applying array_partition to 'kernel_window_3': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+remark: <unknown>:0:0: Applying array_partition to 'ref.tmp177': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+remark: <unknown>:0:0: Applying array_partition to 'ref.tmp180': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+remark: <unknown>:0:0: Applying array_partition to 'ref.tmp183': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+remark: <unknown>:0:0: Applying array_partition to 'ref.tmp186': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_0' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_1' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_2' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_3' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_4' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_5' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_6' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_7' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_8' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_9' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_10' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_11' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_12' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_13' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_14' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_15' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_16' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_17' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_18' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_19' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_20' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_21' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_22' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_23' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_24' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_25' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_26' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_27' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_28' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_29' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_30' with compact=bit mode in 16-bits
+remark: src/yolo_conv.cpp:23:20: Aggregating fifo (hls::stream) variable 'out_stream_group_31' with compact=bit mode in 16-bits

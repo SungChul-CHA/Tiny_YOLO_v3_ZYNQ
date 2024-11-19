@@ -1,0 +1,292 @@
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:1328:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:1328:7: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:2302:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:2302:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:2316:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:2316:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:2330:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:2330:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:3941:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:3941:7: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18247:2: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < N; k++) {
+ ^~~
+ VITIS_LOOP_307_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18247:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18261:5: warning: Added loop label VITIS_LOOP_321_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_321_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18261:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18276:5: warning: Added loop label VITIS_LOOP_336_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_336_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18276:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18291:5: warning: Added loop label VITIS_LOOP_351_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_351_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18291:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18306:5: warning: Added loop label VITIS_LOOP_366_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_366_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18306:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18321:5: warning: Added loop label VITIS_LOOP_381_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_381_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18321:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18336:5: warning: Added loop label VITIS_LOOP_396_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_396_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18336:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18351:5: warning: Added loop label VITIS_LOOP_411_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_411_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18351:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18366:5: warning: Added loop label VITIS_LOOP_426_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_426_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18366:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18443:9: warning: Added loop label VITIS_LOOP_511_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < (rows * ((cols + NPC - 1) >> xfNPixelsPerCycle<NPC>::datashift)); ++i) {
+        ^~~
+        VITIS_LOOP_511_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18443:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18651:5: warning: Added loop label VITIS_LOOP_719_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_719_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18651:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18652:9: warning: Added loop label VITIS_LOOP_720_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < packcols; c++) {
+        ^~~
+        VITIS_LOOP_720_2: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18652:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18653:13: warning: Added loop label VITIS_LOOP_721_3:   [xilinx-label-all-loops]
+            for (int p = 0; p < nppc; p++) {
+            ^~~
+            VITIS_LOOP_721_3: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18653:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18655:17: warning: Added loop label VITIS_LOOP_723_4:   [xilinx-label-all-loops]
+                for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+                ^~~
+                VITIS_LOOP_723_4: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18655:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18693:5: warning: Added loop label VITIS_LOOP_761_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < rows; r++) {
+    ^~~
+    VITIS_LOOP_761_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18693:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18694:9: warning: Added loop label VITIS_LOOP_762_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < cols; c++) {
+        ^~~
+        VITIS_LOOP_762_2: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18694:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18696:13: warning: Added loop label VITIS_LOOP_764_3:   [xilinx-label-all-loops]
+            for (int ch = 0; ch < DataType<T, NPPC>::channel; ch++) {
+            ^~~
+            VITIS_LOOP_764_3: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18696:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18697:17: warning: Added loop label VITIS_LOOP_765_4:   [xilinx-label-all-loops]
+                for (int b = 0; b < cv_nbytes; ++b) {
+                ^~~
+                VITIS_LOOP_765_4: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18697:17: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18751:5: warning: Added loop label VITIS_LOOP_819_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < rows; i++) {
+    ^~~
+    VITIS_LOOP_819_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18751:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18752:9: warning: Added loop label VITIS_LOOP_820_2:   [xilinx-label-all-loops]
+        for (int j = 0; j<cols>> (xfNPixelsPerCycle<NPPC>::datashift); j++) {
+        ^~~
+        VITIS_LOOP_820_2: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18752:9: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18760:13: warning: Added loop label VITIS_LOOP_828_3:   [xilinx-label-all-loops]
+            for (int k = 0; k < (1 << (xfNPixelsPerCycle<NPPC>::datashift)); k++) {
+            ^~~
+            VITIS_LOOP_828_3: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18760:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18873:9: error: Invalid Directive: for current device, mul + dsp is invalid combination for bind_op [clang-diagnostic-error]
+#pragma HLS BIND_OP variable=mul_rows_cols op=mul impl=dsp latency=2
+        ^
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18945:2: warning: Added loop label VITIS_LOOP_1021_1:   [xilinx-label-all-loops]
+ for (c = 0; c < cols_addrbound; c++) {
+ ^~~
+ VITIS_LOOP_1021_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:18945:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19353:13: warning: Added loop label VITIS_LOOP_1429_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1429_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19353:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19381:13: warning: Added loop label VITIS_LOOP_1457_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1457_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19381:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19411:13: warning: Added loop label VITIS_LOOP_1487_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1487_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19411:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19441:13: warning: Added loop label VITIS_LOOP_1517_1:   [xilinx-label-all-loops]
+            for (int rowIdx = 0, offset = 0; rowIdx < rows; rowIdx++, offset += offset_1row) {
+            ^~~
+            VITIS_LOOP_1517_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19441:13: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19954:5: warning: Added loop label VITIS_LOOP_122_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_122_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19954:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19958:2: warning: Added loop label VITIS_LOOP_126_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS - 1; j++) {
+ ^~~
+ VITIS_LOOP_126_2: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19958:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19985:5: warning: Added loop label VITIS_LOOP_166_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_166_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19985:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19989:2: warning: Added loop label VITIS_LOOP_170_2:   [xilinx-label-all-loops]
+ for (j = COLS - 1; j > 0; j--) {
+ ^~~
+ VITIS_LOOP_170_2: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:19989:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20016:5: warning: Added loop label VITIS_LOOP_210_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_210_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20016:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20020:2: warning: Added loop label VITIS_LOOP_214_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_214_2: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20020:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20047:5: warning: Added loop label VITIS_LOOP_254_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_254_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20047:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20051:2: warning: Added loop label VITIS_LOOP_258_2:   [xilinx-label-all-loops]
+ for (j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_258_2: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20051:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20097:5: warning: Added loop label VITIS_LOOP_330_1:   [xilinx-label-all-loops]
+    for (j = 0; j < COLS; j++) {
+    ^~~
+    VITIS_LOOP_330_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20097:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20160:5: warning: Added loop label VITIS_LOOP_435_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_435_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20160:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20357:44: error: Invalid Directive: for current device, RAM_1P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=BRAM
+                                           ^
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20362:44: error: Invalid Directive: for current device, RAM_1P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_1P impl=URAM
+                                           ^
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20367:44: error: Invalid Directive: for current device, RAM_2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=BRAM
+                                           ^
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20372:44: error: Invalid Directive: for current device, RAM_2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_2P impl=URAM
+                                           ^
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20377:44: error: Invalid Directive: for current device, RAM_S2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=BRAM
+                                           ^
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20382:44: error: Invalid Directive: for current device, RAM_S2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_S2P impl=URAM
+                                           ^
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20387:44: error: Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=BRAM
+                                           ^
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20392:44: error: Invalid Directive: for current device, RAM_T2P + URAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS bind_storage variable=val type=RAM_T2P impl=URAM
+                                           ^
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20448:5: warning: Added loop label VITIS_LOOP_824_1:   [xilinx-label-all-loops]
+    for (i = ROWS - 1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_824_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20448:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20474:5: warning: Added loop label VITIS_LOOP_867_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS - 1; i++) {
+    ^~~
+    VITIS_LOOP_867_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20474:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20530:5: warning: Added loop label VITIS_LOOP_968_1:   [xilinx-label-all-loops]
+    for (i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_968_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20530:5: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20652:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+ for(int out_row=0;out_row<output_h;out_row++)
+ ^~~
+ VITIS_LOOP_27_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20652:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20655:2: warning: Added loop label VITIS_LOOP_30_2:   [xilinx-label-all-loops]
+ for(int row_stride=0;row_stride<stride;row_stride++)
+ ^~~
+ VITIS_LOOP_30_2: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20655:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20658:2: warning: Added loop label VITIS_LOOP_33_3:   [xilinx-label-all-loops]
+ for(int out_col=0;out_col<output_w;out_col++)
+ ^~~
+ VITIS_LOOP_33_3: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20658:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20661:2: warning: Added loop label VITIS_LOOP_36_4:   [xilinx-label-all-loops]
+ for(int col_stride=0;col_stride<stride;col_stride++)
+ ^~~
+ VITIS_LOOP_36_4: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20661:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20664:2: warning: Added loop label VITIS_LOOP_39_5:   [xilinx-label-all-loops]
+ for(int input_ch_idx=0;input_ch_idx<input_fold_ch;input_ch_idx++)
+ ^~~
+ VITIS_LOOP_39_5: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20664:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20765:2: warning: Added loop label VITIS_LOOP_140_1:   [xilinx-label-all-loops]
+ for(int win_row=0; win_row < 2; win_row++)
+ ^~~
+ VITIS_LOOP_140_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20765:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20767:3: warning: Added loop label VITIS_LOOP_142_2:   [xilinx-label-all-loops]
+  for(int win_col=0; win_col < 2; win_col++)
+  ^~~
+  VITIS_LOOP_142_2: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20767:3: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20780:2: warning: Added loop label VITIS_LOOP_155_1:   [xilinx-label-all-loops]
+ for(int win_row=0; win_row < 2; win_row++)
+ ^~~
+ VITIS_LOOP_155_1: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20780:2: note: FIX-IT applied suggested code changes
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20782:3: warning: Added loop label VITIS_LOOP_157_2:   [xilinx-label-all-loops]
+  for(int win_col=0; win_col < 2; win_col++)
+  ^~~
+  VITIS_LOOP_157_2: 
+/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/.autopilot/db/yolo_max_pool.pp.0.cpp:20782:3: note: FIX-IT applied suggested code changes

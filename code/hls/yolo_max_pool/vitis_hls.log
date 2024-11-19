@@ -1,0 +1,676 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+  **** SW Build 3670227 on Oct 13 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'tony' on host 'tony' (Linux_x86_64 version 4.18.0-553.27.1.el8_10.x86_64) on Mon Nov 18 23:57:39 KST 2024
+INFO: [HLS 200-10] On os "Red Hat Enterprise Linux release 8.10 (Ootpa)"
+INFO: [HLS 200-10] In directory '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool'
+Sourcing Tcl script 'run_hls.tcl'
+INFO: [HLS 200-1510] Running: source run_hls.tcl
+INFO: [HLS 200-1510] Running: open_project -reset yolo_max_pool_prj 
+INFO: [HLS 200-10] Opening and resetting project '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj'.
+INFO: [HLS 200-1510] Running: set_top yolo_max_pool_top 
+INFO: [HLS 200-1510] Running: add_files src/yolo_fp.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_fp.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_max_pool.cpp -cflags -I/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include 
+INFO: [HLS 200-10] Adding design file 'src/yolo_max_pool.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_max_pool.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_max_pool.h' to the project
+INFO: [HLS 200-1510] Running: add_files src/yolo_stream.h 
+INFO: [HLS 200-10] Adding design file 'src/yolo_stream.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/layer_input.dat 
+INFO: [HLS 200-10] Adding test bench file 'tb/layer_input.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/layer_output_sdk.dat 
+INFO: [HLS 200-10] Adding test bench file 'tb/layer_output_sdk.dat' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb/yolo_max_pool_tb.cpp -cflags -I/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include 
+INFO: [HLS 200-10] Adding test bench file 'tb/yolo_max_pool_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog 
+INFO: [HLS 200-1510] Running: csim_design 
+Running Dispatch Server on port: 39669
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb/yolo_max_pool_tb.cpp in debug mode
+   Compiling ../../../../src/yolo_max_pool.cpp in debug mode
+   Generating csim.exe
+173055
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 692224
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.64 seconds. CPU system time: 0.2 seconds. Elapsed time: 3.86 seconds; current allocated memory: 0.000 MB.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 198.496 MB.
+INFO: [HLS 200-10] Analyzing design file 'src/yolo_max_pool.cpp' ... 
+WARNING: [HLS 207-5529] 'factor' in '#pragma HLS array_reshape' is ignored (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:759:47)
+WARNING: [HLS 207-5292] unused parameter 'src' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:517:30)
+WARNING: [HLS 207-5292] unused parameter '_data' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:528:30)
+WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:541:14)
+WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:552:20)
+WARNING: [HLS 207-5292] unused parameter 'stride' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1036:41)
+WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1224:102)
+WARNING: [HLS 207-5292] unused parameter 'index' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_structs.hpp:1530:34)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2.42 seconds. CPU system time: 0.27 seconds. Elapsed time: 2.7 seconds; current allocated memory: 204.148 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::shift_pixels_up(int)' into 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::shift_up(int)' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1018:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_bottom_row(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:1042:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::shift_up(int)' into 'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>*, int)' (src/yolo_max_pool.cpp:131:13)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::insert_top(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int)' into 'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>*, int)' (src/yolo_max_pool.cpp:132:13)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert_pixel(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int, int)' into 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int, int)' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:633:2)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'slide_window(int, xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>*)' (src/yolo_max_pool.cpp:138:14)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::insert(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, int, int)' into 'slide_window(int, xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>*)' (src/yolo_max_pool.cpp:145:18)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::getval(int, int)' into 'slide_window(int, xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>*)' (src/yolo_max_pool.cpp:144:48)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::getval(int, int)' into 'window_max_pool(xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >)' (src/yolo_max_pool.cpp:159:30)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:19:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:20:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:21:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>::LineBuffer()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:22:17)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:87:18)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:86:18)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:85:18)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Window<2, 2, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0> >::Window()' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:84:18)
+INFO: [HLS 214-377] Adding 'ref.tmp96' into disaggregation list because there's array-partition pragma applied on the struct field (src/yolo_max_pool.cpp:94:17)
+INFO: [HLS 214-377] Adding 'ref.tmp99' into disaggregation list because there's array-partition pragma applied on the struct field (src/yolo_max_pool.cpp:95:17)
+INFO: [HLS 214-377] Adding 'ref.tmp102' into disaggregation list because there's array-partition pragma applied on the struct field (src/yolo_max_pool.cpp:96:17)
+INFO: [HLS 214-377] Adding 'ref.tmp105' into disaggregation list because there's array-partition pragma applied on the struct field (src/yolo_max_pool.cpp:97:17)
+INFO: [HLS 214-377] Adding 'window_0' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:48:9)
+INFO: [HLS 214-377] Adding 'window_0' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:47:9)
+INFO: [HLS 214-377] Adding 'window_1' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:48:9)
+INFO: [HLS 214-377] Adding 'window_1' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:47:9)
+INFO: [HLS 214-377] Adding 'window_2' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:48:9)
+INFO: [HLS 214-377] Adding 'window_2' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:47:9)
+INFO: [HLS 214-377] Adding 'window_3' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:48:9)
+INFO: [HLS 214-377] Adding 'window_3' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:47:9)
+INFO: [HLS 214-377] Adding 'line_buff_group_3' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9)
+INFO: [HLS 214-377] Adding 'line_buff_group_2' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9)
+INFO: [HLS 214-377] Adding 'line_buff_group_1' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9)
+INFO: [HLS 214-377] Adding 'line_buff_group_0' into disaggregation list because there's array-partition pragma applied on the struct field (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:755:9)
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp105'
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp102'
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp99'
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'ref.tmp96'
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'window_3' (src/yolo_max_pool.cpp:87:18)
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'window_2' (src/yolo_max_pool.cpp:86:18)
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'window_1' (src/yolo_max_pool.cpp:85:18)
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'window_0' (src/yolo_max_pool.cpp:84:18)
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'line_buff_group_3' (src/yolo_max_pool.cpp:22:17)
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'line_buff_group_2' (src/yolo_max_pool.cpp:21:17)
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'line_buff_group_1' (src/yolo_max_pool.cpp:20:17)
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'line_buff_group_0' (src/yolo_max_pool.cpp:19:17)
+Resolution: For help on HLS 214-210 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=214-210.html
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_155_1' is marked as complete unroll implied by the pipeline pragma (src/yolo_max_pool.cpp:155:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_157_2' is marked as complete unroll implied by the pipeline pragma (src/yolo_max_pool.cpp:157:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_140_1' is marked as complete unroll implied by the pipeline pragma (src/yolo_max_pool.cpp:140:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_142_2' is marked as complete unroll implied by the pipeline pragma (src/yolo_max_pool.cpp:142:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_867_1' is marked as complete unroll implied by the pipeline pragma (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:867:23)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'yolo_max_pool_top' completely with a factor of 2 (src/yolo_max_pool.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_155_1' (src/yolo_max_pool.cpp:155:20) in function 'window_max_pool' completely with a factor of 2 (src/yolo_max_pool.cpp:153:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_157_2' (src/yolo_max_pool.cpp:157:21) in function 'window_max_pool' completely with a factor of 2 (src/yolo_max_pool.cpp:153:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_140_1' (src/yolo_max_pool.cpp:140:20) in function 'slide_window' completely with a factor of 2 (src/yolo_max_pool.cpp:137:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_142_2' (src/yolo_max_pool.cpp:142:21) in function 'slide_window' completely with a factor of 2 (src/yolo_max_pool.cpp:137:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:44:5) in function 'slide_window' completely with a factor of 2 (src/yolo_max_pool.cpp:137:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_867_1' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:867:23) in function 'yolo_line_buffer' completely with a factor of 1 (src/yolo_max_pool.cpp:129:0)
+INFO: [HLS 214-178] Inlining function 'yolo_line_buffer(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, xf::cv::LineBuffer<2, 418, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, (_ramtype)6, 1>*, int)' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:8:0)
+INFO: [HLS 214-178] Inlining function 'write_output(ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<16, 8, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_axi_fp<64, 2, 5, 6>, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<1>)' into 'yolo_max_pool_top(hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, hls::stream<ap_axi_fp<64, 2, 5, 6>, 0>&, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<4>, ap_uint<2>)' (src/yolo_max_pool.cpp:8:0)
+INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_0': Complete partitioning on dimension 2. (src/yolo_max_pool.cpp:19:17)
+INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_1': Complete partitioning on dimension 2. (src/yolo_max_pool.cpp:20:17)
+INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_2': Complete partitioning on dimension 2. (src/yolo_max_pool.cpp:21:17)
+INFO: [HLS 214-248] Applying array_partition to 'line_buff_group_3': Complete partitioning on dimension 2. (src/yolo_max_pool.cpp:22:17)
+INFO: [HLS 214-248] Applying array_partition to 'ref.tmp96': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+INFO: [HLS 214-248] Applying array_partition to 'ref.tmp99': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+INFO: [HLS 214-248] Applying array_partition to 'ref.tmp102': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+INFO: [HLS 214-248] Applying array_partition to 'ref.tmp105': Complete partitioning on dimension 1. Complete partitioning on dimension 2.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.11 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.31 seconds; current allocated memory: 204.566 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 204.566 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 216.758 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 233.688 MB.
+INFO: [XFORM 203-102] Partitioning array 'window.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp109' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp111' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp113' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp115' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp109.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp109.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp111.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp111.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp113.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp113.1' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp115.0' automatically.
+INFO: [XFORM 203-102] Partitioning array 'agg.tmp115.1' automatically.
+INFO: [XFORM 203-602] Inlining function 'slide_window' into 'yolo_max_pool_top' (src/yolo_max_pool.cpp:94) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_max_pool_top' (src/yolo_max_pool.cpp:4)...5 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 270.469 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_36_4' (src/yolo_max_pool.cpp:25:23) in function 'yolo_max_pool_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_33_3' (src/yolo_max_pool.cpp:25:23) in function 'yolo_max_pool_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_30_2' (src/yolo_max_pool.cpp:25:23) in function 'yolo_max_pool_top'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' (src/yolo_max_pool.cpp:25:23) in function 'yolo_max_pool_top'.
+INFO: [HLS 200-472] Inferring partial write operation for 'line_buff_group_0.val.V' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:871:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'line_buff_group_0.val.V.2' (/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:908:24)
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V.2' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_0.val.V' (src/yolo_max_pool.cpp:19).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V.2' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_1.val.V' (src/yolo_max_pool.cpp:20).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V.2' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_2.val.V' (src/yolo_max_pool.cpp:21).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V.2' (src/yolo_max_pool.cpp:22).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buff_group_3.val.V' (src/yolo_max_pool.cpp:22).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.33 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.35 seconds; current allocated memory: 292.891 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_max_pool_top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'window_max_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'window_max_pool'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, function 'window_max_pool'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 292.891 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 292.891 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5'.
+WARNING: [HLS 200-882] User specified resource constraint cannot be honored function 'window_max_pool' (II = 1)..
+Resolution: For help on HLS 200-882 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-882.html
+WARNING: [HLS 200-885] The II Violation in module 'yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS' (loop 'VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5'): Unable to schedule 'load' operation ('kernel_window.val.V', /tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:297) on array 'line_buff_group_0_val_V_2' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'line_buff_group_0_val_V_2'.
+Resolution: For help on HLS 200-885 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 3, Depth = 10, loop 'VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 300.965 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Starting global binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 300.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_max_pool_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln4_3) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.26 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 300.965 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 300.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'window_max_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'window_max_pool'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 300.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS' pipeline 'VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS_LOOP_39_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_10ns_12_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_2ns_11_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 300.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_max_pool_top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/inStream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/outStream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/output_h' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/output_w' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_h' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_w' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/input_fold_ch' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'yolo_max_pool_top/stride' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'yolo_max_pool_top' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'output_h', 'output_w', 'input_h', 'input_w', 'input_fold_ch', 'stride' to AXI-Lite port CTRL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'mul_2ns_15ns_17_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_2ns_4ns_6_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_6ns_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_9ns_17ns_26_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_max_pool_top'.
+INFO: [RTMG 210-278] Implementing memory 'yolo_max_pool_top_line_buff_group_0_val_V_RAM_S2P_BRAM_1R1W' using block RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.62 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.64 seconds; current allocated memory: 304.152 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.49 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.51 seconds; current allocated memory: 307.715 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 313.246 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for yolo_max_pool_top.
+INFO: [VLOG 209-307] Generating Verilog RTL for yolo_max_pool_top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 140.05 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7.55 seconds. CPU system time: 0.55 seconds. Elapsed time: 8.18 seconds; current allocated memory: 116.004 MB.
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_yolo_max_pool_top.cpp
+   Compiling yolo_max_pool_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_yolo_max_pool_top_util.cpp
+   Compiling yolo_max_pool.cpp_pre.cpp.tb.cpp
+   Compiling apatb_yolo_max_pool_top_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+173055
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 692224
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_yolo_max_pool_top_top glbl -Oenable_linking_all_libraries -prj yolo_max_pool_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s yolo_max_pool_top 
+Multi-threading is on. Using 18 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_yolo_max_pool_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/AESL_axi_s_inStream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_inStream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/AESL_axi_s_outStream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/AESL_axi_slave_CTRL_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CTRL_BUS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/AESL_deadlock_idx1_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx1_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_window_max_pool.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_window_max_pool
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_yolo_max_pool_top_Pipeline_VITIS_LOOP_27_1_VITIS_LOOP_33_3_VITIS_LOOP_36_4_VITIS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_regslice_both
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_mul_9ns_2ns_11_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_9ns_2ns_11_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_mul_4ns_10ns_12_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_4ns_10ns_12_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_mul_2ns_4ns_6_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_2ns_4ns_6_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_mul_9ns_6ns_15_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_9ns_6ns_15_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_mul_2ns_15ns_17_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_2ns_15ns_17_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_line_buff_group_0_val_V_RAM_S2P_BRAM_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_line_buff_group_0_val_V_RAM_S2P_BRAM_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_mul_mul_9ns_17ns_26_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_mul_9ns_17ns_26_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_mul_mul_9ns_17ns_26_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top_CTRL_BUS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module yolo_max_pool_top_CTRL_BUS_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:20]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-3980] File "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/AESL_fifo.v" Line 81 : The SystemVerilog feature ": Sensitivity on Associative Array" is not supported yet for simulation.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.yolo_max_pool_top_line_buff_grou...
+Compiling module xil_defaultlib.yolo_max_pool_top_window_max_poo...
+Compiling module xil_defaultlib.yolo_max_pool_top_mul_9ns_2ns_11...
+Compiling module xil_defaultlib.yolo_max_pool_top_mul_4ns_10ns_1...
+Compiling module xil_defaultlib.yolo_max_pool_top_flow_control_l...
+Compiling module xil_defaultlib.yolo_max_pool_top_yolo_max_pool_...
+Compiling module xil_defaultlib.yolo_max_pool_top_CTRL_BUS_s_axi
+Compiling module xil_defaultlib.yolo_max_pool_top_mul_2ns_4ns_6_...
+Compiling module xil_defaultlib.yolo_max_pool_top_mul_9ns_6ns_15...
+Compiling module xil_defaultlib.yolo_max_pool_top_mul_2ns_15ns_1...
+Compiling module xil_defaultlib.yolo_max_pool_top_mul_mul_9ns_17...
+Compiling module xil_defaultlib.yolo_max_pool_top_mul_mul_9ns_17...
+Compiling module xil_defaultlib.yolo_max_pool_top_regslice_both(...
+Compiling module xil_defaultlib.yolo_max_pool_top
+Compiling module xil_defaultlib.fifo(DEPTH=692224,WIDTH=112)
+Compiling module xil_defaultlib.AESL_axi_s_inStream
+Compiling module xil_defaultlib.fifo(DEPTH=173056,WIDTH=112)
+Compiling module xil_defaultlib.AESL_axi_s_outStream
+Compiling module xil_defaultlib.AESL_axi_slave_CTRL_BUS
+Compiling module xil_defaultlib.AESL_deadlock_idx1_monitor
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=3)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_yolo_max_pool_top_top
+Compiling module work.glbl
+Built simulation snapshot yolo_max_pool_top
+
+****** xsim v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/yolo_max_pool_top/xsim_script.tcl
+# xsim {yolo_max_pool_top} -autoloadwcfg -tclbatch {yolo_max_pool_top.tcl}
+Time resolution is 1 ps
+source yolo_max_pool_top.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "20767625000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 20767685 ns : File "/home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_max_pool/yolo_max_pool_prj/solution1/sim/verilog/yolo_max_pool_top.autotb.v" Line 382
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:33 . Memory (MB): peak = 1475.250 ; gain = 0.000 ; free physical = 18320 ; free virtual = 60155
+## quit
+INFO: xsimkernel Simulation Memory Usage: 306036 KB (Peak: 306036 KB), Simulation CPU Usage: 32860 ms
+INFO: [Common 17-206] Exiting xsim at Mon Nov 18 23:58:51 2024...
+INFO: [COSIM 212-316] Starting C post checking ...
+WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+173055
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 692224
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 50 seconds. CPU system time: 1.06 seconds. Elapsed time: 50.26 seconds; current allocated memory: 12.562 MB.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 23:58:57 2024...
+INFO: [HLS 200-802] Generated output file yolo_max_pool_prj/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 6.21 seconds. CPU system time: 0.28 seconds. Elapsed time: 15.83 seconds; current allocated memory: 4.973 MB.
+INFO: [HLS 200-112] Total CPU user time: 67.98 seconds. Total CPU system time: 2.19 seconds. Total elapsed time: 88.73 seconds; peak allocated memory: 332.035 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Mon Nov 18 23:59:07 2024...

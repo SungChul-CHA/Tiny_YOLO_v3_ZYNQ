@@ -1,0 +1,198 @@
+<stg><name>window_max_pool</name>
+
+
+<trans_list>
+
+<trans id="16" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="16" op_0_bw="16" op_1_bw="16">
+<![CDATA[
+entry:0 %p_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read4
+
+]]></Node>
+<StgValue><ssdm name="p_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="16" op_0_bw="16" op_1_bw="16">
+<![CDATA[
+entry:1 %p_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read3
+
+]]></Node>
+<StgValue><ssdm name="p_read_1"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="16" op_0_bw="16" op_1_bw="16">
+<![CDATA[
+entry:2 %p_read_2 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read2
+
+]]></Node>
+<StgValue><ssdm name="p_read_2"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="16" op_0_bw="16" op_1_bw="16">
+<![CDATA[
+entry:3 %p_read11 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %p_read1
+
+]]></Node>
+<StgValue><ssdm name="p_read11"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="1" op_0_bw="16" op_1_bw="16">
+<![CDATA[
+entry:4 %icmp_ln1649 = icmp_sgt  i16 %p_read_2, i16 %p_read11
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln1649"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="16" op_0_bw="1" op_1_bw="16" op_2_bw="16">
+<![CDATA[
+entry:5 %select_ln160 = select i1 %icmp_ln1649, i16 %p_read_2, i16 %p_read11
+
+]]></Node>
+<StgValue><ssdm name="select_ln160"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="1" op_0_bw="16" op_1_bw="16">
+<![CDATA[
+entry:6 %icmp_ln1649_1 = icmp_slt  i16 %select_ln160, i16 %p_read_1
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln1649_1"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="12" bw="16" op_0_bw="1" op_1_bw="16" op_2_bw="16">
+<![CDATA[
+entry:7 %select_ln160_1 = select i1 %icmp_ln1649_1, i16 %p_read_1, i16 %select_ln160
+
+]]></Node>
+<StgValue><ssdm name="select_ln160_1"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="11" st_id="2" stage="1" lat="1">
+<core>Cmp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="13" bw="1" op_0_bw="16" op_1_bw="16">
+<![CDATA[
+entry:8 %icmp_ln1649_2 = icmp_slt  i16 %select_ln160_1, i16 %p_read
+
+]]></Node>
+<StgValue><ssdm name="icmp_ln1649_2"/></StgValue>
+</operation>
+
+<operation id="12" st_id="2" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="14" bw="16" op_0_bw="1" op_1_bw="16" op_2_bw="16">
+<![CDATA[
+entry:9 %max_V = select i1 %icmp_ln1649_2, i16 %p_read, i16 %select_ln160_1
+
+]]></Node>
+<StgValue><ssdm name="max_V"/></StgValue>
+</operation>
+
+<operation id="13" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="15" bw="0" op_0_bw="16">
+<![CDATA[
+entry:10 %ret_ln164 = ret i16 %max_V
+
+]]></Node>
+<StgValue><ssdm name="ret_ln164"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

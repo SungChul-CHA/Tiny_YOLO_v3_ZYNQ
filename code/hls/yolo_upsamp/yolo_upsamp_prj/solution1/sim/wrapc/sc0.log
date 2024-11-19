@@ -1,0 +1,7 @@
+   Build using "/tools/Xilinx/Vitis_HLS/2022.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling yolo_upsamp.cpp_pre.cpp.tb.cpp
+   Compiling apatb_yolo_upsamp_top.cpp
+   Compiling yolo_upsamp_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_yolo_upsamp_top_util.cpp
+   Compiling apatb_yolo_upsamp_top_ir.ll
+   Generating cosim.tv.exe

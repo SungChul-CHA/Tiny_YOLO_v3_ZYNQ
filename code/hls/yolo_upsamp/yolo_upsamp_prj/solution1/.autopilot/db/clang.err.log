@@ -1,0 +1,6 @@
+In file included from src/yolo_upsamp.cpp:1:
+In file included from src/yolo_upsamp.h:7:
+/tools/Xilinx/Vitis_HLS/2022.2/include/vision/L1/include/common/xf_video_mem.hpp:759:47: warning: 'factor' in '#pragma HLS array_reshape' is ignored [-Wextra-tokens]
+#pragma HLS ARRAY_RESHAPE variable=val factor=RESHAPE_FACTOR dim=1
+                                              ^
+1 warning generated.

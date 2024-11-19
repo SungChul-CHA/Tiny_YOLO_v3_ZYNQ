@@ -1,0 +1,4 @@
+1 warning and 9 errors generated.
+Error while processing /home/tony/Desktop/yolo_2022/Tiny_YOLO_v3_ZYNQ/code/hls/yolo_upsamp/yolo_upsamp_prj/solution1/.autopilot/db/yolo_upsamp.pp.0.cpp.
+clang-tidy applied 49 of 49 suggested fixes.
+Suppressed 1 warnings (1 with check filters).
