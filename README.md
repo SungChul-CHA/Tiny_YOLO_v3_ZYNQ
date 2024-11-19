@@ -40,7 +40,8 @@ some tools used for helping the test, not important
 -   OS : RHEL 8
 -   Vivado tool version : 2022.2
 
-**Original vivado tool version was 2019.1 but**<br> **In 2022.2, there are some changes...**
+**Original vivado tool version was 2019.1 but**<br>
+**In 2022.2, there are some changes...**
 
 1. `scripts/run_all.py`
 
@@ -68,7 +69,7 @@ with open("opt.conf", "r") as fp:
 ```
 
 > Change some pragma of Vitis HLS. <br>
-> [Vitis HLS docs of pramga HLs allocation](https://docs.amd.com/r/2022.2-English/ug1399-vitis-hls/pragma-HLS-allocation)
+> [pramga HLS allocation of Vitis HLS User Guide 2022.2](https://docs.amd.com/r/2022.2-English/ug1399-vitis-hls/pragma-HLS-allocation)
 
 ```python
 ...
@@ -117,7 +118,7 @@ with open("run_hls.tcl", "w") as tcl_fp:
 ```
 
 > program name has been changed : `vivado_hls` &rarr; `vitis_hls` <br>
-> before copy, need to generate 'ip' folder in code : /code/ip &larr; I just used mkdir
+> before copy, need to generate 'ip' folder in code : /code/ip &larr; I just use `mkdir`
 
 ---
 
@@ -166,8 +167,8 @@ start_gui
 ```
 
 > no longer need `.sdk` folder<br>
-> `.hdf` &rarr; `.xsa`
-> `launch_sdk` &rarr; `vitis` <br> 
+> `.hdf` &rarr; `.xsa`<br>
+> `launch_sdk` &rarr; `vitis` 
 
 ---
 
@@ -214,11 +215,13 @@ compilation terminated.
 
 <br>
 
-[**Install Vitis Vision!!**](#in-my-workspace)
+[**How to Install Vitis Vision**](#in-my-workspace)
 
-### How to Install Vitis Vision
+<br>
 
-From [Vitis Vision GitHub](https://github.com/Xilinx/Vitis_Libraries/tree/master/vision) README
+&darr; from [Vitis Vision Library GitHub README](https://github.com/Xilinx/Vitis_Libraries/tree/master/vision)
+
+---
 
 #### Prerequisites
 
