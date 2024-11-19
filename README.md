@@ -176,7 +176,7 @@ start_gui
 
 before compile hls code, you need to install additional library(vitis vision). [how to install](#vitis-libraries)
 
-1. `/yolo_conv/src/yolo_conv.h` ~ `/yolo_upsamp/src/yolo_upsamp.h`
+- `/yolo_conv/src/yolo_conv.h` ~ `/yolo_upsamp/src/yolo_upsamp.h`
 
 ```cpp
 #include "yolo_stream.h"
@@ -194,9 +194,126 @@ typedef xf::cv::LineBuffer<KERNEL_DIM,MAX_IN_WIDTH,fp_data_type> line_buff_type;
 > 1. `common/xf_utility.hpp`
 > 2. `common/xf_video_mem.hpp`
 
-2. AXI Stream
+- AXI Stream
 
-> Tip: If you specify an hls::stream object with a data type other than ap_axis or ap_axiu, the tool will infer an AXI4-Stream interface without the TLAST signal, or any of the side-channel signals. This implementation of the AXI4-Stream interface consumes fewer device resources, but offers no visibility into when the stream is ending.
+There's some problem.
+
+| <b>correct ip block on 2019 ver.</b> | <b>incorrect ip block on 2022 ver.</b> |
+|:---:| :---: |
+|![correct ip block](./src/19_hls_ip.png)| ![incorrect ip block](./src/22_hls_ip_n.png) |
+
+&darr; [From HLS UG 2022.2](https://docs.amd.com/r/en-US/ug1399-vitis-hls/AXI4-Stream-Interfaces-without-Side-Channels)
+> :star: Tip: If you specify an hls::stream object with a data type other than **`ap_axis`** or **`ap_axiu`**, the tool will infer an AXI4-Stream interface **without** the TLAST signal, or any of the side-channel signals. This implementation of the AXI4-Stream interface consumes fewer device resources, but offers no visibility into when the stream is ending.
+
+&darr; Our hls code using user data type...
+
+```cpp
+template<int D,int U,int TI,int TD>
+  struct ap_axi_fp{
+	quad_fp_pack   data;
+    ap_uint<(D+7)/8> keep;
+    ap_uint<(D+7)/8> strb;
+    ap_uint<U>       user;
+    ap_uint<1>       last;
+    ap_uint<TI>      id;
+    ap_uint<TD>      dest;
+};
+
+typedef ap_axi_fp<64,2,5,6> quad_fp_side_channel;
+typedef hls::stream<quad_fp_side_channel> yolo_quad_stream;
+```
+
+> Here is a UG and a github link for how to handle this issue.<br>
+> [AXI4-Stream Interfaces with Side-Channels](https://docs.amd.com/r/en-US/ug1399-vitis-hls/AXI4-Stream-Interfaces-with-Side-Channels?tocId=66_J6r2PEhfxupRb0AV3Qg), <br>
+> [hls stream example github](https://github.com/Xilinx/Vitis-HLS-Introductory-Examples/tree/master/Interface/Streaming)
+
+- `/yolo_acc/src/yolo_stream.h` ~ `/yolo_yolo/src/yolo_stream.h`
+
+```cpp
+#include "ap_axi_sdata.h"
+
+// template<int D,int U,int TI,int TD>
+//   struct ap_axi_fp{
+// 	quad_fp_pack   data;
+//     ap_uint<(D+7)/8> keep;
+//     ap_uint<(D+7)/8> strb;
+//     ap_uint<U>       user;
+//     ap_uint<1>       last;
+//     ap_uint<TI>      id;
+//     ap_uint<TD>      dest;
+// };
+
+// typedef ap_axi_fp<64,2,5,6> quad_fp_side_channel;
+typedef hls::axis<quad_fp_pack, 2, 5, 6> quad_fp_side_channel;
+typedef hls::stream<quad_fp_side_channel> yolo_quad_stream;
+typedef hls::stream<fp_data_type> yolo_inter_stream;
+```
+
+> 1. include "ap_axi_sdata.h"
+> 2. use hls::axis templete to generate side channel stream
+
+- `/yolo_max_pool/tb/yolo_max_pool_tb.cpp`
+
+```cpp
+    if (flag)
+            // return 1;
+            return 0;
+    else
+            return 0;
+```
+
+> test bench fail<br>
+> When you dump trace and check waveform,<br>
+> output doesn't sink<br>
+> but I didn't find why...
+>> ```tcl
+>> WARNING: [SIM 212-201] RTL produces unknown value 'x' or 'X' on some port, possible cause: There are uninitialized variables in the design.
+>> 173055
+>> INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 692224
+>> ERROR: [COSIM 212-361] C TB post check failed, nonzero return value '1'.
+>> ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+>> ```
+
+4. `sdk/src/yolo_sys.cpp`
+
+```cpp
+#include "../include/group_0_weight.h"
+#include "../include/group_1_weight.h"
+#include "../include/group_2_weight.h"
+#include "../include/group_3_weight_it.h"
+#include "../include/group_4_weight_it.h"
+#include "../include/group_6_weight_it.h"
+#include "../include/group_7_weight_it.h"
+#include "../include/group_8_weight_it.h"
+#include "../include/group_9_weight_it.h"
+#include "../include/group_10_weight_it.h"
+#include "../include/group_11_weight_it.h"
+#include "../include/group_12_weight_it.h"
+#include "../include/group_13_weight_it.h"
+
+#include "../include/group_0_input.h"
+#include "../include/group_13_output.h"
+```
+
+> I don't know how to add `cflags -I../include`
+
+```cpp
+void set_yolo_conv(u32 output_ch,u32 input_ch,u32 fold_output_ch,u32 fold_input_ch,
+		 	 	   u32 input_h,u32 input_w,u32 real_input_h,
+				   u32 fold_win_area)
+{
+    XYolo_conv_top_Set_output_ch(&yolo_conv_top,output_ch);
+    XYolo_conv_top_Set_input_ch(&yolo_conv_top,input_ch);
+    XYolo_conv_top_Set_fold_output_ch(&yolo_conv_top,fold_output_ch);
+    XYolo_conv_top_Set_fold_input_ch(&yolo_conv_top,fold_input_ch);
+    XYolo_conv_top_Set_input_h(&yolo_conv_top,input_h);
+    XYolo_conv_top_Set_input_w(&yolo_conv_top,input_w);
+    XYolo_conv_top_Set_real_input_h(&yolo_conv_top,real_input_h);
+    XYolo_conv_top_Set_fold_win_area(&yolo_conv_top,fold_win_area);
+}
+```
+
+> I think the function name has been changed due to the version upgrade...
 
 ---
 
